@@ -33,3 +33,7 @@ Runtime limits, schema and algorithm logic remain traceable to the original file
 The full multi-benchmark corpus, all native model I/O, every earlier attempt and historical request prefix are not included. The local corpus-selection pointers are recorded for provenance, not as claims that all pointed-to data are shipped. A complete historical replay still requires those matching archives.
 
 Independent gold annotations and completed paper-level comparisons do not presently exist in this release. They are not replaced by synthetic labels or the earlier tutorial demo.
+
+## Existing experimental records and audit capsules
+
+`research_artifacts/` releases the three completed research evidence groups, saved native responses and author review, original/public source hashes, plus deterministic message/read and trace inventories. Every omitted request/tool context is explicitly indexed. Full benchmark datasets, databases and source traces are not silently substituted. Original sources and frozen outputs are unchanged. The verifier's source checks are publication bindings and indexed continuity, not a new full-corpus source replay. See the [package guide](../research_artifacts/README.md).

@@ -1,0 +1,1254 @@
+{
+  "purpose": "Offline packaging classification and reference-existence/read audit only; not output repair, not reacceptance, not semantic accuracy measurement.",
+  "native_acceptance_unchanged": true,
+  "packaging_counts": {
+    "single_fenced_json_with_surrounding_text": 4,
+    "native_json": 6
+  },
+  "rows_with_reference_errors": 0,
+  "reference_error_count": 0,
+  "rows": [
+    {
+      "record_id": "rawio-c05784a0b4925c35b147",
+      "benchmark": "dabstep",
+      "agent_id": "claude_code",
+      "task_id": "1753",
+      "status": "invalid_json",
+      "accepted": false,
+      "packaging": "single_fenced_json_with_surrounding_text",
+      "root_chain_items": 2,
+      "critical_decision_items": 2,
+      "model_summary_as_recorded": "最终交付：answer.txt包含42个fee ID（E00065/E00068读回确认），文件存在。已确认一处可能的分析偏差：capture_delay_matches把商户'1'当作匹配fee的'immediate'（days<=1），使7个capture='immediate'的fee（284,456,502,804,870,915,944）进入答案；merchant_data中'immediate'与'1'是不同取值，若'immediate'仅指0天/字符串'immediate'，则这7个应被排除（答案变为35）。另一处是口径选择：agent把'applicable'解释为商户级+至少一条交易级匹配（42），而非仅商户级（57）；manual未明确该口径，S0017的推理选择了42。此外，空列表[]被当作'全部'（与manual的null=全部一致），但manual未显式说明[]的语义。由于'immediate'语义和'applicable'口径均未由现有证据完全确定，无法断言唯一正确fee集合；需要manual对'immediate'的明确定义或任务对'applicable'的口径说明才能定论。",
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00065",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00068",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00050",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00064",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00010",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00050",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00006",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00006",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00010",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00050",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00064",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00006",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00052",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00053",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00065",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      },
+      "native_final_sha256": "ca22ad38ce0d05adeaa4e7d2f8df3df1d9cc0bbba1bf9207e70d785fb6f441a3"
+    },
+    {
+      "record_id": "rawio-c63c1bb0b2f1eaa2080b",
+      "benchmark": "dabstep",
+      "agent_id": "codex",
+      "task_id": "49",
+      "status": "mechanically_passed",
+      "accepted": true,
+      "packaging": "native_json",
+      "root_chain_items": 0,
+      "critical_decision_items": 1,
+      "model_summary_as_recorded": "已确认的交付内容：S0005 逐行读取 ./context/payments.csv，按 has_fraudulent_dispute == 'True' 统计 ip_country，得到总记录 138236、欺诈 10765，NL 2955 居首（其后 BE 2493、IT 1652、SE 1627、FR 843、LU 410、ES 407、GR 378，合计 10765）；S0006 将 'A. NL' 写入 ./answer.txt 并 cat 读回，FINAL0001 仅重复 'A. NL'，符合 'X. Y' 格式与“最终消息只重复答案”的要求。readme 将 has_fraudulent_dispute 定义为发卡行欺诈争议指示（E00009），因此以该列计数是可用文档支持的读法。S0004 的 write_stdin 因 Unknown process id 1 失败（E00015），S0005 改用脚本执行后恢复，不构成最终失败原因。唯一有证据的偏差是脚本被写到 /tmp 而非工作区，违反 T0005/R0007，但不改变答案值。未提供参考答案或评分，无法独立确认 A. NL 是否为官方正确答案；任务文本也未明确 'top' 是欺诈笔数还是欺诈率，本诊断不据此断言答案错误。由于没有已证实的分析错误传导到交付答案，root_cause_chain 留空。",
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00018",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00019",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00021",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      },
+      "native_final_sha256": "399aae304b237f2a9e89a3e5215367df099c708e219264cd72441fab7e9d7243"
+    },
+    {
+      "record_id": "rawio-ad24e54fdf0c7d46da13",
+      "benchmark": "dabstep",
+      "agent_id": "codex",
+      "task_id": "1305",
+      "status": "invalid_json",
+      "accepted": false,
+      "packaging": "single_fenced_json_with_surrounding_text",
+      "root_chain_items": 0,
+      "critical_decision_items": 2,
+      "model_summary_as_recorded": "已确认：最终 answer.txt 内容为 0.064，来自 3 条显式匹配规则（ID=204/612/921）的费用 0.071、0.089、0.032 的算术平均；费用公式 fixed_amount + rate * transaction_value / 10000 与 manual 一致；S0014 曾因把 MCC 条件写成 `5812 not in ...` 而得到 21 条规则、平均 0.127286，该错误在 S0015/S0016 被识别并修正，未进入最终答案。未确认的疑点：筛选要求 account_type 显式含 H、merchant_category_code 显式含 5812，未实现 manual 所述 null=适用所有取值的通配语义；数据中 account_type 存在空列表（ID=1），空列表是否等同“适用所有”未由已检证据确定，且已检证据未显示 GlobalCard 是否存在空/null account_type 或 mcc 的规则，因此无法判定是否漏算规则、也无法判定 0.064 是否正确。另：answer.txt 写为 0.064 而非 6 位小数 0.064000，属格式细节。未使用官方评估、参考答案或运行后快照。",
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00046",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00047",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00050",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00051",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00053",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00054",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00055",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00015",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00029",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00039",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00058",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00063",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00066",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      },
+      "native_final_sha256": "bd82537dbb257d99b84c0632089dab99ab125dcba09de6ccb0ba7680478ec8b3"
+    },
+    {
+      "record_id": "rawio-6e9757019dc8767f3cfc",
+      "benchmark": "dabstep",
+      "agent_id": "kimi_code",
+      "task_id": "1681",
+      "status": "invalid_json",
+      "accepted": false,
+      "packaging": "single_fenced_json_with_surrounding_text",
+      "root_chain_items": 0,
+      "critical_decision_items": 2,
+      "model_summary_as_recorded": "已确认两点。其一，交付失败：最终消息（FINAL0001）仅 95 字符，未给出答案，且导航索引中没有 answer.txt 写入步骤，违反任务要求（T0008、T0010）。其二，分析缺口：最终 solve.py（E00092）的费用匹配遗漏了手册（E00014）定义的商户级条件 monthly_fraud_level 与 monthly_volume，而 fees.json 中确有非空值（E00024、E00025），agent 从未从 payments.csv 计算 Belles 的月度交易额与欺诈率。verify.py 在 S0024 的 TypeError 崩溃发生在打印适用列表之后（E00107），不影响已算出的列表。由于所给证据未包含 12 个适用 ID 的 fees.json 记录，无法核实遗漏条件对最终列表的具体影响，也无法确定正确列表；交付失败是终点，分析缺口与答案错误之间的因果链未建立，故 root_cause_chain 留空。",
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00014",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00024",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00025",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00092",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00098",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "T0008",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "T0010",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00107",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      },
+      "native_final_sha256": "667ae205b06d201a87bfaf15655608f1a7b37554061bfc51f4e440ac2e2f15a1"
+    },
+    {
+      "record_id": "rawio-e7c485f571630e650d08",
+      "benchmark": "dataagentbench",
+      "agent_id": "claude_code",
+      "task_id": "yelp__query2",
+      "status": "mechanically_passed",
+      "accepted": true,
+      "packaging": "native_json",
+      "root_chain_items": 3,
+      "critical_decision_items": 2,
+      "model_summary_as_recorded": "交付层面已完成：answer.txt 已写入并被 cat/ls 读回（E00019、E00023），最终消息重复了答案（FINAL0001）。分析层面存在可支持的偏差：(1) 州码来自 description 的正则提取，模式无法匹配“in St. Louis, MO”，businessid_47（review_count=81）因此被跳过，E00016 的 MO 列表只有 7 家企业，交付的 2151 条/7 家偏低；其余 5 个未匹配企业未在已检查证据中列出，故最高州排名是否稳健未被证实（MO 2151 对 PA 1804，差距 347）。(2) 3.86 是 MO 164 条 review 的合并均值，不是按企业等权的平均评分；任务措辞指向企业级平均，且 review 表只有 2000 行而排名用的是 business.review_count（MO 已达 2151），两者口径不一致。(3) 州集合包含 AB（阿尔伯塔），不符合 U.S. state 限定，但未改变最高州。(4) businessid_X↔businessref_X 的映射是按命名推断，未在已检查证据中验证。未使用官方评估、标准答案或运行后快照；未重新执行分析，因此不给出修正后的具体数值。",
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00019",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00015",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00016",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00008",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00011",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00012",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00016",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00008",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00011",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00012",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00016",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "T0002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00008",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00016",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      },
+      "native_final_sha256": "4e474c6e695a8e6f5784091a80bcaff449b959f8b6261de80003bce682fa9991"
+    },
+    {
+      "record_id": "rawio-28b2f965e92b9d64d640",
+      "benchmark": "dataagentbench",
+      "agent_id": "claude_code",
+      "task_id": "GITHUB_REPOS__query1",
+      "status": "mechanically_passed",
+      "accepted": true,
+      "packaging": "native_json",
+      "root_chain_items": 3,
+      "critical_decision_items": 3,
+      "model_summary_as_recorded": "已确认的终点问题：FINAL0001是一句以冒号结尾的未完成思路，没有比例数值；已检查的14个步骤中没有任何一步执行出比例，也没有answer.txt的写入或存在性确认，因此任务要求的交付物（工作区脚本、./answer.txt、最终消息重复答案）均未完成。可定位的上游设计问题是S0013把2,774,729个非Python仓库整体带入逐仓库循环，而artifacts库中带README内容的不同仓库只有247个（files中3,095个），S0014据此写出的脚本规模不可行且只写到/tmp、未执行，最终回复也自认\"too slow\"。另有两处口径问题会影响任何最终数值：`sample_path LIKE '%README%'`覆盖README.rst/.txt及嵌套路径而非README.md，以及按仓库而非按README.md文件计数。局部错误方面，S0001/S0002的路径错误已由S0003的目录列举纠正，S0009的DuckDB BinderException已由S0010的SHOW TABLES纠正，均不构成最终原因；S0013末尾的NameError（`conn`未定义）之后没有成功重跑，属未修复的局部错误。限制：记录未显示运行为何在FINAL0001处结束（该片段以冒号结尾且无后续工具调用），也未显示contents中content字段是否被截断或占位（db_description提示大文件/二进制可能为占位或截断值），因此无法确定copyright子串匹配的漏检程度；未使用官方评估、标准答案或运行后快照，也未重新执行任何分析。",
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0003",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00042",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00043",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00039",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00038",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00039",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00033",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00023",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00030",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00033",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00036",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00038",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00039",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "T0002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00032",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00033",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00042",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "T0003",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00042",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00043",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      },
+      "native_final_sha256": "a89f7aa78abd39365d6b345f75bfd90133eb2ed37acb237e9e69d560519ec0c5"
+    },
+    {
+      "record_id": "rawio-ecb3a8772d271f6bc689",
+      "benchmark": "dataagentbench",
+      "agent_id": "claude_code",
+      "task_id": "agnews__query3",
+      "status": "mechanically_passed",
+      "accepted": true,
+      "packaging": "native_json",
+      "root_chain_items": 3,
+      "critical_decision_items": 3,
+      "model_summary_as_recorded": "已确认的端点问题：FINAL0001 是分析中途的假设陈述（“AG News 按 15000 分块”并称将验证后计算），不含任何数值答案；已记录的 S0001–S0021 中没有写 ./answer.txt 的步骤，也没有读回确认，因此任务要求的答案文件与最终答案均未交付。分析层面的核心障碍是类别定义：db_description 与实测 schema 显示 article_metadata 只有 article_id、author_id、region、publication_date，articles 只有 _id、article_id、title、description，agent 也自述“metadata database doesn't have a 'business' category”；随后它改用 article_id 位置作为类别代理，但 S0020/S0021 的采样（ID 100 为科技稿、ID 15000 为 World、ID 15100 为 Sports、ID 30000/30100 为 World、ID 60000 为 Sci/Tech、ID 60100 为 Sports）与该分块假设冲突，最终消息却仍沿用该假设。S0017/S0018 得到的 Europe 年度计数（2010:1306 … 2020:1366）是全部文章计数，未含 business 条件，不能直接作为答案。S0003 因路径含空格导致 Exit code 127，已在 S0005 用正确解释器路径重跑并取得 schema，属已恢复的局部错误，不作为最终失败原因。未提供完整文件写入覆盖，故“answer.txt 一定不存在”仅就所记录的步骤而言；正确数值以及数据是否本可支持 business 过滤，现有证据无法确定，需要类别来源或判定规则的进一步证据才能解决。",
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0003",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00065",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00066",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00068",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00014",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00020",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00022",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00062",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00065",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00065",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00066",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00014",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00020",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00062",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00063",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00066",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00068",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "T0002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00052",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00053",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00057",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      },
+      "native_final_sha256": "2c34c3bd36ea2d062b33ee86b47221232808bbe0bad1ce49ef2a7b2956c0f3e9"
+    },
+    {
+      "record_id": "rawio-747fdd4b9b059ac3c74c",
+      "benchmark": "agenticdatabench",
+      "agent_id": "claude_code",
+      "task_id": "agriculture_28",
+      "status": "mechanically_passed",
+      "accepted": true,
+      "packaging": "native_json",
+      "root_chain_items": 3,
+      "critical_decision_items": 4,
+      "model_summary_as_recorded": "已确认交付的 output.csv 存在多处口径偏差：'Corn Price (USD)' 实为当地货币价格（USD 记录仅覆盖 8 国，不含 Colombia/Dominican Republic），条件(6)的全球价格比较在混合货币上进行；Price Volatility 使用年内标准差而非任务要求的 12 个月滚动标准差（S0038 对照显示会改变第 5 行，Dominican Republic 2012 vs Honduras 2012，但对月份完整年份两者数值相同）；农药/波动率/价格阈值在嵌套过滤子集上计算而非全局。S0041 的核验只覆盖列名与两个数值条件，未发现上述问题。'Corn Production' 实际使用 hg/ha_yield，因数据无产量字段；同比变化在 inner merge 后计算，年份缺口可能影响 'previous year' 的取值，现有证据不足以量化。S0039 的 KeyError 与 S0031/S0032/S0036/S0037 的报错均已通过后续步骤恢复，不构成最终失败原因。未使用官方评估或标准答案；具体正确行集需按上述口径重算才能确定。",
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00076",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00123",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00130",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00123",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00124",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00075",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00076",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00117",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00123",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00130",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00075",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00076",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00123",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00130",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00123",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00124",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "E00126",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "E00127",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      },
+      "native_final_sha256": "905830e6257ffce803c74e3aa21d468ed1468b892165f5c7633d2422bb937a81"
+    },
+    {
+      "record_id": "rawio-5bc9d9c1b623a95007e1",
+      "benchmark": "agenticdatabench",
+      "agent_id": "codex",
+      "task_id": "agriculture_29",
+      "status": "mechanically_passed",
+      "accepted": true,
+      "packaging": "native_json",
+      "root_chain_items": 2,
+      "critical_decision_items": 4,
+      "model_summary_as_recorded": "最终脚本 S0064 已运行并生成 output1.csv（562 行）和 output2.csv（303 行），但 output1.csv 的 recommended_crop 列被赋值为最高产作物 Item，导致 562 行全部显示 recommended_crop=produced_crop=Potatoes，而同一脚本算出的全球推荐作物是 Teff；这与任务要求的 recommended_crop 字段不符，是已确认的交付内容错误。FINAL0001 只说“The solution ran successfully. Now let me verify the output files and their content.”，没有实际读回或核对文件名、列/格式、行和值，因此任务要求的核验未在最终回复中完成。农药阈值在 pesticides.csv 的 Value（p75=7869.0）与 yield_df 的 pesticides_tonnes（p75=48687.88）之间切换，使错配数从 143 变为 562；任务文本“all pesticide values”未明确指定数据源，该口径仍待确认。temp_range 采用 filtered_cr 上 mean(T2M_MAX-Su)-mean(T2M_MIN-W)，与“average seasonal temperature range”的另一种逐样本求差再平均口径不同，也未被任务文本唯一确定。S0017–S0031 反复出现 KeyError: 'Area'，原因是推荐数据没有 Area 列；该错误在 S0032 后已修正，未进入最终脚本。ARIMA 在 S0062 因“No supported index is available”全部失败并输出 0.0，S0063 改用 DatetimeIndex 后 S0064 恢复，仍有 ConvergenceWarning；这是已恢复的建模问题，未证明为最终错误。未使用官方评估、标准答案或运行后快照；output1/output2 的完整内容未全部读回，因此不能断言其余数值均正确。",
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00221",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00215",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00221",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00215",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00221",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00220",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00221",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00168",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00154",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00215",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00221",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "E00070",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "E00071",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "E00094",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "E00105",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      },
+      "native_final_sha256": "326e40b50ae9b41d527acfde8fa242909431333913e356dd44548393001ca745"
+    },
+    {
+      "record_id": "rawio-4b9fd6b15e4b554779db",
+      "benchmark": "agenticdatabench",
+      "agent_id": "codex",
+      "task_id": "agriculture_03",
+      "status": "invalid_json",
+      "accepted": false,
+      "packaging": "single_fenced_json_with_surrounding_text",
+      "root_chain_items": 0,
+      "critical_decision_items": 0,
+      "model_summary_as_recorded": "记录轨迹仅含11个探索性数据检查步骤（ls、head、wc、shape/label/年份统计），没有任何分析代码、没有写出output.csv、也没有最终答案；记录的最后回复是'Now let me examine the shapefile:'（33字符），是工作中途的片段。因此任务要求的核心交付物（output.csv，含income_group、alignment_status、count、correlation）完全缺失，这是已确认的交付失败。由于轨迹在探索阶段即结束，且没有可追溯的早期错误决策，root_cause_chain留空；停止原因（记录截断、预算耗尽或其他）无法从现有证据确定。未使用官方评估、标准答案或运行后快照。",
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      },
+      "native_final_sha256": "25632e88d6b297f9231438a93dbbfe2e586bcac7df145b24d1995ce329e40de1"
+    }
+  ]
+}

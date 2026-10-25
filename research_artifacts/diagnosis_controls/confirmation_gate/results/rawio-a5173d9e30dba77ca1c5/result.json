@@ -1,0 +1,7 @@
+{
+  "task_id": "agriculture_20",
+  "status": "mechanically_passed",
+  "model_rounds": 2,
+  "tool_calls": 2,
+  "finished_at": "2026-10-18T13:56:11.155138+00:00"
+}

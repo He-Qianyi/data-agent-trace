@@ -1,0 +1,262 @@
+[
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "task_id": "stockindex__query3",
+    "step_id": "S0004",
+    "pointer": "/facts/steps/3/action/static_extraction/data_operations/0/path_literal",
+    "recovered_value": "file:./data/indexInfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_db_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "task_id": "stockindex__query3",
+    "step_id": "S0006",
+    "pointer": "/facts/steps/5/action/static_extraction/data_operations/0/path_literal",
+    "recovered_value": "file:./data/indexInfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_db_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "task_id": "stockindex__query3",
+    "step_id": "S0006",
+    "pointer": "/facts/steps/5/action/static_extraction/data_operations/4/path_literal",
+    "recovered_value": "file:./data/indexInfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_db_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "task_id": "stockindex__query3",
+    "step_id": "S0004",
+    "pointer": "/facts/data_resources/1/path_as_recorded",
+    "recovered_value": "file:./data/indexInfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/3/action/static_extraction/data_operations/0/path_literal"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "task_id": "stockindex__query3",
+    "step_id": "S0006",
+    "pointer": "/facts/data_resources/5/path_as_recorded",
+    "recovered_value": "file:./data/indexInfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/5/action/static_extraction/data_operations/0/path_literal"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "task_id": "stockindex__query3",
+    "step_id": "S0006",
+    "pointer": "/facts/data_resources/7/path_as_recorded",
+    "recovered_value": "file:./data/indexInfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/5/action/static_extraction/data_operations/4/path_literal"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0004",
+    "pointer": "/facts/steps/3/action/static_extraction/data_operations/0/path_literal",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0004",
+    "pointer": "/facts/steps/3/action/static_extraction/data_operations/8/path_literal",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0005",
+    "pointer": "/facts/steps/4/action/static_extraction/data_operations/0/path_literal",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0005",
+    "pointer": "/facts/steps/4/action/static_extraction/data_operations/8/path_literal",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0006",
+    "pointer": "/facts/steps/5/action/static_extraction/data_operations/0/path_literal",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0006",
+    "pointer": "/facts/steps/5/action/static_extraction/data_operations/7/path_literal",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0007",
+    "pointer": "/facts/steps/6/action/static_extraction/data_operations/0/path_literal",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0007",
+    "pointer": "/facts/steps/6/action/static_extraction/data_operations/5/path_literal",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0008",
+    "pointer": "/facts/steps/7/action/static_extraction/data_operations/0/path_literal",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0008",
+    "pointer": "/facts/steps/7/action/static_extraction/data_operations/6/path_literal",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "basis_operation_pointer": null
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0004",
+    "pointer": "/facts/data_resources/1/path_as_recorded",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/3/action/static_extraction/data_operations/0/path_literal"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0004",
+    "pointer": "/facts/data_resources/3/path_as_recorded",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/3/action/static_extraction/data_operations/8/path_literal"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0005",
+    "pointer": "/facts/data_resources/5/path_as_recorded",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/4/action/static_extraction/data_operations/0/path_literal"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0005",
+    "pointer": "/facts/data_resources/6/path_as_recorded",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/4/action/static_extraction/data_operations/8/path_literal"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0006",
+    "pointer": "/facts/data_resources/7/path_as_recorded",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/5/action/static_extraction/data_operations/0/path_literal"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0006",
+    "pointer": "/facts/data_resources/8/path_as_recorded",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/5/action/static_extraction/data_operations/7/path_literal"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0007",
+    "pointer": "/facts/data_resources/9/path_as_recorded",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/6/action/static_extraction/data_operations/0/path_literal"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0007",
+    "pointer": "/facts/data_resources/10/path_as_recorded",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/6/action/static_extraction/data_operations/5/path_literal"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0008",
+    "pointer": "/facts/data_resources/11/path_as_recorded",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/7/action/static_extraction/data_operations/0/path_literal"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "task_id": "stockmarket__query2",
+    "step_id": "S0008",
+    "pointer": "/facts/data_resources/13/path_as_recorded",
+    "recovered_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "recovered",
+    "source_expression": null,
+    "basis_operation_pointer": "/facts/steps/7/action/static_extraction/data_operations/6/path_literal"
+  }
+]

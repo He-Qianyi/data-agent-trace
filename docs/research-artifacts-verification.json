@@ -1,0 +1,176 @@
+{
+  "status": "passed",
+  "scope": "Offline verification of the published research records, not a rerun of the full private corpus",
+  "integrity": {
+    "status": "passed",
+    "published_files": 974,
+    "bound_existing_source_files": 939,
+    "source_unchanged_during_publication": 1485,
+    "local_archive_needed_for_original_source_recheck": true
+  },
+  "unseen_ten": {
+    "cases": 10,
+    "native_acceptance": 6,
+    "after_recorded_wrapper_extraction": 10,
+    "wrappers_removed": 4,
+    "diagnostic_payload_edited": false,
+    "author_review_cases": 10,
+    "independent_gold": false,
+    "root_cause_accuracy": null
+  },
+  "unseen_recorded_run": {
+    "cases": 10,
+    "recorded_status_counts": {
+      "invalid_json": 4,
+      "mechanically_passed": 6
+    },
+    "saved_native_JSON_objects": 6,
+    "current_policy_acceptance_recomputed": 6,
+    "provider_responses_checked": 44,
+    "message_prefix_transitions_checked": 34,
+    "tool_result_content_links_checked": 57,
+    "unreturned_request_replays_checked": 0,
+    "native_read_metadata_records": 57,
+    "full_request_or_source_text_replayed": false,
+    "semantic_accuracy_measured": false
+  },
+  "author_spot_checks": {
+    "public_evidence_spot_checks_recomputed": 4,
+    "immediate_rule_count": 8,
+    "native_diagnosis_reported_count": 7,
+    "known_count_error_retained": true,
+    "author_review_not_independent_gold": true,
+    "supplemental_dataset_checks_rerun": false,
+    "posthoc_gold_comparison_rerun": false
+  },
+  "processor_validation": {
+    "historical_traces": 164,
+    "tool_steps": 4208,
+    "semantic_units": 4259,
+    "historical_source_checks_passed": 164,
+    "recovered_fields": 26,
+    "retained": 145,
+    "excluded": 19,
+    "environment_exclusions": 14,
+    "short_success_exclusions": 5,
+    "partition_recomputed_from_published_lists": true,
+    "full_corpus_source_audit_rerun": false,
+    "scope": "Historical all-corpus validation records and hash anchors; source trace objects/datasets are not bundled."
+  },
+  "diagnosis_controls": {
+    "experiments": {
+      "baseline_v1": {
+        "cases": 8,
+        "recorded_status_counts": {
+          "recovery_failed": 2,
+          "mechanically_passed": 4,
+          "mechanically_failed": 1,
+          "round_budget_exhausted": 1
+        },
+        "saved_native_JSON_objects": 5,
+        "current_policy_acceptance_recomputed": 5,
+        "provider_responses_checked": 46,
+        "message_prefix_transitions_checked": 40,
+        "tool_result_content_links_checked": 73,
+        "unreturned_request_replays_checked": 2,
+        "native_read_metadata_records": 75,
+        "full_request_or_source_text_replayed": false,
+        "semantic_accuracy_measured": false
+      },
+      "forced_final_round12": {
+        "cases": 8,
+        "recorded_status_counts": {
+          "recovery_failed": 2,
+          "mechanically_passed": 4,
+          "mechanically_failed": 2
+        },
+        "saved_native_JSON_objects": 6,
+        "current_policy_acceptance_recomputed": 6,
+        "provider_responses_checked": 1,
+        "message_prefix_transitions_checked": 0,
+        "tool_result_content_links_checked": 0,
+        "unreturned_request_replays_checked": 0,
+        "native_read_metadata_records": 0,
+        "full_request_or_source_text_replayed": false,
+        "semantic_accuracy_measured": false
+      },
+      "confirmation_gate": {
+        "cases": 8,
+        "recorded_status_counts": {
+          "mechanically_passed": 5,
+          "invalid_json": 1,
+          "mechanically_failed": 2
+        },
+        "saved_native_JSON_objects": 7,
+        "current_policy_acceptance_recomputed": 7,
+        "provider_responses_checked": 39,
+        "message_prefix_transitions_checked": 31,
+        "tool_result_content_links_checked": 51,
+        "unreturned_request_replays_checked": 0,
+        "native_read_metadata_records": 51,
+        "full_request_or_source_text_replayed": false,
+        "semantic_accuracy_measured": false
+      },
+      "round24_continuation": {
+        "cases": 8,
+        "recorded_status_counts": {
+          "recovery_failed": 2,
+          "mechanically_passed": 5,
+          "round_budget_exhausted": 1
+        },
+        "saved_native_JSON_objects": 5,
+        "current_policy_acceptance_recomputed": 5,
+        "provider_responses_checked": 12,
+        "message_prefix_transitions_checked": 11,
+        "tool_result_content_links_checked": 22,
+        "unreturned_request_replays_checked": 0,
+        "native_read_metadata_records": 24,
+        "full_request_or_source_text_replayed": false,
+        "semantic_accuracy_measured": false
+      },
+      "service_rerun_two": {
+        "cases": 2,
+        "recorded_status_counts": {
+          "round_budget_exhausted": 1,
+          "mechanically_passed": 1
+        },
+        "saved_native_JSON_objects": 1,
+        "current_policy_acceptance_recomputed": 1,
+        "provider_responses_checked": 27,
+        "message_prefix_transitions_checked": 25,
+        "tool_result_content_links_checked": 33,
+        "unreturned_request_replays_checked": 0,
+        "native_read_metadata_records": 34,
+        "full_request_or_source_text_replayed": false,
+        "semantic_accuracy_measured": false
+      },
+      "no_repeat_and_unlocalized": {
+        "cases": 2,
+        "recorded_status_counts": {
+          "round_budget_exhausted": 2
+        },
+        "saved_native_JSON_objects": 0,
+        "current_policy_acceptance_recomputed": 0,
+        "provider_responses_checked": 48,
+        "message_prefix_transitions_checked": 46,
+        "tool_result_content_links_checked": 77,
+        "unreturned_request_replays_checked": 0,
+        "native_read_metadata_records": 80,
+        "full_request_or_source_text_replayed": false,
+        "semantic_accuracy_measured": false
+      }
+    },
+    "candidate_accepted": 0,
+    "candidate_cases": 2,
+    "candidate_is_two_simultaneous_prompt_changes": true,
+    "single_factor_semantic_improvement_claimed": false,
+    "historical_acceptance_policies_are_not_relabelled": true,
+    "independent_gold": false,
+    "root_cause_accuracy": null
+  },
+  "new_model_calls": 0,
+  "network_disabled": true,
+  "captured_analysis_code_executed": false,
+  "independent_semantic_gold": false,
+  "root_cause_accuracy": null
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "trace-corpus-curation-v1",
+  "policy_id": "environment-and-short-success-v1-20261020",
+  "updated_at_utc": "2026-10-20T06:10:20.497653+00:00",
+  "source_full_normalized_results": "artifacts/03_trace_processor/integrated_runs/trace_processor_connection_positional_v5_20261020/final",
+  "source_full_trace_count": 164,
+  "normalized_results": "artifacts/02_recording_quality/trace_curation_environment_short_v1_20261020/eligible",
+  "active_trace_count": 145,
+  "excluded_count": 19,
+  "retained_manifest": "artifacts/02_recording_quality/trace_curation_environment_short_v1_20261020/retained_manifest.jsonl",
+  "excluded_manifest": "artifacts/02_recording_quality/trace_curation_environment_short_v1_20261020/excluded_manifest.jsonl",
+  "decisions": "artifacts/02_recording_quality/trace_curation_environment_short_v1_20261020/decisions.json",
+  "summary": "artifacts/02_recording_quality/trace_curation_environment_short_v1_20261020/summary.json",
+  "verification": "artifacts/02_recording_quality/trace_curation_environment_short_v1_20261020/eligible_verification.json",
+  "scope": "Strict downstream diagnosis corpus: exclude confirmed external testbed binding/service/load defects and official-score-1 traces with fewer than10 tool steps. Historical full164 data remain preserved.",
+  "limitations": [
+    "Present-state input-file structural checks do not prove historical input equivalence or exhaustive environment correctness.",
+    "IMDB alternate-database access attempts are preserved; the task-provided binding failed and equivalent input recovery was not independently established.",
+    "Task-file corruption, generation incompleteness, agent task failure, and record completeness are distinct."
+  ],
+  "model_calls": 0,
+  "original_data_modified": false
+}

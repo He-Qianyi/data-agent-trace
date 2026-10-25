@@ -1,0 +1,12 @@
+{
+  "two_exact_service_cases": [
+    "2697",
+    "agriculture_20"
+  ],
+  "initial_packets_byte_identical_to_original": true,
+  "original_v1_prompt_unchanged": true,
+  "max_model_rounds": 24,
+  "force_final": false,
+  "official_outcome_not_used_in_packet": true,
+  "processor_files_verified": 79
+}

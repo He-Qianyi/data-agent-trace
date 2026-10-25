@@ -31,3 +31,9 @@ The original author review says the cross-validation F1 aggregation convention w
 There is no released independent gold set for root causes or causal chains. Accordingly root-cause accuracy and causal-chain accuracy are `null`, not zero, perfect, or inferred from LLM agreement. Baseline comparisons and ablation results are not populated with simulated values.
 
 To add semantic evaluation later, first establish an annotation protocol, independent labels, unit of analysis and a held-out split. The current evaluator does not invent these assets. Existing structural validators and source audits must remain separate from that future evaluation.
+
+## Existing research artifact verification
+
+`python -m reproduction.verify_research --artifacts research_artifacts --output reproduction_output/research-audit-001` checks the public experiment file inventory, native response/receipt and message/read signature links, exact historical formatting-extraction ranges, four author-review spot checks from published evidence, the all-164 validation inventory and the disjoint 145/19 corpus partition. It blocks network access and executes no captured code.
+
+Original outcomes and policies are retained. Native ten-case acceptance is 6/10; separately recorded wrapper-extracted acceptance is 10/10. These numbers are structural acceptance, not diagnostic accuracy. The all-corpus source checks and supplemental dataset calculations are historical reports, not rerun here without the original archive.

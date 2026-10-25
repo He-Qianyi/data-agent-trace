@@ -1,0 +1,58 @@
+[
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "unchanged_source_trace": true,
+    "original_source_pages_verified": 61,
+    "exchange_pages_verified": 5,
+    "all_exact_source_slices": true
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "unchanged_source_trace": true,
+    "original_source_pages_verified": 80,
+    "exchange_pages_verified": 0,
+    "all_exact_source_slices": true
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "unchanged_source_trace": true,
+    "original_source_pages_verified": 37,
+    "exchange_pages_verified": 1,
+    "all_exact_source_slices": true
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "unchanged_source_trace": true,
+    "original_source_pages_verified": 60,
+    "exchange_pages_verified": 0,
+    "all_exact_source_slices": true
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "unchanged_source_trace": true,
+    "original_source_pages_verified": 43,
+    "exchange_pages_verified": 0,
+    "all_exact_source_slices": true
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "unchanged_source_trace": true,
+    "original_source_pages_verified": 48,
+    "exchange_pages_verified": 0,
+    "all_exact_source_slices": true
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "unchanged_source_trace": true,
+    "original_source_pages_verified": 36,
+    "exchange_pages_verified": 0,
+    "all_exact_source_slices": true
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "unchanged_source_trace": true,
+    "original_source_pages_verified": 70,
+    "exchange_pages_verified": 0,
+    "all_exact_source_slices": true
+  }
+]

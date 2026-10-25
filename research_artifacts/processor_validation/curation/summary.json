@@ -1,0 +1,91 @@
+{
+  "input_traces": 164,
+  "retained": 145,
+  "excluded": 19,
+  "held_for_review": 0,
+  "environment_excluded": 14,
+  "short_success_excluded": 5,
+  "overlap": 0,
+  "exclusion_rule_counts": {
+    "SHORT_SUCCESS_LT10": 5,
+    "ENV_REQUIRED_SERVICE_UNAVAILABLE": 4,
+    "ENV_REQUIRED_STORE_NOT_LOADED": 2,
+    "ENV_REQUIRED_DATABASE_BINDING_MISSING": 10
+  },
+  "input_checks": {
+    "unique_files": 65,
+    "bytes": 14504378049,
+    "status_counts": {
+      "passed": 65
+    },
+    "present_state_only": true,
+    "network_services_contacted": false,
+    "original_code_executed": false,
+    "source_files_modified": false,
+    "gaps": 0
+  },
+  "signal_steps_reviewed": 230,
+  "signal_review_classes": {
+    "ordinary_documentation_keyword_collision": 16,
+    "ordinary_data_text_keyword_collision": 72,
+    "agent_path_api_or_optional_dependency_error": 121,
+    "agent_probed_non_task_service": 1,
+    "confirmed_external_issue": 14,
+    "reviewed_runtime_or_data_signal_not_independent_exclusion": 3,
+    "agent_reader_or_encoding_error": 3
+  },
+  "groups": [
+    {
+      "benchmark": "agenticdatabench",
+      "agent_id": "claude_code",
+      "decision": "retained",
+      "count": 24
+    },
+    {
+      "benchmark": "agenticdatabench",
+      "agent_id": "codex",
+      "decision": "retained",
+      "count": 24
+    },
+    {
+      "benchmark": "dabstep",
+      "agent_id": "claude_code",
+      "decision": "excluded",
+      "count": 1
+    },
+    {
+      "benchmark": "dabstep",
+      "agent_id": "claude_code",
+      "decision": "retained",
+      "count": 9
+    },
+    {
+      "benchmark": "dabstep",
+      "agent_id": "codex",
+      "decision": "retained",
+      "count": 10
+    },
+    {
+      "benchmark": "dabstep",
+      "agent_id": "kimi_code",
+      "decision": "retained",
+      "count": 5
+    },
+    {
+      "benchmark": "dataagentbench",
+      "agent_id": "claude_code",
+      "decision": "excluded",
+      "count": 18
+    },
+    {
+      "benchmark": "dataagentbench",
+      "agent_id": "claude_code",
+      "decision": "retained",
+      "count": 73
+    }
+  ],
+  "original_trace_hashes_unchanged": true,
+  "new_model_calls": 0,
+  "original_code_executed": false,
+  "original_evaluators_run": false
+}

@@ -1,0 +1,9 @@
+{
+  "status": "active",
+  "previous_config_sha256": "1b86e33339c2c68adc7578fd833d13d1c91ec4e0a76425de808131f4b36af27a",
+  "current_config_sha256": "9bc0ebff45ec15c1007b5704863ee2dc0c5ead17cfe1be2374e9f5f412fcedb9",
+  "previous_results": "artifacts/03_trace_processor/integrated_runs/trace_processor_constant_connection_v4_20261020/final",
+  "current_results": "artifacts/03_trace_processor/integrated_runs/trace_processor_connection_positional_v5_20261020/final",
+  "old_versions_preserved": true,
+  "activation_after_complete_validation": true
+}

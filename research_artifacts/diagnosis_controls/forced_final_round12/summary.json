@@ -1,0 +1,45 @@
+{
+  "comparison_design": "paired continuation of identical recorded pre-intervention histories; not eight independent reruns",
+  "single_changed_factor": "tool_choice=none only at round 12; no reminder/prompt/schema/example/evidence change",
+  "cohort": 8,
+  "early_completed_outputs_reused": 5,
+  "paired_intervention_cases": 1,
+  "new_provider_requests": 1,
+  "new_provider_responses": 1,
+  "service_censored_before_round12": 2,
+  "new_connection_interruptions": 0,
+  "before_final_json_count": 5,
+  "after_final_json_count": 6,
+  "before_strict_pass_count": 4,
+  "after_strict_pass_count": 4,
+  "non_service_comparable_cases": 6,
+  "affected_case": {
+    "task_id": "agriculture_16",
+    "before": "round_budget_exhausted",
+    "after": "mechanically_failed",
+    "completed_in_round": 12,
+    "tools_executed_in_round12": 0,
+    "original_round12_tool_calls": 2,
+    "prefix_tool_calls_reused": 24,
+    "semantic_author_review": "needs_revision"
+  },
+  "previously_completed_outputs_byte_identical": true,
+  "independent_repeated_run_quality_estimate": false,
+  "safe_diagnosis_proven": false,
+  "usage_new_request_only": {
+    "prompt_tokens": 52121,
+    "total_tokens": 62933,
+    "completion_tokens": 10812,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 9017
+    }
+  },
+  "prompt_unchanged": true,
+  "new_prompt_rules_or_examples": 0,
+  "new_tool_reads": 0,
+  "automatic_retries": 0,
+  "output_repairs": 0,
+  "review_model_calls": 0,
+  "frozen_processor_files_unchanged": 79
+}

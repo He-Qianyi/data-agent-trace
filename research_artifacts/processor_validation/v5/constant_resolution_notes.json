@@ -1,0 +1,67 @@
+[
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "pointer": "/facts/steps/3/action/static_extraction/data_operations/0/constant_resolution",
+    "method": "bounded_source_order_strings"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "pointer": "/facts/steps/5/action/static_extraction/data_operations/0/constant_resolution",
+    "method": "bounded_source_order_strings"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "pointer": "/facts/steps/5/action/static_extraction/data_operations/4/constant_resolution",
+    "method": "bounded_source_order_strings"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "pointer": "/facts/steps/3/action/static_extraction/data_operations/0/constant_resolution",
+    "method": "bounded_source_order_strings"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "pointer": "/facts/steps/3/action/static_extraction/data_operations/8/constant_resolution",
+    "method": "bounded_source_order_strings"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "pointer": "/facts/steps/4/action/static_extraction/data_operations/0/constant_resolution",
+    "method": "bounded_source_order_strings"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "pointer": "/facts/steps/4/action/static_extraction/data_operations/8/constant_resolution",
+    "method": "bounded_source_order_strings"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "pointer": "/facts/steps/5/action/static_extraction/data_operations/0/constant_resolution",
+    "method": "bounded_source_order_strings"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "pointer": "/facts/steps/5/action/static_extraction/data_operations/7/constant_resolution",
+    "method": "bounded_source_order_strings"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "pointer": "/facts/steps/6/action/static_extraction/data_operations/0/constant_resolution",
+    "method": "bounded_source_order_strings"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "pointer": "/facts/steps/6/action/static_extraction/data_operations/5/constant_resolution",
+    "method": "bounded_source_order_strings"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "pointer": "/facts/steps/7/action/static_extraction/data_operations/0/constant_resolution",
+    "method": "bounded_source_order_strings"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "pointer": "/facts/steps/7/action/static_extraction/data_operations/6/constant_resolution",
+    "method": "bounded_source_order_strings"
+  }
+]

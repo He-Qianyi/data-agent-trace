@@ -1,0 +1,8 @@
+
+## Confirmation threshold
+
+Treat an issue as confirmed only when inspected original evidence supports a
+discrepancy between the agent's actual behavior and an explicit task requirement
+or data definition. If evidence is insufficient, the task leaves the interpretation
+open, or only a verification is missing, describe that limitation in summary;
+do not upgrade it to a definite error.

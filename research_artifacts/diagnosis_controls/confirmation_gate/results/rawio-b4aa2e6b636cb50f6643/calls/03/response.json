@@ -1,0 +1,44 @@
+{
+  "id": "chatcmpl-d370bf32",
+  "object": "chat.completion",
+  "created": 1792331624,
+  "model": "deepseek-v4.1-flash-1017",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_665cbe813b5545608b91410e",
+            "type": "function",
+            "function": {
+              "name": "read_evidence",
+              "arguments": "{\"evidence_id\":\"E00024\",\"start\":4000}"
+            }
+          }
+        ],
+        "reasoning": "I need the fee formula section (section 5, Understanding Payment Processing Fees). That's between char 4000 and 13868 of E00024. Let me read the continuation of E00024."
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 47050,
+    "total_tokens": 47152,
+    "completion_tokens": 102,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 42
+    }
+  },
+  "system_fingerprint": null,
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null
+}

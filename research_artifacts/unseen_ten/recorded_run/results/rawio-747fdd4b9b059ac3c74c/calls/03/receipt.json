@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-10-20T05:34:28.432440+00:00",
+  "request_sha256": "08ec1c2da8b215105b965a53e2a7782c41b29d1a7c44e27747f26bd1f14c4e79",
+  "requested_model": "x-test-2",
+  "automatic_retries": 0,
+  "http_attempts": 1,
+  "http_status": 200,
+  "returned_model": "deepseek-v4.1-flash-1017",
+  "usage": {
+    "prompt_tokens": 62678,
+    "total_tokens": 73031,
+    "completion_tokens": 10353,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 8453
+    }
+  },
+  "response_id": "chatcmpl-62e1e7be",
+  "elapsed_seconds": 78.104,
+  "finish_reason": "stop"
+}

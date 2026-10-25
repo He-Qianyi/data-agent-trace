@@ -1,0 +1,356 @@
+{
+  "records": [
+    {
+      "record_id": "rawio-bcb49010f78ccd4af446",
+      "request_field_ranges": {},
+      "reads": [],
+      "returned_request_characters": 0,
+      "tool_definition_characters": 0
+    },
+    {
+      "record_id": "rawio-b4aa2e6b636cb50f6643",
+      "request_field_ranges": {
+        "X0004": [
+          {
+            "field": "model",
+            "start": 9,
+            "end": 22
+          },
+          {
+            "field": "instructions",
+            "start": 38,
+            "end": 8862
+          },
+          {
+            "field": "input",
+            "start": 8871,
+            "end": 164027
+          },
+          {
+            "field": "tools",
+            "start": 164036,
+            "end": 238314
+          },
+          {
+            "field": "store",
+            "start": 238323,
+            "end": 238328
+          },
+          {
+            "field": "stream",
+            "start": 238338,
+            "end": 238342
+          },
+          {
+            "field": "prompt_cache_key",
+            "start": 238362,
+            "end": 238408
+          },
+          {
+            "field": "max_output_tokens",
+            "start": 238429,
+            "end": 238434
+          }
+        ]
+      },
+      "reads": [
+        {
+          "round": 4,
+          "exchange_id": "X0004",
+          "start": 0,
+          "end": 3000,
+          "returned_characters": 3000,
+          "top_level_field_overlap": [
+            {
+              "field": "model",
+              "characters": 13
+            },
+            {
+              "field": "instructions",
+              "characters": 2962
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "exchange_id": "X0004",
+          "start": 235000,
+          "end": 237000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "exchange_id": "X0004",
+          "start": 237000,
+          "end": 238435,
+          "returned_characters": 1435,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 1314
+            },
+            {
+              "field": "store",
+              "characters": 5
+            },
+            {
+              "field": "stream",
+              "characters": 4
+            },
+            {
+              "field": "prompt_cache_key",
+              "characters": 46
+            },
+            {
+              "field": "max_output_tokens",
+              "characters": 5
+            }
+          ]
+        },
+        {
+          "round": 7,
+          "exchange_id": "X0004",
+          "start": 233000,
+          "end": 235000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "exchange_id": "X0004",
+          "start": 231000,
+          "end": 233000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 9,
+          "exchange_id": "X0004",
+          "start": 229000,
+          "end": 231000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 10,
+          "exchange_id": "X0004",
+          "start": 227000,
+          "end": 229000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 11,
+          "exchange_id": "X0004",
+          "start": 225000,
+          "end": 227000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 12,
+          "exchange_id": "X0004",
+          "start": 223000,
+          "end": 225000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 13,
+          "exchange_id": "X0004",
+          "start": 221000,
+          "end": 223000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 14,
+          "exchange_id": "X0004",
+          "start": 219000,
+          "end": 221000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 15,
+          "exchange_id": "X0004",
+          "start": 217000,
+          "end": 219000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 16,
+          "exchange_id": "X0004",
+          "start": 215000,
+          "end": 217000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 17,
+          "exchange_id": "X0004",
+          "start": 213000,
+          "end": 215000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 18,
+          "exchange_id": "X0004",
+          "start": 211000,
+          "end": 213000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 19,
+          "exchange_id": "X0004",
+          "start": 209000,
+          "end": 211000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 20,
+          "exchange_id": "X0004",
+          "start": 207000,
+          "end": 209000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 21,
+          "exchange_id": "X0004",
+          "start": 205000,
+          "end": 207000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 22,
+          "exchange_id": "X0004",
+          "start": 203000,
+          "end": 205000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 23,
+          "exchange_id": "X0004",
+          "start": 201000,
+          "end": 203000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        },
+        {
+          "round": 24,
+          "exchange_id": "X0004",
+          "start": 199000,
+          "end": 201000,
+          "returned_characters": 2000,
+          "top_level_field_overlap": [
+            {
+              "field": "tools",
+              "characters": 2000
+            }
+          ]
+        }
+      ],
+      "returned_request_characters": 42435,
+      "tool_definition_characters": 39314
+    }
+  ],
+  "interpretation": "Field/character overlap only. Tool definitions can matter for tool-use diagnosis, but reading a new source range alone does not establish diagnostic relevance."
+}

@@ -1,0 +1,320 @@
+[
+  {
+    "record_id": "rawio-c05784a0b4925c35b147",
+    "pointer": "/facts/steps/8/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-c05784a0b4925c35b147",
+    "pointer": "/facts/steps/12/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-a351932be4b4cee42449",
+    "pointer": "/facts/steps/9/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-d646c83fb0cd621172b7",
+    "pointer": "/facts/steps/5/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-d646c83fb0cd621172b7",
+    "pointer": "/facts/steps/6/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-d646c83fb0cd621172b7",
+    "pointer": "/facts/steps/9/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-d646c83fb0cd621172b7",
+    "pointer": "/facts/steps/26/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-139bc2d3a4cc3c71747f",
+    "pointer": "/facts/steps/16/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-f1b9d043fca0a8c93d5f",
+    "pointer": "/facts/steps/12/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-f1b9d043fca0a8c93d5f",
+    "pointer": "/facts/steps/12/action/static_extraction/script_invocations/1/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-f1b9d043fca0a8c93d5f",
+    "pointer": "/facts/steps/13/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-ba871dfd92fd9fd5f7db",
+    "pointer": "/facts/steps/13/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-e8c18f48d4be108617f3",
+    "pointer": "/facts/steps/15/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-c0749cca9c3348326582",
+    "pointer": "/facts/steps/3/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-c0749cca9c3348326582",
+    "pointer": "/facts/steps/4/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-c0749cca9c3348326582",
+    "pointer": "/facts/steps/8/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-c0749cca9c3348326582",
+    "pointer": "/facts/steps/15/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-c0749cca9c3348326582",
+    "pointer": "/facts/steps/16/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-ef9fe2769822d2c161ec",
+    "pointer": "/facts/steps/2/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-5e1a868ae98662ada0b6",
+    "pointer": "/facts/steps/2/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-b0317e0f9a26f45fdcb5",
+    "pointer": "/facts/steps/12/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-b0317e0f9a26f45fdcb5",
+    "pointer": "/facts/steps/29/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-a98b68a92ca194c40a2b",
+    "pointer": "/facts/steps/23/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-fa3c795c877f1eccd8a8",
+    "pointer": "/facts/steps/2/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-3f95bb9e76813ada0e37",
+    "pointer": "/facts/steps/7/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-7184a7df6f163251603c",
+    "pointer": "/facts/steps/9/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-87c3307d62e8d21390ae",
+    "pointer": "/facts/steps/24/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "pointer": "/facts/steps/4/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-e052d50c99b0ddb64ff3",
+    "pointer": "/facts/steps/2/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-e052d50c99b0ddb64ff3",
+    "pointer": "/facts/steps/9/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-749ebfef23e8948ab538",
+    "pointer": "/facts/steps/14/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-749ebfef23e8948ab538",
+    "pointer": "/facts/steps/20/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "pointer": "/facts/steps/3/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "pointer": "/facts/steps/7/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "pointer": "/facts/steps/8/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "pointer": "/facts/steps/9/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "pointer": "/facts/steps/11/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-a626546d6fe8053469bf",
+    "pointer": "/facts/steps/13/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-61f0f61366d2c1d5ba0e",
+    "pointer": "/facts/steps/6/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-61f0f61366d2c1d5ba0e",
+    "pointer": "/facts/steps/7/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-508d132fa2709713ac68",
+    "pointer": "/facts/steps/11/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-fe5e49d0e7ac8966cad5",
+    "pointer": "/facts/steps/15/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "no_matched_definition_under_recorded_cwd",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-fe5e49d0e7ac8966cad5",
+    "pointer": "/facts/steps/16/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "no_matched_definition_under_recorded_cwd",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-6e9757019dc8767f3cfc",
+    "pointer": "/facts/steps/18/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "no_matched_definition_under_recorded_cwd",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-d2f7b0dd8069fef36a5d",
+    "pointer": "/facts/steps/21/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-d2f7b0dd8069fef36a5d",
+    "pointer": "/facts/steps/23/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-d2f7b0dd8069fef36a5d",
+    "pointer": "/facts/steps/27/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-2897aa7c3dffddcb8818",
+    "pointer": "/facts/steps/23/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "pointer": "/facts/steps/13/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "pointer": "/facts/steps/32/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-fba48bd5d5825e7ee8b0",
+    "pointer": "/facts/steps/4/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-0248cd413cdd7f20bd51",
+    "pointer": "/facts/steps/26/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "no_matched_definition_under_recorded_cwd",
+    "status": "null_preserved"
+  },
+  {
+    "record_id": "rawio-9845f4715a44a752037c",
+    "pointer": "/facts/steps/32/action/static_extraction/script_invocations/0/candidate_revision_ref",
+    "reason": "matching_definition_in_failed_tool_deliberately_not_bound",
+    "status": "null_preserved"
+  }
+]

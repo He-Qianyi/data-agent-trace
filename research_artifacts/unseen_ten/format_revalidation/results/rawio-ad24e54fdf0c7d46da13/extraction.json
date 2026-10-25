@@ -1,0 +1,19 @@
+{
+  "mode": "removed_surrounding_prose_and_json_fence",
+  "native_response": "artifacts/05_diagnosis/diagnosis_unseen_ten_v5_20261020/results/rawio-ad24e54fdf0c7d46da13/native_final.txt",
+  "native_sha256": "bd82537dbb257d99b84c0632089dab99ab125dcba09de6ccb0ba7680478ec8b3",
+  "retained_char_range": [
+    1142,
+    3519
+  ],
+  "retained_utf8_byte_range": [
+    1142,
+    4845
+  ],
+  "removed_prefix_characters": 1142,
+  "removed_suffix_characters": 4,
+  "cleaned_sha256": "d18603270fa3cfbf8deb1740dea94ff6162a0a09181e85450547095c765fe83c",
+  "retained_text_is_exact_source_substring": true,
+  "json_payload_edited": false,
+  "reserialized": false
+}

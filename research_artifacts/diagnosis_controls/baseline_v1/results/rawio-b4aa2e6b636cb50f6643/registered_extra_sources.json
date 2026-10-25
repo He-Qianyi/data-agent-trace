@@ -1,0 +1,65 @@
+[
+  {
+    "evidence_id": "FINAL0001",
+    "step_id": null,
+    "role": "recorded_final_response",
+    "fact_pointer": "/facts/final_response/text",
+    "original_source_ref": {
+      "source_id": "S0005",
+      "json_pointer": "/final_text"
+    },
+    "representation": "text"
+  },
+  {
+    "evidence_id": "X0004_RESPONSE",
+    "step_id": null,
+    "role": "recorded_model_response",
+    "fact_pointer": null,
+    "original_source_ref": {
+      "source_id": "S0004",
+      "line": 4,
+      "json_pointer": "/model_output"
+    },
+    "representation": "compact_json",
+    "history_is_not_additional_execution": true
+  },
+  {
+    "evidence_id": "X0004_REQUEST",
+    "step_id": null,
+    "role": "recorded_model_request",
+    "fact_pointer": null,
+    "original_source_ref": {
+      "source_id": "S0004",
+      "line": 4,
+      "json_pointer": "/model_input"
+    },
+    "representation": "compact_json",
+    "history_is_not_additional_execution": true
+  },
+  {
+    "evidence_id": "X0005_REQUEST",
+    "step_id": null,
+    "role": "recorded_model_request",
+    "fact_pointer": null,
+    "original_source_ref": {
+      "source_id": "S0004",
+      "line": 5,
+      "json_pointer": "/model_input"
+    },
+    "representation": "compact_json",
+    "history_is_not_additional_execution": true
+  },
+  {
+    "evidence_id": "X0005_RESPONSE",
+    "step_id": null,
+    "role": "recorded_model_response",
+    "fact_pointer": null,
+    "original_source_ref": {
+      "source_id": "S0004",
+      "line": 5,
+      "json_pointer": "/model_output"
+    },
+    "representation": "compact_json",
+    "history_is_not_additional_execution": true
+  }
+]

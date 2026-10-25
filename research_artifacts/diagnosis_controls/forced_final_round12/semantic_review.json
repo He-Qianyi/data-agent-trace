@@ -1,0 +1,72 @@
+{
+  "reviewer": "local_source_checked_author_review",
+  "independent_gold": false,
+  "official_scores_or_answers_consulted": false,
+  "new_review_model_calls": 0,
+  "record_id": "rawio-bcb49010f78ccd4af446",
+  "status": "needs_revision",
+  "within_budget_final_json": true,
+  "new_tools_executed_at_deadline": 0,
+  "new_output_conclusion": "已按预算交卷，但存在额外字段、统计学错误和未经支持的归因，不能视为安全可靠的最终诊断。",
+  "supported_observations": [
+    {
+      "claim": "S0034完成Ridge并输出R²=0.406782及11个系数，12行metric/value结果；S0033的NameError已恢复。",
+      "evidence_ids": [
+        "E00101",
+        "E00102",
+        "E00104",
+        "E00105"
+      ]
+    },
+    {
+      "claim": "最终脚本只用精确名称交集；S0033映射在精确交集筛选后才应用，S0034不再含crop_map。",
+      "evidence_ids": [
+        "E00101",
+        "E00102",
+        "E00104",
+        "E00105"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "kind": "output_contract",
+      "pointer": "/root_cause_chain_note",
+      "problem": "原生输出额外包含root_cause_chain_note:null，违反五字段合同；未删除或修复。"
+    },
+    {
+      "kind": "unsupported_failure_attribution",
+      "pointer": "/root_cause_chain",
+      "problem": "模型自己承认作物名标准化未被任务明确规定、不能证实任务违规，仍将该偏差组织成失败链。可保留实际筛选/映射观察，但不能据此认证最终失败根因。"
+    },
+    {
+      "kind": "statistical_error",
+      "pointer": "/critical_decision_points/1/reasoning",
+      "problem": "从全部收入组哑变量与截距线性相关直接推出Ridge(alpha=1.0)系数解不唯一，是把未正则化OLS的结论套入Ridge。正alpha的L2项使系数目标严格凸；不存在其所声称的解不唯一。",
+      "basis": "原代码是Ridge(alpha=1.0)。依官方目标函数，任意非零v都有v^T(X^TX+alpha I)v=||Xv||²+alpha||v||²>0。中心化后的系数解唯一；非空样本下截距也可确定。此处是由目标函数作出的数学推导，不是重跑原数据。",
+      "primary_source": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html"
+    },
+    {
+      "kind": "unsupported_counterfactual",
+      "pointer": "/critical_decision_points/1/reasoning",
+      "problem": "R²不受影响没有反事实执行或理论保证；删除哑变量会改变正则化参数化，不能保证预测或R²保持不变。"
+    },
+    {
+      "kind": "unsupported_driver",
+      "pointer": "/critical_decision_points/2/reasoning",
+      "problem": "0.8411、0.9734是总体解释方差比例，不能单独证明主成分主要由季节温度/降水驱动。实际已读记录没有给出支持该归因的载荷或按列方差分析。"
+    },
+    {
+      "kind": "invented_fixed_output_size",
+      "pointer": "/correct_strategy",
+      "problem": "建议删掉一个收入组或改变PCA列口径后，仍要求核对12行。原任务没有固定12行；行数依最终系数数量决定，不能把本次实际行数变成通用要求。"
+    },
+    {
+      "kind": "unsupported_impact_size",
+      "pointer": "/summary",
+      "problem": "丢弃21行的数量有据，但影响很小未经敏感性或偏差分析支持。较小比例不直接证明估计影响小。"
+    }
+  ],
+  "causal_inference_limit": "对照组第12轮没有最终诊断，因此不能证明这些语义问题由强制提交本身引起；只能说该输出存在这些问题，终止控制未保证语义可靠。",
+  "old_completed_quality_limit": "五条早期完成结果逐字节复用，说明本策略未改变这些已记录输出；不是五次独立重跑得到的质量稳定性证据。"
+}

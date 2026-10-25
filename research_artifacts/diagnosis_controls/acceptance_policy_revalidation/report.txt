@@ -1,0 +1,24 @@
+诊断验收改为CodeTracer detailed兼容标准
+
+验收检查：可解析JSON对象、五个核心字段存在、已提供且非null的关键决策step_id属于轨迹。额外字段原样保留并忽略。
+与CodeTracer一样，不把字段存在性验收当成语义认证。引用核查独立报告，不影响本口径的机械验收。
+本次只重验已有结果；LLM请求0、输出修复0、prompt改动0。历史严格验收报告保持不变。
+
+|结果组|旧严格验收|新验收|
+|---|---:|---:|
+|原始v1对照|4/8|5/8|
+|第一轮终止控制|4/8|6/8|
+|第二轮确认门槛|5/8|7/8|
+
+固定六条第一轮已完成样本：第一轮6/6，第二轮5/6。
+五条两轮都有最终JSON的样本：两轮均为5/5；原来的额外字段失败不再计为诊断失败。
+
+第二轮agriculture_16仍不通过：第12轮返回文本取证标记而不是诊断JSON，HTTP200/stop；不是连接中断或token截断。
+两条历史连接中断本次未重跑，也不因更换标准自动变成通过。第二轮此前已经完成这两条，不计作prompt语义改善。
+语义复核结论不变：civic的因果越界、stock的SQL机制混淆仍需处理。通过机械验收不表示这些诊断正确。
+
+后续使用configs/05_diagnosis/CURRENT_ACCEPTANCE.json及pipeline.stages.diagnosis.validation。历史冻结实验runner仍保留原严格校验以便复现，不再用其旧通过数比较当前验收效果。
+原实验文件823个与冻结Processor文件79个均验证未改动。
+上游版本：https://github.com/NJU-LINK/CodeTracer/blob/2d302191dd07e7c0c2da6f7a5e9451c7cbb62d34/src/codetracer/services/validation.py
+
+验证：9项单元测试通过；18份已有JSON与上游_validate_detailed逐条比较，验收结论及错误列表完全一致。

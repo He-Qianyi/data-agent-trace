@@ -1,0 +1,82 @@
+{
+  "design": "latest recorded result per case; not eight fresh independent reruns",
+  "total": 8,
+  "accepted": 6,
+  "has_final_json": 6,
+  "service_interrupted": 0,
+  "nonservice_no_final_json": 2,
+  "traces": [
+    {
+      "record_id": "rawio-b4aa2e6b636cb50f6643",
+      "task_id": "2697",
+      "agent_id": "kimi_code",
+      "status": "round_budget_exhausted",
+      "accepted": false,
+      "has_final_json": false,
+      "result_source": "outputs/diagnosis_v1_service_rerun_two_20261018"
+    },
+    {
+      "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+      "task_id": "1273",
+      "agent_id": "codex",
+      "status": "mechanically_passed",
+      "accepted": true,
+      "has_final_json": true,
+      "result_source": null
+    },
+    {
+      "record_id": "rawio-2a40e1d15e900422bb10",
+      "task_id": "1464",
+      "agent_id": "claude_code",
+      "status": "mechanically_passed",
+      "accepted": true,
+      "has_final_json": true,
+      "result_source": null
+    },
+    {
+      "record_id": "rawio-a5173d9e30dba77ca1c5",
+      "task_id": "agriculture_20",
+      "agent_id": "codex",
+      "status": "mechanically_passed",
+      "accepted": true,
+      "has_final_json": true,
+      "result_source": "outputs/diagnosis_v1_service_rerun_two_20261018"
+    },
+    {
+      "record_id": "rawio-de63c9937aeb17c70d6d",
+      "task_id": "agriculture_22",
+      "agent_id": "claude_code",
+      "status": "mechanically_passed",
+      "accepted": true,
+      "has_final_json": true,
+      "result_source": null
+    },
+    {
+      "record_id": "rawio-bcb49010f78ccd4af446",
+      "task_id": "agriculture_16",
+      "agent_id": "claude_code",
+      "status": "round_budget_exhausted",
+      "accepted": false,
+      "has_final_json": false,
+      "result_source": null
+    },
+    {
+      "record_id": "rawio-ecb8d458d5899c6dfd80",
+      "task_id": "civic_unstructured__query6",
+      "agent_id": "claude_code",
+      "status": "mechanically_passed",
+      "accepted": true,
+      "has_final_json": true,
+      "result_source": null
+    },
+    {
+      "record_id": "rawio-ea688bde06c727ee43b1",
+      "task_id": "stockmarket__query1",
+      "agent_id": "claude_code",
+      "status": "mechanically_passed",
+      "accepted": true,
+      "has_final_json": true,
+      "result_source": null
+    }
+  ]
+}

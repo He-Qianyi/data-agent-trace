@@ -1,0 +1,10 @@
+{
+  "task_id": "agriculture_22",
+  "status": "mechanically_passed",
+  "model_rounds": 4,
+  "tool_calls": 4,
+  "finished_at": "2026-10-18T13:02:06.032467+00:00",
+  "new_model_requests": 0,
+  "reused_model_rounds": 4,
+  "acceptance_standard": "codetracer-detailed-compatible-v1"
+}

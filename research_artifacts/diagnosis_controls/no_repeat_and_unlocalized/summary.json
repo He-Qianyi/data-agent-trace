@@ -1,0 +1,63 @@
+{
+  "finished_at": "2026-10-18T16:21:39.299514+00:00",
+  "traces": [
+    {
+      "record_id": "rawio-bcb49010f78ccd4af446",
+      "task_id": "agriculture_16",
+      "agent_id": "claude_code",
+      "input_sha256": "537a6e421020124e604a7684d678697e6ba8c721daa9135aca2587d7f1b5cb60",
+      "trace_sha256": "8fdf56cbeaa1707c053e7e346281ff38b0e0f9e2a2e82be773a30033627cf86e",
+      "historical_status": "round_budget_exhausted",
+      "mode": "fresh_from_round1_no_old_responses_reused",
+      "comparison_source": "outputs/diagnosis_v1_round24_20261018",
+      "baseline_model_rounds": 24,
+      "baseline_tool_calls": 50,
+      "status": "round_budget_exhausted",
+      "model_rounds": 24,
+      "tool_calls": 48,
+      "reason": "no_final_diagnosis_within_frozen_budget",
+      "finished_at": "2026-10-18T16:21:28.821098+00:00",
+      "has_final_json": false,
+      "accepted": false
+    },
+    {
+      "record_id": "rawio-b4aa2e6b636cb50f6643",
+      "task_id": "2697",
+      "agent_id": "kimi_code",
+      "input_sha256": "bc4d3cead31ad10bbefed6557c769494068f1e0f550832524dfbfc5c4eeab641",
+      "trace_sha256": "1b37c584b28ffcc908abc49282d4b7894cd226d0bb6bd7d5d72d28f5aff1e975",
+      "historical_status": "round_budget_exhausted",
+      "mode": "fresh_from_round1_no_old_responses_reused",
+      "comparison_source": "outputs/diagnosis_v1_service_rerun_two_20261018",
+      "baseline_model_rounds": 24,
+      "baseline_tool_calls": 30,
+      "status": "round_budget_exhausted",
+      "model_rounds": 24,
+      "tool_calls": 32,
+      "reason": "no_final_diagnosis_within_frozen_budget",
+      "finished_at": "2026-10-18T16:21:39.127875+00:00",
+      "has_final_json": false,
+      "accepted": false
+    }
+  ],
+  "accepted": 0,
+  "total": 2,
+  "new_requests": 48,
+  "new_responses": 48,
+  "service_failures": 0,
+  "usage": {
+    "prompt_tokens": 9806290,
+    "completion_tokens": 688994,
+    "total_tokens": 10495284
+  },
+  "prompt_version": "v1-no-repeat-and-unlocalized-candidate",
+  "max_model_rounds": 24,
+  "acceptance_standard": "codetracer-detailed-compatible-v1",
+  "historical_files_unchanged": 725,
+  "processor_files_unchanged": 79,
+  "official_evaluations_sent": false,
+  "benchmark_reexecutions": 0,
+  "automatic_retries": 0,
+  "output_repairs": 0,
+  "semantic_accuracy_measured": false
+}

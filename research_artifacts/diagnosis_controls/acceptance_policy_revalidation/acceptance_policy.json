@@ -1,0 +1,21 @@
+{
+  "policy_id": "codetracer-detailed-compatible-v1",
+  "validator": "pipeline.stages.diagnosis.validation:validate_diagnosis_text",
+  "upstream_commit": "2d302191dd07e7c0c2da6f7a5e9451c7cbb62d34",
+  "upstream_function": "src/codetracer/services/validation.py:_validate_detailed",
+  "checks": [
+    "parseable JSON object",
+    "five required top-level fields present",
+    "provided non-null critical decision step IDs exist in the trace"
+  ],
+  "additional_fields": "ignored at every level; preserved in original output",
+  "evidence_audit": "reported separately; not part of CodeTracer-compatible acceptance",
+  "semantic_review": "reported separately; acceptance does not certify diagnosis correctness",
+  "local_adaptations": [
+    "preserve string step IDs without coercion",
+    "upstream container TypeError becomes validation failure rather than a crash"
+  ],
+  "historical_experiments": "retain original strict results; revalidate in a separate versioned report",
+  "prompt_changes": false,
+  "model_reruns": false
+}

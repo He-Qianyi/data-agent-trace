@@ -34,6 +34,20 @@ flowchart LR
 
 See [reproduction instructions](docs/reproduction.md), [evaluation protocol](docs/evaluation.md), [data scope](docs/data-release.md), and [remaining limitations](docs/availability.md).
 
+## Existing experiments and full-corpus audit evidence
+
+The [research artifact release](research_artifacts/README.md) adds the [new ten-case diagnostic experiment and author review](research_artifacts/unseen_ten/README.md), [all-164 processor validation and 145/19 corpus selection](research_artifacts/processor_validation/README.md), and [six recorded diagnosis controls with negative outcomes](research_artifacts/diagnosis_controls/README.md).
+
+Saved native responses and historical outcomes are retained. A separate formatting-only revalidation is labelled explicitly; it is not semantic accuracy. The experimental candidate prompt does not replace the default. Complete multi-benchmark source contexts are not all redistributed.
+
+```bash
+python -m reproduction.verify_research \
+  --artifacts research_artifacts \
+  --output reproduction_output/research-audit-001
+```
+
+This network-blocked audit checks published records and indexes, redoes four deterministic content spot checks and reconstructs the selection partition. It does not rerun the private full-corpus source audit. See the [verification scope](research_artifacts/README.md).
+
 ## Quick start without a model API
 
 Python 3.10 or later on Linux or macOS is required. The original runtime uses POSIX file locking. From the repository root:
@@ -94,6 +108,7 @@ The supplied historical provider profile uses SoCLaaS `x-test-2`, expected to re
 | `configs/` | Current/frozen method contracts and release profiles |
 | `reproduction/` | Portable fresh-run adapters, complete recorded-output replay and evaluation |
 | `samples/real/` | Complete DABstep recording/output history and earlier agriculture excerpt |
+| `research_artifacts/` | Saved diagnosis experiments, author reviews, controls and full-corpus audit records |
 | `tests/` | Original regression tests, full real replay tests and explicitly mocked integration tests |
 | `docs/research-source-manifest.json` | Research source, source hash, release hash, and disclosed export edits |
 | `src/data_agent_trace/` | Earlier selected-module API and explicitly synthetic tutorial demo, retained for compatibility |

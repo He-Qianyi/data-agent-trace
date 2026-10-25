@@ -1,0 +1,3441 @@
+[
+  {
+    "record_id": "rawio-c05784a0b4925c35b147",
+    "call": "calls/01",
+    "request_source_sha256": "c7adf26c5cd9ebcc3bb2b3ba4bd983bb0e29c483b63890ddc29b639c965cec91",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "02c5330b73724d9539f8768cbe8cf75b5a228f3c6f7b791b2bd68ffa6f011f98"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "02c5330b73724d9539f8768cbe8cf75b5a228f3c6f7b791b2bd68ffa6f011f98"
+    ],
+    "message_roles": [
+      "system",
+      "user"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "35c3319d0cb09b866b39041e9362dae0eef8033f4c182a0fab1171b2358106a9",
+    "response_file": "unseen_ten/recorded_run/results/rawio-c05784a0b4925c35b147/calls/01/response.json",
+    "source_assistant_message_sha256": "9d1c91098bce9bff68a12b9bb7a57ab90959819b196093ebe22d5daa961645f7",
+    "published_assistant_message_sha256": "9d1c91098bce9bff68a12b9bb7a57ab90959819b196093ebe22d5daa961645f7",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_a25bda4926274548b213a046",
+      "call_ecfb0a2945a04bb1b81647ca"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_a25bda4926274548b213a046",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0002\",\"S0006\",\"S0015\",\"S0021\"]}"
+      },
+      {
+        "id": "call_ecfb0a2945a04bb1b81647ca",
+        "name": "retrieve_evidence",
+        "arguments": "{\"question\":\"manual.md fee rules matching criteria merchant_category_code account_type capture_delay monthly_volume monthly_fraud_level intracountry\",\"top_k\":4}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "045eb069d16661f442f4523b74708bae93704507844b96702d96c868f9fcbb5b"
+    ]
+  },
+  {
+    "record_id": "rawio-c05784a0b4925c35b147",
+    "call": "calls/02",
+    "request_source_sha256": "f4940a7c6858289a402fb7d2e03dc38d5337eabed2e268c526f078f9b76710cc",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "02c5330b73724d9539f8768cbe8cf75b5a228f3c6f7b791b2bd68ffa6f011f98",
+      "9d1c91098bce9bff68a12b9bb7a57ab90959819b196093ebe22d5daa961645f7",
+      "30944ee382dba2e7cdd685ba26bc3da7c26b5d099a5a73bf9462b21f9cab0438",
+      "41b3bd1a6f19ffdb0c9377d0faea940fae8423e0ac295747b65359fc0cea160e"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "02c5330b73724d9539f8768cbe8cf75b5a228f3c6f7b791b2bd68ffa6f011f98",
+      "9d1c91098bce9bff68a12b9bb7a57ab90959819b196093ebe22d5daa961645f7",
+      "30944ee382dba2e7cdd685ba26bc3da7c26b5d099a5a73bf9462b21f9cab0438",
+      "41b3bd1a6f19ffdb0c9377d0faea940fae8423e0ac295747b65359fc0cea160e"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_a25bda4926274548b213a046",
+      "call_ecfb0a2945a04bb1b81647ca"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "a555801c26928899d7996325f00ee58f491dfdab2a506843ce13aaa06052db91",
+    "response_file": "unseen_ten/recorded_run/results/rawio-c05784a0b4925c35b147/calls/02/response.json",
+    "source_assistant_message_sha256": "99b8f2f88674c6a855d3cb3c48cf4937a20b087ca64058887b0f7d28e998b326",
+    "published_assistant_message_sha256": "99b8f2f88674c6a855d3cb3c48cf4937a20b087ca64058887b0f7d28e998b326",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_e0656b7c6c9c4cf39a403226",
+      "call_40a17cb6500340b788010e33"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_e0656b7c6c9c4cf39a403226",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00006\",\"start\":5000,\"characters\":6000}"
+      },
+      {
+        "id": "call_40a17cb6500340b788010e33",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0003\",\"S0004\",\"S0020\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "045eb069d16661f442f4523b74708bae93704507844b96702d96c868f9fcbb5b",
+      "0a20759c8436a5e95dcca6bad99120db7db0f52f4654499b89f3922152cac4a8",
+      "f199fa97ae42cd734b961d3b72d201105986d86ead113436b055bda2056756f1",
+      "fceaa4adfb54b6e81501220ffc70eb57b1f23e7bf187a0980b1cbea344cb4693"
+    ]
+  },
+  {
+    "record_id": "rawio-c05784a0b4925c35b147",
+    "call": "calls/03",
+    "request_source_sha256": "746358aaa55f69eb5f9c4c39af253150ee4146925c80dc5a46dfc3f578dd9788",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "02c5330b73724d9539f8768cbe8cf75b5a228f3c6f7b791b2bd68ffa6f011f98",
+      "9d1c91098bce9bff68a12b9bb7a57ab90959819b196093ebe22d5daa961645f7",
+      "30944ee382dba2e7cdd685ba26bc3da7c26b5d099a5a73bf9462b21f9cab0438",
+      "41b3bd1a6f19ffdb0c9377d0faea940fae8423e0ac295747b65359fc0cea160e",
+      "99b8f2f88674c6a855d3cb3c48cf4937a20b087ca64058887b0f7d28e998b326",
+      "c2a5b4848b73035394b648008708057a879abb7d1d531d31345445e656511669",
+      "b22e5dc0b7e3a3a6d7878a08a6d252fda0ed6a74d064a3ee8bd9a6c2c8e80acd"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "02c5330b73724d9539f8768cbe8cf75b5a228f3c6f7b791b2bd68ffa6f011f98",
+      "9d1c91098bce9bff68a12b9bb7a57ab90959819b196093ebe22d5daa961645f7",
+      "30944ee382dba2e7cdd685ba26bc3da7c26b5d099a5a73bf9462b21f9cab0438",
+      "41b3bd1a6f19ffdb0c9377d0faea940fae8423e0ac295747b65359fc0cea160e",
+      "99b8f2f88674c6a855d3cb3c48cf4937a20b087ca64058887b0f7d28e998b326",
+      "c2a5b4848b73035394b648008708057a879abb7d1d531d31345445e656511669",
+      "b22e5dc0b7e3a3a6d7878a08a6d252fda0ed6a74d064a3ee8bd9a6c2c8e80acd"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_a25bda4926274548b213a046",
+      "call_ecfb0a2945a04bb1b81647ca",
+      null,
+      "call_e0656b7c6c9c4cf39a403226",
+      "call_40a17cb6500340b788010e33"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "b23c6fced24e92788d93628ecfcfee22dddf2e14f8b798d9c565b0d3115c09f6",
+    "response_file": "unseen_ten/recorded_run/results/rawio-c05784a0b4925c35b147/calls/03/response.json",
+    "source_assistant_message_sha256": "5df59241f8e2d431aafd13f664f16d8ff2bd5d67901da9b5118f4e637e565468",
+    "published_assistant_message_sha256": "5df59241f8e2d431aafd13f664f16d8ff2bd5d67901da9b5118f4e637e565468",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_9335561abaa14589856aa6d2",
+      "call_167ef271e5304085aff7f2e4"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_9335561abaa14589856aa6d2",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00050\",\"start\":0,\"characters\":6000}"
+      },
+      {
+        "id": "call_167ef271e5304085aff7f2e4",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00053\",\"start\":0,\"characters\":4000}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "045eb069d16661f442f4523b74708bae93704507844b96702d96c868f9fcbb5b",
+      "0a20759c8436a5e95dcca6bad99120db7db0f52f4654499b89f3922152cac4a8",
+      "f199fa97ae42cd734b961d3b72d201105986d86ead113436b055bda2056756f1",
+      "fceaa4adfb54b6e81501220ffc70eb57b1f23e7bf187a0980b1cbea344cb4693",
+      "6e14d051c13edf802830b4fee2dd0a6c1ee42b8571532488968b210c3f491c62",
+      "abcec380f3f9a622b8c97039b4ec0c22872ea54daf0a836769cbd9bfa267a989",
+      "1ae8158a9fb02b12bc4b8fd274b5c0521b9302a8ec247c0ba48a2a288c6c6618"
+    ]
+  },
+  {
+    "record_id": "rawio-c05784a0b4925c35b147",
+    "call": "calls/04",
+    "request_source_sha256": "a9bb6f9273971f2bb1c955e0121e28d3a18e76568a44cf4452e88ad5d6c4b3d2",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "02c5330b73724d9539f8768cbe8cf75b5a228f3c6f7b791b2bd68ffa6f011f98",
+      "9d1c91098bce9bff68a12b9bb7a57ab90959819b196093ebe22d5daa961645f7",
+      "30944ee382dba2e7cdd685ba26bc3da7c26b5d099a5a73bf9462b21f9cab0438",
+      "41b3bd1a6f19ffdb0c9377d0faea940fae8423e0ac295747b65359fc0cea160e",
+      "99b8f2f88674c6a855d3cb3c48cf4937a20b087ca64058887b0f7d28e998b326",
+      "c2a5b4848b73035394b648008708057a879abb7d1d531d31345445e656511669",
+      "b22e5dc0b7e3a3a6d7878a08a6d252fda0ed6a74d064a3ee8bd9a6c2c8e80acd",
+      "5df59241f8e2d431aafd13f664f16d8ff2bd5d67901da9b5118f4e637e565468",
+      "2801bca5a227f5170cfa57e146c9af2341c023e75d2b8c247dc4d8509042643a",
+      "88a3cf8b250f7cebd6a8f29926c28b9232bc9a121f590f612b6acf0e2a1d41d5"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "02c5330b73724d9539f8768cbe8cf75b5a228f3c6f7b791b2bd68ffa6f011f98",
+      "9d1c91098bce9bff68a12b9bb7a57ab90959819b196093ebe22d5daa961645f7",
+      "30944ee382dba2e7cdd685ba26bc3da7c26b5d099a5a73bf9462b21f9cab0438",
+      "41b3bd1a6f19ffdb0c9377d0faea940fae8423e0ac295747b65359fc0cea160e",
+      "99b8f2f88674c6a855d3cb3c48cf4937a20b087ca64058887b0f7d28e998b326",
+      "c2a5b4848b73035394b648008708057a879abb7d1d531d31345445e656511669",
+      "b22e5dc0b7e3a3a6d7878a08a6d252fda0ed6a74d064a3ee8bd9a6c2c8e80acd",
+      "5df59241f8e2d431aafd13f664f16d8ff2bd5d67901da9b5118f4e637e565468",
+      "2801bca5a227f5170cfa57e146c9af2341c023e75d2b8c247dc4d8509042643a",
+      "88a3cf8b250f7cebd6a8f29926c28b9232bc9a121f590f612b6acf0e2a1d41d5"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_a25bda4926274548b213a046",
+      "call_ecfb0a2945a04bb1b81647ca",
+      null,
+      "call_e0656b7c6c9c4cf39a403226",
+      "call_40a17cb6500340b788010e33",
+      null,
+      "call_9335561abaa14589856aa6d2",
+      "call_167ef271e5304085aff7f2e4"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "d0a536ae95187c1cfc62b002c11cdc14b9c41d374b1a8899312afeae28afd6c9",
+    "response_file": "unseen_ten/recorded_run/results/rawio-c05784a0b4925c35b147/calls/04/response.json",
+    "source_assistant_message_sha256": "679f378ab7685c4250af7e09e7c4293a3ed9c9905f16bbc1a5829b72b0fa0104",
+    "published_assistant_message_sha256": "679f378ab7685c4250af7e09e7c4293a3ed9c9905f16bbc1a5829b72b0fa0104",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_c52f54a1b77b4774a1925f6f",
+      "call_d09c07388d6c4f3886d0d81f"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_c52f54a1b77b4774a1925f6f",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00050\",\"start\":6000,\"characters\":700}"
+      },
+      {
+        "id": "call_d09c07388d6c4f3886d0d81f",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00064\",\"start\":4000,\"characters\":300}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "045eb069d16661f442f4523b74708bae93704507844b96702d96c868f9fcbb5b",
+      "0a20759c8436a5e95dcca6bad99120db7db0f52f4654499b89f3922152cac4a8",
+      "f199fa97ae42cd734b961d3b72d201105986d86ead113436b055bda2056756f1",
+      "fceaa4adfb54b6e81501220ffc70eb57b1f23e7bf187a0980b1cbea344cb4693",
+      "6e14d051c13edf802830b4fee2dd0a6c1ee42b8571532488968b210c3f491c62",
+      "abcec380f3f9a622b8c97039b4ec0c22872ea54daf0a836769cbd9bfa267a989",
+      "1ae8158a9fb02b12bc4b8fd274b5c0521b9302a8ec247c0ba48a2a288c6c6618",
+      "c475ee9dc161a28b655d3dfe00dcc11e116c95e7411dc26b154d26820bfcc123",
+      "34ee4d5703e6180a133741c429ba85a45fd1123a28746c81e773d338abb0d74c",
+      "21af2f4170fc5078ae723e201ca8d0ffdf5d0b23944532506c4dbfb11655e171"
+    ]
+  },
+  {
+    "record_id": "rawio-c05784a0b4925c35b147",
+    "call": "calls/05",
+    "request_source_sha256": "c11e0eaa59ab780ffd756a02a013075fcffacb4e6339b0df261367db08ee581f",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "02c5330b73724d9539f8768cbe8cf75b5a228f3c6f7b791b2bd68ffa6f011f98",
+      "9d1c91098bce9bff68a12b9bb7a57ab90959819b196093ebe22d5daa961645f7",
+      "30944ee382dba2e7cdd685ba26bc3da7c26b5d099a5a73bf9462b21f9cab0438",
+      "41b3bd1a6f19ffdb0c9377d0faea940fae8423e0ac295747b65359fc0cea160e",
+      "99b8f2f88674c6a855d3cb3c48cf4937a20b087ca64058887b0f7d28e998b326",
+      "c2a5b4848b73035394b648008708057a879abb7d1d531d31345445e656511669",
+      "b22e5dc0b7e3a3a6d7878a08a6d252fda0ed6a74d064a3ee8bd9a6c2c8e80acd",
+      "5df59241f8e2d431aafd13f664f16d8ff2bd5d67901da9b5118f4e637e565468",
+      "2801bca5a227f5170cfa57e146c9af2341c023e75d2b8c247dc4d8509042643a",
+      "88a3cf8b250f7cebd6a8f29926c28b9232bc9a121f590f612b6acf0e2a1d41d5",
+      "679f378ab7685c4250af7e09e7c4293a3ed9c9905f16bbc1a5829b72b0fa0104",
+      "ad411b31c27c2c3308ad2e1b2cc34314e48b5a51b3dd3e4b62e6e64d415da24c",
+      "4cf4f8840c4d4e2f55f738072a13c3e12989b6fe13aa066fc6f1b2c6928e9e61"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "02c5330b73724d9539f8768cbe8cf75b5a228f3c6f7b791b2bd68ffa6f011f98",
+      "9d1c91098bce9bff68a12b9bb7a57ab90959819b196093ebe22d5daa961645f7",
+      "30944ee382dba2e7cdd685ba26bc3da7c26b5d099a5a73bf9462b21f9cab0438",
+      "41b3bd1a6f19ffdb0c9377d0faea940fae8423e0ac295747b65359fc0cea160e",
+      "99b8f2f88674c6a855d3cb3c48cf4937a20b087ca64058887b0f7d28e998b326",
+      "c2a5b4848b73035394b648008708057a879abb7d1d531d31345445e656511669",
+      "b22e5dc0b7e3a3a6d7878a08a6d252fda0ed6a74d064a3ee8bd9a6c2c8e80acd",
+      "5df59241f8e2d431aafd13f664f16d8ff2bd5d67901da9b5118f4e637e565468",
+      "2801bca5a227f5170cfa57e146c9af2341c023e75d2b8c247dc4d8509042643a",
+      "88a3cf8b250f7cebd6a8f29926c28b9232bc9a121f590f612b6acf0e2a1d41d5",
+      "679f378ab7685c4250af7e09e7c4293a3ed9c9905f16bbc1a5829b72b0fa0104",
+      "ad411b31c27c2c3308ad2e1b2cc34314e48b5a51b3dd3e4b62e6e64d415da24c",
+      "4cf4f8840c4d4e2f55f738072a13c3e12989b6fe13aa066fc6f1b2c6928e9e61"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_a25bda4926274548b213a046",
+      "call_ecfb0a2945a04bb1b81647ca",
+      null,
+      "call_e0656b7c6c9c4cf39a403226",
+      "call_40a17cb6500340b788010e33",
+      null,
+      "call_9335561abaa14589856aa6d2",
+      "call_167ef271e5304085aff7f2e4",
+      null,
+      "call_c52f54a1b77b4774a1925f6f",
+      "call_d09c07388d6c4f3886d0d81f"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "fa433f0f308d82b41d2b2f9c48dfa15199cde43495ab734a1a46daf8ab4033d4",
+    "response_file": "unseen_ten/recorded_run/results/rawio-c05784a0b4925c35b147/calls/05/response.json",
+    "source_assistant_message_sha256": "739edc3ffc2d35866b7d192bed6e4e5de7824e8a312e1481798c20cd3e2ba48e",
+    "published_assistant_message_sha256": "739edc3ffc2d35866b7d192bed6e4e5de7824e8a312e1481798c20cd3e2ba48e",
+    "finish_reason": "stop",
+    "response_tool_call_ids": [],
+    "response_tool_calls": [],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "045eb069d16661f442f4523b74708bae93704507844b96702d96c868f9fcbb5b",
+      "0a20759c8436a5e95dcca6bad99120db7db0f52f4654499b89f3922152cac4a8",
+      "f199fa97ae42cd734b961d3b72d201105986d86ead113436b055bda2056756f1",
+      "fceaa4adfb54b6e81501220ffc70eb57b1f23e7bf187a0980b1cbea344cb4693",
+      "6e14d051c13edf802830b4fee2dd0a6c1ee42b8571532488968b210c3f491c62",
+      "abcec380f3f9a622b8c97039b4ec0c22872ea54daf0a836769cbd9bfa267a989",
+      "1ae8158a9fb02b12bc4b8fd274b5c0521b9302a8ec247c0ba48a2a288c6c6618",
+      "c475ee9dc161a28b655d3dfe00dcc11e116c95e7411dc26b154d26820bfcc123",
+      "34ee4d5703e6180a133741c429ba85a45fd1123a28746c81e773d338abb0d74c",
+      "21af2f4170fc5078ae723e201ca8d0ffdf5d0b23944532506c4dbfb11655e171",
+      "b9a074746f804273166d3ee1cf5baddb94a49770b35be13711faef4ff4e3f6d4",
+      "0114183d4e436b06f0c5cc0415f0e0bc607634047a91124a4a9d2974571b0ba0",
+      "18a430728aa113180f910ee62015e0850cc43334b52dad2c11fcfd53717611d4"
+    ]
+  },
+  {
+    "record_id": "rawio-c63c1bb0b2f1eaa2080b",
+    "call": "calls/01",
+    "request_source_sha256": "1f93971e20c98c5ed93c536cdb5078a735e5ab4937dd4d63b2b9a1d2f61e2eac",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "a3512facf533791338ad81bffff6afdae8eafcdc1a810f06eeceadf0a098ef0c"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "a3512facf533791338ad81bffff6afdae8eafcdc1a810f06eeceadf0a098ef0c"
+    ],
+    "message_roles": [
+      "system",
+      "user"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "9cea27fac064765ea0674f0fecfe850c9da0e72b2db018196fd34040c7e3aab2",
+    "response_file": "unseen_ten/recorded_run/results/rawio-c63c1bb0b2f1eaa2080b/calls/01/response.json",
+    "source_assistant_message_sha256": "4a740b596f3ea1001f1d520c35807068c6d99d3d8be5878d8f4e7578f7a31453",
+    "published_assistant_message_sha256": "4a740b596f3ea1001f1d520c35807068c6d99d3d8be5878d8f4e7578f7a31453",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_769080fe80864a33a10da12d",
+      "call_e391f4fdf44248679cdee09a"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_769080fe80864a33a10da12d",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0002\",\"S0003\",\"S0004\"]}"
+      },
+      {
+        "id": "call_e391f4fdf44248679cdee09a",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00002\",\"start\":1000}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "888671dc77f094a6632fa72652367d528273d959dce342a64e9210772eb60a30"
+    ]
+  },
+  {
+    "record_id": "rawio-c63c1bb0b2f1eaa2080b",
+    "call": "calls/02",
+    "request_source_sha256": "2fc6a298aca8dfdef00524bcf762dbe11def53c1c2a63d2ec465cc3b2def238e",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "a3512facf533791338ad81bffff6afdae8eafcdc1a810f06eeceadf0a098ef0c",
+      "4a740b596f3ea1001f1d520c35807068c6d99d3d8be5878d8f4e7578f7a31453",
+      "e54a77ca385edcb780a087c8e0b455f89156dbaf344331dad65ed4a76e3c894b",
+      "5c04f6dbba073c759b331ff4bcf827d1341a73633c08b9ba5b195c1056d30afe"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "a3512facf533791338ad81bffff6afdae8eafcdc1a810f06eeceadf0a098ef0c",
+      "4a740b596f3ea1001f1d520c35807068c6d99d3d8be5878d8f4e7578f7a31453",
+      "e54a77ca385edcb780a087c8e0b455f89156dbaf344331dad65ed4a76e3c894b",
+      "5c04f6dbba073c759b331ff4bcf827d1341a73633c08b9ba5b195c1056d30afe"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_769080fe80864a33a10da12d",
+      "call_e391f4fdf44248679cdee09a"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "d7f9e37b7b94a7cff52e898b542ebbd498462cce6fca1d9881309830a0291454",
+    "response_file": "unseen_ten/recorded_run/results/rawio-c63c1bb0b2f1eaa2080b/calls/02/response.json",
+    "source_assistant_message_sha256": "df52cdc28932620d24404b57afae535a48e7c8cfaf2e8908217203815d92fe69",
+    "published_assistant_message_sha256": "df52cdc28932620d24404b57afae535a48e7c8cfaf2e8908217203815d92fe69",
+    "finish_reason": "stop",
+    "response_tool_call_ids": [],
+    "response_tool_calls": [],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "888671dc77f094a6632fa72652367d528273d959dce342a64e9210772eb60a30",
+      null,
+      "ea4d78f5894b3ce181f440ce36076b40b2e76cb77c00dfd02fed804f071bd1c4",
+      "15dbbfb011243032288b9f9131a1331e77882d797c7d4c86a0c1c708caf7b665"
+    ]
+  },
+  {
+    "record_id": "rawio-ad24e54fdf0c7d46da13",
+    "call": "calls/01",
+    "request_source_sha256": "507e525c250656b55ebd57ee5bc8135146cdeb91a4b586493526a50e13076021",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "467ad6558424661c091626402d77aa60596f6ec13d0fe4691b8d0b30e68323eb"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "39580f84aea8051bf6c1c79333af2cff97224eb13ff029615acc5986b8c5f29e"
+    ],
+    "message_roles": [
+      "system",
+      "user"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "701fd3097f88575eb8cfe4446e8dd5adf44aa53a311f98f0b9039e1ae3fcaf75",
+    "response_file": "unseen_ten/recorded_run/results/rawio-ad24e54fdf0c7d46da13/calls/01/response.json",
+    "source_assistant_message_sha256": "2ec31cd0e0bfab97c3184de880b8f41d4cd4faded0829933e36156c1b834eeb0",
+    "published_assistant_message_sha256": "2ec31cd0e0bfab97c3184de880b8f41d4cd4faded0829933e36156c1b834eeb0",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_e910e4dfd7354c1f8d758486",
+      "call_3f7d2adb889b47759341ab20"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_e910e4dfd7354c1f8d758486",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0005\",\"S0006\",\"S0009\",\"S0012\"]}"
+      },
+      {
+        "id": "call_3f7d2adb889b47759341ab20",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0013\",\"S0014\",\"S0015\",\"S0016\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "43db04ba9961e59c8cd4cd7e63cf391061dc4028995654f65153118ab62a3939"
+    ]
+  },
+  {
+    "record_id": "rawio-ad24e54fdf0c7d46da13",
+    "call": "calls/02",
+    "request_source_sha256": "707939f777b6d998ab8ebc4c04d6df38c7b9cff0b8957bcf7a675107f939feb1",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "467ad6558424661c091626402d77aa60596f6ec13d0fe4691b8d0b30e68323eb",
+      "2ec31cd0e0bfab97c3184de880b8f41d4cd4faded0829933e36156c1b834eeb0",
+      "8d959d9b989c27560854e7fbeeeb1664d6b823035b61aa953bedfe8a0ee7338e",
+      "ff9a9f8696fdde2cfe209dd6d365d1e3b371d772c088f1a25cf8a2e044341d3b"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "39580f84aea8051bf6c1c79333af2cff97224eb13ff029615acc5986b8c5f29e",
+      "2ec31cd0e0bfab97c3184de880b8f41d4cd4faded0829933e36156c1b834eeb0",
+      "58ed26e3cc6bbd61e74f3a9cd03aaed5bc36d0eaf7f320a896f6d6a0ab59b6ba",
+      "724ac741eaeb3f5c525c2fc13f1fad2f02344f71ae897928147eaf845248e306"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_e910e4dfd7354c1f8d758486",
+      "call_3f7d2adb889b47759341ab20"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "26bc44d4eeb5e87dff6dc69923b7e6cf8b4a97c408930c997a2520f9c0f1ac99",
+    "response_file": "unseen_ten/recorded_run/results/rawio-ad24e54fdf0c7d46da13/calls/02/response.json",
+    "source_assistant_message_sha256": "71d1bb1ad88cf7d72cf5c50951db70275dcaa074a5a4b990b877599a88999846",
+    "published_assistant_message_sha256": "71d1bb1ad88cf7d72cf5c50951db70275dcaa074a5a4b990b877599a88999846",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_3c5594aa5c3e4de89c273068",
+      "call_caab54b92d6143e2924b74cd"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_3c5594aa5c3e4de89c273068",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00039\",\"start\":5000,\"characters\":2000}"
+      },
+      {
+        "id": "call_caab54b92d6143e2924b74cd",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0003\",\"S0007\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "43db04ba9961e59c8cd4cd7e63cf391061dc4028995654f65153118ab62a3939",
+      "d25316d9fdb7dc857e6632eeb42160139b71e70262a07bb02eeff3cc3882c882",
+      "db048f1c8054f37adc4ec9a43e315c59d88d485f0bdaaecdb12f2d07c4af50d4",
+      "885fabc586563d160a307af1f71d117a5af68d81db2cb3413200fc9f206a7c8a"
+    ]
+  },
+  {
+    "record_id": "rawio-ad24e54fdf0c7d46da13",
+    "call": "calls/03",
+    "request_source_sha256": "baea7e3603034507f6fd63c35d5aa7db726704f496404f879d9c090613495a63",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "467ad6558424661c091626402d77aa60596f6ec13d0fe4691b8d0b30e68323eb",
+      "2ec31cd0e0bfab97c3184de880b8f41d4cd4faded0829933e36156c1b834eeb0",
+      "8d959d9b989c27560854e7fbeeeb1664d6b823035b61aa953bedfe8a0ee7338e",
+      "ff9a9f8696fdde2cfe209dd6d365d1e3b371d772c088f1a25cf8a2e044341d3b",
+      "71d1bb1ad88cf7d72cf5c50951db70275dcaa074a5a4b990b877599a88999846",
+      "927a3716dba031708d5315612683924b05438c52b7bad5b43ba8e663d82a82b4",
+      "3b26b657d2010199d1a25c4c4469834522caf444342914da1fb321a4143655ba"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "39580f84aea8051bf6c1c79333af2cff97224eb13ff029615acc5986b8c5f29e",
+      "2ec31cd0e0bfab97c3184de880b8f41d4cd4faded0829933e36156c1b834eeb0",
+      "58ed26e3cc6bbd61e74f3a9cd03aaed5bc36d0eaf7f320a896f6d6a0ab59b6ba",
+      "724ac741eaeb3f5c525c2fc13f1fad2f02344f71ae897928147eaf845248e306",
+      "71d1bb1ad88cf7d72cf5c50951db70275dcaa074a5a4b990b877599a88999846",
+      "927a3716dba031708d5315612683924b05438c52b7bad5b43ba8e663d82a82b4",
+      "6e9e458acd054f3083eee2c94516e2b13b2dbad0166edbf4138d9951540be40f"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_e910e4dfd7354c1f8d758486",
+      "call_3f7d2adb889b47759341ab20",
+      null,
+      "call_3c5594aa5c3e4de89c273068",
+      "call_caab54b92d6143e2924b74cd"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "0a71f6b5787eeaa3e5f6186ec16010c97608e1b03d165ac72bcf9d4dba1d599e",
+    "response_file": "unseen_ten/recorded_run/results/rawio-ad24e54fdf0c7d46da13/calls/03/response.json",
+    "source_assistant_message_sha256": "c5db3df4c7f17dd4b3bcec3d67c1ef9bad1521eaea8845a6e73db4c14daea23c",
+    "published_assistant_message_sha256": "c5db3df4c7f17dd4b3bcec3d67c1ef9bad1521eaea8845a6e73db4c14daea23c",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_2d56d32a6b034b558c742f70",
+      "call_9c43645f2d5142e191ecc08a"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_2d56d32a6b034b558c742f70",
+        "name": "search_evidence",
+        "arguments": "{\"question\":\"fees.json entries with empty account_type list or null merchant_category_code applying to all values\",\"top_k\":6}"
+      },
+      {
+        "id": "call_9c43645f2d5142e191ecc08a",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0017\",\"S0018\",\"S0019\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "43db04ba9961e59c8cd4cd7e63cf391061dc4028995654f65153118ab62a3939",
+      "d25316d9fdb7dc857e6632eeb42160139b71e70262a07bb02eeff3cc3882c882",
+      "db048f1c8054f37adc4ec9a43e315c59d88d485f0bdaaecdb12f2d07c4af50d4",
+      "885fabc586563d160a307af1f71d117a5af68d81db2cb3413200fc9f206a7c8a",
+      "501ddadd8e1ecdaf34894ec45849221fa96b77b0805ca7e9663acf4735630031",
+      "cd20803837d1ee91fcd907b74fcb03097311f64ab13b366263411ef4e9c5ba54",
+      "e5bd682a9926c43d420e4b7bb9079471403c07765f6b2415bcecaf488887c42b"
+    ]
+  },
+  {
+    "record_id": "rawio-ad24e54fdf0c7d46da13",
+    "call": "calls/04",
+    "request_source_sha256": "40ddf89f451585d71a578aec14487bbf388a05a5dc9e14a2c22c63ca94369958",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "467ad6558424661c091626402d77aa60596f6ec13d0fe4691b8d0b30e68323eb",
+      "2ec31cd0e0bfab97c3184de880b8f41d4cd4faded0829933e36156c1b834eeb0",
+      "8d959d9b989c27560854e7fbeeeb1664d6b823035b61aa953bedfe8a0ee7338e",
+      "ff9a9f8696fdde2cfe209dd6d365d1e3b371d772c088f1a25cf8a2e044341d3b",
+      "71d1bb1ad88cf7d72cf5c50951db70275dcaa074a5a4b990b877599a88999846",
+      "927a3716dba031708d5315612683924b05438c52b7bad5b43ba8e663d82a82b4",
+      "3b26b657d2010199d1a25c4c4469834522caf444342914da1fb321a4143655ba",
+      "c5db3df4c7f17dd4b3bcec3d67c1ef9bad1521eaea8845a6e73db4c14daea23c",
+      "be5cf86a4b16462e56f8bd4a70c9f8e3d20d4091cb51be8ca07d86a2fb01ed1b",
+      "bbcffb5b33cb2e838b3caded210f5441916e374cc3112ee8be7746c7ec7e411e"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "39580f84aea8051bf6c1c79333af2cff97224eb13ff029615acc5986b8c5f29e",
+      "2ec31cd0e0bfab97c3184de880b8f41d4cd4faded0829933e36156c1b834eeb0",
+      "58ed26e3cc6bbd61e74f3a9cd03aaed5bc36d0eaf7f320a896f6d6a0ab59b6ba",
+      "724ac741eaeb3f5c525c2fc13f1fad2f02344f71ae897928147eaf845248e306",
+      "71d1bb1ad88cf7d72cf5c50951db70275dcaa074a5a4b990b877599a88999846",
+      "927a3716dba031708d5315612683924b05438c52b7bad5b43ba8e663d82a82b4",
+      "6e9e458acd054f3083eee2c94516e2b13b2dbad0166edbf4138d9951540be40f",
+      "c5db3df4c7f17dd4b3bcec3d67c1ef9bad1521eaea8845a6e73db4c14daea23c",
+      "12ec529099ad83f2e36eb1f01c86b84646c307c8188b94a43b774e583b3839e4",
+      "018c6a33a5d4dd9c2b5c68f062ad609f2ae904c757179557a49f85599d4bf22a"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_e910e4dfd7354c1f8d758486",
+      "call_3f7d2adb889b47759341ab20",
+      null,
+      "call_3c5594aa5c3e4de89c273068",
+      "call_caab54b92d6143e2924b74cd",
+      null,
+      "call_2d56d32a6b034b558c742f70",
+      "call_9c43645f2d5142e191ecc08a"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "87c75fcc915edbfbf44b43918bb25e357c37264861d40a995c6fd9b801503bb6",
+    "response_file": "unseen_ten/recorded_run/results/rawio-ad24e54fdf0c7d46da13/calls/04/response.json",
+    "source_assistant_message_sha256": "11320132a724a9aaea069531f23fe109d71adfd5c84c021c206993e92df4b816",
+    "published_assistant_message_sha256": "11320132a724a9aaea069531f23fe109d71adfd5c84c021c206993e92df4b816",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_29899878987b4b2a83071aca"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_29899878987b4b2a83071aca",
+        "name": "retrieve_evidence",
+        "arguments": "{\"question\":\"GlobalCard fee rules with empty account_type list or empty merchant_category_code meaning applies to all\",\"top_k\":4}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "43db04ba9961e59c8cd4cd7e63cf391061dc4028995654f65153118ab62a3939",
+      "d25316d9fdb7dc857e6632eeb42160139b71e70262a07bb02eeff3cc3882c882",
+      "db048f1c8054f37adc4ec9a43e315c59d88d485f0bdaaecdb12f2d07c4af50d4",
+      "885fabc586563d160a307af1f71d117a5af68d81db2cb3413200fc9f206a7c8a",
+      "501ddadd8e1ecdaf34894ec45849221fa96b77b0805ca7e9663acf4735630031",
+      "cd20803837d1ee91fcd907b74fcb03097311f64ab13b366263411ef4e9c5ba54",
+      "e5bd682a9926c43d420e4b7bb9079471403c07765f6b2415bcecaf488887c42b",
+      "b5d0a2ceb5e85ba75fbf7e3a3985616618b0d552e2e727937e2e6bd69bd9194e",
+      "e8fce8fef479f9bb930c3b53cf0b739b9f0af62039fc841bcba5a3af11ea3cd0",
+      "ee592427a1844a1e8a4fb1c90e474bc033cad4bcdcf394582e42632886d2734d"
+    ]
+  },
+  {
+    "record_id": "rawio-ad24e54fdf0c7d46da13",
+    "call": "calls/05",
+    "request_source_sha256": "5f72a27f9b107a628a2d51f3a741c266ae179c6ff2597850ea67bd4eccebea4f",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "467ad6558424661c091626402d77aa60596f6ec13d0fe4691b8d0b30e68323eb",
+      "2ec31cd0e0bfab97c3184de880b8f41d4cd4faded0829933e36156c1b834eeb0",
+      "8d959d9b989c27560854e7fbeeeb1664d6b823035b61aa953bedfe8a0ee7338e",
+      "ff9a9f8696fdde2cfe209dd6d365d1e3b371d772c088f1a25cf8a2e044341d3b",
+      "71d1bb1ad88cf7d72cf5c50951db70275dcaa074a5a4b990b877599a88999846",
+      "927a3716dba031708d5315612683924b05438c52b7bad5b43ba8e663d82a82b4",
+      "3b26b657d2010199d1a25c4c4469834522caf444342914da1fb321a4143655ba",
+      "c5db3df4c7f17dd4b3bcec3d67c1ef9bad1521eaea8845a6e73db4c14daea23c",
+      "be5cf86a4b16462e56f8bd4a70c9f8e3d20d4091cb51be8ca07d86a2fb01ed1b",
+      "bbcffb5b33cb2e838b3caded210f5441916e374cc3112ee8be7746c7ec7e411e",
+      "11320132a724a9aaea069531f23fe109d71adfd5c84c021c206993e92df4b816",
+      "6feb869dade7154a0ba1575efb8d12def54c34eb7995d4cdcc199c9f11bdeb41"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "39580f84aea8051bf6c1c79333af2cff97224eb13ff029615acc5986b8c5f29e",
+      "2ec31cd0e0bfab97c3184de880b8f41d4cd4faded0829933e36156c1b834eeb0",
+      "58ed26e3cc6bbd61e74f3a9cd03aaed5bc36d0eaf7f320a896f6d6a0ab59b6ba",
+      "724ac741eaeb3f5c525c2fc13f1fad2f02344f71ae897928147eaf845248e306",
+      "71d1bb1ad88cf7d72cf5c50951db70275dcaa074a5a4b990b877599a88999846",
+      "927a3716dba031708d5315612683924b05438c52b7bad5b43ba8e663d82a82b4",
+      "6e9e458acd054f3083eee2c94516e2b13b2dbad0166edbf4138d9951540be40f",
+      "c5db3df4c7f17dd4b3bcec3d67c1ef9bad1521eaea8845a6e73db4c14daea23c",
+      "12ec529099ad83f2e36eb1f01c86b84646c307c8188b94a43b774e583b3839e4",
+      "018c6a33a5d4dd9c2b5c68f062ad609f2ae904c757179557a49f85599d4bf22a",
+      "11320132a724a9aaea069531f23fe109d71adfd5c84c021c206993e92df4b816",
+      "9e6f9a1229ac95e1a8ed585ba0518e14625236cf3697ab38743fb99b23d75f10"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_e910e4dfd7354c1f8d758486",
+      "call_3f7d2adb889b47759341ab20",
+      null,
+      "call_3c5594aa5c3e4de89c273068",
+      "call_caab54b92d6143e2924b74cd",
+      null,
+      "call_2d56d32a6b034b558c742f70",
+      "call_9c43645f2d5142e191ecc08a",
+      null,
+      "call_29899878987b4b2a83071aca"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "5865427e353da4c728e7b82c2147a962ef4895bd92a39f929fb335391f1c7a78",
+    "response_file": "unseen_ten/recorded_run/results/rawio-ad24e54fdf0c7d46da13/calls/05/response.json",
+    "source_assistant_message_sha256": "6f6c325a1cbd83199909f0b671ee788e69fd3c89a09292d471a20dc01af5255e",
+    "published_assistant_message_sha256": "6f6c325a1cbd83199909f0b671ee788e69fd3c89a09292d471a20dc01af5255e",
+    "finish_reason": "stop",
+    "response_tool_call_ids": [],
+    "response_tool_calls": [],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "43db04ba9961e59c8cd4cd7e63cf391061dc4028995654f65153118ab62a3939",
+      "d25316d9fdb7dc857e6632eeb42160139b71e70262a07bb02eeff3cc3882c882",
+      "db048f1c8054f37adc4ec9a43e315c59d88d485f0bdaaecdb12f2d07c4af50d4",
+      "885fabc586563d160a307af1f71d117a5af68d81db2cb3413200fc9f206a7c8a",
+      "501ddadd8e1ecdaf34894ec45849221fa96b77b0805ca7e9663acf4735630031",
+      "cd20803837d1ee91fcd907b74fcb03097311f64ab13b366263411ef4e9c5ba54",
+      "e5bd682a9926c43d420e4b7bb9079471403c07765f6b2415bcecaf488887c42b",
+      "b5d0a2ceb5e85ba75fbf7e3a3985616618b0d552e2e727937e2e6bd69bd9194e",
+      "e8fce8fef479f9bb930c3b53cf0b739b9f0af62039fc841bcba5a3af11ea3cd0",
+      "ee592427a1844a1e8a4fb1c90e474bc033cad4bcdcf394582e42632886d2734d",
+      "ba8865232a3e65005c227eed780ca0490c03d05cd7201c9fc00734ba7c496213",
+      "cd9b0944edaca31bc706470e82fbe8a3bf5270d82466966e358af76cc07a91a2"
+    ]
+  },
+  {
+    "record_id": "rawio-6e9757019dc8767f3cfc",
+    "call": "calls/01",
+    "request_source_sha256": "98f5276f841f04e384784f2137b07d480fcdf2adf210476fc5b090c4c2c2fb6c",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "850e96579b314cd8e44f10b9ae6d24fdf36e4e06068339f945546bbb3d4e2a9e"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4230d8628f3d33cf2180d5ebc1a6e2ba99286a457954e40aebb52b935bdbc0ac"
+    ],
+    "message_roles": [
+      "system",
+      "user"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "538bc2884aec2aa9db09d7e9dc16b2741f912954f26da3667bed4b8929107016",
+    "response_file": "unseen_ten/recorded_run/results/rawio-6e9757019dc8767f3cfc/calls/01/response.json",
+    "source_assistant_message_sha256": "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+    "published_assistant_message_sha256": "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_de4b2760a7f24d97b8b96e05",
+      "call_5f3ab5234dab4a099eb14420"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_de4b2760a7f24d97b8b96e05",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"FINAL0001\"}"
+      },
+      {
+        "id": "call_5f3ab5234dab4a099eb14420",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0004\",\"S0008\",\"S0013\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "24d08835563893a9273b5a6e37e2a580013089c038f5f1f91d4e66bb2186abf7"
+    ]
+  },
+  {
+    "record_id": "rawio-6e9757019dc8767f3cfc",
+    "call": "calls/02",
+    "request_source_sha256": "e6c5edcdea71ef550c36695425ebca1b3735778162898de4c24cc2d3f62e1993",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "850e96579b314cd8e44f10b9ae6d24fdf36e4e06068339f945546bbb3d4e2a9e",
+      "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+      "c273477eb7b93bfd6bb2965de3cef7ff7c059b9ba39f908c3024cba2aa6d21b0",
+      "1e2a56164607a0f16ac8e97576f63612f56c1a12c04935c480be3c1b30914fb9"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4230d8628f3d33cf2180d5ebc1a6e2ba99286a457954e40aebb52b935bdbc0ac",
+      "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+      "c273477eb7b93bfd6bb2965de3cef7ff7c059b9ba39f908c3024cba2aa6d21b0",
+      "92659da52254b78c66d62c77443ece8c02e2996bd24f37ba02a0eab44a6ace2a"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_de4b2760a7f24d97b8b96e05",
+      "call_5f3ab5234dab4a099eb14420"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "b9291f4bf42ef4b7c899a52faf21ee277517d4fff238d1eed7d45745e2cb0b27",
+    "response_file": "unseen_ten/recorded_run/results/rawio-6e9757019dc8767f3cfc/calls/02/response.json",
+    "source_assistant_message_sha256": "282580f0ca438efb17fad649128b1408b5e8e580831e5b7536b1bb84f66655cd",
+    "published_assistant_message_sha256": "282580f0ca438efb17fad649128b1408b5e8e580831e5b7536b1bb84f66655cd",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_ebb1d9081b4842ce86f9e0a8",
+      "call_656d85683e94442083543971"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_ebb1d9081b4842ce86f9e0a8",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00014\",\"start\":5000}"
+      },
+      {
+        "id": "call_656d85683e94442083543971",
+        "name": "search_evidence",
+        "arguments": "{\"question\":\"answer.txt write final answer\",\"top_k\":6}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "24d08835563893a9273b5a6e37e2a580013089c038f5f1f91d4e66bb2186abf7",
+      "88ccbb78efe0c991279bbec4d4fdcdbbcaf1a04b6a1d38f790c42c8ebd620d3a",
+      "07f8cd1449a0eb67b825e447105f1bad427394c396e91805e7542f53f190e5a3",
+      "909ec85633b37db37d8d117f3ebcae268ee8d49b3d410004e40cd337922cf750"
+    ]
+  },
+  {
+    "record_id": "rawio-6e9757019dc8767f3cfc",
+    "call": "calls/03",
+    "request_source_sha256": "a6880b0099cd648b7bd4cf3191e28c4e82fd0731f1bb4c8061a41f97c8429f8c",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "850e96579b314cd8e44f10b9ae6d24fdf36e4e06068339f945546bbb3d4e2a9e",
+      "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+      "c273477eb7b93bfd6bb2965de3cef7ff7c059b9ba39f908c3024cba2aa6d21b0",
+      "1e2a56164607a0f16ac8e97576f63612f56c1a12c04935c480be3c1b30914fb9",
+      "282580f0ca438efb17fad649128b1408b5e8e580831e5b7536b1bb84f66655cd",
+      "1c3db0f1bfbb40746e513332edb783ed464299d0da5ed7d01f2b60e02af56f64",
+      "3090f1262243af67816ab1dd352daa262fbec5c6649edec52dfd0ffc1ef93317"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4230d8628f3d33cf2180d5ebc1a6e2ba99286a457954e40aebb52b935bdbc0ac",
+      "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+      "c273477eb7b93bfd6bb2965de3cef7ff7c059b9ba39f908c3024cba2aa6d21b0",
+      "92659da52254b78c66d62c77443ece8c02e2996bd24f37ba02a0eab44a6ace2a",
+      "282580f0ca438efb17fad649128b1408b5e8e580831e5b7536b1bb84f66655cd",
+      "1c3db0f1bfbb40746e513332edb783ed464299d0da5ed7d01f2b60e02af56f64",
+      "15794e2d24087fc00c905267890f995158a087f19a25bb015ab79f6a66aa6bb5"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_de4b2760a7f24d97b8b96e05",
+      "call_5f3ab5234dab4a099eb14420",
+      null,
+      "call_ebb1d9081b4842ce86f9e0a8",
+      "call_656d85683e94442083543971"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "fb768664c9486afccba40acea012c55a436382fcd392b814bfd957c7f38c19b8",
+    "response_file": "unseen_ten/recorded_run/results/rawio-6e9757019dc8767f3cfc/calls/03/response.json",
+    "source_assistant_message_sha256": "00ab8b97ff79db18f8c4658305d81b8cc615c2b296f2d75b172bfd4a96ff637e",
+    "published_assistant_message_sha256": "00ab8b97ff79db18f8c4658305d81b8cc615c2b296f2d75b172bfd4a96ff637e",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_54bb1184a8754331919cab61",
+      "call_27da96b7d581420e9ad63f0d"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_54bb1184a8754331919cab61",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0014\",\"S0021\",\"S0022\"]}"
+      },
+      {
+        "id": "call_27da96b7d581420e9ad63f0d",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00034\",\"start\":5000}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "24d08835563893a9273b5a6e37e2a580013089c038f5f1f91d4e66bb2186abf7",
+      "88ccbb78efe0c991279bbec4d4fdcdbbcaf1a04b6a1d38f790c42c8ebd620d3a",
+      "07f8cd1449a0eb67b825e447105f1bad427394c396e91805e7542f53f190e5a3",
+      "909ec85633b37db37d8d117f3ebcae268ee8d49b3d410004e40cd337922cf750",
+      "1c55dbc6a38b371ea64d229d3fb4bbc79d66e109315126f1e49f874ced91f901",
+      "9688b59419b9d58b9939b3db7e14ff00a888cf7e72ce0ce570d2a2f1ac0bed45",
+      "45fd986258728cc69f9ba552ed362420b2a448b4a842c0ab75073e5c491020af"
+    ]
+  },
+  {
+    "record_id": "rawio-6e9757019dc8767f3cfc",
+    "call": "calls/04",
+    "request_source_sha256": "bb7e537fc54c778942e2c5e98900b111c7da34c7e12d51bb834e8ac519839350",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "850e96579b314cd8e44f10b9ae6d24fdf36e4e06068339f945546bbb3d4e2a9e",
+      "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+      "c273477eb7b93bfd6bb2965de3cef7ff7c059b9ba39f908c3024cba2aa6d21b0",
+      "1e2a56164607a0f16ac8e97576f63612f56c1a12c04935c480be3c1b30914fb9",
+      "282580f0ca438efb17fad649128b1408b5e8e580831e5b7536b1bb84f66655cd",
+      "1c3db0f1bfbb40746e513332edb783ed464299d0da5ed7d01f2b60e02af56f64",
+      "3090f1262243af67816ab1dd352daa262fbec5c6649edec52dfd0ffc1ef93317",
+      "00ab8b97ff79db18f8c4658305d81b8cc615c2b296f2d75b172bfd4a96ff637e",
+      "f8e75d95438b54e6bc584104c30148f473b9733460a484dc0af33b0e337e6147",
+      "70bc5214954c1cc5fe461824c3602040803eaa30172ca3465d3d28826e8e15a6"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4230d8628f3d33cf2180d5ebc1a6e2ba99286a457954e40aebb52b935bdbc0ac",
+      "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+      "c273477eb7b93bfd6bb2965de3cef7ff7c059b9ba39f908c3024cba2aa6d21b0",
+      "92659da52254b78c66d62c77443ece8c02e2996bd24f37ba02a0eab44a6ace2a",
+      "282580f0ca438efb17fad649128b1408b5e8e580831e5b7536b1bb84f66655cd",
+      "1c3db0f1bfbb40746e513332edb783ed464299d0da5ed7d01f2b60e02af56f64",
+      "15794e2d24087fc00c905267890f995158a087f19a25bb015ab79f6a66aa6bb5",
+      "00ab8b97ff79db18f8c4658305d81b8cc615c2b296f2d75b172bfd4a96ff637e",
+      "fae92212a830fb1392f11af42a46eeedd6b156e88b33ad4c5082069abfe95f49",
+      "70bc5214954c1cc5fe461824c3602040803eaa30172ca3465d3d28826e8e15a6"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_de4b2760a7f24d97b8b96e05",
+      "call_5f3ab5234dab4a099eb14420",
+      null,
+      "call_ebb1d9081b4842ce86f9e0a8",
+      "call_656d85683e94442083543971",
+      null,
+      "call_54bb1184a8754331919cab61",
+      "call_27da96b7d581420e9ad63f0d"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "ac40e3574b529788b084b4c2a8a2ed81ae534813b305d99ba5fb563983e6fc32",
+    "response_file": "unseen_ten/recorded_run/results/rawio-6e9757019dc8767f3cfc/calls/04/response.json",
+    "source_assistant_message_sha256": "77c6f8c5f62c2bd4e8d11e36d7bb6e5e97c80660aba18c1aa559ba2fcc4eae3d",
+    "published_assistant_message_sha256": "77c6f8c5f62c2bd4e8d11e36d7bb6e5e97c80660aba18c1aa559ba2fcc4eae3d",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_708a920bc92a4232a7cd56fe",
+      "call_bda01c35509447d2af63dcdd"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_708a920bc92a4232a7cd56fe",
+        "name": "read_exchange",
+        "arguments": "{\"exchange_id\":\"X0020\",\"surface\":\"response\"}"
+      },
+      {
+        "id": "call_bda01c35509447d2af63dcdd",
+        "name": "search_evidence",
+        "arguments": "{\"question\":\"write answer.txt file exists final answer\",\"top_k\":6}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "24d08835563893a9273b5a6e37e2a580013089c038f5f1f91d4e66bb2186abf7",
+      "88ccbb78efe0c991279bbec4d4fdcdbbcaf1a04b6a1d38f790c42c8ebd620d3a",
+      "07f8cd1449a0eb67b825e447105f1bad427394c396e91805e7542f53f190e5a3",
+      "909ec85633b37db37d8d117f3ebcae268ee8d49b3d410004e40cd337922cf750",
+      "1c55dbc6a38b371ea64d229d3fb4bbc79d66e109315126f1e49f874ced91f901",
+      "9688b59419b9d58b9939b3db7e14ff00a888cf7e72ce0ce570d2a2f1ac0bed45",
+      "45fd986258728cc69f9ba552ed362420b2a448b4a842c0ab75073e5c491020af",
+      "23fda509fb43335f9e8e00bf986beb65038aaa6a3dba94451f9bcbed924392e9",
+      "a968625b6661619df9c894db910192d71a894bd6f094e4d43a22a0bfd3c3e52c",
+      "78f7b093c485f59448807c8e59c8a7b5f4f968ab77b0cbb718de4875f3cd455b"
+    ]
+  },
+  {
+    "record_id": "rawio-6e9757019dc8767f3cfc",
+    "call": "calls/05",
+    "request_source_sha256": "4942c0df52dbdd6c5d567016532acb2a745a11ee2b38307f06d40f6a1fa19ddb",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "850e96579b314cd8e44f10b9ae6d24fdf36e4e06068339f945546bbb3d4e2a9e",
+      "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+      "c273477eb7b93bfd6bb2965de3cef7ff7c059b9ba39f908c3024cba2aa6d21b0",
+      "1e2a56164607a0f16ac8e97576f63612f56c1a12c04935c480be3c1b30914fb9",
+      "282580f0ca438efb17fad649128b1408b5e8e580831e5b7536b1bb84f66655cd",
+      "1c3db0f1bfbb40746e513332edb783ed464299d0da5ed7d01f2b60e02af56f64",
+      "3090f1262243af67816ab1dd352daa262fbec5c6649edec52dfd0ffc1ef93317",
+      "00ab8b97ff79db18f8c4658305d81b8cc615c2b296f2d75b172bfd4a96ff637e",
+      "f8e75d95438b54e6bc584104c30148f473b9733460a484dc0af33b0e337e6147",
+      "70bc5214954c1cc5fe461824c3602040803eaa30172ca3465d3d28826e8e15a6",
+      "77c6f8c5f62c2bd4e8d11e36d7bb6e5e97c80660aba18c1aa559ba2fcc4eae3d",
+      "0f42d2f5bdacbe0ef63482fda2181d00085e7c14e00512b59647044b8ce1d7cf",
+      "9ed74075b078efdd06f283b1c734ebced51868de1340209b7b9986acc1bc8864"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4230d8628f3d33cf2180d5ebc1a6e2ba99286a457954e40aebb52b935bdbc0ac",
+      "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+      "c273477eb7b93bfd6bb2965de3cef7ff7c059b9ba39f908c3024cba2aa6d21b0",
+      "92659da52254b78c66d62c77443ece8c02e2996bd24f37ba02a0eab44a6ace2a",
+      "282580f0ca438efb17fad649128b1408b5e8e580831e5b7536b1bb84f66655cd",
+      "1c3db0f1bfbb40746e513332edb783ed464299d0da5ed7d01f2b60e02af56f64",
+      "15794e2d24087fc00c905267890f995158a087f19a25bb015ab79f6a66aa6bb5",
+      "00ab8b97ff79db18f8c4658305d81b8cc615c2b296f2d75b172bfd4a96ff637e",
+      "fae92212a830fb1392f11af42a46eeedd6b156e88b33ad4c5082069abfe95f49",
+      "70bc5214954c1cc5fe461824c3602040803eaa30172ca3465d3d28826e8e15a6",
+      "77c6f8c5f62c2bd4e8d11e36d7bb6e5e97c80660aba18c1aa559ba2fcc4eae3d",
+      "c9fcd9d0b5eed85400b7355540ed652c7db2171b91a7b96f28be076412d4bb40",
+      "9b0909736ff005e04e68648825e374d0b7270735690db22304b4faf4a57ada8d"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_de4b2760a7f24d97b8b96e05",
+      "call_5f3ab5234dab4a099eb14420",
+      null,
+      "call_ebb1d9081b4842ce86f9e0a8",
+      "call_656d85683e94442083543971",
+      null,
+      "call_54bb1184a8754331919cab61",
+      "call_27da96b7d581420e9ad63f0d",
+      null,
+      "call_708a920bc92a4232a7cd56fe",
+      "call_bda01c35509447d2af63dcdd"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "2492a830220f0f990c290dcb5fa35a5831d8d7f99202edf32c8bb54ac6f4d16f",
+    "response_file": "unseen_ten/recorded_run/results/rawio-6e9757019dc8767f3cfc/calls/05/response.json",
+    "source_assistant_message_sha256": "38213dbbbff5dd5bb1d02396edf2374ae6d766e9846f7c3220508af7c1b23dfa",
+    "published_assistant_message_sha256": "38213dbbbff5dd5bb1d02396edf2374ae6d766e9846f7c3220508af7c1b23dfa",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_35f73a0aad1e44cbaadee8ac",
+      "call_b8e418c06e01457f8632ea30"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_35f73a0aad1e44cbaadee8ac",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00020\"}"
+      },
+      {
+        "id": "call_b8e418c06e01457f8632ea30",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00024\"}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "24d08835563893a9273b5a6e37e2a580013089c038f5f1f91d4e66bb2186abf7",
+      "88ccbb78efe0c991279bbec4d4fdcdbbcaf1a04b6a1d38f790c42c8ebd620d3a",
+      "07f8cd1449a0eb67b825e447105f1bad427394c396e91805e7542f53f190e5a3",
+      "909ec85633b37db37d8d117f3ebcae268ee8d49b3d410004e40cd337922cf750",
+      "1c55dbc6a38b371ea64d229d3fb4bbc79d66e109315126f1e49f874ced91f901",
+      "9688b59419b9d58b9939b3db7e14ff00a888cf7e72ce0ce570d2a2f1ac0bed45",
+      "45fd986258728cc69f9ba552ed362420b2a448b4a842c0ab75073e5c491020af",
+      "23fda509fb43335f9e8e00bf986beb65038aaa6a3dba94451f9bcbed924392e9",
+      "a968625b6661619df9c894db910192d71a894bd6f094e4d43a22a0bfd3c3e52c",
+      "78f7b093c485f59448807c8e59c8a7b5f4f968ab77b0cbb718de4875f3cd455b",
+      "88c6435acb9d6153b2c706549dc77a1416e1301a02f176fcedaef4f97680db98",
+      "20f35fb9fc3f985c3f505aaf9d25364c5e0fac596b78c5185d7681cbcca29d76",
+      "9413a37a2f25c43ca7d3bfad3a666ab2e6047119dec68c6657a7987d41a9ffb8"
+    ]
+  },
+  {
+    "record_id": "rawio-6e9757019dc8767f3cfc",
+    "call": "calls/06",
+    "request_source_sha256": "a03d460bf48dfb0e1e496065feeea367e0f680a06264717f052c37ea27a3fcd1",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "850e96579b314cd8e44f10b9ae6d24fdf36e4e06068339f945546bbb3d4e2a9e",
+      "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+      "c273477eb7b93bfd6bb2965de3cef7ff7c059b9ba39f908c3024cba2aa6d21b0",
+      "1e2a56164607a0f16ac8e97576f63612f56c1a12c04935c480be3c1b30914fb9",
+      "282580f0ca438efb17fad649128b1408b5e8e580831e5b7536b1bb84f66655cd",
+      "1c3db0f1bfbb40746e513332edb783ed464299d0da5ed7d01f2b60e02af56f64",
+      "3090f1262243af67816ab1dd352daa262fbec5c6649edec52dfd0ffc1ef93317",
+      "00ab8b97ff79db18f8c4658305d81b8cc615c2b296f2d75b172bfd4a96ff637e",
+      "f8e75d95438b54e6bc584104c30148f473b9733460a484dc0af33b0e337e6147",
+      "70bc5214954c1cc5fe461824c3602040803eaa30172ca3465d3d28826e8e15a6",
+      "77c6f8c5f62c2bd4e8d11e36d7bb6e5e97c80660aba18c1aa559ba2fcc4eae3d",
+      "0f42d2f5bdacbe0ef63482fda2181d00085e7c14e00512b59647044b8ce1d7cf",
+      "9ed74075b078efdd06f283b1c734ebced51868de1340209b7b9986acc1bc8864",
+      "38213dbbbff5dd5bb1d02396edf2374ae6d766e9846f7c3220508af7c1b23dfa",
+      "9d10c8243dc5d6cb67f81fb3d63700fb05a4e08467ccae4d5ea73f6ed3171ea7",
+      "5a92af9623df493b57b2fa7b1c906a89d8f6d8d59f095ba504d5055f4800e9fe"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4230d8628f3d33cf2180d5ebc1a6e2ba99286a457954e40aebb52b935bdbc0ac",
+      "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+      "c273477eb7b93bfd6bb2965de3cef7ff7c059b9ba39f908c3024cba2aa6d21b0",
+      "92659da52254b78c66d62c77443ece8c02e2996bd24f37ba02a0eab44a6ace2a",
+      "282580f0ca438efb17fad649128b1408b5e8e580831e5b7536b1bb84f66655cd",
+      "1c3db0f1bfbb40746e513332edb783ed464299d0da5ed7d01f2b60e02af56f64",
+      "15794e2d24087fc00c905267890f995158a087f19a25bb015ab79f6a66aa6bb5",
+      "00ab8b97ff79db18f8c4658305d81b8cc615c2b296f2d75b172bfd4a96ff637e",
+      "fae92212a830fb1392f11af42a46eeedd6b156e88b33ad4c5082069abfe95f49",
+      "70bc5214954c1cc5fe461824c3602040803eaa30172ca3465d3d28826e8e15a6",
+      "77c6f8c5f62c2bd4e8d11e36d7bb6e5e97c80660aba18c1aa559ba2fcc4eae3d",
+      "c9fcd9d0b5eed85400b7355540ed652c7db2171b91a7b96f28be076412d4bb40",
+      "9b0909736ff005e04e68648825e374d0b7270735690db22304b4faf4a57ada8d",
+      "38213dbbbff5dd5bb1d02396edf2374ae6d766e9846f7c3220508af7c1b23dfa",
+      "5740731c5a636f871cbae37b8d0df64a431980a9fdf207a088a79eb38feec6f7",
+      "5a92af9623df493b57b2fa7b1c906a89d8f6d8d59f095ba504d5055f4800e9fe"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_de4b2760a7f24d97b8b96e05",
+      "call_5f3ab5234dab4a099eb14420",
+      null,
+      "call_ebb1d9081b4842ce86f9e0a8",
+      "call_656d85683e94442083543971",
+      null,
+      "call_54bb1184a8754331919cab61",
+      "call_27da96b7d581420e9ad63f0d",
+      null,
+      "call_708a920bc92a4232a7cd56fe",
+      "call_bda01c35509447d2af63dcdd",
+      null,
+      "call_35f73a0aad1e44cbaadee8ac",
+      "call_b8e418c06e01457f8632ea30"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "2b1c2676c72aab4a138f631a91e1a349a88c2af89a031fcf0a0744230e314107",
+    "response_file": "unseen_ten/recorded_run/results/rawio-6e9757019dc8767f3cfc/calls/06/response.json",
+    "source_assistant_message_sha256": "d33083ae545dd64dcf7956c7aabeee94f2cbdcca16a365fa15f6d3df82382beb",
+    "published_assistant_message_sha256": "d33083ae545dd64dcf7956c7aabeee94f2cbdcca16a365fa15f6d3df82382beb",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_db3987ebc90045d492e25d3c"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_db3987ebc90045d492e25d3c",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00025\"}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "24d08835563893a9273b5a6e37e2a580013089c038f5f1f91d4e66bb2186abf7",
+      "88ccbb78efe0c991279bbec4d4fdcdbbcaf1a04b6a1d38f790c42c8ebd620d3a",
+      "07f8cd1449a0eb67b825e447105f1bad427394c396e91805e7542f53f190e5a3",
+      "909ec85633b37db37d8d117f3ebcae268ee8d49b3d410004e40cd337922cf750",
+      "1c55dbc6a38b371ea64d229d3fb4bbc79d66e109315126f1e49f874ced91f901",
+      "9688b59419b9d58b9939b3db7e14ff00a888cf7e72ce0ce570d2a2f1ac0bed45",
+      "45fd986258728cc69f9ba552ed362420b2a448b4a842c0ab75073e5c491020af",
+      "23fda509fb43335f9e8e00bf986beb65038aaa6a3dba94451f9bcbed924392e9",
+      "a968625b6661619df9c894db910192d71a894bd6f094e4d43a22a0bfd3c3e52c",
+      "78f7b093c485f59448807c8e59c8a7b5f4f968ab77b0cbb718de4875f3cd455b",
+      "88c6435acb9d6153b2c706549dc77a1416e1301a02f176fcedaef4f97680db98",
+      "20f35fb9fc3f985c3f505aaf9d25364c5e0fac596b78c5185d7681cbcca29d76",
+      "9413a37a2f25c43ca7d3bfad3a666ab2e6047119dec68c6657a7987d41a9ffb8",
+      "8a13b26b70b494cda02cd9bddea1d155f6a8dd7d70ead53a45f320f59e66f708",
+      "60e16230fee6d184df8db02a32fb43a4cbaec384799ee054160369405d55b071",
+      "5224bd8f5c5002bdd6f0230b35b7ba872ea571e8831dc78630a00648e27bf919"
+    ]
+  },
+  {
+    "record_id": "rawio-6e9757019dc8767f3cfc",
+    "call": "calls/07",
+    "request_source_sha256": "640acb2b7ee894d1eae235ca7e7e95d6c61bdfd5008e6363a66a234a48623478",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "850e96579b314cd8e44f10b9ae6d24fdf36e4e06068339f945546bbb3d4e2a9e",
+      "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+      "c273477eb7b93bfd6bb2965de3cef7ff7c059b9ba39f908c3024cba2aa6d21b0",
+      "1e2a56164607a0f16ac8e97576f63612f56c1a12c04935c480be3c1b30914fb9",
+      "282580f0ca438efb17fad649128b1408b5e8e580831e5b7536b1bb84f66655cd",
+      "1c3db0f1bfbb40746e513332edb783ed464299d0da5ed7d01f2b60e02af56f64",
+      "3090f1262243af67816ab1dd352daa262fbec5c6649edec52dfd0ffc1ef93317",
+      "00ab8b97ff79db18f8c4658305d81b8cc615c2b296f2d75b172bfd4a96ff637e",
+      "f8e75d95438b54e6bc584104c30148f473b9733460a484dc0af33b0e337e6147",
+      "70bc5214954c1cc5fe461824c3602040803eaa30172ca3465d3d28826e8e15a6",
+      "77c6f8c5f62c2bd4e8d11e36d7bb6e5e97c80660aba18c1aa559ba2fcc4eae3d",
+      "0f42d2f5bdacbe0ef63482fda2181d00085e7c14e00512b59647044b8ce1d7cf",
+      "9ed74075b078efdd06f283b1c734ebced51868de1340209b7b9986acc1bc8864",
+      "38213dbbbff5dd5bb1d02396edf2374ae6d766e9846f7c3220508af7c1b23dfa",
+      "9d10c8243dc5d6cb67f81fb3d63700fb05a4e08467ccae4d5ea73f6ed3171ea7",
+      "5a92af9623df493b57b2fa7b1c906a89d8f6d8d59f095ba504d5055f4800e9fe",
+      "d33083ae545dd64dcf7956c7aabeee94f2cbdcca16a365fa15f6d3df82382beb",
+      "20ee2f1df363b998af7c950f6ec56f694c8ec7e7bc40ea9f908a91754af8aea9"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4230d8628f3d33cf2180d5ebc1a6e2ba99286a457954e40aebb52b935bdbc0ac",
+      "7542926c86db6f84503420258cd73daef81769b28f934ba1836c15c6f141c146",
+      "c273477eb7b93bfd6bb2965de3cef7ff7c059b9ba39f908c3024cba2aa6d21b0",
+      "92659da52254b78c66d62c77443ece8c02e2996bd24f37ba02a0eab44a6ace2a",
+      "282580f0ca438efb17fad649128b1408b5e8e580831e5b7536b1bb84f66655cd",
+      "1c3db0f1bfbb40746e513332edb783ed464299d0da5ed7d01f2b60e02af56f64",
+      "15794e2d24087fc00c905267890f995158a087f19a25bb015ab79f6a66aa6bb5",
+      "00ab8b97ff79db18f8c4658305d81b8cc615c2b296f2d75b172bfd4a96ff637e",
+      "fae92212a830fb1392f11af42a46eeedd6b156e88b33ad4c5082069abfe95f49",
+      "70bc5214954c1cc5fe461824c3602040803eaa30172ca3465d3d28826e8e15a6",
+      "77c6f8c5f62c2bd4e8d11e36d7bb6e5e97c80660aba18c1aa559ba2fcc4eae3d",
+      "c9fcd9d0b5eed85400b7355540ed652c7db2171b91a7b96f28be076412d4bb40",
+      "9b0909736ff005e04e68648825e374d0b7270735690db22304b4faf4a57ada8d",
+      "38213dbbbff5dd5bb1d02396edf2374ae6d766e9846f7c3220508af7c1b23dfa",
+      "5740731c5a636f871cbae37b8d0df64a431980a9fdf207a088a79eb38feec6f7",
+      "5a92af9623df493b57b2fa7b1c906a89d8f6d8d59f095ba504d5055f4800e9fe",
+      "d33083ae545dd64dcf7956c7aabeee94f2cbdcca16a365fa15f6d3df82382beb",
+      "20ee2f1df363b998af7c950f6ec56f694c8ec7e7bc40ea9f908a91754af8aea9"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_de4b2760a7f24d97b8b96e05",
+      "call_5f3ab5234dab4a099eb14420",
+      null,
+      "call_ebb1d9081b4842ce86f9e0a8",
+      "call_656d85683e94442083543971",
+      null,
+      "call_54bb1184a8754331919cab61",
+      "call_27da96b7d581420e9ad63f0d",
+      null,
+      "call_708a920bc92a4232a7cd56fe",
+      "call_bda01c35509447d2af63dcdd",
+      null,
+      "call_35f73a0aad1e44cbaadee8ac",
+      "call_b8e418c06e01457f8632ea30",
+      null,
+      "call_db3987ebc90045d492e25d3c"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "e01685f4b522d4644d3a779813aff89f5031c2ac11d880395b0e1c3be66f36a6",
+    "response_file": "unseen_ten/recorded_run/results/rawio-6e9757019dc8767f3cfc/calls/07/response.json",
+    "source_assistant_message_sha256": "fdc5aba64a5e20e34f6a0d764fd9b9e96c101696868719c4f99411af3af1ea10",
+    "published_assistant_message_sha256": "fdc5aba64a5e20e34f6a0d764fd9b9e96c101696868719c4f99411af3af1ea10",
+    "finish_reason": "stop",
+    "response_tool_call_ids": [],
+    "response_tool_calls": [],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "24d08835563893a9273b5a6e37e2a580013089c038f5f1f91d4e66bb2186abf7",
+      "88ccbb78efe0c991279bbec4d4fdcdbbcaf1a04b6a1d38f790c42c8ebd620d3a",
+      "07f8cd1449a0eb67b825e447105f1bad427394c396e91805e7542f53f190e5a3",
+      "909ec85633b37db37d8d117f3ebcae268ee8d49b3d410004e40cd337922cf750",
+      "1c55dbc6a38b371ea64d229d3fb4bbc79d66e109315126f1e49f874ced91f901",
+      "9688b59419b9d58b9939b3db7e14ff00a888cf7e72ce0ce570d2a2f1ac0bed45",
+      "45fd986258728cc69f9ba552ed362420b2a448b4a842c0ab75073e5c491020af",
+      "23fda509fb43335f9e8e00bf986beb65038aaa6a3dba94451f9bcbed924392e9",
+      "a968625b6661619df9c894db910192d71a894bd6f094e4d43a22a0bfd3c3e52c",
+      "78f7b093c485f59448807c8e59c8a7b5f4f968ab77b0cbb718de4875f3cd455b",
+      "88c6435acb9d6153b2c706549dc77a1416e1301a02f176fcedaef4f97680db98",
+      "20f35fb9fc3f985c3f505aaf9d25364c5e0fac596b78c5185d7681cbcca29d76",
+      "9413a37a2f25c43ca7d3bfad3a666ab2e6047119dec68c6657a7987d41a9ffb8",
+      "8a13b26b70b494cda02cd9bddea1d155f6a8dd7d70ead53a45f320f59e66f708",
+      "60e16230fee6d184df8db02a32fb43a4cbaec384799ee054160369405d55b071",
+      "5224bd8f5c5002bdd6f0230b35b7ba872ea571e8831dc78630a00648e27bf919",
+      "943d03c2c52671d486c4f91c7d8486e7e7540b96d4ddd79d52f65fa77e5b9911",
+      "17765ed6017f859e2b013f715b1338901e35c56426bf6fb1fe592349cb8b5766"
+    ]
+  },
+  {
+    "record_id": "rawio-e7c485f571630e650d08",
+    "call": "calls/01",
+    "request_source_sha256": "01d7cbd3fa8dc5cd5d6c50e498868e5b4be45eb71251cac77b9ab68b607b1c49",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "0300f8f67105d4dc1f4097b1c7ab6bf4ca372ed1899f07b7b20fbd0be5b76c40"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "0300f8f67105d4dc1f4097b1c7ab6bf4ca372ed1899f07b7b20fbd0be5b76c40"
+    ],
+    "message_roles": [
+      "system",
+      "user"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "7ae2ae8adc08eef7a868a21356992f4d5bf0285927e02235f1c6a53ab887bc55",
+    "response_file": "unseen_ten/recorded_run/results/rawio-e7c485f571630e650d08/calls/01/response.json",
+    "source_assistant_message_sha256": "9ce6d1218f6327b4e12d3bc3e582f6c25d6644baa8a80de4425447567a7f65a5",
+    "published_assistant_message_sha256": "9ce6d1218f6327b4e12d3bc3e582f6c25d6644baa8a80de4425447567a7f65a5",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_481847f79e0341bda1cbb43e",
+      "call_be9b17e34f164e0bb9e4658d"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_481847f79e0341bda1cbb43e",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00002\",\"start\":1000,\"characters\":2600}"
+      },
+      {
+        "id": "call_be9b17e34f164e0bb9e4658d",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0003\",\"S0004\",\"S0005\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "b261fcaa1def62ca6b83d1e55569089fdbfec18c7e41fa75bd08fb66ad09633e"
+    ]
+  },
+  {
+    "record_id": "rawio-e7c485f571630e650d08",
+    "call": "calls/02",
+    "request_source_sha256": "aa94b63155d8893f947506ae60f87fc85e29a70235b2393d2d3cdb58ae11b835",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "0300f8f67105d4dc1f4097b1c7ab6bf4ca372ed1899f07b7b20fbd0be5b76c40",
+      "9ce6d1218f6327b4e12d3bc3e582f6c25d6644baa8a80de4425447567a7f65a5",
+      "5b965b854d331708efbf1780454b9ea6534a5979cc3106972241971b168ed33b",
+      "af7edb419d0a5a4bfad20afbdf865e53b28d25a44b7a1f3143d0464514d6c56b"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "0300f8f67105d4dc1f4097b1c7ab6bf4ca372ed1899f07b7b20fbd0be5b76c40",
+      "9ce6d1218f6327b4e12d3bc3e582f6c25d6644baa8a80de4425447567a7f65a5",
+      "5b965b854d331708efbf1780454b9ea6534a5979cc3106972241971b168ed33b",
+      "af7edb419d0a5a4bfad20afbdf865e53b28d25a44b7a1f3143d0464514d6c56b"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_481847f79e0341bda1cbb43e",
+      "call_be9b17e34f164e0bb9e4658d"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "b5c9ef84aa906612cc75e0be479c355cac69a97816b9727787e83d672dc7cefd",
+    "response_file": "unseen_ten/recorded_run/results/rawio-e7c485f571630e650d08/calls/02/response.json",
+    "source_assistant_message_sha256": "6f9f0b9aa00b9150d6d07eb692526869e9c6e69a706ca65271597bdf9c4f097d",
+    "published_assistant_message_sha256": "6f9f0b9aa00b9150d6d07eb692526869e9c6e69a706ca65271597bdf9c4f097d",
+    "finish_reason": "stop",
+    "response_tool_call_ids": [],
+    "response_tool_calls": [],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "b261fcaa1def62ca6b83d1e55569089fdbfec18c7e41fa75bd08fb66ad09633e",
+      null,
+      "ae68815b32ba549ff5daccca296f51720b0c32de9df9d7f27f2d002a062c7a97",
+      "d79b912a4d88a6eff5db7764e85068a0be0bbcdd4a36bef52dce381cc831f49d"
+    ]
+  },
+  {
+    "record_id": "rawio-28b2f965e92b9d64d640",
+    "call": "calls/01",
+    "request_source_sha256": "8ab75b120fdba6a72ea90f6160a32c8cdaf3ac645680cb09b47fd84bc3bcda9e",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "6341de3c0c3ece1f3c1636253e82303390e6bce8341b7d5abaf2d365a54fb317"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "592013e3bfecdf5813092764991abc931d50d7f8282949c66ad39684f6590600"
+    ],
+    "message_roles": [
+      "system",
+      "user"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "de94d510ee3b553b3d24a0f78ab211d376161110e02c5166d094bfcb65a2e672",
+    "response_file": "unseen_ten/recorded_run/results/rawio-28b2f965e92b9d64d640/calls/01/response.json",
+    "source_assistant_message_sha256": "80431e4d362655685263246175c59c99cd106be6b565f9652e5f7422634f9438",
+    "published_assistant_message_sha256": "80431e4d362655685263246175c59c99cd106be6b565f9652e5f7422634f9438",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_160568e42cd34ecaa88d0793",
+      "call_96efe48661ec465a8a4d94f9"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_160568e42cd34ecaa88d0793",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0008\",\"S0010\",\"S0011\",\"S0012\"]}"
+      },
+      {
+        "id": "call_96efe48661ec465a8a4d94f9",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0013\",\"S0014\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "cc9822075ec260f300d592e6385224497b78379fc792cfb441c5ca62f55a4cdd"
+    ]
+  },
+  {
+    "record_id": "rawio-28b2f965e92b9d64d640",
+    "call": "calls/02",
+    "request_source_sha256": "f0215cc34901d5d1e8380ad6b5fcf73b3fc0575681184f923a5e89beff7e770e",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "6341de3c0c3ece1f3c1636253e82303390e6bce8341b7d5abaf2d365a54fb317",
+      "80431e4d362655685263246175c59c99cd106be6b565f9652e5f7422634f9438",
+      "b156a42f706c47e3af315c4101013f094bf803df8ae92d50d9dcf64ca3ce54bb",
+      "1b3fdefe8a60578d10815d4463a9f8a119eb38b2d3719008f079d5a75dd1262c"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "592013e3bfecdf5813092764991abc931d50d7f8282949c66ad39684f6590600",
+      "80431e4d362655685263246175c59c99cd106be6b565f9652e5f7422634f9438",
+      "aededaa3d365dc57220310e97d223f2f439bc5b576a76a3bcc5060f7087611d3",
+      "8d571586d2415aba20dd90b4ed90d8834fb84dc978ed1595c4e2e09876e2bbaa"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_160568e42cd34ecaa88d0793",
+      "call_96efe48661ec465a8a4d94f9"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "7b59fff7347f2331e98cf9717de27c7a7b8b09635ca19a054264285825904440",
+    "response_file": "unseen_ten/recorded_run/results/rawio-28b2f965e92b9d64d640/calls/02/response.json",
+    "source_assistant_message_sha256": "3d4eb7a0fbc2f8f2f69fb377fc039cd77fcd78c76132740d7e2fc37923a1910b",
+    "published_assistant_message_sha256": "3d4eb7a0fbc2f8f2f69fb377fc039cd77fcd78c76132740d7e2fc37923a1910b",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_87907847b1514c9b8390dc0c",
+      "call_247149c939894c448e23b6c8"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_87907847b1514c9b8390dc0c",
+        "name": "search_evidence",
+        "arguments": "{\"question\":\"answer.txt written or confirmed exists\",\"top_k\":6}"
+      },
+      {
+        "id": "call_247149c939894c448e23b6c8",
+        "name": "read_exchange",
+        "arguments": "{\"exchange_id\":\"X0010\",\"surface\":\"response\",\"characters\":4000}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "cc9822075ec260f300d592e6385224497b78379fc792cfb441c5ca62f55a4cdd",
+      null,
+      "b32f2fa0bf6806583a3a6f6396975eb8d24cd3ee75de05b4e2ff8ff25eaa8bbd",
+      "7d76253f0ff5e61239579d94de7e75b8b9d636ce5065bf07a5e4a3af25fd4499"
+    ]
+  },
+  {
+    "record_id": "rawio-28b2f965e92b9d64d640",
+    "call": "calls/03",
+    "request_source_sha256": "2069c4fa33962755ae896961e7df11801d8480eb8fe28ecfbb77cc5ee6e358e7",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "6341de3c0c3ece1f3c1636253e82303390e6bce8341b7d5abaf2d365a54fb317",
+      "80431e4d362655685263246175c59c99cd106be6b565f9652e5f7422634f9438",
+      "b156a42f706c47e3af315c4101013f094bf803df8ae92d50d9dcf64ca3ce54bb",
+      "1b3fdefe8a60578d10815d4463a9f8a119eb38b2d3719008f079d5a75dd1262c",
+      "3d4eb7a0fbc2f8f2f69fb377fc039cd77fcd78c76132740d7e2fc37923a1910b",
+      "164ddd3ae01926b0c34893c8b0b02833db11a188d88f4728d10c62a82aaa2d88",
+      "99d6bd881703d12c83cc9aabbf8c962f132e27b409b7487e54601fcc14b55171"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "592013e3bfecdf5813092764991abc931d50d7f8282949c66ad39684f6590600",
+      "80431e4d362655685263246175c59c99cd106be6b565f9652e5f7422634f9438",
+      "aededaa3d365dc57220310e97d223f2f439bc5b576a76a3bcc5060f7087611d3",
+      "8d571586d2415aba20dd90b4ed90d8834fb84dc978ed1595c4e2e09876e2bbaa",
+      "3d4eb7a0fbc2f8f2f69fb377fc039cd77fcd78c76132740d7e2fc37923a1910b",
+      "164ddd3ae01926b0c34893c8b0b02833db11a188d88f4728d10c62a82aaa2d88",
+      "99d6bd881703d12c83cc9aabbf8c962f132e27b409b7487e54601fcc14b55171"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_160568e42cd34ecaa88d0793",
+      "call_96efe48661ec465a8a4d94f9",
+      null,
+      "call_87907847b1514c9b8390dc0c",
+      "call_247149c939894c448e23b6c8"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "b223e7c4ed03273534e612ffb245c91d8efb96997c0167bab89a697465bc2d1b",
+    "response_file": "unseen_ten/recorded_run/results/rawio-28b2f965e92b9d64d640/calls/03/response.json",
+    "source_assistant_message_sha256": "31fbcda48928a30454ffc14fd97390cb3549544fdac93e5638bbf3a7a3c72dcd",
+    "published_assistant_message_sha256": "31fbcda48928a30454ffc14fd97390cb3549544fdac93e5638bbf3a7a3c72dcd",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_750831e817604293b7c50eec"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_750831e817604293b7c50eec",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0004\",\"S0005\",\"S0006\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "cc9822075ec260f300d592e6385224497b78379fc792cfb441c5ca62f55a4cdd",
+      null,
+      "b32f2fa0bf6806583a3a6f6396975eb8d24cd3ee75de05b4e2ff8ff25eaa8bbd",
+      "7d76253f0ff5e61239579d94de7e75b8b9d636ce5065bf07a5e4a3af25fd4499",
+      null,
+      "066de9b28c03636b39c7c201ba7be1e40a7d1f04a7618eedc2307b953f9b99dd",
+      "5080b6c66799bd64f4d8ec62d53bcbf160de2730adacf857a4e7c61531281a76"
+    ]
+  },
+  {
+    "record_id": "rawio-28b2f965e92b9d64d640",
+    "call": "calls/04",
+    "request_source_sha256": "88c2d586c073d4ef30665fbca75dffc02926f1678c3d543cb03246547626a8d3",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "6341de3c0c3ece1f3c1636253e82303390e6bce8341b7d5abaf2d365a54fb317",
+      "80431e4d362655685263246175c59c99cd106be6b565f9652e5f7422634f9438",
+      "b156a42f706c47e3af315c4101013f094bf803df8ae92d50d9dcf64ca3ce54bb",
+      "1b3fdefe8a60578d10815d4463a9f8a119eb38b2d3719008f079d5a75dd1262c",
+      "3d4eb7a0fbc2f8f2f69fb377fc039cd77fcd78c76132740d7e2fc37923a1910b",
+      "164ddd3ae01926b0c34893c8b0b02833db11a188d88f4728d10c62a82aaa2d88",
+      "99d6bd881703d12c83cc9aabbf8c962f132e27b409b7487e54601fcc14b55171",
+      "31fbcda48928a30454ffc14fd97390cb3549544fdac93e5638bbf3a7a3c72dcd",
+      "04e15ec2a3792c80780eec2ddc4cad84e23ec4b6dbf7b41bb0a37569e80367a7"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "592013e3bfecdf5813092764991abc931d50d7f8282949c66ad39684f6590600",
+      "80431e4d362655685263246175c59c99cd106be6b565f9652e5f7422634f9438",
+      "aededaa3d365dc57220310e97d223f2f439bc5b576a76a3bcc5060f7087611d3",
+      "8d571586d2415aba20dd90b4ed90d8834fb84dc978ed1595c4e2e09876e2bbaa",
+      "3d4eb7a0fbc2f8f2f69fb377fc039cd77fcd78c76132740d7e2fc37923a1910b",
+      "164ddd3ae01926b0c34893c8b0b02833db11a188d88f4728d10c62a82aaa2d88",
+      "99d6bd881703d12c83cc9aabbf8c962f132e27b409b7487e54601fcc14b55171",
+      "31fbcda48928a30454ffc14fd97390cb3549544fdac93e5638bbf3a7a3c72dcd",
+      "824c9a8e5af3671b862f3dab34c882dc01dbe41e42f21d4f7e1fb1da83a04649"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_160568e42cd34ecaa88d0793",
+      "call_96efe48661ec465a8a4d94f9",
+      null,
+      "call_87907847b1514c9b8390dc0c",
+      "call_247149c939894c448e23b6c8",
+      null,
+      "call_750831e817604293b7c50eec"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "29c6ad5f8e4007bdb20af9535c03deb06d53125ace5fc32a3816ef91013295c8",
+    "response_file": "unseen_ten/recorded_run/results/rawio-28b2f965e92b9d64d640/calls/04/response.json",
+    "source_assistant_message_sha256": "9fa18ab38d160a576e940aca94c258573c9b12a565f19dd84bb10d20c3a27766",
+    "published_assistant_message_sha256": "9fa18ab38d160a576e940aca94c258573c9b12a565f19dd84bb10d20c3a27766",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_4cb1ce5ee3f147d88a70bf57"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_4cb1ce5ee3f147d88a70bf57",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0007\",\"S0009\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "cc9822075ec260f300d592e6385224497b78379fc792cfb441c5ca62f55a4cdd",
+      null,
+      "b32f2fa0bf6806583a3a6f6396975eb8d24cd3ee75de05b4e2ff8ff25eaa8bbd",
+      "7d76253f0ff5e61239579d94de7e75b8b9d636ce5065bf07a5e4a3af25fd4499",
+      null,
+      "066de9b28c03636b39c7c201ba7be1e40a7d1f04a7618eedc2307b953f9b99dd",
+      "5080b6c66799bd64f4d8ec62d53bcbf160de2730adacf857a4e7c61531281a76",
+      null,
+      "8ede0fe193ea1f0343f7949142ac3b660e2fdb5fb2862025b97236d3986e8c2e"
+    ]
+  },
+  {
+    "record_id": "rawio-28b2f965e92b9d64d640",
+    "call": "calls/05",
+    "request_source_sha256": "528745a047fe9977815de8e3feced0dd57f882f97a663ac64ace0cc9175633c8",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "6341de3c0c3ece1f3c1636253e82303390e6bce8341b7d5abaf2d365a54fb317",
+      "80431e4d362655685263246175c59c99cd106be6b565f9652e5f7422634f9438",
+      "b156a42f706c47e3af315c4101013f094bf803df8ae92d50d9dcf64ca3ce54bb",
+      "1b3fdefe8a60578d10815d4463a9f8a119eb38b2d3719008f079d5a75dd1262c",
+      "3d4eb7a0fbc2f8f2f69fb377fc039cd77fcd78c76132740d7e2fc37923a1910b",
+      "164ddd3ae01926b0c34893c8b0b02833db11a188d88f4728d10c62a82aaa2d88",
+      "99d6bd881703d12c83cc9aabbf8c962f132e27b409b7487e54601fcc14b55171",
+      "31fbcda48928a30454ffc14fd97390cb3549544fdac93e5638bbf3a7a3c72dcd",
+      "04e15ec2a3792c80780eec2ddc4cad84e23ec4b6dbf7b41bb0a37569e80367a7",
+      "9fa18ab38d160a576e940aca94c258573c9b12a565f19dd84bb10d20c3a27766",
+      "df83dc33e29f30880042cffc114de24025827e89cf84e64812107a3f8dcb3ba6"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "592013e3bfecdf5813092764991abc931d50d7f8282949c66ad39684f6590600",
+      "80431e4d362655685263246175c59c99cd106be6b565f9652e5f7422634f9438",
+      "aededaa3d365dc57220310e97d223f2f439bc5b576a76a3bcc5060f7087611d3",
+      "8d571586d2415aba20dd90b4ed90d8834fb84dc978ed1595c4e2e09876e2bbaa",
+      "3d4eb7a0fbc2f8f2f69fb377fc039cd77fcd78c76132740d7e2fc37923a1910b",
+      "164ddd3ae01926b0c34893c8b0b02833db11a188d88f4728d10c62a82aaa2d88",
+      "99d6bd881703d12c83cc9aabbf8c962f132e27b409b7487e54601fcc14b55171",
+      "31fbcda48928a30454ffc14fd97390cb3549544fdac93e5638bbf3a7a3c72dcd",
+      "824c9a8e5af3671b862f3dab34c882dc01dbe41e42f21d4f7e1fb1da83a04649",
+      "9fa18ab38d160a576e940aca94c258573c9b12a565f19dd84bb10d20c3a27766",
+      "4fb896c583659102e9106a4ce74b3cca9ac6e99e313d9c51afe93208cb43af1e"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_160568e42cd34ecaa88d0793",
+      "call_96efe48661ec465a8a4d94f9",
+      null,
+      "call_87907847b1514c9b8390dc0c",
+      "call_247149c939894c448e23b6c8",
+      null,
+      "call_750831e817604293b7c50eec",
+      null,
+      "call_4cb1ce5ee3f147d88a70bf57"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "82aa824462a53af7b2409eb23b079cd19eef215736e9ac01ddc0ff7879d05dea",
+    "response_file": "unseen_ten/recorded_run/results/rawio-28b2f965e92b9d64d640/calls/05/response.json",
+    "source_assistant_message_sha256": "d3382a46bcc5d9ba8d89cb35bb3810e1ff68171cbf3f935ecc27f96331cc87b7",
+    "published_assistant_message_sha256": "d3382a46bcc5d9ba8d89cb35bb3810e1ff68171cbf3f935ecc27f96331cc87b7",
+    "finish_reason": "stop",
+    "response_tool_call_ids": [],
+    "response_tool_calls": [],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "cc9822075ec260f300d592e6385224497b78379fc792cfb441c5ca62f55a4cdd",
+      null,
+      "b32f2fa0bf6806583a3a6f6396975eb8d24cd3ee75de05b4e2ff8ff25eaa8bbd",
+      "7d76253f0ff5e61239579d94de7e75b8b9d636ce5065bf07a5e4a3af25fd4499",
+      null,
+      "066de9b28c03636b39c7c201ba7be1e40a7d1f04a7618eedc2307b953f9b99dd",
+      "5080b6c66799bd64f4d8ec62d53bcbf160de2730adacf857a4e7c61531281a76",
+      null,
+      "8ede0fe193ea1f0343f7949142ac3b660e2fdb5fb2862025b97236d3986e8c2e",
+      null,
+      "46405103bfabe912fbb9b0ce821579c356e963a96d978e0915cf20c6405f2616"
+    ]
+  },
+  {
+    "record_id": "rawio-ecb3a8772d271f6bc689",
+    "call": "calls/01",
+    "request_source_sha256": "5d6852ad639d38e9aca84bef01da56de38a063ad767612d55ae2196a7d9d60fe",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "4d74acd4aec84a85e448b6ad463695e4cdff48e84e81f7b508554f3f69de3e56"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "501df0a5b4dcb26b94e3fcf9d81ee4f4ac5c5bb8e6b39ef022a332e3cefba203"
+    ],
+    "message_roles": [
+      "system",
+      "user"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "e61dc38ecb72b803a79568ba0cbc5b66f8f34269bf9d17cf6a05d1f3ccb03adc",
+    "response_file": "unseen_ten/recorded_run/results/rawio-ecb3a8772d271f6bc689/calls/01/response.json",
+    "source_assistant_message_sha256": "c6450d0124e7636ce101f38d2c7e169347891cf45f36691de05bc8d9088890e1",
+    "published_assistant_message_sha256": "c6450d0124e7636ce101f38d2c7e169347891cf45f36691de05bc8d9088890e1",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_7c6b3fa7fdd24a5b97d550fe",
+      "call_db7565484fae43a5bab5609c"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_7c6b3fa7fdd24a5b97d550fe",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0017\",\"S0018\",\"S0019\",\"S0020\",\"S0021\"]}"
+      },
+      {
+        "id": "call_db7565484fae43a5bab5609c",
+        "name": "search_evidence",
+        "arguments": "{\"question\":\"answer.txt written final answer average business articles per year Europe 2010-2020\",\"top_k\":6}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "31944b1a6ae426ac61adaf2006cf74ddca7a8e6372c9d5454fd933a856ef20d3"
+    ]
+  },
+  {
+    "record_id": "rawio-ecb3a8772d271f6bc689",
+    "call": "calls/02",
+    "request_source_sha256": "2e445b600f1ee883e94e5316159c31c7916edd3359424d0627c085c784e9063f",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "4d74acd4aec84a85e448b6ad463695e4cdff48e84e81f7b508554f3f69de3e56",
+      "c6450d0124e7636ce101f38d2c7e169347891cf45f36691de05bc8d9088890e1",
+      "c9844923fde662ee5bc951c0ce63f2064e357b9c4bb8c8d6f128f6b03ef1a7c3",
+      "d538b72599aa47466b5615ac52673804ea69fd33aa03426fce41d38c9baf6cba"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "501df0a5b4dcb26b94e3fcf9d81ee4f4ac5c5bb8e6b39ef022a332e3cefba203",
+      "c6450d0124e7636ce101f38d2c7e169347891cf45f36691de05bc8d9088890e1",
+      "72b3c277ad597cdd055328a6923e3aa16480c8bd397a313e267819a4d2d76952",
+      "95255838231e27f4a431c326f8a00985157505f3a9f1f2989d382ed95c897abf"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_7c6b3fa7fdd24a5b97d550fe",
+      "call_db7565484fae43a5bab5609c"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "1aef975f49351b27d4364d48757ab42fbf05ce4451c5f4707c62b19b5a2359bc",
+    "response_file": "unseen_ten/recorded_run/results/rawio-ecb3a8772d271f6bc689/calls/02/response.json",
+    "source_assistant_message_sha256": "1d8c2552a2eb0324cb0d8c833a3e622232d5824a3e0983e7798b0a02c21e812c",
+    "published_assistant_message_sha256": "1d8c2552a2eb0324cb0d8c833a3e622232d5824a3e0983e7798b0a02c21e812c",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_0c5cf1eda1ce4ef988d048aa",
+      "call_94861891e00e43cda4a1bb75"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_0c5cf1eda1ce4ef988d048aa",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00002\",\"start\":1000,\"characters\":1000}"
+      },
+      {
+        "id": "call_94861891e00e43cda4a1bb75",
+        "name": "search_evidence",
+        "arguments": "{\"question\":\"write answer.txt file created confirm exists\",\"top_k\":6}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "31944b1a6ae426ac61adaf2006cf74ddca7a8e6372c9d5454fd933a856ef20d3",
+      null,
+      "2f26c274a1ca7626914307ebd9b9060ae4561aebdf54d4e6c0d68eab14b70c43",
+      "86afcb61b26825bd297e74e16a228b452d7a24c4c3d29724a459e9b13ce59f97"
+    ]
+  },
+  {
+    "record_id": "rawio-ecb3a8772d271f6bc689",
+    "call": "calls/03",
+    "request_source_sha256": "041504c77e496e89fe16d13ad6cbb9c7054c20076bf3b4237b2a32168d1db5f9",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "4d74acd4aec84a85e448b6ad463695e4cdff48e84e81f7b508554f3f69de3e56",
+      "c6450d0124e7636ce101f38d2c7e169347891cf45f36691de05bc8d9088890e1",
+      "c9844923fde662ee5bc951c0ce63f2064e357b9c4bb8c8d6f128f6b03ef1a7c3",
+      "d538b72599aa47466b5615ac52673804ea69fd33aa03426fce41d38c9baf6cba",
+      "1d8c2552a2eb0324cb0d8c833a3e622232d5824a3e0983e7798b0a02c21e812c",
+      "ff6c7638588366400ccbcf9523640a1f9885d59ab6351b00805aba90b9d34d3b",
+      "4bd366a2bfcf09bbe8fbcd006d7735ece786281d8e9e1a69be0a369bd4715ed7"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "501df0a5b4dcb26b94e3fcf9d81ee4f4ac5c5bb8e6b39ef022a332e3cefba203",
+      "c6450d0124e7636ce101f38d2c7e169347891cf45f36691de05bc8d9088890e1",
+      "72b3c277ad597cdd055328a6923e3aa16480c8bd397a313e267819a4d2d76952",
+      "95255838231e27f4a431c326f8a00985157505f3a9f1f2989d382ed95c897abf",
+      "1d8c2552a2eb0324cb0d8c833a3e622232d5824a3e0983e7798b0a02c21e812c",
+      "ff6c7638588366400ccbcf9523640a1f9885d59ab6351b00805aba90b9d34d3b",
+      "56c40de5a386b90237cf398446445374ef9d33827c71b7c4dd14188c0de7022a"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_7c6b3fa7fdd24a5b97d550fe",
+      "call_db7565484fae43a5bab5609c",
+      null,
+      "call_0c5cf1eda1ce4ef988d048aa",
+      "call_94861891e00e43cda4a1bb75"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "62cb6ef7edde7bb227e638057ff4c6f99b4a376042e64e5dc2206bfaefdd6d01",
+    "response_file": "unseen_ten/recorded_run/results/rawio-ecb3a8772d271f6bc689/calls/03/response.json",
+    "source_assistant_message_sha256": "6538976796b35f5a62e5b941fc41ea836329237f18700ff5aed76e4253a9af4e",
+    "published_assistant_message_sha256": "6538976796b35f5a62e5b941fc41ea836329237f18700ff5aed76e4253a9af4e",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_76e1644c2c8b4d4c86976db2",
+      "call_03a603faf7c741f7b2c9d994"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_76e1644c2c8b4d4c86976db2",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0005\",\"S0007\",\"S0009\",\"S0011\"]}"
+      },
+      {
+        "id": "call_03a603faf7c741f7b2c9d994",
+        "name": "read_exchange",
+        "arguments": "{\"exchange_id\":\"X0021\",\"surface\":\"response\",\"characters\":3000}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "31944b1a6ae426ac61adaf2006cf74ddca7a8e6372c9d5454fd933a856ef20d3",
+      null,
+      "2f26c274a1ca7626914307ebd9b9060ae4561aebdf54d4e6c0d68eab14b70c43",
+      "86afcb61b26825bd297e74e16a228b452d7a24c4c3d29724a459e9b13ce59f97",
+      null,
+      "2093ae52f9aeee217bfe54827df86b6426e22a8ac9ce56db3f5169bade6215c4",
+      "70bf045ca5c3cd61f92ea5307f60108d20fca1d9afadf0ff1f2d020a9a9b99b5"
+    ]
+  },
+  {
+    "record_id": "rawio-ecb3a8772d271f6bc689",
+    "call": "calls/04",
+    "request_source_sha256": "90611fe7df646ff8bc66107b1d569e87cb3c3c0d54bddf5c4ae9d094e1344d24",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "4d74acd4aec84a85e448b6ad463695e4cdff48e84e81f7b508554f3f69de3e56",
+      "c6450d0124e7636ce101f38d2c7e169347891cf45f36691de05bc8d9088890e1",
+      "c9844923fde662ee5bc951c0ce63f2064e357b9c4bb8c8d6f128f6b03ef1a7c3",
+      "d538b72599aa47466b5615ac52673804ea69fd33aa03426fce41d38c9baf6cba",
+      "1d8c2552a2eb0324cb0d8c833a3e622232d5824a3e0983e7798b0a02c21e812c",
+      "ff6c7638588366400ccbcf9523640a1f9885d59ab6351b00805aba90b9d34d3b",
+      "4bd366a2bfcf09bbe8fbcd006d7735ece786281d8e9e1a69be0a369bd4715ed7",
+      "6538976796b35f5a62e5b941fc41ea836329237f18700ff5aed76e4253a9af4e",
+      "930dabab30794a9389d872795cbf006a76fbe1f2868bbacdd20e9177a4820cc0",
+      "f0264629b80e43e427c97bd7bc7e951fde0f9da375c46609d31f8a607ed023de"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "501df0a5b4dcb26b94e3fcf9d81ee4f4ac5c5bb8e6b39ef022a332e3cefba203",
+      "c6450d0124e7636ce101f38d2c7e169347891cf45f36691de05bc8d9088890e1",
+      "72b3c277ad597cdd055328a6923e3aa16480c8bd397a313e267819a4d2d76952",
+      "95255838231e27f4a431c326f8a00985157505f3a9f1f2989d382ed95c897abf",
+      "1d8c2552a2eb0324cb0d8c833a3e622232d5824a3e0983e7798b0a02c21e812c",
+      "ff6c7638588366400ccbcf9523640a1f9885d59ab6351b00805aba90b9d34d3b",
+      "56c40de5a386b90237cf398446445374ef9d33827c71b7c4dd14188c0de7022a",
+      "6538976796b35f5a62e5b941fc41ea836329237f18700ff5aed76e4253a9af4e",
+      "e1672b3029d8430c3c823d86706c2ce0394f41e850d2f85db1f76ed0d54c073a",
+      "f0264629b80e43e427c97bd7bc7e951fde0f9da375c46609d31f8a607ed023de"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_7c6b3fa7fdd24a5b97d550fe",
+      "call_db7565484fae43a5bab5609c",
+      null,
+      "call_0c5cf1eda1ce4ef988d048aa",
+      "call_94861891e00e43cda4a1bb75",
+      null,
+      "call_76e1644c2c8b4d4c86976db2",
+      "call_03a603faf7c741f7b2c9d994"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "5b9fe9fe28e0e881e3395bc6667c4740911dc7afc0703b757e8b261ebaa0698b",
+    "response_file": "unseen_ten/recorded_run/results/rawio-ecb3a8772d271f6bc689/calls/04/response.json",
+    "source_assistant_message_sha256": "e1726843da87ef4f176205a7ffd17bc156452d1d75fada7462d6dccf40e7b155",
+    "published_assistant_message_sha256": "e1726843da87ef4f176205a7ffd17bc156452d1d75fada7462d6dccf40e7b155",
+    "finish_reason": "stop",
+    "response_tool_call_ids": [],
+    "response_tool_calls": [],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "31944b1a6ae426ac61adaf2006cf74ddca7a8e6372c9d5454fd933a856ef20d3",
+      null,
+      "2f26c274a1ca7626914307ebd9b9060ae4561aebdf54d4e6c0d68eab14b70c43",
+      "86afcb61b26825bd297e74e16a228b452d7a24c4c3d29724a459e9b13ce59f97",
+      null,
+      "2093ae52f9aeee217bfe54827df86b6426e22a8ac9ce56db3f5169bade6215c4",
+      "70bf045ca5c3cd61f92ea5307f60108d20fca1d9afadf0ff1f2d020a9a9b99b5",
+      null,
+      "0a4bd226069de2b9016642b559c3e0a2a96ca996c48654d870d76a619301d6a5",
+      "867e6f174b09b867430c697629274092beba3b112e44c077a16aba86cce49b85"
+    ]
+  },
+  {
+    "record_id": "rawio-747fdd4b9b059ac3c74c",
+    "call": "calls/01",
+    "request_source_sha256": "8527d61adddf0f957100d27da5c10d6f5d8dd4993d4eefa6e1a6e526c8c68f8c",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "f796eb590eb8c2f3470ad257bd7ab93ce74f75573160cd705a2265baf258c24b"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "85ab18b7d84a3a2901c1b5bffe493d169b660d326e7783cc4c20f8282e5a8fcf"
+    ],
+    "message_roles": [
+      "system",
+      "user"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "479246d4a0e77534a42f313d14e2a0105148b5e94c54e54119a423fd2f48b5da",
+    "response_file": "unseen_ten/recorded_run/results/rawio-747fdd4b9b059ac3c74c/calls/01/response.json",
+    "source_assistant_message_sha256": "d62a97803b8a0e093f268634c12dc16a962e61e542bc17cb91c4609b957e78d0",
+    "published_assistant_message_sha256": "d62a97803b8a0e093f268634c12dc16a962e61e542bc17cb91c4609b957e78d0",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_9b63f8ddaeb3433891ee0cae",
+      "call_f5fa6ec40d4f4affbc65fb70"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_9b63f8ddaeb3433891ee0cae",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0040\",\"S0038\",\"S0033\"]}"
+      },
+      {
+        "id": "call_f5fa6ec40d4f4affbc65fb70",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0025\",\"S0029\",\"S0030\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "9572cd18c6470750df25a8e96e150d10a10843059c8c2347828d47132781958f"
+    ]
+  },
+  {
+    "record_id": "rawio-747fdd4b9b059ac3c74c",
+    "call": "calls/02",
+    "request_source_sha256": "93976c7bcd60545b4f2e0a5d3e36f6df1cd8cf6755064770a25c2276502c7518",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "f796eb590eb8c2f3470ad257bd7ab93ce74f75573160cd705a2265baf258c24b",
+      "d62a97803b8a0e093f268634c12dc16a962e61e542bc17cb91c4609b957e78d0",
+      "93b5c9948a27b7d509f26135cfbf9c3422eab6ee3b6ce4f43ef2d23c52f88091",
+      "d3295195e9541df9356a6d89c44d0f57d93a662a3c659f3fa0365416dc4752f5"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "85ab18b7d84a3a2901c1b5bffe493d169b660d326e7783cc4c20f8282e5a8fcf",
+      "d62a97803b8a0e093f268634c12dc16a962e61e542bc17cb91c4609b957e78d0",
+      "47eb5cf501fb6e0ef7976196cd95a8e070f6d706e847bb1dbd25912976ca550a",
+      "35358d9c52110c15a9d2ac25c0c89d7433388f94800b343e492874b53b4c0667"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_9b63f8ddaeb3433891ee0cae",
+      "call_f5fa6ec40d4f4affbc65fb70"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "ff9c7f3cc9f505ed041540bd7c2468d004f9f343d7527f659fdc1ea56455a8b7",
+    "response_file": "unseen_ten/recorded_run/results/rawio-747fdd4b9b059ac3c74c/calls/02/response.json",
+    "source_assistant_message_sha256": "14e4244a9c86d9d20b41738fbaacac8b69fff875b4b6c86ff2b5d8f8c543ab4f",
+    "published_assistant_message_sha256": "14e4244a9c86d9d20b41738fbaacac8b69fff875b4b6c86ff2b5d8f8c543ab4f",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_7637286026994f449c892480"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_7637286026994f449c892480",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0041\",\"S0039\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "9572cd18c6470750df25a8e96e150d10a10843059c8c2347828d47132781958f",
+      "2a5687cb567ce9145df1cd68da3f5517c9f1234de118839955ba1afcc42e28ca",
+      "6562ca3c68be5d51ca4440f33792e337081d1a091e0c667ca084e164422e4f23",
+      "7640f7a4b3895b94662ba4c8978bda5b67da757bc00ed456ad25da5aad3da760"
+    ]
+  },
+  {
+    "record_id": "rawio-747fdd4b9b059ac3c74c",
+    "call": "calls/03",
+    "request_source_sha256": "5a0b168a88beb3327c8249b9147d930321d39690f39ffb8e942eedc917c8a9bd",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "f796eb590eb8c2f3470ad257bd7ab93ce74f75573160cd705a2265baf258c24b",
+      "d62a97803b8a0e093f268634c12dc16a962e61e542bc17cb91c4609b957e78d0",
+      "93b5c9948a27b7d509f26135cfbf9c3422eab6ee3b6ce4f43ef2d23c52f88091",
+      "d3295195e9541df9356a6d89c44d0f57d93a662a3c659f3fa0365416dc4752f5",
+      "14e4244a9c86d9d20b41738fbaacac8b69fff875b4b6c86ff2b5d8f8c543ab4f",
+      "26365ea68a9545ff0b306a889bbf5921e6b9d69cfeb7d6daea4d7ba5650b7ea5"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "85ab18b7d84a3a2901c1b5bffe493d169b660d326e7783cc4c20f8282e5a8fcf",
+      "d62a97803b8a0e093f268634c12dc16a962e61e542bc17cb91c4609b957e78d0",
+      "47eb5cf501fb6e0ef7976196cd95a8e070f6d706e847bb1dbd25912976ca550a",
+      "35358d9c52110c15a9d2ac25c0c89d7433388f94800b343e492874b53b4c0667",
+      "14e4244a9c86d9d20b41738fbaacac8b69fff875b4b6c86ff2b5d8f8c543ab4f",
+      "03119b8422beeefb094f8ea01adea07f2da3c7cb899608007d88746fe175409a"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_9b63f8ddaeb3433891ee0cae",
+      "call_f5fa6ec40d4f4affbc65fb70",
+      null,
+      "call_7637286026994f449c892480"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "b94c4a83c69db51ec8e9036ff076ba1e154706399eb0c7ca4251d73460474e28",
+    "response_file": "unseen_ten/recorded_run/results/rawio-747fdd4b9b059ac3c74c/calls/03/response.json",
+    "source_assistant_message_sha256": "968226ebc1bd6e49425353374e1cd3b24cb186f23b78487f9f6d91955e963509",
+    "published_assistant_message_sha256": "968226ebc1bd6e49425353374e1cd3b24cb186f23b78487f9f6d91955e963509",
+    "finish_reason": "stop",
+    "response_tool_call_ids": [],
+    "response_tool_calls": [],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "9572cd18c6470750df25a8e96e150d10a10843059c8c2347828d47132781958f",
+      "2a5687cb567ce9145df1cd68da3f5517c9f1234de118839955ba1afcc42e28ca",
+      "6562ca3c68be5d51ca4440f33792e337081d1a091e0c667ca084e164422e4f23",
+      "7640f7a4b3895b94662ba4c8978bda5b67da757bc00ed456ad25da5aad3da760",
+      "08ac7b14051a442988bbc33461d58906ca815110dc2933a8d60748a25cb6f80e",
+      "13db6db25e1a83d4904ed160b529603d32293026abffc8303c11896e06d536e7"
+    ]
+  },
+  {
+    "record_id": "rawio-5bc9d9c1b623a95007e1",
+    "call": "calls/01",
+    "request_source_sha256": "d5ac25c27a7bcba7c6fe69ea2d93abec85d7691e47dd025419e72de3820db5a2",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "8d51d85bdc0f94d31e7fdffc8ea11a029b5d6ce1f9144dbd871e8ce31455e219"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4a3ab22f83c637e371acc7cd3bfdb56b8545ea122e9e2b0904c8e3a66e23a88a"
+    ],
+    "message_roles": [
+      "system",
+      "user"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "8f9c6af5122110c854547cef4bd5a0334d0f489908b6e833c97926c36525d2d9",
+    "response_file": "unseen_ten/recorded_run/results/rawio-5bc9d9c1b623a95007e1/calls/01/response.json",
+    "source_assistant_message_sha256": "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+    "published_assistant_message_sha256": "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_5a40b93ae3c4481884c764db",
+      "call_881f0d085d4041e0b03fb210"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_5a40b93ae3c4481884c764db",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00215\",\"characters\":7000}"
+      },
+      {
+        "id": "call_881f0d085d4041e0b03fb210",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00221\",\"characters\":12000}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "e1f1c93d3122056b2ae5be193ae28df1e8b79d797cd2662d2a0d1e4aa689b14d"
+    ]
+  },
+  {
+    "record_id": "rawio-5bc9d9c1b623a95007e1",
+    "call": "calls/02",
+    "request_source_sha256": "9e3430117198d29b1a033476bc79269fbc0d58840b29e287c9f0f507deeece16",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "8d51d85bdc0f94d31e7fdffc8ea11a029b5d6ce1f9144dbd871e8ce31455e219",
+      "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+      "6ea876a12278fa702ea71ea7714f156d10db6461ba6ab570e84af2affa791705",
+      "c8b8acd38a11d8917156b6501adfa9b4e30fbe5dbc69412162f43ec515d035c2"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4a3ab22f83c637e371acc7cd3bfdb56b8545ea122e9e2b0904c8e3a66e23a88a",
+      "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+      "6ea876a12278fa702ea71ea7714f156d10db6461ba6ab570e84af2affa791705",
+      "c8b8acd38a11d8917156b6501adfa9b4e30fbe5dbc69412162f43ec515d035c2"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_5a40b93ae3c4481884c764db",
+      "call_881f0d085d4041e0b03fb210"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "5c7e006f19a0d76b72723e593fb31c829dbe48fb410730451ab667d46fc1b7bd",
+    "response_file": "unseen_ten/recorded_run/results/rawio-5bc9d9c1b623a95007e1/calls/02/response.json",
+    "source_assistant_message_sha256": "ff5b7c6dc6017e3a2ded84053ea978ff8e70773734e22bedd9e025c7016f561a",
+    "published_assistant_message_sha256": "ff5b7c6dc6017e3a2ded84053ea978ff8e70773734e22bedd9e025c7016f561a",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_3eff3e8617eb465987606194"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_3eff3e8617eb465987606194",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0060\",\"S0062\",\"S0046\",\"S0048\",\"S0050\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "e1f1c93d3122056b2ae5be193ae28df1e8b79d797cd2662d2a0d1e4aa689b14d",
+      null,
+      "99a77fc3ebf0df657ecd88f5d69878a0f9033f804f35e9549e5bef89c98af174",
+      "840deb4ef6fd3067f03666b22f5366249a322c1a4bd28a2d4a702fabf1f1694f"
+    ]
+  },
+  {
+    "record_id": "rawio-5bc9d9c1b623a95007e1",
+    "call": "calls/03",
+    "request_source_sha256": "28499797347c7ab524b057f189bf274340c07a8db1c818be3b2c23ffd843ac93",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "8d51d85bdc0f94d31e7fdffc8ea11a029b5d6ce1f9144dbd871e8ce31455e219",
+      "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+      "6ea876a12278fa702ea71ea7714f156d10db6461ba6ab570e84af2affa791705",
+      "c8b8acd38a11d8917156b6501adfa9b4e30fbe5dbc69412162f43ec515d035c2",
+      "ff5b7c6dc6017e3a2ded84053ea978ff8e70773734e22bedd9e025c7016f561a",
+      "32fe4447c74c2a0367b55529e3f258c979898ffc15b04b1b27d90d3d3c985e85"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4a3ab22f83c637e371acc7cd3bfdb56b8545ea122e9e2b0904c8e3a66e23a88a",
+      "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+      "6ea876a12278fa702ea71ea7714f156d10db6461ba6ab570e84af2affa791705",
+      "c8b8acd38a11d8917156b6501adfa9b4e30fbe5dbc69412162f43ec515d035c2",
+      "ff5b7c6dc6017e3a2ded84053ea978ff8e70773734e22bedd9e025c7016f561a",
+      "2a0e703dfbb7d5d3781162b0b2e386057165f5fcab59a5074af9a6d622ddc990"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_5a40b93ae3c4481884c764db",
+      "call_881f0d085d4041e0b03fb210",
+      null,
+      "call_3eff3e8617eb465987606194"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "9d1a3265daf6a8ee5f1eae12579ad4ba20f6a3a9b5c77e9034a9fea6d5b9be08",
+    "response_file": "unseen_ten/recorded_run/results/rawio-5bc9d9c1b623a95007e1/calls/03/response.json",
+    "source_assistant_message_sha256": "9cacdc4837e7dd877622da8a36790c2d181518bd30065a9e8eba437454786dd4",
+    "published_assistant_message_sha256": "9cacdc4837e7dd877622da8a36790c2d181518bd30065a9e8eba437454786dd4",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_ebdb7805fcef4ef88aa94c7c"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_ebdb7805fcef4ef88aa94c7c",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0023\",\"S0025\",\"S0026\",\"S0029\",\"S0032\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "e1f1c93d3122056b2ae5be193ae28df1e8b79d797cd2662d2a0d1e4aa689b14d",
+      null,
+      "99a77fc3ebf0df657ecd88f5d69878a0f9033f804f35e9549e5bef89c98af174",
+      "840deb4ef6fd3067f03666b22f5366249a322c1a4bd28a2d4a702fabf1f1694f",
+      null,
+      "f452259341f7f9a5c14e13481aae53e68fb3e3cc84920267bd98a4f2962f7e76"
+    ]
+  },
+  {
+    "record_id": "rawio-5bc9d9c1b623a95007e1",
+    "call": "calls/04",
+    "request_source_sha256": "4faaa403c69379bb30c9fe5465fee553c2e46f1c4e3770aadfe83ec44070c281",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "8d51d85bdc0f94d31e7fdffc8ea11a029b5d6ce1f9144dbd871e8ce31455e219",
+      "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+      "6ea876a12278fa702ea71ea7714f156d10db6461ba6ab570e84af2affa791705",
+      "c8b8acd38a11d8917156b6501adfa9b4e30fbe5dbc69412162f43ec515d035c2",
+      "ff5b7c6dc6017e3a2ded84053ea978ff8e70773734e22bedd9e025c7016f561a",
+      "32fe4447c74c2a0367b55529e3f258c979898ffc15b04b1b27d90d3d3c985e85",
+      "9cacdc4837e7dd877622da8a36790c2d181518bd30065a9e8eba437454786dd4",
+      "91b472d7b3d98c3ef75ac69bb31fac20f70488ba7d9164c669bf8b4c780de7bf"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4a3ab22f83c637e371acc7cd3bfdb56b8545ea122e9e2b0904c8e3a66e23a88a",
+      "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+      "6ea876a12278fa702ea71ea7714f156d10db6461ba6ab570e84af2affa791705",
+      "c8b8acd38a11d8917156b6501adfa9b4e30fbe5dbc69412162f43ec515d035c2",
+      "ff5b7c6dc6017e3a2ded84053ea978ff8e70773734e22bedd9e025c7016f561a",
+      "2a0e703dfbb7d5d3781162b0b2e386057165f5fcab59a5074af9a6d622ddc990",
+      "9cacdc4837e7dd877622da8a36790c2d181518bd30065a9e8eba437454786dd4",
+      "0a4e7c529c053fd2c7a387265d6b0723ec97ec568f5f8d16be5792989aff1bb9"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_5a40b93ae3c4481884c764db",
+      "call_881f0d085d4041e0b03fb210",
+      null,
+      "call_3eff3e8617eb465987606194",
+      null,
+      "call_ebdb7805fcef4ef88aa94c7c"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "e3f11b7ddd682b45a5eec255bf5f24998ac9ba8a72abab6889c7c3209c24fda2",
+    "response_file": "unseen_ten/recorded_run/results/rawio-5bc9d9c1b623a95007e1/calls/04/response.json",
+    "source_assistant_message_sha256": "9ce1e2fdd73627fbda694c3771c4ab16a445dff26375de50b6a6467dbf2fa335",
+    "published_assistant_message_sha256": "9ce1e2fdd73627fbda694c3771c4ab16a445dff26375de50b6a6467dbf2fa335",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_b325c9940b51425388f259ce"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_b325c9940b51425388f259ce",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"FINAL0001\"}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "e1f1c93d3122056b2ae5be193ae28df1e8b79d797cd2662d2a0d1e4aa689b14d",
+      null,
+      "99a77fc3ebf0df657ecd88f5d69878a0f9033f804f35e9549e5bef89c98af174",
+      "840deb4ef6fd3067f03666b22f5366249a322c1a4bd28a2d4a702fabf1f1694f",
+      null,
+      "f452259341f7f9a5c14e13481aae53e68fb3e3cc84920267bd98a4f2962f7e76",
+      null,
+      "4f223d2b48bf09858e7dacbe6cd723e1e7c1723f0e88a66856c9cef6dc6b235a"
+    ]
+  },
+  {
+    "record_id": "rawio-5bc9d9c1b623a95007e1",
+    "call": "calls/05",
+    "request_source_sha256": "b6075733a085e14d398c773171db79674c0b4f15f02f0027554349293b3a2ea7",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "8d51d85bdc0f94d31e7fdffc8ea11a029b5d6ce1f9144dbd871e8ce31455e219",
+      "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+      "6ea876a12278fa702ea71ea7714f156d10db6461ba6ab570e84af2affa791705",
+      "c8b8acd38a11d8917156b6501adfa9b4e30fbe5dbc69412162f43ec515d035c2",
+      "ff5b7c6dc6017e3a2ded84053ea978ff8e70773734e22bedd9e025c7016f561a",
+      "32fe4447c74c2a0367b55529e3f258c979898ffc15b04b1b27d90d3d3c985e85",
+      "9cacdc4837e7dd877622da8a36790c2d181518bd30065a9e8eba437454786dd4",
+      "91b472d7b3d98c3ef75ac69bb31fac20f70488ba7d9164c669bf8b4c780de7bf",
+      "9ce1e2fdd73627fbda694c3771c4ab16a445dff26375de50b6a6467dbf2fa335",
+      "f8f4e3bd795e3c5a299d6e24b5ee0525532534aa44cf29958073c8f4a06ec395"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4a3ab22f83c637e371acc7cd3bfdb56b8545ea122e9e2b0904c8e3a66e23a88a",
+      "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+      "6ea876a12278fa702ea71ea7714f156d10db6461ba6ab570e84af2affa791705",
+      "c8b8acd38a11d8917156b6501adfa9b4e30fbe5dbc69412162f43ec515d035c2",
+      "ff5b7c6dc6017e3a2ded84053ea978ff8e70773734e22bedd9e025c7016f561a",
+      "2a0e703dfbb7d5d3781162b0b2e386057165f5fcab59a5074af9a6d622ddc990",
+      "9cacdc4837e7dd877622da8a36790c2d181518bd30065a9e8eba437454786dd4",
+      "0a4e7c529c053fd2c7a387265d6b0723ec97ec568f5f8d16be5792989aff1bb9",
+      "9ce1e2fdd73627fbda694c3771c4ab16a445dff26375de50b6a6467dbf2fa335",
+      "f8f4e3bd795e3c5a299d6e24b5ee0525532534aa44cf29958073c8f4a06ec395"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_5a40b93ae3c4481884c764db",
+      "call_881f0d085d4041e0b03fb210",
+      null,
+      "call_3eff3e8617eb465987606194",
+      null,
+      "call_ebdb7805fcef4ef88aa94c7c",
+      null,
+      "call_b325c9940b51425388f259ce"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "8dfe4f7f453b0c094f4f565cee47d05922b5d8507aa1795ea2a216bfcef838b9",
+    "response_file": "unseen_ten/recorded_run/results/rawio-5bc9d9c1b623a95007e1/calls/05/response.json",
+    "source_assistant_message_sha256": "bccb86eb6aebf88eacc10dc40d4f1774e036ad6271476fd040a927972fa5c490",
+    "published_assistant_message_sha256": "bccb86eb6aebf88eacc10dc40d4f1774e036ad6271476fd040a927972fa5c490",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_42eb7ef9101c40d2ae1696be"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_42eb7ef9101c40d2ae1696be",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00213\",\"start\":5000,\"characters\":6000}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "e1f1c93d3122056b2ae5be193ae28df1e8b79d797cd2662d2a0d1e4aa689b14d",
+      null,
+      "99a77fc3ebf0df657ecd88f5d69878a0f9033f804f35e9549e5bef89c98af174",
+      "840deb4ef6fd3067f03666b22f5366249a322c1a4bd28a2d4a702fabf1f1694f",
+      null,
+      "f452259341f7f9a5c14e13481aae53e68fb3e3cc84920267bd98a4f2962f7e76",
+      null,
+      "4f223d2b48bf09858e7dacbe6cd723e1e7c1723f0e88a66856c9cef6dc6b235a",
+      null,
+      "d772b6684a99f6eb04ddb0cf898cd8e6abfdd126eb3d5a2718a005c0a8c2455d"
+    ]
+  },
+  {
+    "record_id": "rawio-5bc9d9c1b623a95007e1",
+    "call": "calls/06",
+    "request_source_sha256": "90847dc388b54b381639dd4312d5ab4db0ded6e07c7cc878c9403399310adcd7",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "8d51d85bdc0f94d31e7fdffc8ea11a029b5d6ce1f9144dbd871e8ce31455e219",
+      "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+      "6ea876a12278fa702ea71ea7714f156d10db6461ba6ab570e84af2affa791705",
+      "c8b8acd38a11d8917156b6501adfa9b4e30fbe5dbc69412162f43ec515d035c2",
+      "ff5b7c6dc6017e3a2ded84053ea978ff8e70773734e22bedd9e025c7016f561a",
+      "32fe4447c74c2a0367b55529e3f258c979898ffc15b04b1b27d90d3d3c985e85",
+      "9cacdc4837e7dd877622da8a36790c2d181518bd30065a9e8eba437454786dd4",
+      "91b472d7b3d98c3ef75ac69bb31fac20f70488ba7d9164c669bf8b4c780de7bf",
+      "9ce1e2fdd73627fbda694c3771c4ab16a445dff26375de50b6a6467dbf2fa335",
+      "f8f4e3bd795e3c5a299d6e24b5ee0525532534aa44cf29958073c8f4a06ec395",
+      "bccb86eb6aebf88eacc10dc40d4f1774e036ad6271476fd040a927972fa5c490",
+      "b316a03c27ec27ed4e1ac71a7e9e454ebc63590058340762a11455538c51e464"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4a3ab22f83c637e371acc7cd3bfdb56b8545ea122e9e2b0904c8e3a66e23a88a",
+      "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+      "6ea876a12278fa702ea71ea7714f156d10db6461ba6ab570e84af2affa791705",
+      "c8b8acd38a11d8917156b6501adfa9b4e30fbe5dbc69412162f43ec515d035c2",
+      "ff5b7c6dc6017e3a2ded84053ea978ff8e70773734e22bedd9e025c7016f561a",
+      "2a0e703dfbb7d5d3781162b0b2e386057165f5fcab59a5074af9a6d622ddc990",
+      "9cacdc4837e7dd877622da8a36790c2d181518bd30065a9e8eba437454786dd4",
+      "0a4e7c529c053fd2c7a387265d6b0723ec97ec568f5f8d16be5792989aff1bb9",
+      "9ce1e2fdd73627fbda694c3771c4ab16a445dff26375de50b6a6467dbf2fa335",
+      "f8f4e3bd795e3c5a299d6e24b5ee0525532534aa44cf29958073c8f4a06ec395",
+      "bccb86eb6aebf88eacc10dc40d4f1774e036ad6271476fd040a927972fa5c490",
+      "b316a03c27ec27ed4e1ac71a7e9e454ebc63590058340762a11455538c51e464"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_5a40b93ae3c4481884c764db",
+      "call_881f0d085d4041e0b03fb210",
+      null,
+      "call_3eff3e8617eb465987606194",
+      null,
+      "call_ebdb7805fcef4ef88aa94c7c",
+      null,
+      "call_b325c9940b51425388f259ce",
+      null,
+      "call_42eb7ef9101c40d2ae1696be"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "5e513e78b6e24c4bd437b3c1f4a9bc4eececcd5eead11f8556775a6684133408",
+    "response_file": "unseen_ten/recorded_run/results/rawio-5bc9d9c1b623a95007e1/calls/06/response.json",
+    "source_assistant_message_sha256": "d11007caba67b9a74110d9516da7a019b5c0884a453427d4822d45fa0814517c",
+    "published_assistant_message_sha256": "d11007caba67b9a74110d9516da7a019b5c0884a453427d4822d45fa0814517c",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_148c6ea758fe4fd5a984baa5"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_148c6ea758fe4fd5a984baa5",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00221\",\"start\":1000,\"characters\":3000}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "e1f1c93d3122056b2ae5be193ae28df1e8b79d797cd2662d2a0d1e4aa689b14d",
+      null,
+      "99a77fc3ebf0df657ecd88f5d69878a0f9033f804f35e9549e5bef89c98af174",
+      "840deb4ef6fd3067f03666b22f5366249a322c1a4bd28a2d4a702fabf1f1694f",
+      null,
+      "f452259341f7f9a5c14e13481aae53e68fb3e3cc84920267bd98a4f2962f7e76",
+      null,
+      "4f223d2b48bf09858e7dacbe6cd723e1e7c1723f0e88a66856c9cef6dc6b235a",
+      null,
+      "d772b6684a99f6eb04ddb0cf898cd8e6abfdd126eb3d5a2718a005c0a8c2455d",
+      null,
+      "1606ef0263a8dddbdc855fc918b249f3d0624158de7c469eb35df0277dcd3c55"
+    ]
+  },
+  {
+    "record_id": "rawio-5bc9d9c1b623a95007e1",
+    "call": "calls/07",
+    "request_source_sha256": "f738a7c6eab120f7ed6a69cb1dbe23ce5321ea13a583227befb94559f7d89fbd",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "8d51d85bdc0f94d31e7fdffc8ea11a029b5d6ce1f9144dbd871e8ce31455e219",
+      "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+      "6ea876a12278fa702ea71ea7714f156d10db6461ba6ab570e84af2affa791705",
+      "c8b8acd38a11d8917156b6501adfa9b4e30fbe5dbc69412162f43ec515d035c2",
+      "ff5b7c6dc6017e3a2ded84053ea978ff8e70773734e22bedd9e025c7016f561a",
+      "32fe4447c74c2a0367b55529e3f258c979898ffc15b04b1b27d90d3d3c985e85",
+      "9cacdc4837e7dd877622da8a36790c2d181518bd30065a9e8eba437454786dd4",
+      "91b472d7b3d98c3ef75ac69bb31fac20f70488ba7d9164c669bf8b4c780de7bf",
+      "9ce1e2fdd73627fbda694c3771c4ab16a445dff26375de50b6a6467dbf2fa335",
+      "f8f4e3bd795e3c5a299d6e24b5ee0525532534aa44cf29958073c8f4a06ec395",
+      "bccb86eb6aebf88eacc10dc40d4f1774e036ad6271476fd040a927972fa5c490",
+      "b316a03c27ec27ed4e1ac71a7e9e454ebc63590058340762a11455538c51e464",
+      "d11007caba67b9a74110d9516da7a019b5c0884a453427d4822d45fa0814517c",
+      "14823b434cbc80fb06addc58090b341db9825c7acfbd6d2a1d6eda24f6743846"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "4a3ab22f83c637e371acc7cd3bfdb56b8545ea122e9e2b0904c8e3a66e23a88a",
+      "76645b4968dc411947d38ddc4bc0a678031975a05d7f0b31e2aa9a51a55ab63a",
+      "6ea876a12278fa702ea71ea7714f156d10db6461ba6ab570e84af2affa791705",
+      "c8b8acd38a11d8917156b6501adfa9b4e30fbe5dbc69412162f43ec515d035c2",
+      "ff5b7c6dc6017e3a2ded84053ea978ff8e70773734e22bedd9e025c7016f561a",
+      "2a0e703dfbb7d5d3781162b0b2e386057165f5fcab59a5074af9a6d622ddc990",
+      "9cacdc4837e7dd877622da8a36790c2d181518bd30065a9e8eba437454786dd4",
+      "0a4e7c529c053fd2c7a387265d6b0723ec97ec568f5f8d16be5792989aff1bb9",
+      "9ce1e2fdd73627fbda694c3771c4ab16a445dff26375de50b6a6467dbf2fa335",
+      "f8f4e3bd795e3c5a299d6e24b5ee0525532534aa44cf29958073c8f4a06ec395",
+      "bccb86eb6aebf88eacc10dc40d4f1774e036ad6271476fd040a927972fa5c490",
+      "b316a03c27ec27ed4e1ac71a7e9e454ebc63590058340762a11455538c51e464",
+      "d11007caba67b9a74110d9516da7a019b5c0884a453427d4822d45fa0814517c",
+      "14823b434cbc80fb06addc58090b341db9825c7acfbd6d2a1d6eda24f6743846"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_5a40b93ae3c4481884c764db",
+      "call_881f0d085d4041e0b03fb210",
+      null,
+      "call_3eff3e8617eb465987606194",
+      null,
+      "call_ebdb7805fcef4ef88aa94c7c",
+      null,
+      "call_b325c9940b51425388f259ce",
+      null,
+      "call_42eb7ef9101c40d2ae1696be",
+      null,
+      "call_148c6ea758fe4fd5a984baa5"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "3221fd55dc580eca8561bdd1d4c47cfc3bc7bcf5a7a63979a60b4e1cd67adf71",
+    "response_file": "unseen_ten/recorded_run/results/rawio-5bc9d9c1b623a95007e1/calls/07/response.json",
+    "source_assistant_message_sha256": "41e73477d0252c56da05894c9f690d8643aa414d92f383827f9652d229e6afc9",
+    "published_assistant_message_sha256": "41e73477d0252c56da05894c9f690d8643aa414d92f383827f9652d229e6afc9",
+    "finish_reason": "stop",
+    "response_tool_call_ids": [],
+    "response_tool_calls": [],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "e1f1c93d3122056b2ae5be193ae28df1e8b79d797cd2662d2a0d1e4aa689b14d",
+      null,
+      "99a77fc3ebf0df657ecd88f5d69878a0f9033f804f35e9549e5bef89c98af174",
+      "840deb4ef6fd3067f03666b22f5366249a322c1a4bd28a2d4a702fabf1f1694f",
+      null,
+      "f452259341f7f9a5c14e13481aae53e68fb3e3cc84920267bd98a4f2962f7e76",
+      null,
+      "4f223d2b48bf09858e7dacbe6cd723e1e7c1723f0e88a66856c9cef6dc6b235a",
+      null,
+      "d772b6684a99f6eb04ddb0cf898cd8e6abfdd126eb3d5a2718a005c0a8c2455d",
+      null,
+      "1606ef0263a8dddbdc855fc918b249f3d0624158de7c469eb35df0277dcd3c55",
+      null,
+      "430d20011bc6ae828ef277c3ab63b885fa0e4ac8c9fcad6bcc666fab3bf38b8b"
+    ]
+  },
+  {
+    "record_id": "rawio-4b9fd6b15e4b554779db",
+    "call": "calls/01",
+    "request_source_sha256": "6257a8b88547f2ca6fcd0f00f0b8f4f55efa3362d0f41eee564e08d874983b84",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "e861fe74840ff42ec60e5d73f3983fbc8803e3b3c0135a42310e26fff497b2b4"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "a535c184fc179726d4ae7321239454052d9ce15067b2d78f3102e6059a025099"
+    ],
+    "message_roles": [
+      "system",
+      "user"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "413562f5d170bc6be75f933961a70cfe9c84a7ac339fe5e567eb323f2c8b37c4",
+    "response_file": "unseen_ten/recorded_run/results/rawio-4b9fd6b15e4b554779db/calls/01/response.json",
+    "source_assistant_message_sha256": "273043ca1e7afe185de595df37023dcadce4da3f4742c12c22d1a13d5947b105",
+    "published_assistant_message_sha256": "273043ca1e7afe185de595df37023dcadce4da3f4742c12c22d1a13d5947b105",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_3d4341aa1ef74bcda92dad24",
+      "call_64fca6e41cc24fa2bcd606d9"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_3d4341aa1ef74bcda92dad24",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0002\",\"S0003\",\"S0004\",\"S0005\",\"S0006\",\"S0007\"]}"
+      },
+      {
+        "id": "call_64fca6e41cc24fa2bcd606d9",
+        "name": "read_steps",
+        "arguments": "{\"step_ids\":[\"S0008\",\"S0009\",\"S0010\",\"S0011\"]}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "065a3a652b89e97297d2b32e23cd18140e5690c2a2bbf087e875f12509b80d19"
+    ]
+  },
+  {
+    "record_id": "rawio-4b9fd6b15e4b554779db",
+    "call": "calls/02",
+    "request_source_sha256": "7dbe3b12f08c2fa11fba59026a3e8a6eb6b0e8c204a7e9eba733c540a1a0b4d9",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "e861fe74840ff42ec60e5d73f3983fbc8803e3b3c0135a42310e26fff497b2b4",
+      "273043ca1e7afe185de595df37023dcadce4da3f4742c12c22d1a13d5947b105",
+      "470e2bce81e4e35478324dd6b3715002ae3bef32e771cf28b881f861782d94e0",
+      "c18b01b3afadc6eb532cf6b0871398f63b1095e677089e63d818de3e51e4a848"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "a535c184fc179726d4ae7321239454052d9ce15067b2d78f3102e6059a025099",
+      "273043ca1e7afe185de595df37023dcadce4da3f4742c12c22d1a13d5947b105",
+      "61abcd40856bf5dd4e568da22fa66d7b92566234d4ee18ffbb95be0e086fbf2e",
+      "c18b01b3afadc6eb532cf6b0871398f63b1095e677089e63d818de3e51e4a848"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_3d4341aa1ef74bcda92dad24",
+      "call_64fca6e41cc24fa2bcd606d9"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "08c4b376b2a6c813c22edcbf0045913af258e8c587683940238aaea4f9635eb8",
+    "response_file": "unseen_ten/recorded_run/results/rawio-4b9fd6b15e4b554779db/calls/02/response.json",
+    "source_assistant_message_sha256": "1195232d64992ba914a02de309e97412b2f8444c7fbc8894390e4179c2c435b7",
+    "published_assistant_message_sha256": "1195232d64992ba914a02de309e97412b2f8444c7fbc8894390e4179c2c435b7",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_da008c3fd706477d94f64135",
+      "call_74a09e35429f4f228a12d7a7"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_da008c3fd706477d94f64135",
+        "name": "read_exchange",
+        "arguments": "{\"exchange_id\":\"X0010\",\"surface\":\"response\"}"
+      },
+      {
+        "id": "call_74a09e35429f4f228a12d7a7",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"FINAL0001\"}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "065a3a652b89e97297d2b32e23cd18140e5690c2a2bbf087e875f12509b80d19",
+      "2e3155dc49a018a55d290243fb0c39250c9251d1516cc7dec070b8ffc6f7aec5",
+      "f34289ba5dacc5fb73a00f4d0150d4d91afeda21d9d14985aa232cf1a88e35f4",
+      "5bd20d6ee13a48b116316c6abc50295f2eaebf5cb6b98e38159db703e989d7ce"
+    ]
+  },
+  {
+    "record_id": "rawio-4b9fd6b15e4b554779db",
+    "call": "calls/03",
+    "request_source_sha256": "cf671c83d7447066d867320b775c7444c85bf305ad28556e81019615e35f4389",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "e861fe74840ff42ec60e5d73f3983fbc8803e3b3c0135a42310e26fff497b2b4",
+      "273043ca1e7afe185de595df37023dcadce4da3f4742c12c22d1a13d5947b105",
+      "470e2bce81e4e35478324dd6b3715002ae3bef32e771cf28b881f861782d94e0",
+      "c18b01b3afadc6eb532cf6b0871398f63b1095e677089e63d818de3e51e4a848",
+      "1195232d64992ba914a02de309e97412b2f8444c7fbc8894390e4179c2c435b7",
+      "3529eb8093176ca0aa2ca86fb1522940b04f6d275f8dc5a2cbffe8e0c5207c4e",
+      "68f6a05dda044718dea502d1da8a07f22907457c46fe483a70ab2a05d642d435"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "a535c184fc179726d4ae7321239454052d9ce15067b2d78f3102e6059a025099",
+      "273043ca1e7afe185de595df37023dcadce4da3f4742c12c22d1a13d5947b105",
+      "61abcd40856bf5dd4e568da22fa66d7b92566234d4ee18ffbb95be0e086fbf2e",
+      "c18b01b3afadc6eb532cf6b0871398f63b1095e677089e63d818de3e51e4a848",
+      "1195232d64992ba914a02de309e97412b2f8444c7fbc8894390e4179c2c435b7",
+      "3529eb8093176ca0aa2ca86fb1522940b04f6d275f8dc5a2cbffe8e0c5207c4e",
+      "68f6a05dda044718dea502d1da8a07f22907457c46fe483a70ab2a05d642d435"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_3d4341aa1ef74bcda92dad24",
+      "call_64fca6e41cc24fa2bcd606d9",
+      null,
+      "call_da008c3fd706477d94f64135",
+      "call_74a09e35429f4f228a12d7a7"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "73d2cc97aa9073c79dce6052dd94d25929b0f1e1f42fea21f76d6341b1b2aabc",
+    "response_file": "unseen_ten/recorded_run/results/rawio-4b9fd6b15e4b554779db/calls/03/response.json",
+    "source_assistant_message_sha256": "6a24bc4601c71786277431c1997d65d66a67734d0eaa004e0e2cccb894d16471",
+    "published_assistant_message_sha256": "6a24bc4601c71786277431c1997d65d66a67734d0eaa004e0e2cccb894d16471",
+    "finish_reason": "tool_calls",
+    "response_tool_call_ids": [
+      "call_0c45727ee0954937826ea6c7"
+    ],
+    "response_tool_calls": [
+      {
+        "id": "call_0c45727ee0954937826ea6c7",
+        "name": "read_evidence",
+        "arguments": "{\"evidence_id\":\"E00002\",\"start\":1000}"
+      }
+    ],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "065a3a652b89e97297d2b32e23cd18140e5690c2a2bbf087e875f12509b80d19",
+      "2e3155dc49a018a55d290243fb0c39250c9251d1516cc7dec070b8ffc6f7aec5",
+      "f34289ba5dacc5fb73a00f4d0150d4d91afeda21d9d14985aa232cf1a88e35f4",
+      "5bd20d6ee13a48b116316c6abc50295f2eaebf5cb6b98e38159db703e989d7ce",
+      "d628128c5b67980e60b9720cbc6a89e407f55d9c030104567316a976bae19155",
+      "fae842e940c71301f4bd281c4d1699689d7195153254685d3f0088ec57241494",
+      "cd5354996a8cf90f92ca7084bbb64aa1e561e3f2cb1d77ab4d8028612dbd8022"
+    ]
+  },
+  {
+    "record_id": "rawio-4b9fd6b15e4b554779db",
+    "call": "calls/04",
+    "request_source_sha256": "e575722275182180c5483f64fc24da36de475c783c85e1a7a5b0b9ef17e91799",
+    "request_parameters": {
+      "model": "x-test-2",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "tool_choice": "auto"
+    },
+    "message_sha256": [
+      "82a3678fee1d501c104b01866348e5addac4f1a0ef342b4a0b7f64b4a979153e",
+      "e861fe74840ff42ec60e5d73f3983fbc8803e3b3c0135a42310e26fff497b2b4",
+      "273043ca1e7afe185de595df37023dcadce4da3f4742c12c22d1a13d5947b105",
+      "470e2bce81e4e35478324dd6b3715002ae3bef32e771cf28b881f861782d94e0",
+      "c18b01b3afadc6eb532cf6b0871398f63b1095e677089e63d818de3e51e4a848",
+      "1195232d64992ba914a02de309e97412b2f8444c7fbc8894390e4179c2c435b7",
+      "3529eb8093176ca0aa2ca86fb1522940b04f6d275f8dc5a2cbffe8e0c5207c4e",
+      "68f6a05dda044718dea502d1da8a07f22907457c46fe483a70ab2a05d642d435",
+      "6a24bc4601c71786277431c1997d65d66a67734d0eaa004e0e2cccb894d16471",
+      "aed4fc342e11b9b0735145cfb4bd13650808de7d2f48a0d879307cd53277cf18"
+    ],
+    "original_message_sha256": [
+      "14d2d6b6f206cacfbfed9370aff8decc2b668460d23cd491101649421dc1dcc5",
+      "a535c184fc179726d4ae7321239454052d9ce15067b2d78f3102e6059a025099",
+      "273043ca1e7afe185de595df37023dcadce4da3f4742c12c22d1a13d5947b105",
+      "61abcd40856bf5dd4e568da22fa66d7b92566234d4ee18ffbb95be0e086fbf2e",
+      "c18b01b3afadc6eb532cf6b0871398f63b1095e677089e63d818de3e51e4a848",
+      "1195232d64992ba914a02de309e97412b2f8444c7fbc8894390e4179c2c435b7",
+      "3529eb8093176ca0aa2ca86fb1522940b04f6d275f8dc5a2cbffe8e0c5207c4e",
+      "68f6a05dda044718dea502d1da8a07f22907457c46fe483a70ab2a05d642d435",
+      "6a24bc4601c71786277431c1997d65d66a67734d0eaa004e0e2cccb894d16471",
+      "c93c556115398594157389d9e8043609059c9f706e00764e08a7817e0de90aa9"
+    ],
+    "message_roles": [
+      "system",
+      "user",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "message_tool_call_ids": [
+      null,
+      null,
+      null,
+      "call_3d4341aa1ef74bcda92dad24",
+      "call_64fca6e41cc24fa2bcd606d9",
+      null,
+      "call_da008c3fd706477d94f64135",
+      "call_74a09e35429f4f228a12d7a7",
+      null,
+      "call_0c45727ee0954937826ea6c7"
+    ],
+    "hash_basis": "message_sha256 uses the disclosed published path spellings; original_message_sha256 anchors the original archive",
+    "response_present": true,
+    "response_source_sha256": "1135f9985f31e75db219ee8ab7c05fa5e774d34037169dc920e13d3a7763da2f",
+    "response_file": "unseen_ten/recorded_run/results/rawio-4b9fd6b15e4b554779db/calls/04/response.json",
+    "source_assistant_message_sha256": "23b8db607c130c6ea505e324c61e0b5c7a1454e1e77259c633596ea2714fbd33",
+    "published_assistant_message_sha256": "23b8db607c130c6ea505e324c61e0b5c7a1454e1e77259c633596ea2714fbd33",
+    "finish_reason": "stop",
+    "response_tool_call_ids": [],
+    "response_tool_calls": [],
+    "message_content_sha256": [
+      "b1db71b69a328ba4a529c474478b27ddd1dcb71179615ee652555dfedb50d84d",
+      "065a3a652b89e97297d2b32e23cd18140e5690c2a2bbf087e875f12509b80d19",
+      "2e3155dc49a018a55d290243fb0c39250c9251d1516cc7dec070b8ffc6f7aec5",
+      "f34289ba5dacc5fb73a00f4d0150d4d91afeda21d9d14985aa232cf1a88e35f4",
+      "5bd20d6ee13a48b116316c6abc50295f2eaebf5cb6b98e38159db703e989d7ce",
+      "d628128c5b67980e60b9720cbc6a89e407f55d9c030104567316a976bae19155",
+      "fae842e940c71301f4bd281c4d1699689d7195153254685d3f0088ec57241494",
+      "cd5354996a8cf90f92ca7084bbb64aa1e561e3f2cb1d77ab4d8028612dbd8022",
+      "7226d5775981c9c954a986f1caa17aea6f0302921f8c6b8e8bf2e31f04b00452",
+      "f0256e3307cd15b762086053c664e3cf2b5bd836e95d391b5b1305936810f0ac"
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "policy_id": "trace-processor-allow-extra-fields-v1-20261019",
+  "policy": "outputs/trace_processor_allow_extra_fields_20261019/policy.json",
+  "operations_schema": "outputs/trace_processor_allow_extra_fields_20261019/operations.schema.json",
+  "parent_frozen_config": "configs/03_trace_processor/CURRENT_FROZEN.json",
+  "normalized_results": "artifacts/03_trace_processor/integrated_runs/trace_processor_connection_positional_v5_20261020/final",
+  "summary": "artifacts/03_trace_processor/integrated_runs/trace_processor_connection_positional_v5_20261020/summary.json",
+  "hierarchy_prompt_experiment": "outputs/stage_c_hierarchy_ten_20261019/experiment.json",
+  "scope": "General bounded resolution of the first positional database connection argument recovered26 known NULL fields (13 connection paths and13 resource copies). All164 rebuilt and independently validated;2 final traces updated,162 unchanged. No new calls; all4259 semantic units and citations unchanged; reasonable nulls and previous repairs preserved; no model calls.",
+  "updated_at_utc": "2026-10-20T05:11:37.118171+00:00",
+  "connection_retry": "outputs/stage_c_connection_retry_three_20261019/experiment.json",
+  "missing_unit_retry": "outputs/stage_c_cve_missing_retry_20261019/experiment.json",
+  "fact_layer_upgrade": "artifacts/03_trace_processor/integrated_runs/trace_processor_connection_positional_v5_20261020",
+  "fact_layer_implementation": "pipeline.stages.trace_processor.fact_layer_v5",
+  "fact_layer_implementation_version": "fact-layer-connection-positional-v5-20261020",
+  "previous_normalized_results": "artifacts/03_trace_processor/integrated_runs/trace_processor_constant_connection_v4_20261020/final",
+  "null_recovery_validation": "artifacts/03_trace_processor/integrated_runs/trace_processor_connection_positional_v5_20261020/known26_recovery.json",
+  "conservative_null_validation": "artifacts/03_trace_processor/integrated_runs/trace_processor_connection_positional_v5_20261020/reasonable_null_preservation.json",
+  "postmerge_validation": "artifacts/03_trace_processor/integrated_runs/trace_processor_connection_positional_v5_20261020/postmerge_validation.json",
+  "connection_recovery_validation": "artifacts/03_trace_processor/integrated_runs/trace_processor_connection_positional_v5_20261020/known709_connections.json",
+  "downstream_fact_validation": "artifacts/03_trace_processor/integrated_runs/trace_processor_connection_positional_v5_20261020/final/downstream/static_fact_validation.json"
+}

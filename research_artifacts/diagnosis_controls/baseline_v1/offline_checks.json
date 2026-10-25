@@ -1,0 +1,74 @@
+[
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "projection_allowlist": "passed",
+    "source_pages": "passed",
+    "unknown_ids": "passed",
+    "negative_range": "passed",
+    "unread_citation_rejected": "passed",
+    "final_source_resolved": "passed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "projection_allowlist": "passed",
+    "source_pages": "passed",
+    "unknown_ids": "passed",
+    "negative_range": "passed",
+    "unread_citation_rejected": "passed",
+    "final_source_resolved": "passed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "projection_allowlist": "passed",
+    "source_pages": "passed",
+    "unknown_ids": "passed",
+    "negative_range": "passed",
+    "unread_citation_rejected": "passed",
+    "final_source_resolved": "passed"
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "projection_allowlist": "passed",
+    "source_pages": "passed",
+    "unknown_ids": "passed",
+    "negative_range": "passed",
+    "unread_citation_rejected": "passed",
+    "final_source_resolved": "passed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "projection_allowlist": "passed",
+    "source_pages": "passed",
+    "unknown_ids": "passed",
+    "negative_range": "passed",
+    "unread_citation_rejected": "passed",
+    "final_source_resolved": "passed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "projection_allowlist": "passed",
+    "source_pages": "passed",
+    "unknown_ids": "passed",
+    "negative_range": "passed",
+    "unread_citation_rejected": "passed",
+    "final_source_resolved": "passed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "projection_allowlist": "passed",
+    "source_pages": "passed",
+    "unknown_ids": "passed",
+    "negative_range": "passed",
+    "unread_citation_rejected": "passed",
+    "final_source_resolved": "passed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "projection_allowlist": "passed",
+    "source_pages": "passed",
+    "unknown_ids": "passed",
+    "negative_range": "passed",
+    "unread_citation_rejected": "passed",
+    "final_source_resolved": "passed"
+  }
+]

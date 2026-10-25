@@ -1,0 +1,26 @@
+[
+  {
+    "evidence_id": "FINAL0001",
+    "step_id": null,
+    "role": "recorded_final_response",
+    "fact_pointer": "/facts/final_response/text",
+    "original_source_ref": {
+      "source_id": "S0005",
+      "json_pointer": "/final_text"
+    },
+    "representation": "text"
+  },
+  {
+    "evidence_id": "X0020_RESPONSE",
+    "step_id": null,
+    "role": "recorded_model_response",
+    "fact_pointer": null,
+    "original_source_ref": {
+      "source_id": "S0004",
+      "line": 20,
+      "json_pointer": "/model_output"
+    },
+    "representation": "compact_json",
+    "history_is_not_additional_execution": true
+  }
+]

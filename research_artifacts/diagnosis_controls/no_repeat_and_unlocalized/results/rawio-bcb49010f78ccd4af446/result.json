@@ -1,0 +1,8 @@
+{
+  "task_id": "agriculture_16",
+  "status": "round_budget_exhausted",
+  "model_rounds": 24,
+  "tool_calls": 48,
+  "reason": "no_final_diagnosis_within_frozen_budget",
+  "finished_at": "2026-10-18T16:21:28.821098+00:00"
+}

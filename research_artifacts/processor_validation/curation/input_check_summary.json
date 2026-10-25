@@ -1,0 +1,12 @@
+{
+  "unique_files": 65,
+  "bytes": 14504378049,
+  "status_counts": {
+    "passed": 65
+  },
+  "present_state_only": true,
+  "network_services_contacted": false,
+  "original_code_executed": false,
+  "source_files_modified": false,
+  "gaps": 0
+}

@@ -1,0 +1,11 @@
+{
+  "same_pre_round12_messages": true,
+  "only_changed_key": "tool_choice",
+  "before": "auto",
+  "after": "none",
+  "prompt_changed": false,
+  "new_user_or_system_messages_added": false,
+  "rounds_reused": 11,
+  "tool_calls_reused": 24,
+  "baseline_round12_tool_results_excluded": true
+}

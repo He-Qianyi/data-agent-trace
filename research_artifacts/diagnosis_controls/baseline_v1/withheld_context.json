@@ -1,0 +1,877 @@
+[
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/01/request.json",
+    "bytes": 135194,
+    "sha256": "479d60bc1fb1dc45084f69b39a3f920258d42b11ea86d93ff137344a3f973b0b",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/02/request.json",
+    "bytes": 185492,
+    "sha256": "f54cfe881a2f310cab34d3839baf9ddb4ee9990ac812f5d2d6138bce08069b17",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/03/request.json",
+    "bytes": 195833,
+    "sha256": "b58c9ea79e926acce8a8ffbc0ce0fb89f2b6c47ea8239611b719eb1f9a682ea0",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/04/request.json",
+    "bytes": 219059,
+    "sha256": "ef6b60f8472094b367d2ad7c409e0cc20f5d0bd4769bbc39a5513777f55061d7",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/05/request.json",
+    "bytes": 236979,
+    "sha256": "0531c3d2b99d8cd916099549fd530ae77b3384c741241d3a26ec43c7f2223cdb",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/06/request.json",
+    "bytes": 241044,
+    "sha256": "4d508f6a9bad7b4e3ada7981fa62add1bf1026f51aebfa2f5c31c102511896fc",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/07/request.json",
+    "bytes": 264405,
+    "sha256": "5d3c747a8d1f0a8fe006fa90bf56fdd0cf89008207ec3e1105fd488f2ef55073",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/08/request.json",
+    "bytes": 276766,
+    "sha256": "391f5a3282a61d91fdf77c375abbce028f20a661d7a3d6aca7f764ab585d2727",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/09/request.json",
+    "bytes": 357280,
+    "sha256": "3882cecb6f4690ea578d1f3ace19024603d689e67ff1fef00701c51b859e7158",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/10/request.json",
+    "bytes": 430429,
+    "sha256": "dcd06adf613ce3bdfdb03fe102d92fe2c67fecc621197ef658fe804b22d03ad5",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/10-explicit-recovery1/request.json",
+    "bytes": 430429,
+    "sha256": "dcd06adf613ce3bdfdb03fe102d92fe2c67fecc621197ef658fe804b22d03ad5",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/11/request.json",
+    "bytes": 500772,
+    "sha256": "da729f084dd66f3ac15763986c7703ea4d4656a2f253503693f317c5439018da",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/001.json",
+    "bytes": 35486,
+    "sha256": "5687bf1fd239b00b6f414efcbec96f9e83a8aa6bc86960ea6ead26dd14da6beb",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/002.json",
+    "bytes": 13713,
+    "sha256": "9f3655c003a2886e1bb8cf96d81ce67691c54a8b4b82880028da86eb348237a3",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/003.json",
+    "bytes": 3092,
+    "sha256": "4e8e5a109816175d4048f18a5766f6b6c430254330c2227d880d720493e86d6f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/004.json",
+    "bytes": 6381,
+    "sha256": "edfcc471881425dd7d46c13e095df427574d8541c729f48626bc8708270c4d97",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/005.json",
+    "bytes": 13052,
+    "sha256": "9f320bc4f0ecd9c351ca1b888a568b6a870456f1673111f23052e09b89cd8007",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/006.json",
+    "bytes": 9484,
+    "sha256": "20dedc367c1912264988e4495f328b7ccb3035454ad3d061f1e46635939e92a2",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/007.json",
+    "bytes": 2760,
+    "sha256": "d7c6a426e10433e7f66761141197f5e8bca2a3f25331411c39870c070b215f5f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/008.json",
+    "bytes": 1626,
+    "sha256": "5c697f5ac808a5eadc72a6b8ca06695188fde5f9fecab3c77eadfef59739f48e",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/009.json",
+    "bytes": 214,
+    "sha256": "81471fefd36b2c15acfc836d179b64bc5262efa178b4407655c6b05a5792d3ef",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/010.json",
+    "bytes": 952,
+    "sha256": "35897ac3575281bcd1e7102895ddcd369dfc8853f562619061ec1bbe4fd51546",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/011.json",
+    "bytes": 13113,
+    "sha256": "1004168a51016c39f48d8ffdfbacadbcfb260388bfea471390beaa28b9a95f1b",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/012.json",
+    "bytes": 961,
+    "sha256": "99d5380178b10621591d3e29292b4d23a0266992b9c432b25ee6261dff545a91",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/013.json",
+    "bytes": 2607,
+    "sha256": "6e9212880333c88ab2f1a6318004f8d2194678aa824f747c11e504ad1aff4245",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/014.json",
+    "bytes": 10563,
+    "sha256": "bf96489307cebd20e4b0a7133eed27284ff314f3176f242949cf2d724bdfa336",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/015.json",
+    "bytes": 903,
+    "sha256": "e5c7c835f258d1756fc208ae021604f18cee16c12c8e349786b3763002e2fd1d",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/016.json",
+    "bytes": 4557,
+    "sha256": "a11065187d782dbd3b9a742d5a80f85bf7312667ba5da043e52830311bd9e7dc",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/017.json",
+    "bytes": 1869,
+    "sha256": "7defa1082851eba4b9c0f84178eedcb7c93bff201a5da8fb2717176da60b000a",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/calls/01/request.json",
+    "bytes": 134299,
+    "sha256": "d4826937f5e17cb162b927e2ddb13081814e234b901db1b3f1522e212ae795e6",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/calls/02/request.json",
+    "bytes": 190990,
+    "sha256": "a7a4cd9e548b9bdb30c7987b441441fca82e56b421574ce21c6b60c72243830b",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/calls/03/request.json",
+    "bytes": 219107,
+    "sha256": "0a4bb15785408ef86d373a94dc8f9f3e7cdac03f20af7fa00876ffc3d0a60e42",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/calls/04/request.json",
+    "bytes": 241739,
+    "sha256": "79f781de1301dc6a9ff93568113b3a53c2099f6c47871a76265d2cae88e63022",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/calls/05/request.json",
+    "bytes": 265922,
+    "sha256": "f9776951d884f43218bb1134508d0ce03e4c73adb9e7ae3a97ec80555af20029",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/001.json",
+    "bytes": 26346,
+    "sha256": "48b73943a001fe12b241e988941817cd9487d5daa1662278b95a255f31f46c34",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/002.json",
+    "bytes": 30691,
+    "sha256": "f954fcc5266a682e5f038e032ee4e1cad96534c07fce9d88e5093aeeaa3dc8b1",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/003.json",
+    "bytes": 20608,
+    "sha256": "065ef1ae12913026b1e99994262e7c496e60660f101ee5ac690440bb21e0ea7f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/004.json",
+    "bytes": 651,
+    "sha256": "cf716b305a5e4d191ac2fbac52b63b557347a2cba51a4bf7d4794c69ce16edbf",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/005.json",
+    "bytes": 6122,
+    "sha256": "edbb15e059032db86858c05ab9e7964ae1dcf9d8646d4017bda85b999f611100",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/006.json",
+    "bytes": 16981,
+    "sha256": "dcda28f598d608d5ff9ed3a1b39217d1a858f02c0caf0a12b324af56ef0cd415",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/007.json",
+    "bytes": 6903,
+    "sha256": "8712eb8b89d8f567a86241c126c94699ad9fb2704f80ea340ca8e0fe52fc6c6d",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/008.json",
+    "bytes": 1549,
+    "sha256": "17453998075155ac8b2947027b50ebf455398a705295c75d283ed0b14916db7e",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/01/request.json",
+    "bytes": 130147,
+    "sha256": "217f9f9c63bd650b8f65b9d9c5cf50e0040611b276d67f6971b393c15c283249",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/02/request.json",
+    "bytes": 155496,
+    "sha256": "371608e75fc09f3da0fbdfa1e6680b41fc71917b48c809929f61c90cf84a6181",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/03/request.json",
+    "bytes": 162101,
+    "sha256": "65264caea0eda6575af27ceb04374f12266818df9ab7f8d1b939389f2001bc4f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/04/request.json",
+    "bytes": 179828,
+    "sha256": "c82046e9e45ba008914e9389f39decc5bc5c791e55f3d9b2185f279d57e100cc",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/001.json",
+    "bytes": 24238,
+    "sha256": "b6c63cc4522062453717f2b8fc4090e8f1282f523908e33495a673c5198ad632",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/002.json",
+    "bytes": 856,
+    "sha256": "87567f3c5bf230a3faeeb26c0b6dd16eb3e03a6ce81b9b42f953f6903602da8f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/003.json",
+    "bytes": 5934,
+    "sha256": "6cde65471e423a75a07ef327cc401474c8c5eae0ef0532bb94d0f7bc00988f4e",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/004.json",
+    "bytes": 7123,
+    "sha256": "6c236c2c4e16b2b127270f7ad339213f8d081eb46f3370c115770a9b8e9eafe1",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/005.json",
+    "bytes": 2047,
+    "sha256": "38f671acdfa3beb810fa0a9f6e6b030398f6f7d207a00d724701943b555adb80",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-a5173d9e30dba77ca1c5/calls/01/request.json",
+    "bytes": 164349,
+    "sha256": "ba22c7f6610c2a42bf4b88c1ba4c7a3ba33e5271eb6b3fefd8e28276c1f553a1",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-a5173d9e30dba77ca1c5/calls/02/request.json",
+    "bytes": 232580,
+    "sha256": "ff2fecc9d5efe4e73e25225a6bc5530a4048ad666196ce33b5f51beeb0d99894",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-a5173d9e30dba77ca1c5/calls/02-explicit-recovery1/request.json",
+    "bytes": 232580,
+    "sha256": "ff2fecc9d5efe4e73e25225a6bc5530a4048ad666196ce33b5f51beeb0d99894",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-a5173d9e30dba77ca1c5/calls/03/request.json",
+    "bytes": 291774,
+    "sha256": "e8a99e8c28c0c07179be3825281cb0ad587556e11beeedcefe6252aa19b2dfa7",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-a5173d9e30dba77ca1c5/tool_reads/001.json",
+    "bytes": 33630,
+    "sha256": "62e81931933d025261bb9ea98dbdfd25755c8dbc593ac1750a147d113a1d764c",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-a5173d9e30dba77ca1c5/tool_reads/002.json",
+    "bytes": 29985,
+    "sha256": "d651d1bf2a5aa97d65b38b93cf492e2fdde7306a17da83010f19c3568f5fe451",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-a5173d9e30dba77ca1c5/tool_reads/003.json",
+    "bytes": 29450,
+    "sha256": "76db1129e4fff278a9c72374a88a798b93bfa5fe53f488d1bd9c688d97ffc706",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-de63c9937aeb17c70d6d/calls/01/request.json",
+    "bytes": 133902,
+    "sha256": "74cf9b687cd8d7a79ccec39c0bbe73aacc7f5b59ae34c78366db76dacf04c6b6",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-de63c9937aeb17c70d6d/calls/02/request.json",
+    "bytes": 141414,
+    "sha256": "0ea8604a02ff0b54baef9ff077a09e8c15b1d1f72fa72780b5818357c41cad40",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-de63c9937aeb17c70d6d/calls/03/request.json",
+    "bytes": 152330,
+    "sha256": "b876e135a3bf717d984c5ed9335bf4d5711a38a3091c866d5ec19356e6bc5e38",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-de63c9937aeb17c70d6d/calls/04/request.json",
+    "bytes": 167329,
+    "sha256": "0792e4d1166dffb40483117c1a620de3f7ae85666fd40fca30ee25a24dd6e363",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-de63c9937aeb17c70d6d/tool_reads/001.json",
+    "bytes": 4119,
+    "sha256": "9d914c775ab40ca244eec86573013387da6ac3994724c0ae9a321f11849a7292",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-de63c9937aeb17c70d6d/tool_reads/002.json",
+    "bytes": 2287,
+    "sha256": "80056a66a13073c8ce681d9ad5b993d2e15d4466f9c68515ac7434c16b7888b6",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-de63c9937aeb17c70d6d/tool_reads/003.json",
+    "bytes": 9681,
+    "sha256": "12621a9dfba3a7771c7748b0cee3e9846ca1f8fe0a9a2550ba6253f117ab5911",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-de63c9937aeb17c70d6d/tool_reads/004.json",
+    "bytes": 11474,
+    "sha256": "6b1c1d67f986207c50da4a7b8fa8ad592e5e7460440a146f860e4571240ee1f4",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/calls/01/request.json",
+    "bytes": 147518,
+    "sha256": "2f29af5b18ccb1cec73ce0a39427c4eda832fd9174199774e815073a9cc2996d",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/calls/02/request.json",
+    "bytes": 170101,
+    "sha256": "85513712c9e61c0fc04f6c735b50ec62ed8e9da70510faff3d936898662ef75c",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/calls/03/request.json",
+    "bytes": 187428,
+    "sha256": "02cfa9ae3759a884993f9c52ced5803abffd57f6a85ad613fa64c4b9e09bcf96",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/calls/04/request.json",
+    "bytes": 269260,
+    "sha256": "9493bacf42f5f876d25573505c538f2f6e4fa77223f348bb082e5ddbd8ea3a45",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/calls/05/request.json",
+    "bytes": 347742,
+    "sha256": "946cc04d4a98e0ca6795b2d9d198f0d1d721f4e130be58e7725af07612959353",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/calls/06/request.json",
+    "bytes": 425026,
+    "sha256": "6d842b4dd7c4d83974c7563820eaa3616f6ed216df77d1bede81c351e08548a5",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/calls/07/request.json",
+    "bytes": 502578,
+    "sha256": "3226176f7eb144e4e8f152b9a40c923329d615b10cf803558e80d7df82b29f1f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/calls/08/request.json",
+    "bytes": 578288,
+    "sha256": "cd008adf774a5b5d6d941c50cf1377e507f9ba724758596ab8fb3093f422e5bc",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/calls/09/request.json",
+    "bytes": 653870,
+    "sha256": "a8aadefafc7e824975ef3050e15af43e51e6902ecc823c9f97a7f56623b9b25b",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/calls/10/request.json",
+    "bytes": 731051,
+    "sha256": "80a51b7f82fcf0ca95321fdbb7f3ede51c99c62a756ab46c3bb9e939abd14034",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/calls/11/request.json",
+    "bytes": 807255,
+    "sha256": "7c9ee1a0487407c7b294dfd112eb0729575baa83feaddcd642ca8fd0c205593d",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/calls/12/request.json",
+    "bytes": 884520,
+    "sha256": "605a58877be12eec587b530d3c4a0f9bde31b449bc97a1ca74cce8e209866233",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/001.json",
+    "bytes": 6643,
+    "sha256": "2e79a1db187c8e49778c8bb5e02d4abd09edce77d6fdcbe7e77d507e6cf623ed",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/002.json",
+    "bytes": 2241,
+    "sha256": "176b3c5260155ceb19ae01e3e7ed6e4e05758068d0dee3ab6508c9bdb5d13fc5",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/003.json",
+    "bytes": 3859,
+    "sha256": "91fd7a997be0680ebc49188bb2db6f80a95cf88c6314ff337d2fc055a3369324",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/004.json",
+    "bytes": 1165,
+    "sha256": "345e4c46ca92aa88a14e2c479a855bfdc4815e84f5e88fa176da78fe9afbd720",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/005.json",
+    "bytes": 1297,
+    "sha256": "10c0dadda458f8ab962e894a84cf4f5cd1ce51593b1b298beab8a4038bc7e9a1",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/006.json",
+    "bytes": 2222,
+    "sha256": "12e2970f2cbaafbd758a577d33582b14cc8de0420c193e413fc533ab2de56e9f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/007.json",
+    "bytes": 7036,
+    "sha256": "f2f5ff7a6292e01d00e75cd20ab723c5588add7b968e12baf88852d15425f960",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/008.json",
+    "bytes": 902,
+    "sha256": "54e1d4c9f625da78bd977e5d399a5b3db4bc44bb0e5be156a0fc20fb357fd910",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/009.json",
+    "bytes": 3482,
+    "sha256": "9b3191ab46e82b4abc56f77f41756903dccd5e92889e436abcd2fab45b736259",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/010.json",
+    "bytes": 1326,
+    "sha256": "481eab51bcb15588291308b0e50069d2d9e2c77a45088c877983266150ba8ac6",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/011.json",
+    "bytes": 2788,
+    "sha256": "3f37e5a37e6c11ad72ad794a1d0eba787bd1c53fe9659c09800d2f9b852487fe",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/012.json",
+    "bytes": 903,
+    "sha256": "568955fd4dc5f234c2d61faf795778fd8c188eb24e9c3a4795e37a6e16d30a26",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/013.json",
+    "bytes": 1297,
+    "sha256": "9586731838dd603197333b06f91f535a8c7fb1006b3c1b4a90a481bce93ec479",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/014.json",
+    "bytes": 2667,
+    "sha256": "7201b90a98f769850820f5e5decd2dc618a2a323d71d94dd30b418b01e5d10c4",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/015.json",
+    "bytes": 903,
+    "sha256": "057648965c42384179fe8baebfed6ef1bacf799dcdb36ddbf7191a966bc63c7b",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/016.json",
+    "bytes": 1202,
+    "sha256": "dde6b7d818dcd6326826d4697bb21db8bb6fd873e123849d801896866df9ceb3",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/017.json",
+    "bytes": 1084,
+    "sha256": "bd46d1087a0dc271ca6e382a13e2f1b9f0b19956c6d59543d2e008a12a443824",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/018.json",
+    "bytes": 903,
+    "sha256": "6eaed16ada9e59cbf6a3f829b37f005d6d50ada6fd0097375257df8636655ec2",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/019.json",
+    "bytes": 1718,
+    "sha256": "6a311dd4902b5b4f4ad2996d3d8cda1bf5ab8b33515a75917958eaa373e6f424",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/020.json",
+    "bytes": 1879,
+    "sha256": "cdeff35f518109a03334b42d4e238f7c1a4b04eb45eb5cbd9e0f9e7a3fd6cb0f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/021.json",
+    "bytes": 1678,
+    "sha256": "c50da935b4aecf202092463dec890b464160b6ebc1f008fa3ffd080d7433890a",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/022.json",
+    "bytes": 904,
+    "sha256": "64427d85f4ba51408ea29c7266810f04a18ba86b4acf4a39b210e379b4835644",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/023.json",
+    "bytes": 2459,
+    "sha256": "b799b2e38e694e945c09ef4e5d1408384cc09051c45a49a6c6a2b1e73de3bb5a",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/024.json",
+    "bytes": 1203,
+    "sha256": "762457bf14f95ac5a5c61dcd9135b1054e222fcc542de19e18ea5285708a4048",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/025.json",
+    "bytes": 904,
+    "sha256": "94c503aef5b0807f30013f03a0923ecac3343a815f014277e4dcb9de8ff8ec37",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/026.json",
+    "bytes": 1037,
+    "sha256": "b966bbfd4e3a195fc1a5e98ae030c07c10fd09b000f1318b8730c89c82e8fe13",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/calls/01/request.json",
+    "bytes": 137810,
+    "sha256": "ba5c20ffbc5a5a858820459784352e43dba5c4292b2a728244c87da3ade426be",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/calls/02/request.json",
+    "bytes": 177876,
+    "sha256": "b766baec0aa2c901f3b9366ae6dc8f863a221410911f5da2885be66a2eec64f1",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/calls/03/request.json",
+    "bytes": 183452,
+    "sha256": "34fb070d767dad3416b65932c3007aea11e59f4e5ce53b78db31c8a6c4d0925e",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/calls/04/request.json",
+    "bytes": 204805,
+    "sha256": "58d205ccb320ce6e2c8bcaaf3a303f3a95b86b327e3049bdc915ca5d444bf334",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/calls/05/request.json",
+    "bytes": 225782,
+    "sha256": "50e61e41fe6a0a4b3dea884061f6622fa0d852571a8a9c410c99421ab28db6ba",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/001.json",
+    "bytes": 31742,
+    "sha256": "c68b5906fecc3683451509c57f50b225cfe12a2d649083104e7133b76f2e7859",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/002.json",
+    "bytes": 8956,
+    "sha256": "37348a3c8323f181f5c243b49efcff598c16de4a5f2cf57fadd5404a9742882c",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/003.json",
+    "bytes": 882,
+    "sha256": "a8e320c39f283772e42e95ac1d665b7a49db1b8819a5a44ea9b2ba3f6c01db25",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/004.json",
+    "bytes": 3741,
+    "sha256": "1b51cfd8eecdaf6e88a88ee080d024cfbdfc036f0232dc9a14d56d852d255a0b",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/005.json",
+    "bytes": 7820,
+    "sha256": "4f5d677746764db73cbe258f3667c67a8444e60000406ccb4851bca99b8cee36",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/006.json",
+    "bytes": 9040,
+    "sha256": "fdf9bf0c702711f490e6338f3bc4de0f90ef743484fed226480f7d41ebf49e58",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/007.json",
+    "bytes": 12847,
+    "sha256": "d809ef078e73cdda670ca3f46bebe1abd351d70cfc081f128c64dc5d2f950175",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ea688bde06c727ee43b1/calls/01/request.json",
+    "bytes": 130333,
+    "sha256": "eb5f5ac617f307220f8033588b9f32a256f531a421c0c57883ae3ad2329029b5",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ea688bde06c727ee43b1/calls/02/request.json",
+    "bytes": 160543,
+    "sha256": "72d0b1348f3f1f7ef2da5323e2966d70290c208f11184c52e787117c01ca852a",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ea688bde06c727ee43b1/calls/03/request.json",
+    "bytes": 191570,
+    "sha256": "13ddab9f3a8e5b270460e87dccd12b596b57f5f28019eef0f89c338e91c04acb",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ea688bde06c727ee43b1/calls/04/request.json",
+    "bytes": 199225,
+    "sha256": "25d6a560dad1d4d322eb811343855695b149a71b887736f1a4c90fe815727f34",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ea688bde06c727ee43b1/tool_reads/001.json",
+    "bytes": 18644,
+    "sha256": "737d9c308291aa456ecee83dc865047a23c72dfc3ef785d82a7ccdd623a1c3f0",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ea688bde06c727ee43b1/tool_reads/002.json",
+    "bytes": 1550,
+    "sha256": "0544964dd899ef8f3fb0ed1ff20e013aa7a179f6efaca46ad9c1dc78efb0726a",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ea688bde06c727ee43b1/tool_reads/003.json",
+    "bytes": 21175,
+    "sha256": "9e0d154cfc2768f092a9566e1b7a6236c12b638fd5917305dcacbccd8fe31c69",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ea688bde06c727ee43b1/tool_reads/004.json",
+    "bytes": 5832,
+    "sha256": "f34ef07b634d1841fa20267114a97416ae5591918a51214095c9fd8a946c1756",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/results/rawio-ea688bde06c727ee43b1/tool_reads/005.json",
+    "bytes": 7709,
+    "sha256": "3f4c851cc0c67129402cc78638bf6a459423d68b8d0cc34753d2ff78a7d724dc",
+    "kind": "context_not_redistributed"
+  }
+]

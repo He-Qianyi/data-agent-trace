@@ -1,0 +1,64 @@
+{
+  "source_pages_verified": 18,
+  "request_protocol_checks_passed": 2,
+  "references": [
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "T0005",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00128",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00129",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00165",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "T0005",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00152",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00153",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00147",
+      "exists": true,
+      "actually_read": true
+    }
+  ],
+  "errors": [],
+  "references_valid": true
+}

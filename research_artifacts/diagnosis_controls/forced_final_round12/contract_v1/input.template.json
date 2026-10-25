@@ -1,0 +1,22 @@
+{
+  "trace_metadata": {
+    "record_id": "<current trace ID>",
+    "task_id": "<task ID>"
+  },
+  "task_evidence_ids": [],
+  "task_requirements": [],
+  "navigation_index": [],
+  "stage_ranges": [],
+  "evidence": [],
+  "coverage": {
+    "tool_evidence": "<explicit included/omitted scope>",
+    "final_response": "<included/omitted; if included register source ID>",
+    "excluded": [
+      "official_evaluation",
+      "reference_answers",
+      "evaluator_feedback",
+      "post_run_artifact_snapshots"
+    ]
+  },
+  "available_retrieval": []
+}

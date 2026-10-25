@@ -1,0 +1,8 @@
+{
+  "task_id": "2697",
+  "status": "failed",
+  "model_rounds": 9,
+  "tool_calls": 16,
+  "reason": "provider_failure_no_retry",
+  "finished_at": "2026-10-18T13:00:24.451006+00:00"
+}

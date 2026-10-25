@@ -1,0 +1,9 @@
+{
+  "before_treatment_agri16_final": true,
+  "old_probe": {
+    "task": "agriculture_16",
+    "probe": "S0033异常已恢复；S0034执行写入与回显有据；最终回复未报告要求结果。"
+  },
+  "source": "review_sources/rawio-bcb49010f78ccd4af446.json T0005/T0009/T0010",
+  "correction": "任务规定报告结果并保存metric/value文件，文件首行即R2；没有单独的最终消息复述要求。不可把最终消息缺少数值或缺少独立读回直接当成确认违规。"
+}

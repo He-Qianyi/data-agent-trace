@@ -1,0 +1,58 @@
+[
+  {
+    "suite": "test_fact_layer_adapters.py",
+    "v5_rebound": true,
+    "versioned_contract_changes": [
+      "known straight-line reassignment now resolves each call in source order; frozen test file unchanged"
+    ],
+    "tests": 32,
+    "success": true,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "test_shell_boundaries_v2.py",
+    "v5_rebound": true,
+    "versioned_contract_changes": [],
+    "tests": 19,
+    "success": true,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "test_stage_d_merge.py",
+    "v5_rebound": false,
+    "versioned_contract_changes": [],
+    "tests": 10,
+    "success": true,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "test_fact_layer_v3_recovery.py",
+    "v5_rebound": true,
+    "versioned_contract_changes": [],
+    "tests": 17,
+    "success": true,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "test_fact_layer_v4_constants_connections.py",
+    "v5_rebound": true,
+    "versioned_contract_changes": [],
+    "tests": 17,
+    "success": true,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "test_fact_layer_v5_connection_positional.py",
+    "v5_rebound": false,
+    "versioned_contract_changes": [],
+    "tests": 9,
+    "success": true,
+    "failures": 0,
+    "errors": 0
+  }
+]

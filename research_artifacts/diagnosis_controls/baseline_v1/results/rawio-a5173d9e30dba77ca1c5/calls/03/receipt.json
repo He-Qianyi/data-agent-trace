@@ -1,0 +1,10 @@
+{
+  "started_at": "2026-10-18T13:11:04.812731+00:00",
+  "request_sha256": "728bc4a33b2b4c1deb4d63b2d7919b20f401cbec7340a1dfea820cb1ae386ea5",
+  "requested_model": "x-test-2",
+  "automatic_retries": 0,
+  "http_attempts": 1,
+  "status": "provider_or_identity_failure",
+  "error_type": "RemoteDisconnected",
+  "elapsed_seconds": 38.976
+}

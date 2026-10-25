@@ -1,0 +1,39 @@
+{
+  "first_run": {
+    "model_calls": 8,
+    "native_tool_calls": 0,
+    "mechanically_passed": 0,
+    "usage": {
+      "prompt_tokens": 280343,
+      "completion_tokens": 10690,
+      "total_tokens": 291033
+    }
+  },
+  "controlled_probe": {
+    "only_changed_factor": "omitted_response_format_json_object",
+    "prompt_input_tools_and_sampling_unchanged": true,
+    "automatic_retries": 0,
+    "http_status": 200,
+    "returned_model": "deepseek-v4.1-flash-1017",
+    "finish_reason": "tool_calls",
+    "native_tool_calls": [
+      "read_steps",
+      "read_evidence"
+    ],
+    "content_characters": 0,
+    "usage": {
+      "prompt_tokens": 32678,
+      "total_tokens": 35757,
+      "completion_tokens": 3079,
+      "prompt_tokens_details": null,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2960
+      }
+    },
+    "elapsed_seconds": 17.404
+  },
+  "prompt_hash_identical": true,
+  "input_hashes_identical": true,
+  "causal_scope": "One trace establishes JSON mode/tool-call incompatibility for this exact setup; not a universal statement about all SoCLaaS models or JSON mode.",
+  "first_probe_response_reused_not_resubmitted": true
+}

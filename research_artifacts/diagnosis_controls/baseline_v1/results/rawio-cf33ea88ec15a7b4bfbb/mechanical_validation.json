@@ -1,0 +1,217 @@
+{
+  "passed": true,
+  "errors": [],
+  "citation_references": 11,
+  "citation_checks": [
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00012",
+      "read_ranges": [
+        [
+          0,
+          2000
+        ],
+        [
+          2000,
+          4000
+        ],
+        [
+          4000,
+          4027
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00021",
+      "read_ranges": [
+        [
+          0,
+          904
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00035",
+      "read_ranges": [
+        [
+          0,
+          2000
+        ],
+        [
+          2000,
+          4000
+        ],
+        [
+          4000,
+          5558
+        ],
+        [
+          0,
+          2000
+        ],
+        [
+          2000,
+          4000
+        ],
+        [
+          4000,
+          5558
+        ],
+        [
+          0,
+          5000
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00024",
+      "read_ranges": [
+        [
+          0,
+          1394
+        ],
+        [
+          0,
+          1394
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00025",
+      "read_ranges": [
+        [
+          0,
+          200
+        ],
+        [
+          0,
+          200
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "T0002",
+      "read_ranges": [
+        [
+          0,
+          145
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00015",
+      "read_ranges": [
+        [
+          0,
+          1823
+        ],
+        [
+          0,
+          1823
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00024",
+      "read_ranges": [
+        [
+          0,
+          1394
+        ],
+        [
+          0,
+          1394
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00035",
+      "read_ranges": [
+        [
+          0,
+          2000
+        ],
+        [
+          2000,
+          4000
+        ],
+        [
+          4000,
+          5558
+        ],
+        [
+          0,
+          2000
+        ],
+        [
+          2000,
+          4000
+        ],
+        [
+          4000,
+          5558
+        ],
+        [
+          0,
+          5000
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00047",
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          1043
+        ],
+        [
+          0,
+          1043
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00048",
+      "read_ranges": [
+        [
+          0,
+          214
+        ],
+        [
+          0,
+          214
+        ],
+        [
+          0,
+          214
+        ]
+      ]
+    }
+  ],
+  "semantic_entailment_verified_by_scripts": false
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "search_evidence",
+      "description": "Search this trace only. Results are unverified navigation, not inspected evidence. No official evaluations or snapshots are searchable.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "top_k": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "retrieve_evidence",
+      "description": "Search and read original evidence pages for this trace. Returns page boundaries and explicit deferred pages. A hit is not proof; follow relevant missing pages.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "top_k": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "read_evidence",
+      "description": "Read an original evidence block or its next page. Copy the returned evidence_id when citing. FINAL0001 is the source-verified recorded final message. Does not execute anything.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "characters": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12000
+          }
+        },
+        "required": [
+          "evidence_id"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "read_steps",
+      "description": "Read original arguments, returns and recording signals for up to six existing tool steps. Pages may be partial; follow next_char_start. Does not execute the submitted code.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "step_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "maxItems": 6
+          }
+        },
+        "required": [
+          "step_ids"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "read_exchange",
+      "description": "Read a bounded page of a fully recorded model request or response for this trace. The response is a source, not a new execution; repeated historical messages are not extra tool calls. Registered evidence ID is exchange_id plus _REQUEST or _RESPONSE.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "exchange_id": {
+            "type": "string"
+          },
+          "surface": {
+            "type": "string",
+            "enum": [
+              "request",
+              "response"
+            ]
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "characters": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12000
+          }
+        },
+        "required": [
+          "exchange_id",
+          "surface"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+]

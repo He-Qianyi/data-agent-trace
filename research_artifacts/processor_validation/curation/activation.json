@@ -1,0 +1,10 @@
+{
+  "activated_at": "2026-10-20T06:10:20.497653+00:00",
+  "before_sha256": "9bc0ebff45ec15c1007b5704863ee2dc0c5ead17cfe1be2374e9f5f412fcedb9",
+  "after_sha256": "f7b7c9581926b1f937218a6e994fd5fedba55eb29f2c70202dcb057b797642c6",
+  "curation_config_sha256": "9a6660b687f9d3de01f00a69c7d88848a9056dde58d5105b54caabfa11345964",
+  "active_count": 145,
+  "full_count": 164,
+  "original_trace_bytes_unchanged": true,
+  "eligible_verified": "passed"
+}

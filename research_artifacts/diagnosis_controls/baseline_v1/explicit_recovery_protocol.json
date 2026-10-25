@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-10-18T13:10:27.009024+00:00",
+  "scope": [
+    "rawio-b4aa2e6b636cb50f6643",
+    "rawio-a5173d9e30dba77ca1c5"
+  ],
+  "one_explicit_replay_per_disconnected_unreturned_request": true,
+  "no_completed_response_regenerated": true,
+  "prompt_or_tools_or_sampling_changed": false,
+  "original_round_budget_unchanged": true,
+  "automatic_retries": 0,
+  "explicit_replay_count_planned": 2,
+  "runner_sha256": "43685fc1b15fe68010dce770830c284ee5e6485b5767c77f66f0ecd2450de340"
+}

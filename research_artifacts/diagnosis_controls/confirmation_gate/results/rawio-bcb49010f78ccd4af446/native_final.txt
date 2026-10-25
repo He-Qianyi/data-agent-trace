@@ -1,0 +1,7 @@
+
+
+<｜DSML｜ calls>
+<｜DSML｜ invoke name="read_steps">
+<｜DSML｜ parameter name="step_ids" string="false">["S0003", "S0004", "S0007", "S0009"]</｜DSML｜ parameter>
+</｜DSML｜ invoke>
+</｜DSML｜ calls>

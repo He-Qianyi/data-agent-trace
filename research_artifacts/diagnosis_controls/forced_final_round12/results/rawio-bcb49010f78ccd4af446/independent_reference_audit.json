@@ -1,0 +1,326 @@
+{
+  "note": "Reference audit performed separately because strict schema validator stops at extra-key failure; diagnosis was not changed.",
+  "passed": true,
+  "citation_instances": 18,
+  "checks": [
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "E00104",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          5636
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "E00105",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          1418
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "E00102",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          3000
+        ],
+        [
+          3000,
+          3343
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "E00104",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          5636
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "E00105",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          1418
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 2,
+      "evidence_id": "E00101",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          6000
+        ],
+        [
+          6000,
+          8541
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 2,
+      "evidence_id": "E00102",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          3000
+        ],
+        [
+          3000,
+          3343
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00101",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          6000
+        ],
+        [
+          6000,
+          8541
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00102",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          3000
+        ],
+        [
+          3000,
+          3343
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00104",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          5636
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00105",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          1418
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00104",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          5636
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00105",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          1418
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00082",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1849
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 2,
+      "evidence_id": "E00104",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          5636
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 2,
+      "evidence_id": "E00102",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          3000
+        ],
+        [
+          3000,
+          3343
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 2,
+      "evidence_id": "E00089",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          861
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 2,
+      "evidence_id": "E00091",
+      "exists": true,
+      "actually_read_before12": true,
+      "read_ranges": [
+        [
+          0,
+          1603
+        ]
+      ]
+    }
+  ],
+  "semantic_entailment_verified": false
+}

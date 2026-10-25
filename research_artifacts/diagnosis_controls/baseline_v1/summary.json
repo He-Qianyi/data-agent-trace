@@ -1,0 +1,884 @@
+{
+  "traces": [
+    {
+      "record_id": "rawio-b4aa2e6b636cb50f6643",
+      "task_id": "2697",
+      "agent_id": "kimi_code",
+      "input_sha256": "bc4d3cead31ad10bbefed6557c769494068f1e0f550832524dfbfc5c4eeab641",
+      "trace_sha256": "1b37c584b28ffcc908abc49282d4b7894cd226d0bb6bd7d5d72d28f5aff1e975",
+      "status": "recovery_failed",
+      "model_rounds": 10,
+      "tool_calls": 17,
+      "finished_at": "2026-10-18T13:11:43.789691+00:00",
+      "explicit_transport_replays": 1,
+      "reason": "provider_failure_no_retry",
+      "mechanical_validation": null,
+      "critical_points": null,
+      "chain_entries": null,
+      "tool_argument_errors": []
+    },
+    {
+      "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+      "task_id": "1273",
+      "agent_id": "codex",
+      "input_sha256": "956fde0eecfd6272de1d81e5381c81a09e66315cddf6d0ab1056aebe8325a32c",
+      "trace_sha256": "cc7aa9828564e561ac67c4a596f4cfc5961841a80ad69620c6cc4abdc59a4677",
+      "status": "mechanically_passed",
+      "model_rounds": 5,
+      "tool_calls": 8,
+      "finished_at": "2026-10-18T12:58:36.558032+00:00",
+      "mechanical_validation": {
+        "passed": true,
+        "errors": [],
+        "citation_references": 11,
+        "citation_checks": [
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00012",
+            "read_ranges": [
+              [
+                0,
+                2000
+              ],
+              [
+                2000,
+                4000
+              ],
+              [
+                4000,
+                4027
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00021",
+            "read_ranges": [
+              [
+                0,
+                904
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00035",
+            "read_ranges": [
+              [
+                0,
+                2000
+              ],
+              [
+                2000,
+                4000
+              ],
+              [
+                4000,
+                5558
+              ],
+              [
+                0,
+                2000
+              ],
+              [
+                2000,
+                4000
+              ],
+              [
+                4000,
+                5558
+              ],
+              [
+                0,
+                5000
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00024",
+            "read_ranges": [
+              [
+                0,
+                1394
+              ],
+              [
+                0,
+                1394
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00025",
+            "read_ranges": [
+              [
+                0,
+                200
+              ],
+              [
+                0,
+                200
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "T0002",
+            "read_ranges": [
+              [
+                0,
+                145
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00015",
+            "read_ranges": [
+              [
+                0,
+                1823
+              ],
+              [
+                0,
+                1823
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00024",
+            "read_ranges": [
+              [
+                0,
+                1394
+              ],
+              [
+                0,
+                1394
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00035",
+            "read_ranges": [
+              [
+                0,
+                2000
+              ],
+              [
+                2000,
+                4000
+              ],
+              [
+                4000,
+                5558
+              ],
+              [
+                0,
+                2000
+              ],
+              [
+                2000,
+                4000
+              ],
+              [
+                4000,
+                5558
+              ],
+              [
+                0,
+                5000
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00047",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                1043
+              ],
+              [
+                0,
+                1043
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00048",
+            "read_ranges": [
+              [
+                0,
+                214
+              ],
+              [
+                0,
+                214
+              ],
+              [
+                0,
+                214
+              ]
+            ]
+          }
+        ],
+        "semantic_entailment_verified_by_scripts": false
+      },
+      "critical_points": 2,
+      "chain_entries": 0,
+      "tool_argument_errors": []
+    },
+    {
+      "record_id": "rawio-2a40e1d15e900422bb10",
+      "task_id": "1464",
+      "agent_id": "claude_code",
+      "input_sha256": "95a8503d56f82a358bcc8e48b1d8e1a1fb638e50886e8c1f0056dc888fe5fbf3",
+      "trace_sha256": "b351469d47e46c8e7d4c1771fb72dd45a43461ae1a7879200e2a87d0f0b0a81f",
+      "status": "mechanically_passed",
+      "model_rounds": 4,
+      "tool_calls": 5,
+      "finished_at": "2026-10-18T12:59:21.427148+00:00",
+      "mechanical_validation": {
+        "passed": true,
+        "errors": [],
+        "citation_references": 5,
+        "citation_checks": [
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00005",
+            "read_ranges": [
+              [
+                0,
+                5000
+              ],
+              [
+                5000,
+                10000
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00012",
+            "read_ranges": [
+              [
+                0,
+                638
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00014",
+            "read_ranges": [
+              [
+                0,
+                893
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00015",
+            "read_ranges": [
+              [
+                0,
+                301
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00018",
+            "read_ranges": [
+              [
+                0,
+                155
+              ]
+            ]
+          }
+        ],
+        "semantic_entailment_verified_by_scripts": false
+      },
+      "critical_points": 1,
+      "chain_entries": 0,
+      "tool_argument_errors": []
+    },
+    {
+      "record_id": "rawio-a5173d9e30dba77ca1c5",
+      "task_id": "agriculture_20",
+      "agent_id": "codex",
+      "input_sha256": "ee57636d99ab1aa243832352e8c1006a9567a9a8d8263f474e77aeef5b1a0a66",
+      "trace_sha256": "bf909b5ceed53d76ae7f6f71f3be3658037a5d12d2906ce3d28636b25e74165a",
+      "status": "recovery_failed",
+      "model_rounds": 2,
+      "tool_calls": 3,
+      "finished_at": "2026-10-18T13:11:43.789865+00:00",
+      "explicit_transport_replays": 1,
+      "reason": "provider_failure_no_retry",
+      "mechanical_validation": null,
+      "critical_points": null,
+      "chain_entries": null,
+      "tool_argument_errors": []
+    },
+    {
+      "record_id": "rawio-de63c9937aeb17c70d6d",
+      "task_id": "agriculture_22",
+      "agent_id": "claude_code",
+      "input_sha256": "4424fedc84401b8baf5fe668d87a95532a6ff9af9d60bdf1227999a5849f0a3d",
+      "trace_sha256": "be667b18541bb348e53096f1f4719236a53d8e0a1b03dbf096f6cc20d57f8e34",
+      "status": "mechanically_failed",
+      "model_rounds": 4,
+      "tool_calls": 4,
+      "finished_at": "2026-10-18T13:02:06.032467+00:00",
+      "mechanical_validation": {
+        "passed": false,
+        "errors": [
+          {
+            "kind": "schema",
+            "path": "",
+            "message": "Additional properties are not allowed ('root_cause_chain_note' was unexpected)"
+          }
+        ],
+        "citation_references": 0
+      },
+      "critical_points": 1,
+      "chain_entries": 0,
+      "tool_argument_errors": []
+    },
+    {
+      "record_id": "rawio-bcb49010f78ccd4af446",
+      "task_id": "agriculture_16",
+      "agent_id": "claude_code",
+      "input_sha256": "537a6e421020124e604a7684d678697e6ba8c721daa9135aca2587d7f1b5cb60",
+      "trace_sha256": "8fdf56cbeaa1707c053e7e346281ff38b0e0f9e2a2e82be773a30033627cf86e",
+      "status": "round_budget_exhausted",
+      "model_rounds": 12,
+      "tool_calls": 26,
+      "reason": "no_final_diagnosis_within_frozen_budget",
+      "finished_at": "2026-10-18T13:09:54.835846+00:00",
+      "mechanical_validation": null,
+      "critical_points": null,
+      "chain_entries": null,
+      "tool_argument_errors": []
+    },
+    {
+      "record_id": "rawio-ecb8d458d5899c6dfd80",
+      "task_id": "civic_unstructured__query6",
+      "agent_id": "claude_code",
+      "input_sha256": "093fb5549a9ff678816577e62b02f901919428ba9cd50c02d51c4e09bef312b2",
+      "trace_sha256": "4f3aae8f8f858b55f70de47a837c2d95a0767cd34ef7f17680d7a43fccf71ba8",
+      "status": "mechanically_passed",
+      "model_rounds": 5,
+      "tool_calls": 7,
+      "finished_at": "2026-10-18T13:02:58.081647+00:00",
+      "mechanical_validation": {
+        "passed": true,
+        "errors": [],
+        "citation_references": 21,
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0002",
+            "read_ranges": [
+              [
+                0,
+                328
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0003",
+            "read_ranges": [
+              [
+                0,
+                406
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "read_ranges": [
+              [
+                0,
+                277
+              ],
+              [
+                0,
+                277
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "T0002",
+            "read_ranges": [
+              [
+                0,
+                328
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00010",
+            "read_ranges": [
+              [
+                0,
+                5000
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00035",
+            "read_ranges": [
+              [
+                0,
+                4248
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00056",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                2946
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00057",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                2928
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00041",
+            "read_ranges": [
+              [
+                0,
+                828
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00045",
+            "read_ranges": [
+              [
+                0,
+                2295
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00054",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                5000
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00056",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                2946
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00057",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                2928
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0002",
+            "read_ranges": [
+              [
+                0,
+                328
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00035",
+            "read_ranges": [
+              [
+                0,
+                4248
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00056",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                2946
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00057",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                2928
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "read_ranges": [
+              [
+                0,
+                277
+              ],
+              [
+                0,
+                277
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00041",
+            "read_ranges": [
+              [
+                0,
+                828
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00045",
+            "read_ranges": [
+              [
+                0,
+                2295
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00054",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                5000
+              ]
+            ]
+          }
+        ],
+        "semantic_entailment_verified_by_scripts": false
+      },
+      "critical_points": 2,
+      "chain_entries": 3,
+      "tool_argument_errors": []
+    },
+    {
+      "record_id": "rawio-ea688bde06c727ee43b1",
+      "task_id": "stockmarket__query1",
+      "agent_id": "claude_code",
+      "input_sha256": "376b911271a822513ddf8c95273f89d241edee9936903b6d17b748795c20e3eb",
+      "trace_sha256": "c9e252c63e1bb326fe7c0be0aae78a9e1b2dcf59313f9c44593b4d272a8a063e",
+      "status": "mechanically_passed",
+      "model_rounds": 4,
+      "tool_calls": 5,
+      "finished_at": "2026-10-18T13:03:39.902755+00:00",
+      "mechanical_validation": {
+        "passed": true,
+        "errors": [],
+        "citation_references": 13,
+        "citation_checks": [
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00023",
+            "read_ranges": [
+              [
+                0,
+                370
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00024",
+            "read_ranges": [
+              [
+                0,
+                366
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00026",
+            "read_ranges": [
+              [
+                0,
+                326
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00027",
+            "read_ranges": [
+              [
+                0,
+                366
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00030",
+            "read_ranges": [
+              [
+                0,
+                323
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00035",
+            "read_ranges": [
+              [
+                0,
+                365
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00036",
+            "read_ranges": [
+              [
+                0,
+                341
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00039",
+            "read_ranges": [
+              [
+                0,
+                377
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00040",
+            "read_ranges": [
+              [
+                0,
+                23
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00050",
+            "read_ranges": [
+              [
+                0,
+                383
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00051",
+            "read_ranges": [
+              [
+                0,
+                395
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00053",
+            "read_ranges": [
+              [
+                0,
+                397
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00054",
+            "read_ranges": [
+              [
+                0,
+                171
+              ]
+            ]
+          }
+        ],
+        "semantic_entailment_verified_by_scripts": false
+      },
+      "critical_points": 1,
+      "chain_entries": 0,
+      "tool_argument_errors": []
+    }
+  ],
+  "final_diagnosis_json_generated": 5,
+  "mechanically_passed": 4,
+  "provider_requests_represented": 50,
+  "model_responses_used": 46,
+  "new_requests_after_probe": 49,
+  "probe_responses_reused": 1,
+  "explicit_transport_replays_of_unreturned_requests": 2,
+  "native_tool_calls": 75,
+  "usage_transport_corrected_run_including_reused_probe": {
+    "prompt_tokens": 3055295,
+    "completion_tokens": 286767,
+    "total_tokens": 3342062
+  },
+  "usage_first_failed_run": {
+    "prompt_tokens": 280343,
+    "completion_tokens": 10690,
+    "total_tokens": 291033
+  },
+  "total_distinct_provider_requests_including_failed_first_run": 58,
+  "interrupted_provider_requests_without_usage": 4,
+  "source_pages_verified": 435,
+  "semantic_review_counts": {
+    "needs_revision": 3,
+    "not_assessable_budget": 1,
+    "not_assessable_service": 2,
+    "usable_with_limits": 2
+  },
+  "independent_gold": false,
+  "root_cause_accuracy_measured": false,
+  "official_scores_not_sent": true,
+  "post_run_snapshots_not_sent": true,
+  "prompt_unchanged": true,
+  "automatic_retries": 0,
+  "repairs": 0,
+  "frozen_processor_files_unchanged": 79
+}

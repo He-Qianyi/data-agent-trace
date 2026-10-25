@@ -1,0 +1,632 @@
+[
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/01/request.json",
+    "bytes": 135589,
+    "sha256": "54417df61a5d0bc1fc76b863611d1a56d1329524f660150a0d64d9e30edcbb51",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/02/request.json",
+    "bytes": 173517,
+    "sha256": "c582e7fd1878d205f882cc577ae0c2dcbaef9e95c152724906b18db70431477f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/03/request.json",
+    "bytes": 184918,
+    "sha256": "0389c8dea85e78ab32c3908fde783d6f14ab2adb34255c1c16ae3501c3221ed0",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/04/request.json",
+    "bytes": 190264,
+    "sha256": "9512af3e63831b7ed5ae554032e47979d456dc1f90151c95bf91428bd64fa557",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/05/request.json",
+    "bytes": 206659,
+    "sha256": "9bdde6ece3760fd57e6dc5ed892b748e899f8d0b2c8d5a43ab3aa6701e2150c3",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/calls/06/request.json",
+    "bytes": 215968,
+    "sha256": "6bdbeb094f171828b8af806a086a0d2659e1710b9d8eabd376b7d7e2890aec50",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/001.json",
+    "bytes": 33624,
+    "sha256": "248080a9d65a71a2bfe9b3ac3554aed25d631d6bfbc4d66ca8104c7a4cf95ea5",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/002.json",
+    "bytes": 845,
+    "sha256": "4cf0ecbdb09bf46048f5382e693092e63034348dd7a8c732303d7349903f974f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/003.json",
+    "bytes": 4878,
+    "sha256": "62773303a44aee50996340d545531ae868023da88ae8e171c3956cc58242bad4",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/004.json",
+    "bytes": 4842,
+    "sha256": "358fc4c1a76e681d7913510f4456fb5519f09a75201d65fa92d5852412fe0e14",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/005.json",
+    "bytes": 4846,
+    "sha256": "3e1bcdd78774c77916942d8dabfb098ff2aa3d40fb5a2e638880075da3f5ed0e",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/006.json",
+    "bytes": 8916,
+    "sha256": "5a5dbc32e4f3f4affdd625be01d44698d31216aaeb82aa27fa7e05c55ead7c0d",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/007.json",
+    "bytes": 4813,
+    "sha256": "3685a0c152ef97b2c1a180f0e64661fc86750963cae4a330bdccd3db13f8c821",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/tool_reads/008.json",
+    "bytes": 3092,
+    "sha256": "3caf01a30f4b16b070008294b51c6dbeca409f423af27128526174f848a6e2e6",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-cf33ea88ec15a7b4bfbb/calls/01/request.json",
+    "bytes": 134694,
+    "sha256": "04c2c150be0e1a84ca110af73e50d46f87859191b2a7e7f591cd683d04e9309f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-cf33ea88ec15a7b4bfbb/calls/02/request.json",
+    "bytes": 151340,
+    "sha256": "d9d6f8e0d9721158874a295018c424ddf15d7ea375a4b51d4ab59c159d80b2e5",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-cf33ea88ec15a7b4bfbb/calls/03/request.json",
+    "bytes": 186665,
+    "sha256": "123908005df60328241320bba2022176c86e90da77ec6117343073df2b50e432",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-cf33ea88ec15a7b4bfbb/calls/04/request.json",
+    "bytes": 198065,
+    "sha256": "3e14caa5389e93d6106b3e71eff22e4301bc742d12d4e0d4f959103edd5e12c4",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/001.json",
+    "bytes": 8290,
+    "sha256": "cd0bac7f6d5e04f28974eac361961d2dabf570d8b2e2429e7be04e57e4de1dfb",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/002.json",
+    "bytes": 2454,
+    "sha256": "307697a127c53f651e433116826dcebf5b9358bfb3749d4611bc08d9c067266b",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/003.json",
+    "bytes": 30514,
+    "sha256": "cfc291fb8ef679a1bbc38e20da4e13459a4424ec1a0591f5dfc0d5988ac49fe1",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/004.json",
+    "bytes": 4837,
+    "sha256": "3179adf3679b019dc8310a4b455a3d2797ecb33d6c303648bf06c1a350bdd76e",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/005.json",
+    "bytes": 4026,
+    "sha256": "f6d3492bd13c7f4474183cf7a6d8e06ef2e1eecaec7f0e2b1a655ed5fa953ae1",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-cf33ea88ec15a7b4bfbb/tool_reads/006.json",
+    "bytes": 675,
+    "sha256": "aee2ab7fc9c04fdc4d2af5df957e5cd8f44a1de3a5d1923c110f2a3303b4e3cb",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-2a40e1d15e900422bb10/calls/01/request.json",
+    "bytes": 130542,
+    "sha256": "a619e9e8ffad2a59a797eeab52cf0d81d0ecd0943d7eeabba5d951d0f3e3bf41",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-2a40e1d15e900422bb10/calls/02/request.json",
+    "bytes": 187317,
+    "sha256": "ec53f6341e7467832d413c893f06b01b5371221e008d2bff2878c1e4425596f6",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-2a40e1d15e900422bb10/calls/03/request.json",
+    "bytes": 218145,
+    "sha256": "4d77c79d673402f335d56f1a9522cbe240895693694bcd20ac48a1cce45e388b",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/001.json",
+    "bytes": 24238,
+    "sha256": "b6c63cc4522062453717f2b8fc4090e8f1282f523908e33495a673c5198ad632",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/002.json",
+    "bytes": 35968,
+    "sha256": "4a85e909102c5c987164dc2d970a6148612cd147c2c34e43bed3eb24d463f628",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/003.json",
+    "bytes": 12382,
+    "sha256": "1e4296c24c34f97c549305ace7d743658f9f26903ea35e1c28650238f0b32439",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/004.json",
+    "bytes": 18262,
+    "sha256": "a52d35dc1930fb188813dbe097f5299c35c651baa0ea0a7e4f7b95b46b3f5435",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-a5173d9e30dba77ca1c5/calls/01/request.json",
+    "bytes": 164744,
+    "sha256": "6d5a5d3b0c500654f59f42d34f11bbeca565a378b60f0f8aec11117d5e663852",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-a5173d9e30dba77ca1c5/calls/02/request.json",
+    "bytes": 208038,
+    "sha256": "bc14d1410b76d4dc644fb8a83442df5a0e31cc81c101dbbdb076491be0dfb2b6",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-a5173d9e30dba77ca1c5/tool_reads/001.json",
+    "bytes": 24934,
+    "sha256": "69d8485e1698786911ab140c3a00e735caa26c13311c2ea9e65a51c99fa7740f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-a5173d9e30dba77ca1c5/tool_reads/002.json",
+    "bytes": 16933,
+    "sha256": "926f6dcbd4d2b23cd1a4de712e3727cfd964eb3eb2562aad6223eefadb10b497",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-de63c9937aeb17c70d6d/calls/01/request.json",
+    "bytes": 134297,
+    "sha256": "525d492b4d985d15edc1704075e4b52c7b13dbacc79c7a9508bffa48577d8f53",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-de63c9937aeb17c70d6d/calls/02/request.json",
+    "bytes": 157563,
+    "sha256": "07088aabfdd9b3d8bbd6c96ff01030b90a7c8d5d6062d89681e4437a5149350e",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-de63c9937aeb17c70d6d/calls/03/request.json",
+    "bytes": 170787,
+    "sha256": "930a2fb8c6defc415ff410c3e380b8c6761e3430aa903ba3ae0b57d52dd77d60",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-de63c9937aeb17c70d6d/tool_reads/001.json",
+    "bytes": 19325,
+    "sha256": "4479e9b9fe25d8ff8d52c3a01f52f6524b938aa29ff7e388d0f1bb258b4845a8",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-de63c9937aeb17c70d6d/tool_reads/002.json",
+    "bytes": 4119,
+    "sha256": "bbf5564fcb28def9d3dc0b274202339694a23b5de9354bf3314269362d4c6e3c",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-de63c9937aeb17c70d6d/tool_reads/003.json",
+    "bytes": 11760,
+    "sha256": "b49a29726afde00c605923e2de1fd4348fb3062de6443b417eecce4a1cc6ef9d",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/calls/01/request.json",
+    "bytes": 147913,
+    "sha256": "63ee16c2d542ac6ee54ad6b3ed53bdedafc61b4ed27ad4523d307aa2eecb6f63",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/calls/02/request.json",
+    "bytes": 162922,
+    "sha256": "fa5952a868b6a7f8d1816e8fc71c8757661690dd8ad1987d8cdceeaec4f26918",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/calls/03/request.json",
+    "bytes": 174095,
+    "sha256": "7b42eb9b3ba37fcbbb65efd92a7e6c47f6036b5d9c89355328ae70e794a2a486",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/calls/04/request.json",
+    "bytes": 265080,
+    "sha256": "1d1d2dd0a2d75b3c907fd926769268308f52d036ab045c2ed0627bef987c63b3",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/calls/05/request.json",
+    "bytes": 333520,
+    "sha256": "f3066edd2415f9b6b274fc1fb7d308988f695876a892acf8a90904735011ee97",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/calls/06/request.json",
+    "bytes": 400928,
+    "sha256": "6b25d2902e9caed9d686d65c68a80e636b7941888d0e6eb00244f34ad6970104",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/calls/07/request.json",
+    "bytes": 468287,
+    "sha256": "b875fd4d620cf483fdcf647c4f877511428c20c3693678b32050aab793bbd83c",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/calls/08/request.json",
+    "bytes": 535147,
+    "sha256": "c77f394527255d0f53fa2935c1b97f8caa23324ff8a28cc4d570da48eddcc87b",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/calls/09/request.json",
+    "bytes": 604329,
+    "sha256": "36258b8094bbeaec59c6a4d3a1c36297f5adc8952f485d5d01161cc021882a6c",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/calls/10/request.json",
+    "bytes": 671167,
+    "sha256": "f0d4f4b602681465731cd2497a4a149a15502571d2fe9a0f83974799038340f9",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/calls/11/request.json",
+    "bytes": 738169,
+    "sha256": "d49ad757c4892d9a5d7ed0b6997659b6eeddef43569265e3d3f154348e7fb435",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/calls/12/request.json",
+    "bytes": 805117,
+    "sha256": "09b1ef53857e5f14a8854896aa5006dcea9d86fcc2dd86d1a0b2dd66187e9d27",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/001.json",
+    "bytes": 5636,
+    "sha256": "a58340e4ac88a023cd68f598016d397f4b6bebe9c8dcf65a625aa35ac25c65a5",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/002.json",
+    "bytes": 1239,
+    "sha256": "5b61981c309a1f36ed577d164689751e55188bdc2ec6e91d52a7cca482d562b0",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/003.json",
+    "bytes": 3213,
+    "sha256": "851cab3ed6bbbbf4fc0d103bcd0be333241873e1d95279aa329f39ca949acbf7",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/004.json",
+    "bytes": 2222,
+    "sha256": "579499a875832130ba134939b69accf20656b9a54ea2857a16d28062df31459f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/005.json",
+    "bytes": 6923,
+    "sha256": "cc1d4da29d318e92dc545d482d8e11e10e24b200a2dfdd6991233390719ad3e9",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/006.json",
+    "bytes": 20340,
+    "sha256": "3efd09242bb0dceaa50902b110287bb0094507424ef7ac46cbb95675fb0112c7",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/007.json",
+    "bytes": 664,
+    "sha256": "8522365efc3d6ef5825932ddae857606297121ef3f6b9848709c1c2794519ff1",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/008.json",
+    "bytes": 4522,
+    "sha256": "63f61f589cc25338caff185bec1b78f48427662ec3b2bca763eb722722b0486e",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/009.json",
+    "bytes": 1508,
+    "sha256": "3b4ceeb370c0b36ae7aef4e33d357f4e9f00d2a2a81fbe3655ef71afead55c8c",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/010.json",
+    "bytes": 812,
+    "sha256": "6585a2a75319507e22fd048ff24683a2b5b5b11ac9d64efad2e013b344d71f48",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/011.json",
+    "bytes": 2239,
+    "sha256": "64153ac5398c4879fbdd065cf52041c29ffd0b996d7b16d6ec86cd33488f73c5",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/012.json",
+    "bytes": 1831,
+    "sha256": "57afc3683dcf8e1d3bbfef23cfd532a9eb3ab118b1277eda09e008d459de1b36",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/013.json",
+    "bytes": 4863,
+    "sha256": "3ca123f79308acb113110208a8c424e4b108a33b7c3dcde42e7db894df4bbb3e",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/014.json",
+    "bytes": 1239,
+    "sha256": "3180776bbfb55116436e8096bda3285982395e84fbe5dd82910c6c8b0147955a",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/015.json",
+    "bytes": 1870,
+    "sha256": "22ca1277f8762bff7eec97b159e7bc790067e318407727d3dd3b3faceda5a5dc",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-bcb49010f78ccd4af446/tool_reads/016.json",
+    "bytes": 1829,
+    "sha256": "2719700e2d9e893945b92ec5eeb6115f5e089f1588463c14e3b6e4c10f0d2ee6",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/calls/01/request.json",
+    "bytes": 138205,
+    "sha256": "fd53d0fec202bd3e6a5ee7d926b6eaadca47de75b13fe54fc49f1012ce368494",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/calls/02/request.json",
+    "bytes": 171274,
+    "sha256": "91e2f82c8918810c08f02c6d4831ac21b32f4f1e8b536bad5ce9284ec58c02cf",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/calls/03/request.json",
+    "bytes": 186142,
+    "sha256": "8dced9c7f96937503500d0ce7a347a12d0e1a9b8a3e3b375b1aba28a16cea51d",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/calls/04/request.json",
+    "bytes": 207562,
+    "sha256": "aad28c90071f2a11859ac6037dfa2b01728b736508822e3b6d2a93fde74c7485",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/calls/05/request.json",
+    "bytes": 239860,
+    "sha256": "11c55cf169d8cf7ad8c8015579aee1cc4a8967ed844ad7c894b502ccdcdf1b8f",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/001.json",
+    "bytes": 882,
+    "sha256": "ce6cb6a0236b6e3b2d3db956a811149dc67571ae6f49f023a3d975849f4ea2a3",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/002.json",
+    "bytes": 31742,
+    "sha256": "f7f1044d87ddbc52b1dfb6deb2acc05e8b02308186b1d954e9f9ffe45c8ea0f2",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/003.json",
+    "bytes": 8252,
+    "sha256": "a7949da069f3997df5da60c4311efa6be16028ed249357a9a0740cdab6c4e49a",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/004.json",
+    "bytes": 8615,
+    "sha256": "4f04d0c2ad6116d25da98c24ce27fb82da152f730132025a10684f6e6a5d4a4b",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/005.json",
+    "bytes": 15360,
+    "sha256": "a6633004268fd2f85972c12c555a585bad8eb314f1a4cf7d446c6c649bad486c",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/006.json",
+    "bytes": 4353,
+    "sha256": "ebd57453283666df9932037a0b956705666da5daff56a5b07aff545f9286dfff",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/tool_reads/007.json",
+    "bytes": 12847,
+    "sha256": "d809ef078e73cdda670ca3f46bebe1abd351d70cfc081f128c64dc5d2f950175",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ea688bde06c727ee43b1/calls/01/request.json",
+    "bytes": 130728,
+    "sha256": "da924549c6b5f46d33ea2cb0d00b87ec823629fef4d9ec9bf87b57318b6da332",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ea688bde06c727ee43b1/calls/02/request.json",
+    "bytes": 148205,
+    "sha256": "bb3060d841be0748c6f71e4d7847f8b5ccbb79a80fb7c37d79a5a2c3a261b5a7",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ea688bde06c727ee43b1/calls/03/request.json",
+    "bytes": 167308,
+    "sha256": "cf82e40695c29a214e53a596a22f86e122c836334fa262f89da0b922562ed24b",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ea688bde06c727ee43b1/calls/04/request.json",
+    "bytes": 168966,
+    "sha256": "ab89b6a6130b12016b38b1475edefb34ebbee9955d5d95d98ef66a6fb01f9c4c",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ea688bde06c727ee43b1/tool_reads/001.json",
+    "bytes": 17491,
+    "sha256": "5aebeb83e8a59f7b90d344c147391cf42c40735e47c74c53dd4b62accf5738f1",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ea688bde06c727ee43b1/tool_reads/002.json",
+    "bytes": 1550,
+    "sha256": "0544964dd899ef8f3fb0ed1ff20e013aa7a179f6efaca46ad9c1dc78efb0726a",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ea688bde06c727ee43b1/tool_reads/003.json",
+    "bytes": 15398,
+    "sha256": "04b5a4d9a0a1e89d14cf775ca43268015de387922f7e1c674ada09fecb40a885",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ea688bde06c727ee43b1/tool_reads/004.json",
+    "bytes": 855,
+    "sha256": "be38abf57971174124b90fed0c2a23b7a3f05b74fbf3ea47c8fdad23f86d768c",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "source": "artifacts/05_diagnosis/diagnosis_confirmation_gate_v1_20261018/results/rawio-ea688bde06c727ee43b1/tool_reads/005.json",
+    "bytes": 1297,
+    "sha256": "b1ffd462f64f506cd49a07b40e4853c61259dfc644562dfd253c857757f99e2a",
+    "kind": "context_not_redistributed"
+  }
+]

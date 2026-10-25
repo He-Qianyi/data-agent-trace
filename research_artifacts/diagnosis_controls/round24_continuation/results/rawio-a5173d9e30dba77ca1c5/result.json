@@ -1,0 +1,11 @@
+{
+  "task_id": "agriculture_20",
+  "status": "recovery_failed",
+  "model_rounds": 2,
+  "tool_calls": 3,
+  "finished_at": "2026-10-18T13:11:43.789865+00:00",
+  "explicit_transport_replays": 1,
+  "reason": "provider_failure_no_retry",
+  "new_model_requests": 0,
+  "comparison_status": "historical_service_censored"
+}

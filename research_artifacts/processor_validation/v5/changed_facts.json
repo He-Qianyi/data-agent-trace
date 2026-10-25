@@ -1,0 +1,30 @@
+[
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "benchmark": "dataagentbench",
+    "task_id": "stockindex__query3",
+    "agent_id": "claude_code",
+    "facts_changed": true,
+    "changed_sections": [
+      "data_resources",
+      "steps"
+    ],
+    "task_evidence_equal": true,
+    "operation_evidence_equal": true,
+    "operation_input_sha256": "d3ba3e3363e223ec421bff8e8a609d51a42799dbfe76219090605ac5cb6dfa28"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "benchmark": "dataagentbench",
+    "task_id": "stockmarket__query2",
+    "agent_id": "claude_code",
+    "facts_changed": true,
+    "changed_sections": [
+      "data_resources",
+      "steps"
+    ],
+    "task_evidence_equal": true,
+    "operation_evidence_equal": true,
+    "operation_input_sha256": "eb59826027f9678e73b1bf651377b1f8dfd02d370b0dfa1381630a5a7356f874"
+  }
+]

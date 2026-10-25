@@ -1,0 +1,52 @@
+{
+  "id": "chatcmpl-e19ff07c",
+  "object": "chat.completion",
+  "created": 1792331850,
+  "model": "deepseek-v4.1-flash-1017",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_470c48d1c68f4862b14d500b",
+            "type": "function",
+            "function": {
+              "name": "read_steps",
+              "arguments": "{\"step_ids\":[\"S0005\",\"S0009\",\"S0010\",\"S0012\",\"S0016\",\"S0018\"]}"
+            }
+          },
+          {
+            "id": "call_8ddb8cefc506492ca35525bd",
+            "type": "function",
+            "function": {
+              "name": "read_evidence",
+              "arguments": "{\"evidence_id\":\"E00002\",\"start\":1000}"
+            }
+          }
+        ],
+        "reasoning": "Let me inspect the key steps: S0005 (symbol lookup), S0012 (max query result), S0016 (top 5 rows), S0017 (write answer), S0018 (readback). Also S0009/S0010 for date range info (REAL table dates 2019-06-28 to 2020-04-01).\n\nLet me read steps."
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 32750,
+    "total_tokens": 32951,
+    "completion_tokens": 201,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 82
+    }
+  },
+  "system_fingerprint": null,
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null
+}

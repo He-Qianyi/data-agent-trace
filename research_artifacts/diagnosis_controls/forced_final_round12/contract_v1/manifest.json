@@ -1,0 +1,18 @@
+{
+  "files": {
+    "README.txt": "43529dadb3da37f8a603bc0ec83ddf132a4ec8a0d0e3e7895136ac883d6b9572",
+    "diagnosis.prompt.md": "8ad65be79cfb5bda29e746d2e096a244e367da6954f4d89773be31bdac7e8fd8",
+    "diagnosis.rules.md": "798fca15d9c34345de65e9dccc211a857a719170ba9bfd9f8dc754a8badae81e",
+    "diagnosis.schema.json": "424154b522ac3a27cfa9a52167ccabc88fd27eaac68f426f213578fdfc5566ce",
+    "examples/01_codex_agriculture10/diagnosis.json": "14621fd53b0682912ac1d27f0769995fc4ea30f40e8d7c3ce09d66db666387f9",
+    "examples/01_codex_agriculture10/example.md": "11a12bf441d01d33248db7ade8445b05ca69bf5fc92e5922ccb0385e2a6708ab",
+    "examples/01_codex_agriculture10/input.json": "c1b5a8dafa9b3f92bf767a3eab830d5511a8b581e4a098eec0b23d9b3148d217",
+    "examples/02_claude_crm_query5/diagnosis.json": "4a2c34dd3197310add07fbcbc9b57f8b5704d30accc6f97c0f36bef5c3d037fb",
+    "examples/02_claude_crm_query5/example.md": "207969cde9ff7f516a795e97e3dc8843436bd37b02dba3b0658274cea59f4156",
+    "examples/02_claude_crm_query5/input.json": "34972e5ce4b7e88d5db6d8ebd65b1d36676973b9d5e43fe0d0b0f038b0b5e5d2",
+    "examples.md": "9a0a0891c0a4b8103f2ad69b3db6785570f5c15941559bbd432533f4365b0afe",
+    "input.template.json": "afcc70a94fc5920c61909e57cd214e7655b697a5724a8e65335fa3c056be97ac",
+    "source_provenance.json": "12a1897dcea4479b01a5ea6904ed12194fb51c13ca4953140aaedcd3039a9b40",
+    "validation.json": "e5b6b7492f8d5b6dcf5c4b9b7bd8425293f71a61b6c61193ffc886d9ea5427e8"
+  }
+}

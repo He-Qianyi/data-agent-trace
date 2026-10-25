@@ -1,0 +1,57 @@
+第一轮：只改诊断运行终止控制，prompt v1不变
+
+结论：本例能在第12轮交卷；严格格式验收及安全诊断仍未通过。
+
+比较设计：
+沿用相同八条非示例轨迹，复用完全相同的历史分支；不是八条重新独立采样。
+五条原来在4–5轮结束，逐字节复用；两条此前连接中断，单列为无法评估终止控制。
+只有agriculture_16原来走到第12轮，因此仅新增一次请求。
+该请求复用前11轮历史与24次取证结果，只将tool_choice从auto改为none。
+system/user消息、prompt、示例、工具定义、模型、温度、输出上限、thinking预算全部不变。
+没有添加最后一轮提醒语，也没有把原第12轮的两次取证结果泄露给新分支。
+
+三项检查：
+1. 预算内提交：agriculture_16从12轮后仍取证，变为第12轮返回完整JSON；无第13轮、无第12轮新取证。
+2. 是否强行构造根因：新输出确有未经支持的失败归因及统计学错误，因此未通过安全诊断核查。
+3. 已完成结果是否下降：五条结果哈希全部相同，既有质量和问题未改变；并非独立重跑的稳定性估计。
+
+|指标|原分支|终止控制分支|
+|---|---:|---:|
+|最终JSON（八条含服务中断）|5/8|6/8|
+|最终JSON（六条非服务中断样本）|5/6|6/6|
+|严格合同与引用验收|4/8|4/8|
+|此前连接中断且未到第12轮|2|2（原样单列）|
+
+新增JSON的格式与引用：
+原生输出多出root_cause_chain_note:null，未做删除或格式修复。
+严格validator在额外字段处失败；另行只读核对18处引用，均为存在且第12轮前已读的证据。
+引用位置合法并不能证明其支持诊断结论。
+
+新增JSON的主要语义问题：
+- 承认作物映射问题不是已证实任务违规，却仍将它组织成失败链。
+- 从全部收入组哑变量推断Ridge(alpha=1.0)系数解不唯一，统计判断错误。
+- 没有加载/载荷证据却声称PCA主要由季节天气驱动；没有验证却说删行影响很小。
+- 建议更改特征集合后仍固定要求12行输出，把当前结果大小变成了任务条件。
+
+Ridge判断的核查依据：官方定义为平方误差加alpha乘L2系数惩罚；当alpha>0，
+X^TX+alpha I为正定矩阵，因此这里不能套用OLS的系数解不唯一结论。
+[官方Ridge目标函数](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html)
+这是根据目标函数的数学推导；未重新执行原分析或读取官方答案。
+
+限制：
+只有一个实际到达终止分支的样本，不能据此声称通用完成率100%。
+旧分支没有最终诊断，不能断言语义问题由强制交卷造成；能确定的是当前输出仍不可靠。
+两条服务中断没有因本轮修改而恢复，也未计作终止控制成功或失败。
+终止控制可作为运行保护保留，不能据此认定诊断阶段已通过；本轮不修改下一项语义规则。
+
+新增请求耗时：52.866秒；usage：{"prompt_tokens": 52121, "total_tokens": 62933, "completion_tokens": 10812, "prompt_tokens_details": null, "completion_tokens_details": {"reasoning_tokens": 9017}}
+
+关键文件：
+results/rawio-bcb49010f78ccd4af446/diagnosis.json：原生最终JSON，未修复。
+results/.../control_request.json 与 treatment_request.json：单因素对照请求。
+results/.../prefix_check.json：历史相同、仅tool_choice改变、排除第12轮证据的检查。
+results/.../independent_reference_audit.json：18处引用单独核对。
+early_terminal_regression_checks.json：五条已完成结果的字节级回归检查。
+semantic_review.json：本地作者逐项核查，不是独立金标准。
+comparison.json、summary.json、tests.json：分项比较与离线测试。
+完整原始来源对象仍需之前的阶段D包；本包保留实际对照请求与响应及原文来源位置。

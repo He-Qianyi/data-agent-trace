@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "errors": [],
+  "acceptance_standard": "codetracer-detailed-compatible-v1",
+  "evidence_audit_affects_acceptance": false,
+  "semantic_correctness_evaluated": false,
+  "output_modified": false
+}

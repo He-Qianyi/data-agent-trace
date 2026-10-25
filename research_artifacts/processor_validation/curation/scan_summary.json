@@ -1,0 +1,163 @@
+{
+  "traces": 164,
+  "signal_steps": 230,
+  "signal_traces": 108,
+  "categories": {
+    "external_service": 20,
+    "resource_limit": 72,
+    "missing_file": 116,
+    "dependency": 5,
+    "connect": 18,
+    "corrupt": 3
+  },
+  "short_success": [
+    {
+      "record_id": "rawio-f0c98a0ab36b18733527",
+      "benchmark": "dabstep",
+      "agent_id": "claude_code",
+      "task_id": "5",
+      "attempt_directory": "/Volumes/Public HD/Data Agent Trace/runs/dabstep-claude-soclaas-relay-qwen36-20261004-v1/tasks/5/attempts/attempt-001",
+      "tool_steps": 4,
+      "scores": [
+        1
+      ],
+      "short_success": true,
+      "workspace": "/Volumes/Public HD/Data Agent Trace/runs/dabstep-claude-soclaas-relay-qwen36-20261004-v1/tasks/5/attempts/attempt-001/workspace",
+      "input_manifests": [],
+      "workspace_input_dirs": [
+        "/Volumes/Public HD/Data Agent Trace/runs/dabstep-claude-soclaas-relay-qwen36-20261004-v1/tasks/5/attempts/attempt-001/workspace/context"
+      ],
+      "flagged_steps": 0
+    },
+    {
+      "record_id": "rawio-0dab3f0c5cf5dbc8cb83",
+      "benchmark": "dataagentbench",
+      "agent_id": "claude_code",
+      "task_id": "GITHUB_REPOS__query4",
+      "attempt_directory": "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/GITHUB_REPOS__query4/attempts/attempt-001",
+      "tool_steps": 7,
+      "scores": [
+        1
+      ],
+      "short_success": true,
+      "workspace": "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/GITHUB_REPOS__query4/attempts/attempt-001/workspace",
+      "input_manifests": [
+        {
+          "path": "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/GITHUB_REPOS__query4/attempts/attempt-001/input_data_manifest.json",
+          "payload": {
+            "repo_metadata.db": {
+              "source": "/Volumes/Public HD/DataAgentBench/query_GITHUB_REPOS/query_dataset/repo_metadata.db",
+              "db_type": "sqlite",
+              "task_local_copy": false
+            },
+            "repo_artifacts.db": {
+              "source": "/Volumes/Public HD/DataAgentBench/query_GITHUB_REPOS/query_dataset/repo_artifacts.db",
+              "db_type": "duckdb",
+              "task_local_copy": true
+            }
+          },
+          "sha256": "739a5f956cfda9684b579453b0a88b7b961bed88503cd8f6c890a34837d602f4"
+        }
+      ],
+      "workspace_input_dirs": [
+        "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/GITHUB_REPOS__query4/attempts/attempt-001/workspace/data"
+      ],
+      "flagged_steps": 0
+    },
+    {
+      "record_id": "rawio-ecffb943921412042e57",
+      "benchmark": "dataagentbench",
+      "agent_id": "claude_code",
+      "task_id": "bookreview__query3",
+      "attempt_directory": "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/bookreview__query3/attempts/attempt-001",
+      "tool_steps": 8,
+      "scores": [
+        1
+      ],
+      "short_success": true,
+      "workspace": "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/bookreview__query3/attempts/attempt-001/workspace",
+      "input_manifests": [
+        {
+          "path": "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/bookreview__query3/attempts/attempt-001/input_data_manifest.json",
+          "payload": {
+            "review_query.db": {
+              "source": "/Volumes/Public HD/DataAgentBench/query_bookreview/query_dataset/review_query.db",
+              "db_type": "sqlite",
+              "task_local_copy": false
+            }
+          },
+          "sha256": "15f380ddfef9d3445bcaf7bbb7afde638711d0704cbe21f4a55d1688266be2ad"
+        }
+      ],
+      "workspace_input_dirs": [
+        "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/bookreview__query3/attempts/attempt-001/workspace/data"
+      ],
+      "flagged_steps": 0
+    },
+    {
+      "record_id": "rawio-fa3c795c877f1eccd8a8",
+      "benchmark": "dataagentbench",
+      "agent_id": "claude_code",
+      "task_id": "googlelocal__query1",
+      "attempt_directory": "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/googlelocal__query1/attempts/attempt-001",
+      "tool_steps": 8,
+      "scores": [
+        1
+      ],
+      "short_success": true,
+      "workspace": "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/googlelocal__query1/attempts/attempt-001/workspace",
+      "input_manifests": [
+        {
+          "path": "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/googlelocal__query1/attempts/attempt-001/input_data_manifest.json",
+          "payload": {
+            "review_query.db": {
+              "source": "/Volumes/Public HD/DataAgentBench/query_googlelocal/query_dataset/review_query.db",
+              "db_type": "sqlite",
+              "task_local_copy": false
+            }
+          },
+          "sha256": "c9df44b268a4ae26b3731c0ebc3dfd930dd13cbb20f725314339b95a6d60a0bf"
+        }
+      ],
+      "workspace_input_dirs": [
+        "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/googlelocal__query1/attempts/attempt-001/workspace/data"
+      ],
+      "flagged_steps": 1
+    },
+    {
+      "record_id": "rawio-e804adcb49f7ddcff9f5",
+      "benchmark": "dataagentbench",
+      "agent_id": "claude_code",
+      "task_id": "usaspending__query3",
+      "attempt_directory": "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/usaspending__query3/attempts/attempt-001",
+      "tool_steps": 9,
+      "scores": [
+        1
+      ],
+      "short_success": true,
+      "workspace": "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/usaspending__query3/attempts/attempt-001/workspace",
+      "input_manifests": [
+        {
+          "path": "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/usaspending__query3/attempts/attempt-001/input_data_manifest.json",
+          "payload": {
+            "recipients.db": {
+              "source": "/Volumes/Public HD/DataAgentBench/query_usaspending/query_dataset/recipients.db",
+              "db_type": "sqlite",
+              "task_local_copy": false
+            },
+            "agencies.duckdb": {
+              "source": "/Volumes/Public HD/DataAgentBench/query_usaspending/query_dataset/agencies.duckdb",
+              "db_type": "duckdb",
+              "task_local_copy": true
+            }
+          },
+          "sha256": "f81a20de978ddacdebdc7fc19a17a8cc8c8b3dff96988e65ca5134a096401c6e"
+        }
+      ],
+      "workspace_input_dirs": [
+        "/Volumes/Public HD/Data Agent Trace/runs/dataagentbench-soclaas-20261004/claude/tasks/usaspending__query3/attempts/attempt-001/workspace/data"
+      ],
+      "flagged_steps": 0
+    }
+  ]
+}

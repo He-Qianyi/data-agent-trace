@@ -1,0 +1,87 @@
+{
+  "root_cause_chain": [
+    {
+      "description": "交付的 output.csv 中 'Corn Price (USD)' 列（Colombia 2001=525.305278、2006=658.766667、2009=877.777778、2013=1099.090417，Dominican Republic 2012=421.7675）并非美元价格：E00076 显示 WFP 玉米记录中仅 Costa Rica、Ecuador、El Salvador、Honduras、Nicaragua、Panama、Timor-Leste、Zimbabwe 8 国为 USD 计价，Colombia 与 Dominican Republic 不在其中，其值实为当地货币价格；条件(6)的 'top quarter of all corn prices worldwide' 也在混合货币上以 420.6589 为阈值计算，不是有效的全球价格比较。",
+      "step_ids": [
+        "S0040"
+      ],
+      "evidence_ids": [
+        "T0005",
+        "E00076",
+        "E00123",
+        "E00130"
+      ]
+    },
+    {
+      "description": "S0040 在最终导出脚本中对全部 cm_name 含 Maize 的 WFP 记录（不区分 cur_name）按 Country、Year 求 mp_price 均值，直接命名为 'Corn Price (USD)'，并用该列计算 0.75 分位阈值后导出 output.csv，使交付价格固定为混合货币口径。",
+      "step_ids": [
+        "S0040"
+      ],
+      "evidence_ids": [
+        "E00123",
+        "E00124"
+      ]
+    },
+    {
+      "description": "S0025 已识别 WFP 价格为当地货币、USD 记录仅 5699 条且只覆盖 8 国，并考虑过 'treat local currency as USD equivalent' 或 'focus on countries that have USD prices'，但后续仍按当地货币价格继续，未限制到 USD 记录或明确标注非 USD。",
+      "step_ids": [
+        "S0025"
+      ],
+      "evidence_ids": [
+        "E00075",
+        "E00076"
+      ]
+    }
+  ],
+  "critical_decision_points": [
+    {
+      "step_id": "S0040",
+      "decision": "把 Price Volatility 定义为各国家—年份内月度均价的年内标准差（groupby(['Country','Year']).agg({'AvgPrice':['mean','std']})），而非任务条件(4)明示的月度玉米价格 12 个月滚动标准差。",
+      "reasoning": "任务条件(4)写的是 '12-month rolling standard deviation of monthly corn prices'；S0038 的对照（E00117）显示滚动口径会得到 Honduras 2012 而非 Dominican Republic 2012，说明该口径选择改变了最终行。交付文件（E00130）中的 Price Volatility 与年内标准差一致。需注意：对月份完整的年份，年内标准差与年末 12 个月滚动标准差数值相同（如 Colombia 各年），差异主要出现在月份不完整的年份，因此影响集中在第 5 行。",
+      "should_have": "按任务字面实现月度价格序列的 12 个月滚动标准差（按国家排序后 rolling(window=12)），并在国家—年份层面取对应值；若采用年内标准差作为近似，应明确说明并核对与滚动口径的差异，而不是直接命名为 Price Volatility。",
+      "evidence_ids": [
+        "T0005",
+        "E00117",
+        "E00123",
+        "E00130"
+      ]
+    },
+    {
+      "step_id": "S0025",
+      "decision": "识别到 WFP 价格为当地货币、仅 8 国有 USD 计价记录后，仍决定把当地货币价格当作 'Corn Price (USD)' 使用。",
+      "reasoning": "E00076 显示 USD 玉米记录仅覆盖 8 国；交付的 Colombia 与 Dominican Republic 不在其中，其 'Corn Price (USD)' 值实为当地货币价格。条件(6)的 'top quarter of all corn prices worldwide' 也在混合货币上计算（阈值 420.6589），不是有效的全球价格比较。任务未提供汇率，因此完全换算为 USD 不可行，但把当地货币值直接标为 USD 仍与列名和条件(6)的全球比较不符。",
+      "should_have": "明确区分货币口径：要么限制到 cur_name == 'USD' 的记录并说明覆盖国家有限，要么在无法换算时明确标注价格非 USD 并说明条件(6)的全球比较受限；不应把当地货币值直接标为 USD。",
+      "evidence_ids": [
+        "E00075",
+        "E00076",
+        "E00123",
+        "E00130"
+      ]
+    },
+    {
+      "step_id": "S0040",
+      "decision": "在顺序筛选中用当前已过滤子集计算阈值：农药中位数在 temp>20 子集上算（3333.88），波动率中位数在农药过滤后子集上算（0.4960），价格 0.75 分位在同比过滤后子集上算（420.6589）。",
+      "reasoning": "任务条件(3)(4)(6)分别要求 'global median for all countries'、'global median volatility of corn'、'top quarter of all corn prices worldwide'，即全局阈值；E00123 的代码显示三个阈值都基于嵌套过滤后的子集，改变了比较基准。具体影响幅度需按全局口径重算才能确定，现有证据不足以量化。",
+      "should_have": "在应用任何条件前，用全量（或任务定义的全球范围）数据计算农药中位数、玉米波动率中位数和价格 0.75 分位，再对每个国家—年份做独立判断。",
+      "evidence_ids": [
+        "T0005",
+        "E00123",
+        "E00124"
+      ]
+    },
+    {
+      "step_id": "S0041",
+      "decision": "最终核验只检查了列名匹配、Average Temperature > 20 和 Year-on-Year Production Change < 0，未核验 Price Volatility 是否为 12 个月滚动标准差、Corn Price 是否为 USD。",
+      "reasoning": "E00126/E00127 显示核验脚本只覆盖列名与两个数值条件；因此上述口径问题未被发现，FINAL0001 声称 'meet all six conditions' 缺乏对条件(4)(6)口径的验证。",
+      "should_have": "核验应覆盖每个条件的实际计算口径，特别是 Price Volatility 的滚动窗口定义和 Corn Price 的货币单位，而不只是列名和两个数值条件。",
+      "evidence_ids": [
+        "E00126",
+        "E00127",
+        "FINAL0001"
+      ]
+    }
+  ],
+  "correct_strategy": "按任务字面重算关键口径：用月度玉米价格序列按国家排序后计算 12 个月滚动标准差，并在国家—年份层面取值；明确 Corn Price 的货币口径（限制到 USD 记录或说明无法换算），在全局范围（而非嵌套过滤子集）计算农药中位数、波动率中位数和价格 0.75 分位；同时说明 'Corn Production' 实际使用 hg/ha_yield（数据无产量字段）这一替代。重算后重新导出 output.csv 并逐条件核验。",
+  "stage_labels": [],
+  "summary": "已确认交付的 output.csv 存在多处口径偏差：'Corn Price (USD)' 实为当地货币价格（USD 记录仅覆盖 8 国，不含 Colombia/Dominican Republic），条件(6)的全球价格比较在混合货币上进行；Price Volatility 使用年内标准差而非任务要求的 12 个月滚动标准差（S0038 对照显示会改变第 5 行，Dominican Republic 2012 vs Honduras 2012，但对月份完整年份两者数值相同）；农药/波动率/价格阈值在嵌套过滤子集上计算而非全局。S0041 的核验只覆盖列名与两个数值条件，未发现上述问题。'Corn Production' 实际使用 hg/ha_yield，因数据无产量字段；同比变化在 inner merge 后计算，年份缺口可能影响 'previous year' 的取值，现有证据不足以量化。S0039 的 KeyError 与 S0031/S0032/S0036/S0037 的报错均已通过后续步骤恢复，不构成最终失败原因。未使用官方评估或标准答案；具体正确行集需按上述口径重算才能确定。"
+}

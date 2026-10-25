@@ -1,0 +1,815 @@
+{
+  "traces": [
+    {
+      "record_id": "rawio-b4aa2e6b636cb50f6643",
+      "task_id": "2697",
+      "agent_id": "kimi_code",
+      "input_sha256": "bc4d3cead31ad10bbefed6557c769494068f1e0f550832524dfbfc5c4eeab641",
+      "trace_sha256": "1b37c584b28ffcc908abc49282d4b7894cd226d0bb6bd7d5d72d28f5aff1e975",
+      "status": "mechanically_passed",
+      "model_rounds": 6,
+      "tool_calls": 8,
+      "finished_at": "2026-10-18T13:54:59.242435+00:00",
+      "mechanical_validation": {
+        "passed": true,
+        "errors": [],
+        "citation_references": 17,
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "read_ranges": [
+              [
+                0,
+                238
+              ],
+              [
+                0,
+                238
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0002",
+            "read_ranges": [
+              [
+                0,
+                289
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0003",
+            "read_ranges": [
+              [
+                0,
+                263
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0008",
+            "read_ranges": [
+              [
+                0,
+                77
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0010",
+            "read_ranges": [
+              [
+                0,
+                77
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0011",
+            "read_ranges": [
+              [
+                0,
+                17
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00034",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00035",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                1000,
+                5000
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00024",
+            "read_ranges": [
+              [
+                0,
+                4000
+              ],
+              [
+                4000,
+                8000
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00014",
+            "read_ranges": [
+              [
+                0,
+                5000
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00034",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00035",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                1000,
+                5000
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00024",
+            "read_ranges": [
+              [
+                0,
+                4000
+              ],
+              [
+                4000,
+                8000
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00014",
+            "read_ranges": [
+              [
+                0,
+                5000
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "read_ranges": [
+              [
+                0,
+                238
+              ],
+              [
+                0,
+                238
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0003",
+            "read_ranges": [
+              [
+                0,
+                263
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0008",
+            "read_ranges": [
+              [
+                0,
+                77
+              ]
+            ]
+          }
+        ],
+        "semantic_entailment_verified_by_scripts": false
+      }
+    },
+    {
+      "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+      "task_id": "1273",
+      "agent_id": "codex",
+      "input_sha256": "956fde0eecfd6272de1d81e5381c81a09e66315cddf6d0ab1056aebe8325a32c",
+      "trace_sha256": "cc7aa9828564e561ac67c4a596f4cfc5961841a80ad69620c6cc4abdc59a4677",
+      "status": "mechanically_passed",
+      "model_rounds": 4,
+      "tool_calls": 6,
+      "finished_at": "2026-10-18T13:54:48.139108+00:00",
+      "mechanical_validation": {
+        "passed": true,
+        "errors": [],
+        "citation_references": 13,
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "read_ranges": [
+              [
+                0,
+                27
+              ],
+              [
+                0,
+                27
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0008",
+            "read_ranges": [
+              [
+                0,
+                77
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0010",
+            "read_ranges": [
+              [
+                0,
+                77
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0011",
+            "read_ranges": [
+              [
+                0,
+                17
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00047",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                1043
+              ],
+              [
+                0,
+                1043
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00048",
+            "read_ranges": [
+              [
+                0,
+                214
+              ],
+              [
+                0,
+                214
+              ],
+              [
+                0,
+                214
+              ]
+            ]
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "T0008",
+            "read_ranges": [
+              [
+                0,
+                77
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00047",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                1043
+              ],
+              [
+                0,
+                1043
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00048",
+            "read_ranges": [
+              [
+                0,
+                214
+              ],
+              [
+                0,
+                214
+              ],
+              [
+                0,
+                214
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0008",
+            "read_ranges": [
+              [
+                0,
+                77
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0010",
+            "read_ranges": [
+              [
+                0,
+                77
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0011",
+            "read_ranges": [
+              [
+                0,
+                17
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "read_ranges": [
+              [
+                0,
+                27
+              ],
+              [
+                0,
+                27
+              ]
+            ]
+          }
+        ],
+        "semantic_entailment_verified_by_scripts": false
+      }
+    },
+    {
+      "record_id": "rawio-2a40e1d15e900422bb10",
+      "task_id": "1464",
+      "agent_id": "claude_code",
+      "input_sha256": "95a8503d56f82a358bcc8e48b1d8e1a1fb638e50886e8c1f0056dc888fe5fbf3",
+      "trace_sha256": "b351469d47e46c8e7d4c1771fb72dd45a43461ae1a7879200e2a87d0f0b0a81f",
+      "status": "mechanically_passed",
+      "model_rounds": 3,
+      "tool_calls": 4,
+      "finished_at": "2026-10-18T13:56:15.187736+00:00",
+      "mechanical_validation": {
+        "passed": true,
+        "errors": [],
+        "citation_references": 4,
+        "citation_checks": [
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00005",
+            "read_ranges": [
+              [
+                0,
+                5000
+              ],
+              [
+                0,
+                2000
+              ],
+              [
+                2000,
+                4000
+              ],
+              [
+                4000,
+                6000
+              ],
+              [
+                6000,
+                8000
+              ],
+              [
+                8000,
+                10000
+              ],
+              [
+                10000,
+                12000
+              ],
+              [
+                12000,
+                13868
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00012",
+            "read_ranges": [
+              [
+                0,
+                638
+              ],
+              [
+                0,
+                638
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00014",
+            "read_ranges": [
+              [
+                0,
+                893
+              ],
+              [
+                0,
+                893
+              ],
+              [
+                0,
+                893
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00015",
+            "read_ranges": [
+              [
+                0,
+                301
+              ],
+              [
+                0,
+                301
+              ],
+              [
+                0,
+                301
+              ]
+            ]
+          }
+        ],
+        "semantic_entailment_verified_by_scripts": false
+      }
+    },
+    {
+      "record_id": "rawio-a5173d9e30dba77ca1c5",
+      "task_id": "agriculture_20",
+      "agent_id": "codex",
+      "input_sha256": "ee57636d99ab1aa243832352e8c1006a9567a9a8d8263f474e77aeef5b1a0a66",
+      "trace_sha256": "bf909b5ceed53d76ae7f6f71f3be3658037a5d12d2906ce3d28636b25e74165a",
+      "status": "mechanically_passed",
+      "model_rounds": 2,
+      "tool_calls": 2,
+      "finished_at": "2026-10-18T13:56:11.155138+00:00",
+      "mechanical_validation": {
+        "passed": true,
+        "errors": [],
+        "citation_references": 8,
+        "citation_checks": [
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0005",
+            "read_ranges": [
+              [
+                0,
+                1022
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00128",
+            "read_ranges": [
+              [
+                0,
+                4481
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00129",
+            "read_ranges": [
+              [
+                0,
+                2369
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00165",
+            "read_ranges": [
+              [
+                0,
+                3599
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "T0005",
+            "read_ranges": [
+              [
+                0,
+                1022
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00152",
+            "read_ranges": [
+              [
+                0,
+                3991
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00153",
+            "read_ranges": [
+              [
+                0,
+                622
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00147",
+            "read_ranges": [
+              [
+                0,
+                2299
+              ]
+            ]
+          }
+        ],
+        "semantic_entailment_verified_by_scripts": false
+      }
+    },
+    {
+      "record_id": "rawio-de63c9937aeb17c70d6d",
+      "task_id": "agriculture_22",
+      "agent_id": "claude_code",
+      "input_sha256": "4424fedc84401b8baf5fe668d87a95532a6ff9af9d60bdf1227999a5849f0a3d",
+      "trace_sha256": "be667b18541bb348e53096f1f4719236a53d8e0a1b03dbf096f6cc20d57f8e34",
+      "status": "mechanically_passed",
+      "model_rounds": 3,
+      "tool_calls": 3,
+      "finished_at": "2026-10-18T13:56:34.316970+00:00",
+      "mechanical_validation": {
+        "passed": true,
+        "errors": [],
+        "citation_references": 5,
+        "citation_checks": [
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0005",
+            "read_ranges": [
+              [
+                0,
+                892
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00014",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                4162
+              ],
+              [
+                1000,
+                4162
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00015",
+            "read_ranges": [
+              [
+                0,
+                1000
+              ],
+              [
+                0,
+                2435
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00019",
+            "read_ranges": [
+              [
+                0,
+                181
+              ],
+              [
+                0,
+                181
+              ]
+            ]
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "read_ranges": [
+              [
+                0,
+                1134
+              ]
+            ]
+          }
+        ],
+        "semantic_entailment_verified_by_scripts": false
+      }
+    },
+    {
+      "record_id": "rawio-bcb49010f78ccd4af446",
+      "task_id": "agriculture_16",
+      "agent_id": "claude_code",
+      "input_sha256": "537a6e421020124e604a7684d678697e6ba8c721daa9135aca2587d7f1b5cb60",
+      "trace_sha256": "8fdf56cbeaa1707c053e7e346281ff38b0e0f9e2a2e82be773a30033627cf86e",
+      "status": "invalid_json",
+      "model_rounds": 12,
+      "tool_calls": 16,
+      "reason": "no_parseable_final_JSON_no_repair",
+      "finished_at": "2026-10-18T14:08:11.598639+00:00"
+    },
+    {
+      "record_id": "rawio-ecb8d458d5899c6dfd80",
+      "task_id": "civic_unstructured__query6",
+      "agent_id": "claude_code",
+      "input_sha256": "093fb5549a9ff678816577e62b02f901919428ba9cd50c02d51c4e09bef312b2",
+      "trace_sha256": "4f3aae8f8f858b55f70de47a837c2d95a0767cd34ef7f17680d7a43fccf71ba8",
+      "status": "mechanically_failed",
+      "model_rounds": 5,
+      "tool_calls": 7,
+      "finished_at": "2026-10-18T13:57:30.352541+00:00",
+      "mechanical_validation": {
+        "passed": false,
+        "errors": [
+          {
+            "kind": "schema",
+            "path": "",
+            "message": "Additional properties are not allowed ('root_cause_chain_note' was unexpected)"
+          }
+        ],
+        "citation_references": 0
+      }
+    },
+    {
+      "record_id": "rawio-ea688bde06c727ee43b1",
+      "task_id": "stockmarket__query1",
+      "agent_id": "claude_code",
+      "input_sha256": "376b911271a822513ddf8c95273f89d241edee9936903b6d17b748795c20e3eb",
+      "trace_sha256": "c9e252c63e1bb326fe7c0be0aae78a9e1b2dcf59313f9c44593b4d272a8a063e",
+      "status": "mechanically_failed",
+      "model_rounds": 4,
+      "tool_calls": 5,
+      "finished_at": "2026-10-18T13:57:51.013542+00:00",
+      "mechanical_validation": {
+        "passed": false,
+        "errors": [
+          {
+            "kind": "schema",
+            "path": "",
+            "message": "Additional properties are not allowed ('root_cause_chain_note_removed' was unexpected)"
+          }
+        ],
+        "citation_references": 0
+      }
+    }
+  ],
+  "model_calls": 39,
+  "tool_calls": 51,
+  "mechanically_passed": 5,
+  "usage": {
+    "prompt_tokens": 2385426,
+    "completion_tokens": 234735,
+    "total_tokens": 2620161
+  },
+  "semantic_accuracy_measured": false,
+  "prepared_prompt_unchanged_during_run": true,
+  "frozen_processor_files_verified": 79,
+  "official_evaluations_sent": false,
+  "benchmark_reexecutions": 0,
+  "automatic_retries": 0,
+  "repair_calls": 0
+}

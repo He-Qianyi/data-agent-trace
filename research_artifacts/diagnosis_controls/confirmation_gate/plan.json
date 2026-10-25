@@ -1,0 +1,191 @@
+{
+  "schema": "diagnosis-confirmation-threshold-single-factor-v1",
+  "prepared_at": "2026-10-18T13:53:22.107751+00:00",
+  "model": "x-test-2",
+  "expected_returned_model": "deepseek-v4.1-flash-1017",
+  "provider": "SoCLaaS",
+  "endpoint": "https://soclaas-api.comp.nus.edu.sg/v1/chat/completions",
+  "max_tokens": 48000,
+  "thinking_token_budget": 16000,
+  "temperature": 0,
+  "response_format": null,
+  "concurrency": 2,
+  "transport_correction": "omit JSON mode; native evidence tools remain enabled; output schema unchanged",
+  "probe_reuse": null,
+  "max_model_rounds_per_trace": 12,
+  "max_tool_calls_per_trace": 60,
+  "automatic_retries": 0,
+  "repair_calls": 0,
+  "review_model_calls": 0,
+  "prompt_path": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/diagnosis_confirmation_gate_v1_20261018/contract/diagnosis.prompt.md",
+  "prompt_sha256": "0de500890567d165b58b368f5224c93af4210e2e1789fee5faf1aad2047589a8",
+  "prompt_transformation": "insert one confirmation threshold before Step; original examples/schema/other text byte-identical",
+  "schema_sha256": "424154b522ac3a27cfa9a52167ccabc88fd27eaac68f426f213578fdfc5566ce",
+  "runner_sha256": "ff40af2403dfc89ef3f2fecadccc610ff0ddb77442fe5355c760c1fcd51ec2b3",
+  "evidence_index_sha256": "72810d8a3760cf135056709deff19d00fa6839e20691529731670b1a33ed20d0",
+  "excluded_prompt_examples": [
+    "rawio-baba471b324aa7141b29",
+    "rawio-d1c5eff3a0eeef033955"
+  ],
+  "jobs": [
+    {
+      "record_id": "rawio-b4aa2e6b636cb50f6643",
+      "task_id": "2697",
+      "agent_id": "kimi_code",
+      "input_sha256": "bc4d3cead31ad10bbefed6557c769494068f1e0f550832524dfbfc5c4eeab641",
+      "trace_sha256": "1b37c584b28ffcc908abc49282d4b7894cd226d0bb6bd7d5d72d28f5aff1e975"
+    },
+    {
+      "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+      "task_id": "1273",
+      "agent_id": "codex",
+      "input_sha256": "956fde0eecfd6272de1d81e5381c81a09e66315cddf6d0ab1056aebe8325a32c",
+      "trace_sha256": "cc7aa9828564e561ac67c4a596f4cfc5961841a80ad69620c6cc4abdc59a4677"
+    },
+    {
+      "record_id": "rawio-2a40e1d15e900422bb10",
+      "task_id": "1464",
+      "agent_id": "claude_code",
+      "input_sha256": "95a8503d56f82a358bcc8e48b1d8e1a1fb638e50886e8c1f0056dc888fe5fbf3",
+      "trace_sha256": "b351469d47e46c8e7d4c1771fb72dd45a43461ae1a7879200e2a87d0f0b0a81f"
+    },
+    {
+      "record_id": "rawio-a5173d9e30dba77ca1c5",
+      "task_id": "agriculture_20",
+      "agent_id": "codex",
+      "input_sha256": "ee57636d99ab1aa243832352e8c1006a9567a9a8d8263f474e77aeef5b1a0a66",
+      "trace_sha256": "bf909b5ceed53d76ae7f6f71f3be3658037a5d12d2906ce3d28636b25e74165a"
+    },
+    {
+      "record_id": "rawio-de63c9937aeb17c70d6d",
+      "task_id": "agriculture_22",
+      "agent_id": "claude_code",
+      "input_sha256": "4424fedc84401b8baf5fe668d87a95532a6ff9af9d60bdf1227999a5849f0a3d",
+      "trace_sha256": "be667b18541bb348e53096f1f4719236a53d8e0a1b03dbf096f6cc20d57f8e34"
+    },
+    {
+      "record_id": "rawio-bcb49010f78ccd4af446",
+      "task_id": "agriculture_16",
+      "agent_id": "claude_code",
+      "input_sha256": "537a6e421020124e604a7684d678697e6ba8c721daa9135aca2587d7f1b5cb60",
+      "trace_sha256": "8fdf56cbeaa1707c053e7e346281ff38b0e0f9e2a2e82be773a30033627cf86e"
+    },
+    {
+      "record_id": "rawio-ecb8d458d5899c6dfd80",
+      "task_id": "civic_unstructured__query6",
+      "agent_id": "claude_code",
+      "input_sha256": "093fb5549a9ff678816577e62b02f901919428ba9cd50c02d51c4e09bef312b2",
+      "trace_sha256": "4f3aae8f8f858b55f70de47a837c2d95a0767cd34ef7f17680d7a43fccf71ba8"
+    },
+    {
+      "record_id": "rawio-ea688bde06c727ee43b1",
+      "task_id": "stockmarket__query1",
+      "agent_id": "claude_code",
+      "input_sha256": "376b911271a822513ddf8c95273f89d241edee9936903b6d17b748795c20e3eb",
+      "trace_sha256": "c9e252c63e1bb326fe7c0be0aae78a9e1b2dcf59313f9c44593b4d272a8a063e"
+    }
+  ],
+  "evaluation_protocol": {
+    "mechanical": [
+      "JSON schema",
+      "existing step IDs",
+      "existing and actually read evidence IDs",
+      "no invented stages"
+    ],
+    "semantic": [
+      "evidence supports claim",
+      "task/metric/population fidelity",
+      "recovery considered",
+      "no unsupported causal link",
+      "delivery and file existence separated",
+      "coverage limits honored"
+    ],
+    "independent_gold": false,
+    "official_scores_do_not_identify_root_causes": true,
+    "eight_traces_are_non_examples_but_previously_inspected_in_retrieval_pilot": true,
+    "semantic_review_is_local_author_review_after_results_not_blinded_independent_scoring": true
+  },
+  "outbound_exclusions": [
+    "official_evaluation",
+    "reference_answers",
+    "evaluator_feedback",
+    "post_run_artifact_snapshots"
+  ],
+  "frozen_processor_files_verified": 79,
+  "original_v1_prompt_sha256": "8ad65be79cfb5bda29e746d2e096a244e367da6954f4d89773be31bdac7e8fd8",
+  "comparison_baseline": "outputs/diagnosis_termination_control_v1_20261018",
+  "single_changed_factor": "one generic confirmation-threshold paragraph; no example or causal-rule change",
+  "termination_control": "round12 tool_choice=none; no new reminder messages; maximum12 rounds",
+  "comparison_design": "eight fresh treatment runs; six historical completed round1 controls; two historical transport cases excluded from paired semantic comparison",
+  "preserved_control_hashes": {
+    "outputs/diagnosis_eight_native_tools_20261018/plan.json": "0cbde893468bcb9896a4e0e67c1d4169527a19fd50890c31807b15580b70b892",
+    "outputs/diagnosis_eight_native_tools_20261018/semantic_review.json": "b5551f311a29320364cb6014045c58c2bfcf981890aa3c9d1b5d8cbb7d0301fb",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/plan.json": "084cae6a6dca9337dda6606e35ee6f6bebc18fda3a3aa4bc13546d1e87f2cda0",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-a5173d9e30dba77ca1c5/result.json": "7028b5e57f75b304b572b087b1b4134b1da9a2377f2eb7107176db397c417bd7",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/result.json": "87545fbc629ba2d103afcb5baea1f81be0390bcb97db93b1acbdbb1de0305d7c",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/diagnosis.json": "7892759ddcd68afa36d2b58d00ebbdfc98e913135d75778d73973991dfe4b440",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-b4aa2e6b636cb50f6643/result.json": "8e4a5c844e56b300f0823c548fcd348a06ab129555a29a4538c8b07e8564f9f6",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-ea688bde06c727ee43b1/result.json": "1c4f0bc0c31d771c652d8ac1f8527793e0a639de4abd31fc5404ff41bebb9752",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-ea688bde06c727ee43b1/diagnosis.json": "b02c5f44425327e6aa8a6e7b9ac622b7d48863b0fc22f9cc8506753d537f0a68",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-de63c9937aeb17c70d6d/result.json": "5036b07fb782204d15b1928ebef1497af74c09e824fcb49d1994742ca03db22f",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-de63c9937aeb17c70d6d/diagnosis.json": "f5cb7da642d0ff792feecd043e68151466b588202952cea606f8e2e317ec4b8d",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-bcb49010f78ccd4af446/result.json": "1decbca7ac1eab3d3e1f6594459b0b25648b1d5b17ab2040aa9e301e6d0c4e4f",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/result.json": "e986652ca6f30afdf9b3d4b2f60f2a42c0f7c14fc4a8e67f37faf750eede1254",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-cf33ea88ec15a7b4bfbb/diagnosis.json": "2e97c33b745ea7d6fdaec0c16bbacace3ac4f76c75aa00842b014493174e0ab0",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/result.json": "16ad94417d2e7cd26e9ce8f16dc4eaf9ef5a99ca4f0bcabcb38d1d239fcaac87",
+    "outputs/diagnosis_eight_native_tools_20261018/results/rawio-ecb8d458d5899c6dfd80/diagnosis.json": "f24b19ae43e77469c6cbe7886d963c30f25b7844b6ae4b81bf614740b6b585eb",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/controlled_probe/result.json": "28aab4a50dcbebeb482ccfd2bd0df35054f75c833f1a16e1a1258f7c2998b7cd",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-a5173d9e30dba77ca1c5/result.json": "efc8b70d5edcd7368413fed4425166d965573b0fc400450469a47f2a8f9daae3",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-a5173d9e30dba77ca1c5/diagnosis.json": "246e3c53619299c7c60575446ccf93ce7defe6f2e65a0de41459716fb1616909",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-2a40e1d15e900422bb10/result.json": "5d89120f5e1e012c2f5d5b35663f2b1694758b4616a429fa22cb5e7494e2bd15",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-2a40e1d15e900422bb10/diagnosis.json": "3b0c6d4d324847fa41e9663a2ed8985e0def61f32141efb80867d691631d8d52",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-b4aa2e6b636cb50f6643/result.json": "c2c5c74523c1a52ea6707a6febc25bbb004d6b4895f551c36f832755341bb95e",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-b4aa2e6b636cb50f6643/diagnosis.json": "4052c4ee76c994782013d6008906d6c15fa545fcf4a2f3b468128d33aff7793d",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-ea688bde06c727ee43b1/result.json": "07a32b767222d0b2ee2fb85544e9e0a2e7a3b2adc3e29511c5284dbdde4b4558",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-ea688bde06c727ee43b1/diagnosis.json": "ebbb41a00ce8d2a1b2b1257bcba7bcf70422d7197f35e15c84ef0aef1028cea6",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-de63c9937aeb17c70d6d/result.json": "4ce690d3c81991286171be829aa3bfb4abfea8914dc3e456c5e18749e66cfddb",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-de63c9937aeb17c70d6d/diagnosis.json": "ebbb41a00ce8d2a1b2b1257bcba7bcf70422d7197f35e15c84ef0aef1028cea6",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-bcb49010f78ccd4af446/result.json": "af6ac04c96135252b7d84c6c2766dbc526b174949c6927804512c1f30fa58b36",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-bcb49010f78ccd4af446/diagnosis.json": "ebbb41a00ce8d2a1b2b1257bcba7bcf70422d7197f35e15c84ef0aef1028cea6",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-cf33ea88ec15a7b4bfbb/result.json": "dff8c544a6083b896c6926894ac7281fab40ff486a4adcf23c24c9d8b1af90cf",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-cf33ea88ec15a7b4bfbb/diagnosis.json": "ebbb41a00ce8d2a1b2b1257bcba7bcf70422d7197f35e15c84ef0aef1028cea6",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-ecb8d458d5899c6dfd80/result.json": "710398ad44f66688904f9b23c4bf23aaadd8fe67f1f83c5c633fc26e5955ef30",
+    "outputs/diagnosis_eight_native_tools_20261018/first_run_json_mode/results/rawio-ecb8d458d5899c6dfd80/diagnosis.json": "ebbb41a00ce8d2a1b2b1257bcba7bcf70422d7197f35e15c84ef0aef1028cea6",
+    "outputs/diagnosis_termination_control_v1_20261018/plan.json": "047fa8d8f4d6b42574d727c552282805ba836718b72e772e2f5cf7b4b9ccd9da",
+    "outputs/diagnosis_termination_control_v1_20261018/semantic_review.json": "870d9ce6d10bc47c795950252fd06da98c62e27390a2cfa1baf2afb682010bcf",
+    "outputs/diagnosis_termination_control_v1_20261018/baseline/plan.json": "0cbde893468bcb9896a4e0e67c1d4169527a19fd50890c31807b15580b70b892",
+    "outputs/diagnosis_termination_control_v1_20261018/baseline/semantic_review.json": "b5551f311a29320364cb6014045c58c2bfcf981890aa3c9d1b5d8cbb7d0301fb",
+    "outputs/diagnosis_termination_control_v1_20261018/contract_v1/examples/01_codex_agriculture10/diagnosis.json": "14621fd53b0682912ac1d27f0769995fc4ea30f40e8d7c3ce09d66db666387f9",
+    "outputs/diagnosis_termination_control_v1_20261018/contract_v1/examples/02_claude_crm_query5/diagnosis.json": "4a2c34dd3197310add07fbcbc9b57f8b5704d30accc6f97c0f36bef5c3d037fb",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-a5173d9e30dba77ca1c5/result.json": "a2f2c4bd7cddc7f931f6400a41963d0833d7a81a8e37d8ebbd4136d633ccc2ef",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-2a40e1d15e900422bb10/result.json": "87545fbc629ba2d103afcb5baea1f81be0390bcb97db93b1acbdbb1de0305d7c",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-2a40e1d15e900422bb10/diagnosis.json": "7892759ddcd68afa36d2b58d00ebbdfc98e913135d75778d73973991dfe4b440",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-b4aa2e6b636cb50f6643/result.json": "7f8a5877b327951f53fd21e136988501aa298688210d23c457b59f462325bec7",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-ea688bde06c727ee43b1/result.json": "1c4f0bc0c31d771c652d8ac1f8527793e0a639de4abd31fc5404ff41bebb9752",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-ea688bde06c727ee43b1/diagnosis.json": "b02c5f44425327e6aa8a6e7b9ac622b7d48863b0fc22f9cc8506753d537f0a68",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-de63c9937aeb17c70d6d/result.json": "5036b07fb782204d15b1928ebef1497af74c09e824fcb49d1994742ca03db22f",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-de63c9937aeb17c70d6d/diagnosis.json": "f5cb7da642d0ff792feecd043e68151466b588202952cea606f8e2e317ec4b8d",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-bcb49010f78ccd4af446/result.json": "8652679c8ef2506ab6a8e17f8d64f4b9bf1436ffa1d2ac3867369d0b72dc594a",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-bcb49010f78ccd4af446/diagnosis.json": "c69d1051350285e00cce27a86a7ec47ff5c0a88c8fc9125cbceed2f36a5dcdd4",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-cf33ea88ec15a7b4bfbb/result.json": "e986652ca6f30afdf9b3d4b2f60f2a42c0f7c14fc4a8e67f37faf750eede1254",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-cf33ea88ec15a7b4bfbb/diagnosis.json": "2e97c33b745ea7d6fdaec0c16bbacace3ac4f76c75aa00842b014493174e0ab0",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/result.json": "16ad94417d2e7cd26e9ce8f16dc4eaf9ef5a99ca4f0bcabcb38d1d239fcaac87",
+    "outputs/diagnosis_termination_control_v1_20261018/results/rawio-ecb8d458d5899c6dfd80/diagnosis.json": "f24b19ae43e77469c6cbe7886d963c30f25b7844b6ae4b81bf614740b6b585eb"
+  },
+  "preregistered_review": {
+    "independent_gold": false,
+    "reviewer": "local source-checked author review; not blinded",
+    "unit": "deduplicated substantive problem assertions; ambiguous-only summary notes are not confirmed errors",
+    "separate_buckets": [
+      "unsupported confirmed discrepancy",
+      "unsupported causal claim (unchanged rules)",
+      "unsupported technical/factual claim",
+      "supported discrepancy retained/lost",
+      "schema/citation defects",
+      "transport failures"
+    ],
+    "compare_only_cases_with_two_final_outputs": true,
+    "no_counting_empty_findings_as_accuracy": true,
+    "no_claim_causal_prompt_effect_from_one_nonrandom_repetition": true
+  }
+}

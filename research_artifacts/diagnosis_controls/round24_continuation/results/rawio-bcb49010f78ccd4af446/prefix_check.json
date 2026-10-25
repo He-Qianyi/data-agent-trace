@@ -1,0 +1,11 @@
+{
+  "original_model_rounds_reused": 12,
+  "original_tool_calls_reused": 26,
+  "original_round12_tool_results_included": true,
+  "new_prompt_rules": 0,
+  "messages_added_for_deadline": 0,
+  "system_prompt_unchanged": true,
+  "first_new_round": 13,
+  "max_round": 24,
+  "tool_choice_all_rounds": "auto"
+}

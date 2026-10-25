@@ -1,0 +1,67 @@
+{
+  "method": "local_author_review_of_diagnosis_against_recorded_task_and_evidence",
+  "independent_gold": false,
+  "new_model_calls": 0,
+  "affects_acceptance": false,
+  "records": [
+    {
+      "record_id": "rawio-a5173d9e30dba77ca1c5",
+      "task_id": "agriculture_20",
+      "supported_observations": [
+        {
+          "claim": "两个CSV已写出并读回，output1含一个显著预测变量，output2含两个预测变量。",
+          "evidence_ids": [
+            "E00156",
+            "E00159",
+            "E00175"
+          ]
+        },
+        {
+          "claim": "最终文字称7国但列出6国，记录的国家计数为6。",
+          "evidence_ids": [
+            "FINAL0001",
+            "E00147"
+          ]
+        },
+        {
+          "claim": "原始助手曾用显著性比较支持选择面板方案。",
+          "evidence_ids": [
+            "E00167"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "issue": "任务没有明确规定全球年度聚合；研究团队的global属性不能确立统计分析粒度。即便诊断承认歧义，correct_strategy仍优先规定全球粒度，不能视为已确认根因。",
+          "evidence_ids": [
+            "T0005",
+            "E00143"
+          ]
+        },
+        {
+          "issue": "失败链的前两项主要复述交付与拟合事实，并非已确认错误，整体没有建立可验证的失败根因。",
+          "evidence_ids": [
+            "E00153",
+            "E00175"
+          ]
+        },
+        {
+          "issue": "S0052只是打印output2的p值检查，未将全部p>=0.05设为断言；把此输出上升为对任务的确定误解证据不足。",
+          "evidence_ids": [
+            "E00158"
+          ]
+        }
+      ],
+      "verdict": "output_contract_passed_but_root_cause_not_certified"
+    },
+    {
+      "record_id": "rawio-b4aa2e6b636cb50f6643",
+      "task_id": "2697",
+      "verdict": "not_assessable_no_final_diagnosis",
+      "model_rounds": 24,
+      "tool_reads": 30,
+      "fully_repeated_source_reads": 14,
+      "note": "模型正常返回取证请求直到轮数耗尽；未提交最终诊断，不能评估诊断语义，也不能据此判定标准化轨迹缺失根因。"
+    }
+  ]
+}

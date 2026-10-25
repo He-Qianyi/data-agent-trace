@@ -1,0 +1,30 @@
+[
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_termination_control_v1_20261018/results/rawio-bcb49010f78ccd4af446/call_round12/request.json",
+    "bytes": 884520,
+    "sha256": "4fd6ac83ef8209163a9cfa997e514da38c86c347f5a90157dcdfb81e1c69e9e2",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_termination_control_v1_20261018/results/rawio-bcb49010f78ccd4af446/control_request.json",
+    "bytes": 884520,
+    "sha256": "605a58877be12eec587b530d3c4a0f9bde31b449bc97a1ca74cce8e209866233",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_termination_control_v1_20261018/results/rawio-bcb49010f78ccd4af446/prefix_reads.json",
+    "bytes": 4678,
+    "sha256": "b9326903e099326f980dea955947beb31be47906f4af22a0541eae75febd981e",
+    "kind": "context_not_redistributed"
+  },
+  {
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "source": "artifacts/05_diagnosis/diagnosis_termination_control_v1_20261018/results/rawio-bcb49010f78ccd4af446/treatment_request.json",
+    "bytes": 884520,
+    "sha256": "4fd6ac83ef8209163a9cfa997e514da38c86c347f5a90157dcdfb81e1c69e9e2",
+    "kind": "context_not_redistributed"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "id": "chatcmpl-8686a032",
+  "object": "chat.completion",
+  "created": 1792331858,
+  "model": "deepseek-v4.1-flash-1017",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_36b8265f387e44c69b510fb7",
+            "type": "function",
+            "function": {
+              "name": "read_evidence",
+              "arguments": "{\"evidence_id\":\"E00006\"}"
+            }
+          }
+        ],
+        "reasoning": "Let me read E00006 (data_connections.md content) to confirm workspace path and DB paths."
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 42016,
+    "total_tokens": 42080,
+    "completion_tokens": 64,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 21
+    }
+  },
+  "system_fingerprint": null,
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null
+}

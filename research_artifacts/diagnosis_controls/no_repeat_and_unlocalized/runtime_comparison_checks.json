@@ -1,0 +1,10 @@
+{
+  "cases": [
+    "agriculture_16",
+    "2697"
+  ],
+  "same_inputs_and_runtime_as_v1": true,
+  "candidate_prompt_exact": true,
+  "first_model_request_diff": "system prompt only",
+  "model_requests_for_checks": 0
+}

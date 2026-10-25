@@ -1,0 +1,314 @@
+{
+  "new_retrieval_calls": 24,
+  "fully_redundant_source_reads": 18,
+  "previously_unseen_source_characters": 5031,
+  "retrieval_policy_changed": false,
+  "calls": [
+    {
+      "round": 13,
+      "ordinal": 27,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00095",
+        "characters": 2000
+      },
+      "source_characters_returned": 1109,
+      "previously_unseen_characters": 1109,
+      "fully_redundant_source_read": false
+    },
+    {
+      "round": 13,
+      "ordinal": 28,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00096",
+        "characters": 2000
+      },
+      "source_characters_returned": 201,
+      "previously_unseen_characters": 201,
+      "fully_redundant_source_read": false
+    },
+    {
+      "round": 14,
+      "ordinal": 29,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00097",
+        "characters": 2000
+      },
+      "source_characters_returned": 2000,
+      "previously_unseen_characters": 2000,
+      "fully_redundant_source_read": false
+    },
+    {
+      "round": 14,
+      "ordinal": 30,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00098",
+        "characters": 2000
+      },
+      "source_characters_returned": 1446,
+      "previously_unseen_characters": 1446,
+      "fully_redundant_source_read": false
+    },
+    {
+      "round": 15,
+      "ordinal": 31,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00099",
+        "characters": 2000
+      },
+      "source_characters_returned": 200,
+      "previously_unseen_characters": 200,
+      "fully_redundant_source_read": false
+    },
+    {
+      "round": 15,
+      "ordinal": 32,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00100",
+        "characters": 2000
+      },
+      "source_characters_returned": 75,
+      "previously_unseen_characters": 75,
+      "fully_redundant_source_read": false
+    },
+    {
+      "round": 16,
+      "ordinal": 33,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00101",
+        "start": 6000,
+        "characters": 3000
+      },
+      "source_characters_returned": 2541,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 16,
+      "ordinal": 34,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00102",
+        "start": 3000,
+        "characters": 1000
+      },
+      "source_characters_returned": 343,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 17,
+      "ordinal": 35,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00101",
+        "start": 6000,
+        "characters": 3000
+      },
+      "source_characters_returned": 2541,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 17,
+      "ordinal": 36,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00102",
+        "start": 3000,
+        "characters": 1000
+      },
+      "source_characters_returned": 343,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 18,
+      "ordinal": 37,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00101",
+        "start": 6000,
+        "characters": 3000
+      },
+      "source_characters_returned": 2541,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 18,
+      "ordinal": 38,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00102",
+        "start": 3000,
+        "characters": 1000
+      },
+      "source_characters_returned": 343,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 19,
+      "ordinal": 39,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00101",
+        "start": 6000,
+        "characters": 3000
+      },
+      "source_characters_returned": 2541,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 19,
+      "ordinal": 40,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00102",
+        "start": 3000,
+        "characters": 1000
+      },
+      "source_characters_returned": 343,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 20,
+      "ordinal": 41,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00101",
+        "start": 6000,
+        "characters": 3000
+      },
+      "source_characters_returned": 2541,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 20,
+      "ordinal": 42,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00102",
+        "start": 3000,
+        "characters": 1000
+      },
+      "source_characters_returned": 343,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 21,
+      "ordinal": 43,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00101",
+        "start": 6000,
+        "characters": 3000
+      },
+      "source_characters_returned": 2541,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 21,
+      "ordinal": 44,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00102",
+        "start": 3000,
+        "characters": 1000
+      },
+      "source_characters_returned": 343,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 22,
+      "ordinal": 45,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00101",
+        "start": 6000,
+        "characters": 3000
+      },
+      "source_characters_returned": 2541,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 22,
+      "ordinal": 46,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00102",
+        "start": 3000,
+        "characters": 1000
+      },
+      "source_characters_returned": 343,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 23,
+      "ordinal": 47,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00101",
+        "start": 6000,
+        "characters": 3000
+      },
+      "source_characters_returned": 2541,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 23,
+      "ordinal": 48,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00102",
+        "start": 3000,
+        "characters": 1000
+      },
+      "source_characters_returned": 343,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 24,
+      "ordinal": 49,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00101",
+        "start": 6000,
+        "characters": 3000
+      },
+      "source_characters_returned": 2541,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    },
+    {
+      "round": 24,
+      "ordinal": 50,
+      "name": "read_evidence",
+      "arguments": {
+        "evidence_id": "E00102",
+        "start": 3000,
+        "characters": 1000
+      },
+      "source_characters_returned": 343,
+      "previously_unseen_characters": 0,
+      "fully_redundant_source_read": true
+    }
+  ]
+}

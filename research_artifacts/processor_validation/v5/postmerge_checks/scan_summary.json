@@ -1,0 +1,91 @@
+{
+  "bundle": "/Volumes/Public HD/Data Agent Trace/artifacts/03_trace_processor/integrated_runs/trace_processor_connection_positional_v5_20261020/final",
+  "counts": {
+    "steps": 4208,
+    "unique_steps_checked": 164,
+    "exchanges": 4162,
+    "unique_exchanges_checked": 164,
+    "units": 4259,
+    "unique_units_checked": 164,
+    "revisions": 448,
+    "unique_revisions_checked": 164,
+    "evidence": 15344,
+    "unique_evidence_checked": 164,
+    "requirements": 2335,
+    "unique_requirements_checked": 164,
+    "step_exchange_call_checked": 4208,
+    "action_parent_checked": 4208,
+    "code_id_scope_checked": 4208,
+    "operation_code_scope_checked": 8939,
+    "python_code_units": 2906,
+    "unit_step_exchange_checked": 4259,
+    "operations": 8560,
+    "requirement_link_exists_checked": 13355,
+    "annotation_evidence_exists_checked": 79742,
+    "analysis_parent_checked": 4208,
+    "analysis_unit_coverage_checked": 4208,
+    "analysis_operation_coverage_checked": 4208,
+    "resource_step_exists_checked": 4006,
+    "resource_code_scope_checked": 3449,
+    "traces": 164,
+    "analysis_artifact_exists_checked": 715,
+    "operation_revision_scope_checked": 1653,
+    "script_invocations": 430,
+    "revision_not_future_step_checked": 377,
+    "file_revision_parent_checked": 448,
+    "unbound_script_invocations": 53,
+    "revision_content_hash_checked": 447,
+    "resource_revision_scope_checked": 557,
+    "sql_api_operations": 4470,
+    "sql_api_null_text": 274,
+    "revision_predecessor_checked": 124,
+    "file_code_scope_checked": 1
+  },
+  "cohort": {
+    "dabstep/claude_code": 10,
+    "dataagentbench/claude_code": 91,
+    "dabstep/codex": 10,
+    "dabstep/kimi_code": 5,
+    "agenticdatabench/claude_code": 24,
+    "agenticdatabench/codex": 24
+  },
+  "relationship_issues": 0,
+  "candidate_groups": {
+    "same_step_write_run_order": {
+      "occurrences": 378,
+      "traces": 58
+    },
+    "cwd_scope_command": {
+      "occurrences": 40,
+      "traces": 17
+    },
+    "python_heredoc_redirection": {
+      "occurrences": 1,
+      "traces": 1
+    },
+    "keyword_only_io": {
+      "occurrences": 710,
+      "traces": 44
+    },
+    "python_wrapper_command": {
+      "occurrences": 9,
+      "traces": 7
+    },
+    "python_flag_command": {
+      "occurrences": 12,
+      "traces": 11
+    },
+    "null_data_path": {
+      "occurrences": 11,
+      "traces": 3
+    },
+    "null_revision_content": {
+      "occurrences": 1,
+      "traces": 1
+    }
+  },
+  "nulls": 64753,
+  "null_patterns": 55,
+  "model_calls": 0,
+  "captured_code_executed": false
+}

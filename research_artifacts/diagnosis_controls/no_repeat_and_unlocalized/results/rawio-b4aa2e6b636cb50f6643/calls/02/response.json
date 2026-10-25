@@ -1,0 +1,60 @@
+{
+  "id": "chatcmpl-dc5e106d",
+  "object": "chat.completion",
+  "created": 1792339066,
+  "model": "deepseek-v4.1-flash-1017",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_e9607127f7194f70ba496ed0",
+            "type": "function",
+            "function": {
+              "name": "read_evidence",
+              "arguments": "{\"evidence_id\":\"E00024\",\"characters\":5000,\"start\":4000}"
+            }
+          },
+          {
+            "id": "call_3eababcc1a71465fba6fd611",
+            "type": "function",
+            "function": {
+              "name": "read_evidence",
+              "arguments": "{\"evidence_id\":\"E00014\",\"characters\":3000}"
+            }
+          },
+          {
+            "id": "call_5ae45ef83b5e43aeaf3cc17d",
+            "type": "function",
+            "function": {
+              "name": "read_evidence",
+              "arguments": "{\"evidence_id\":\"E00035\",\"characters\":3000,\"start\":1000}"
+            }
+          }
+        ],
+        "reasoning": "Let me continue reading the manual (E00024 next page) to get the fee formula and ACI table (E, F, G, etc.), and the fees.json content. Let me read E00024 from 4000, and E00014 (fees.json content). Also read the full E00035 fraud list to see card schemes.\n\nLet me read E00024 next page and E00014."
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 38205,
+    "total_tokens": 38485,
+    "completion_tokens": 280,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 85
+    }
+  },
+  "system_fingerprint": null,
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null
+}

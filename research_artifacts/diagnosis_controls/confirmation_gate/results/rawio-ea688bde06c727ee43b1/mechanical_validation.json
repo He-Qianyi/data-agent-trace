@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "errors": [
+    {
+      "kind": "schema",
+      "path": "",
+      "message": "Additional properties are not allowed ('root_cause_chain_note_removed' was unexpected)"
+    }
+  ],
+  "citation_references": 0
+}

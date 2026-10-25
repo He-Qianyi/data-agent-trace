@@ -1,0 +1,43 @@
+{
+  "source_pages_verified": 22,
+  "request_protocol_checks_passed": 3,
+  "references": [
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "T0005",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00014",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00015",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00019",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "FINAL0001",
+      "exists": true,
+      "actually_read": true
+    }
+  ],
+  "errors": [],
+  "references_valid": true
+}

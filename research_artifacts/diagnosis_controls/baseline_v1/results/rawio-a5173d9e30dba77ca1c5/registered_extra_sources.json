@@ -1,0 +1,14 @@
+[
+  {
+    "evidence_id": "FINAL0001",
+    "step_id": null,
+    "role": "recorded_final_response",
+    "fact_pointer": "/facts/final_response/text",
+    "original_source_ref": {
+      "source_id": "S0014",
+      "json_pointer": "",
+      "representation": "text"
+    },
+    "representation": "text"
+  }
+]

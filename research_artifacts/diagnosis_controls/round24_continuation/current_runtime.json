@@ -1,0 +1,17 @@
+{
+  "schema": "diagnosis-current-runtime-v1",
+  "prompt_path": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/diagnosis_prompt_v1_20261018/diagnosis.prompt.md",
+  "prompt_version": "original-v1",
+  "prompt_sha256": "8ad65be79cfb5bda29e746d2e096a244e367da6954f4d89773be31bdac7e8fd8",
+  "max_model_rounds_per_trace": 24,
+  "max_tool_calls_per_trace": 60,
+  "tool_choice": "auto",
+  "forced_final_round": false,
+  "acceptance_policy": "configs/05_diagnosis/CURRENT_ACCEPTANCE.json",
+  "model": "x-test-2",
+  "max_tokens": 48000,
+  "thinking_token_budget": 16000,
+  "temperature": 0,
+  "response_format": null,
+  "automatic_retries": 0
+}

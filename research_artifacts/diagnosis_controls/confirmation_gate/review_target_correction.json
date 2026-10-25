@@ -1,0 +1,11 @@
+{
+  "before_any_treatment_final_output": true,
+  "source": "review_sources/rawio-ea688bde06c727ee43b1.json T0003",
+  "old_probe": {
+    "id": "stock-final-format",
+    "task": "stockmarket__query1",
+    "bucket": "supported_discrepancy_probe",
+    "baseline": "明确只重复答案要求，但最终附解释；旧结果未充分识别。"
+  },
+  "correction": "T0003 only says Then repeat that answer in your final message; it does not say only the answer. Additional explanation alone is not a confirmed format violation. Prior author review boundary claim was too strong; do not credit its detection as a true positive."
+}

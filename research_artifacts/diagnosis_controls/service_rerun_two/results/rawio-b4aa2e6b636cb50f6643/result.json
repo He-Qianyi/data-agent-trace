@@ -1,0 +1,8 @@
+{
+  "task_id": "2697",
+  "status": "round_budget_exhausted",
+  "model_rounds": 24,
+  "tool_calls": 30,
+  "reason": "no_final_diagnosis_within_frozen_budget",
+  "finished_at": "2026-10-18T15:19:29.896414+00:00"
+}

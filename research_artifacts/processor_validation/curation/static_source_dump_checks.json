@@ -1,0 +1,9 @@
+{
+  "/Volumes/Public HD/DataAgentBench/query_cve/query_dataset/kev.sql": {
+    "sha256": "76f15a345a8dd1006a5b21c198e52952846efa7dc5581727d5052137218a8bfe",
+    "insert_counts": {
+      "kev_entries": 1583,
+      "kev_vendor_aliases": 420
+    }
+  }
+}

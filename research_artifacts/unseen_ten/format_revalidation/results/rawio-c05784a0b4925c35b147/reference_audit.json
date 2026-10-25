@@ -1,0 +1,112 @@
+{
+  "errors": [],
+  "citation_checks": [
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "E00065",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "E00068",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "E00050",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "E00064",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "E00010",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "E00050",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "E00006",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00006",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00010",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00050",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00064",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00006",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00052",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00053",
+      "exists": true,
+      "actually_read": true
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00065",
+      "exists": true,
+      "actually_read": true
+    }
+  ],
+  "affects_acceptance": false,
+  "semantic_entailment_verified": false
+}

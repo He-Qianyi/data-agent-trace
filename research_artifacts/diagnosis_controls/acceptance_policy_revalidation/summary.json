@@ -1,0 +1,59 @@
+{
+  "acceptance_standard": "codetracer-detailed-compatible-v1",
+  "upstream": "https://github.com/NJU-LINK/CodeTracer/blob/2d302191dd07e7c0c2da6f7a5e9451c7cbb62d34/src/codetracer/services/validation.py",
+  "cohorts": {
+    "baseline": {
+      "total": 8,
+      "accepted": 5,
+      "old_strict_passed": 4,
+      "valid_final_json": 5,
+      "service_censored": 2,
+      "non_service_no_valid_json": 1,
+      "reference_errors": 0
+    },
+    "round1": {
+      "total": 8,
+      "accepted": 6,
+      "old_strict_passed": 4,
+      "valid_final_json": 6,
+      "service_censored": 2,
+      "non_service_no_valid_json": 0,
+      "reference_errors": 0
+    },
+    "round2": {
+      "total": 8,
+      "accepted": 7,
+      "old_strict_passed": 5,
+      "valid_final_json": 7,
+      "service_censored": 0,
+      "non_service_no_valid_json": 1,
+      "reference_errors": 0
+    }
+  },
+  "fixed_six_controls": {
+    "round1": {
+      "total": 6,
+      "accepted": 6
+    },
+    "round2": {
+      "total": 6,
+      "accepted": 5
+    }
+  },
+  "both_final_outputs": {
+    "round1": {
+      "total": 5,
+      "accepted": 5
+    },
+    "round2": {
+      "total": 5,
+      "accepted": 5
+    }
+  },
+  "new_model_requests": 0,
+  "output_repairs": 0,
+  "prompts_changed": false,
+  "original_experiment_files_unchanged": 823,
+  "frozen_processor_files_unchanged": 79,
+  "acceptance_certifies_semantics": false
+}

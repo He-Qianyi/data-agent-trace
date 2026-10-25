@@ -18,3 +18,5 @@
 | Project-wide license selection | Not assigned automatically; third-party notices remain applicable |
 
 The repository supports source inspection, complete offline replay of one real run and checks of the earlier excerpt and a documented path to fresh method runs with user-supplied complete inputs and authorized model access. It does not claim that an unfinished paper evaluation or an unreleased archive has become fully reproducible.
+
+The three completed [research evidence groups](../research_artifacts/README.md) are now published: new-ten results/review, all-164 processor and selection audits, and six recorded diagnostic control experiments. These are existing experimental records, including failed/nonterminal outcomes. They do not supply independent labels or a finished paper-level ablation study.

@@ -1,0 +1,93 @@
+[
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0004",
+    "expression": "sqlite3.connect(f'file:{sqlite_db_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/indexInfo_query.db?mode=ro",
+    "status": "matches"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0006",
+    "expression": "sqlite3.connect(f'file:{sqlite_db_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/indexInfo_query.db?mode=ro",
+    "status": "matches"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0006",
+    "expression": "sqlite3.connect(f'file:{sqlite_db_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/indexInfo_query.db?mode=ro",
+    "status": "matches"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "step_id": "S0004",
+    "expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "matches"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "step_id": "S0004",
+    "expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "matches"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "step_id": "S0005",
+    "expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "matches"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "step_id": "S0005",
+    "expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "matches"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "step_id": "S0006",
+    "expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "matches"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "step_id": "S0006",
+    "expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "matches"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "step_id": "S0007",
+    "expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "matches"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "step_id": "S0007",
+    "expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "matches"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "step_id": "S0008",
+    "expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "matches"
+  },
+  {
+    "record_id": "rawio-e88e45ae996e8ae5d18f",
+    "step_id": "S0008",
+    "expression": "sqlite3.connect(f'file:{sqlite_path}?mode=ro', uri=True)",
+    "resolved_value": "file:./data/stockinfo_query.db?mode=ro",
+    "status": "matches"
+  }
+]

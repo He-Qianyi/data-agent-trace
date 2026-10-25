@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "counts": {
+    "traces": 164,
+    "native_units": 4259,
+    "script_invocations": 430,
+    "resource_parent_pairs_checked": 4006,
+    "reasonable_script_nulls_rechecked": 53,
+    "all_connection_operations": 1946,
+    "prior122_rechecked": 122,
+    "prior32_rechecked": 32,
+    "prior709_connections_rechecked": 709,
+    "known26_fields_rechecked": 26,
+    "positional_connection_expressions_checked": 13
+  },
+  "graph_relationship_issues": 0,
+  "all26_values_match_independent_audit_expectations": true,
+  "constant_positional_connection_fields_still_missing": [],
+  "prior122_preserved": 122,
+  "prior709_connections_preserved": 709,
+  "prior32_preserved": 32,
+  "reasonable_script_nulls_preserved": 53,
+  "native_annotations_citations_and_catalog_unchanged": 164,
+  "null_total_before": 64779,
+  "null_total_after": 64753,
+  "null_pattern_delta": {
+    "$.facts.steps[].action.static_extraction.data_operations[].path_literal": -13,
+    "$.facts.data_resources[].path_as_recorded": -13
+  },
+  "all_other_null_patterns_identical": true,
+  "raw_sources_evaluations_and_parent_version_unchanged": true,
+  "model_calls": 0,
+  "captured_code_executed": false
+}

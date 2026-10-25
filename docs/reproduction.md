@@ -111,3 +111,12 @@ These preserve historical assumptions and some `${PROJECT_ROOT}`/`${LOCAL_MIRROR
 ## Validation during this release
 
 The complete real sample runs the original algorithms and compares actual saved responses, full requests and tool logs. Separate integration tests use explicit network-free mocks. The earlier excerpt evaluator also reads actual saved records. The release does not call a model or rerun benchmark tasks. Both validation modes are recorded separately in `docs/release-verification.json`.
+
+## Verify the published experimental evidence
+
+```bash
+python -m reproduction.verify_research --artifacts research_artifacts \
+  --output reproduction_output/research-audit-001
+```
+
+The [artifact guide](../research_artifacts/README.md) describes the three groups, saved native outputs, exact source/public hashes and withheld contexts. The command needs the repository artifact directory, no API credentials or benchmark downloads. It writes `verification.json` and `report.md`; use a fresh output directory. Historical runners require their matching original archives and are not invoked. The new-ten candidate and previous control prompts remain separate from the default profile.

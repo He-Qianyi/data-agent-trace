@@ -1,0 +1,191 @@
+{
+  "passed": true,
+  "errors": [],
+  "citation_references": 13,
+  "citation_checks": [
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "FINAL0001",
+      "read_ranges": [
+        [
+          0,
+          27
+        ],
+        [
+          0,
+          27
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "T0008",
+      "read_ranges": [
+        [
+          0,
+          77
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "T0010",
+      "read_ranges": [
+        [
+          0,
+          77
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "T0011",
+      "read_ranges": [
+        [
+          0,
+          17
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "E00047",
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          1043
+        ],
+        [
+          0,
+          1043
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "E00048",
+      "read_ranges": [
+        [
+          0,
+          214
+        ],
+        [
+          0,
+          214
+        ],
+        [
+          0,
+          214
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "T0008",
+      "read_ranges": [
+        [
+          0,
+          77
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00047",
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          1043
+        ],
+        [
+          0,
+          1043
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00048",
+      "read_ranges": [
+        [
+          0,
+          214
+        ],
+        [
+          0,
+          214
+        ],
+        [
+          0,
+          214
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "T0008",
+      "read_ranges": [
+        [
+          0,
+          77
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "T0010",
+      "read_ranges": [
+        [
+          0,
+          77
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "T0011",
+      "read_ranges": [
+        [
+          0,
+          17
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "FINAL0001",
+      "read_ranges": [
+        [
+          0,
+          27
+        ],
+        [
+          0,
+          27
+        ]
+      ]
+    }
+  ],
+  "semantic_entailment_verified_by_scripts": false
+}

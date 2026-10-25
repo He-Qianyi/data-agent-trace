@@ -1,0 +1,978 @@
+[
+  {
+    "record_id": "rawio-f1b9d043fca0a8c93d5f",
+    "step_id": "S0027",
+    "pointer": "/facts/steps/26/action/static_extraction/data_operations/1/sql_text",
+    "recovered_value": "SELECT * FROM files WHERE id = '6f4cdb70f044b0486a24a07403600cb964a02672'",
+    "current_pointer": "/facts/steps/26/action/static_extraction/data_operations/1/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-f1b9d043fca0a8c93d5f",
+    "step_id": "S0027",
+    "pointer": "/facts/steps/26/action/static_extraction/data_operations/2/sql_text",
+    "recovered_value": "SELECT * FROM files WHERE id = '71a17ce92451858f3eb01aa8082551e48bc5550d'",
+    "current_pointer": "/facts/steps/26/action/static_extraction/data_operations/2/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0031",
+    "pointer": "/facts/steps/30/action/static_extraction/data_operations/1/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT MIN(cn.name) as first_company\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/30/action/static_extraction/data_operations/2/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0031",
+    "pointer": "/facts/steps/30/action/static_extraction/data_operations/2/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT MIN(mii.info) as first_rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/30/action/static_extraction/data_operations/3/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0031",
+    "pointer": "/facts/steps/30/action/static_extraction/data_operations/3/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT MIN(t.title) as first_title\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/30/action/static_extraction/data_operations/4/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0031",
+    "pointer": "/facts/steps/30/action/static_extraction/data_operations/5/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT MIN(cn.name) as first_company\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/30/action/static_extraction/data_operations/7/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0031",
+    "pointer": "/facts/steps/30/action/static_extraction/data_operations/6/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT MIN(mii.info) as first_rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/30/action/static_extraction/data_operations/8/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0031",
+    "pointer": "/facts/steps/30/action/static_extraction/data_operations/7/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT MIN(t.title) as first_title\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/30/action/static_extraction/data_operations/9/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0033",
+    "pointer": "/facts/steps/32/action/static_extraction/data_operations/0/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT mii.info as rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY mii.info ASC\n    LIMIT 20;\n",
+    "current_pointer": "/facts/steps/32/action/static_extraction/data_operations/1/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0033",
+    "pointer": "/facts/steps/32/action/static_extraction/data_operations/1/sql_text",
+    "recovered_value": "\n    SELECT count(DISTINCT mii.info)\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/32/action/static_extraction/data_operations/2/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0033",
+    "pointer": "/facts/steps/32/action/static_extraction/data_operations/2/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT mii.info as rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY mii.info ASC\n    LIMIT 20;\n",
+    "current_pointer": "/facts/steps/32/action/static_extraction/data_operations/4/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0033",
+    "pointer": "/facts/steps/32/action/static_extraction/data_operations/3/sql_text",
+    "recovered_value": "\n    SELECT count(DISTINCT mii.info)\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/32/action/static_extraction/data_operations/5/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0034",
+    "pointer": "/facts/steps/33/action/static_extraction/data_operations/0/sql_text",
+    "recovered_value": "\n    SELECT CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) as movie_id, count(*) as cnt\n    FROM title t\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    WHERE t.kind_id = 1\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    GROUP BY movie_id\n    ORDER BY cnt DESC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/33/action/static_extraction/data_operations/1/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0034",
+    "pointer": "/facts/steps/33/action/static_extraction/data_operations/1/sql_text",
+    "recovered_value": "\n    SELECT t.title, t.id, mii.info as rating, count(*) as cnt\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    GROUP BY t.title, t.id, mii.info\n    ORDER BY mii.info ASC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/33/action/static_extraction/data_operations/2/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0034",
+    "pointer": "/facts/steps/33/action/static_extraction/data_operations/2/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT t.title, mii.info as rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    WHERE t.kind_id = 1\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY mii.info ASC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/33/action/static_extraction/data_operations/3/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0034",
+    "pointer": "/facts/steps/33/action/static_extraction/data_operations/3/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT mii.info as rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY mii.info ASC\n    LIMIT 20;\n",
+    "current_pointer": "/facts/steps/33/action/static_extraction/data_operations/5/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0034",
+    "pointer": "/facts/steps/33/action/static_extraction/data_operations/4/sql_text",
+    "recovered_value": "\n    SELECT count(DISTINCT mii.info)\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/33/action/static_extraction/data_operations/6/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0035",
+    "pointer": "/facts/steps/34/action/static_extraction/data_operations/0/sql_text",
+    "recovered_value": "\n    SELECT t.id, CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) as movie_id, count(*) as cnt\n    FROM title t\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    WHERE t.kind_id = 1\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    GROUP BY t.id\n    ORDER BY cnt DESC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/34/action/static_extraction/data_operations/1/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0035",
+    "pointer": "/facts/steps/34/action/static_extraction/data_operations/1/sql_text",
+    "recovered_value": "\n    SELECT t.id, CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) as movie_id, count(*) as cnt\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    WHERE t.kind_id = 1\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    GROUP BY t.id\n    ORDER BY cnt DESC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/34/action/static_extraction/data_operations/2/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0035",
+    "pointer": "/facts/steps/34/action/static_extraction/data_operations/2/sql_text",
+    "recovered_value": "\n    SELECT t.title, mii.info as rating, mii.id, mc.movie_id\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n      AND mii.info = '......1213'\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/34/action/static_extraction/data_operations/3/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0035",
+    "pointer": "/facts/steps/34/action/static_extraction/data_operations/4/sql_text",
+    "recovered_value": "\n    SELECT t.id, CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) as movie_id, count(*) as cnt\n    FROM title t\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    WHERE t.kind_id = 1\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    GROUP BY t.id\n    ORDER BY cnt DESC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/34/action/static_extraction/data_operations/6/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0035",
+    "pointer": "/facts/steps/34/action/static_extraction/data_operations/5/sql_text",
+    "recovered_value": "\n    SELECT t.id, CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) as movie_id, count(*) as cnt\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    WHERE t.kind_id = 1\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    GROUP BY t.id\n    ORDER BY cnt DESC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/34/action/static_extraction/data_operations/7/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0035",
+    "pointer": "/facts/steps/34/action/static_extraction/data_operations/6/sql_text",
+    "recovered_value": "\n    SELECT t.title, mii.info as rating, mii.id, mc.movie_id\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n      AND mii.info = '......1213'\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/34/action/static_extraction/data_operations/8/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0037",
+    "pointer": "/facts/steps/36/action/static_extraction/data_operations/0/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT mii.info as rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    WHERE t.kind_id = 1\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY mii.info ASC\n    LIMIT 20;\n",
+    "current_pointer": "/facts/steps/36/action/static_extraction/data_operations/1/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0037",
+    "pointer": "/facts/steps/36/action/static_extraction/data_operations/1/sql_text",
+    "recovered_value": "\n    SELECT count(DISTINCT mii.info)\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    WHERE t.kind_id = 1\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/36/action/static_extraction/data_operations/2/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0037",
+    "pointer": "/facts/steps/36/action/static_extraction/data_operations/2/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT cn.name, mii.info as rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY cn.name ASC, mii.info ASC\n    LIMIT 30;\n",
+    "current_pointer": "/facts/steps/36/action/static_extraction/data_operations/3/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0037",
+    "pointer": "/facts/steps/36/action/static_extraction/data_operations/3/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT mii.info as rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    WHERE t.kind_id = 1\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY mii.info ASC\n    LIMIT 20;\n",
+    "current_pointer": "/facts/steps/36/action/static_extraction/data_operations/5/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0037",
+    "pointer": "/facts/steps/36/action/static_extraction/data_operations/4/sql_text",
+    "recovered_value": "\n    SELECT count(DISTINCT mii.info)\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    WHERE t.kind_id = 1\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/36/action/static_extraction/data_operations/6/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0037",
+    "pointer": "/facts/steps/36/action/static_extraction/data_operations/5/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT cn.name, mii.info as rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY cn.name ASC, mii.info ASC\n    LIMIT 30;\n",
+    "current_pointer": "/facts/steps/36/action/static_extraction/data_operations/7/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0040",
+    "pointer": "/facts/steps/39/action/static_extraction/data_operations/0/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT t.title, mii.info as rating, cn.name as company_name\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY cn.name ASC, mii.info ASC, t.title ASC\n    LIMIT 20;\n",
+    "current_pointer": "/facts/steps/39/action/static_extraction/data_operations/1/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0040",
+    "pointer": "/facts/steps/39/action/static_extraction/data_operations/1/sql_text",
+    "recovered_value": "\n    SELECT MIN(cn.name) as first_company\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/39/action/static_extraction/data_operations/2/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0040",
+    "pointer": "/facts/steps/39/action/static_extraction/data_operations/2/sql_text",
+    "recovered_value": "\n    SELECT MIN(mii.info) as first_rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/39/action/static_extraction/data_operations/3/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0040",
+    "pointer": "/facts/steps/39/action/static_extraction/data_operations/3/sql_text",
+    "recovered_value": "\n    SELECT MIN(t.title) as first_title\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/39/action/static_extraction/data_operations/4/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0040",
+    "pointer": "/facts/steps/39/action/static_extraction/data_operations/4/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT t.title, mii.info as rating, cn.name as company_name\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY cn.name ASC, mii.info ASC, t.title ASC\n    LIMIT 20;\n",
+    "current_pointer": "/facts/steps/39/action/static_extraction/data_operations/6/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0040",
+    "pointer": "/facts/steps/39/action/static_extraction/data_operations/5/sql_text",
+    "recovered_value": "\n    SELECT MIN(cn.name) as first_company\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/39/action/static_extraction/data_operations/7/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0040",
+    "pointer": "/facts/steps/39/action/static_extraction/data_operations/6/sql_text",
+    "recovered_value": "\n    SELECT MIN(mii.info) as first_rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/39/action/static_extraction/data_operations/8/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0040",
+    "pointer": "/facts/steps/39/action/static_extraction/data_operations/7/sql_text",
+    "recovered_value": "\n    SELECT MIN(t.title) as first_title\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n);\n",
+    "current_pointer": "/facts/steps/39/action/static_extraction/data_operations/9/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0041",
+    "pointer": "/facts/steps/40/action/static_extraction/data_operations/0/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT cn.name as company_name\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY cn.name ASC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/40/action/static_extraction/data_operations/1/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0041",
+    "pointer": "/facts/steps/40/action/static_extraction/data_operations/1/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT mii.info as rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY mii.info ASC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/40/action/static_extraction/data_operations/2/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0041",
+    "pointer": "/facts/steps/40/action/static_extraction/data_operations/2/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT t.title as title\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY t.title ASC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/40/action/static_extraction/data_operations/3/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0041",
+    "pointer": "/facts/steps/40/action/static_extraction/data_operations/3/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT cn.name as company_name\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY cn.name ASC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/40/action/static_extraction/data_operations/5/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0041",
+    "pointer": "/facts/steps/40/action/static_extraction/data_operations/4/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT mii.info as rating\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY mii.info ASC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/40/action/static_extraction/data_operations/6/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-fd32ef71922588dcde12",
+    "step_id": "S0041",
+    "pointer": "/facts/steps/40/action/static_extraction/data_operations/5/sql_text",
+    "recovered_value": "\n    SELECT DISTINCT t.title as title\n    FROM title t\n    JOIN movie_info_idx mii ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mii.movie_id\n    JOIN movie_companies mc ON CAST(SUBSTRING(t.id FROM 'tt([0-9]+)') AS integer) = mc.movie_id\n    JOIN company_name cn ON SUBSTRING(cn.id FROM '[0-9]+$') = mc.company_id::text\n    JOIN company_type ct ON mc.company_type_id = ct.id\n    WHERE t.kind_id = 1\n      AND cn.country_code LIKE '%us%'\n      AND ct.kind = 'production companies'\n      AND mii.info_type_id = 101\n      AND t.id IN (\n    SELECT id FROM title \n    WHERE CAST(SUBSTRING(id FROM 'tt([0-9]+)') AS integer) IN (\n        SELECT movie_id FROM movie_info WHERE info_type_id = 'IT|16'\n    )\n)\n    ORDER BY t.title ASC\n    LIMIT 10;\n",
+    "current_pointer": "/facts/steps/40/action/static_extraction/data_operations/7/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0017",
+    "pointer": "/facts/steps/16/action/static_extraction/data_operations/3/sql_text",
+    "recovered_value": "\n    SELECT STRPTIME('31 Dec 1986, 00:00', '%d %b %Y, %H:%M')\n",
+    "current_pointer": "/facts/steps/16/action/static_extraction/data_operations/3/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0017",
+    "pointer": "/facts/steps/16/action/static_extraction/data_operations/4/sql_text",
+    "recovered_value": "\n    SELECT STRPTIME('01 Apr 2003, 00:00', '%d %b %Y, %H:%M')\n",
+    "current_pointer": "/facts/steps/16/action/static_extraction/data_operations/4/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0017",
+    "pointer": "/facts/steps/16/action/static_extraction/data_operations/5/sql_text",
+    "recovered_value": "\n    SELECT STRPTIME('01 Apr 1974, 00:00', '%d %b %Y, %H:%M')\n",
+    "current_pointer": "/facts/steps/16/action/static_extraction/data_operations/5/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0017",
+    "pointer": "/facts/steps/16/action/static_extraction/data_operations/6/sql_text",
+    "recovered_value": "\n    SELECT STRPTIME('September 30, 2020 at 12:00 AM', '%B %d, %Y at %I:%M %p')\n",
+    "current_pointer": "/facts/steps/16/action/static_extraction/data_operations/6/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0017",
+    "pointer": "/facts/steps/16/action/static_extraction/data_operations/7/sql_text",
+    "recovered_value": "\n    SELECT TRY_CAST('2000-01-03 00:00:00' AS TIMESTAMP)\n",
+    "current_pointer": "/facts/steps/16/action/static_extraction/data_operations/7/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0017",
+    "pointer": "/facts/steps/16/action/static_extraction/data_operations/11/sql_text",
+    "recovered_value": "\n    SELECT STRPTIME('31 Dec 1986, 00:00', '%d %b %Y, %H:%M')\n",
+    "current_pointer": "/facts/steps/16/action/static_extraction/data_operations/11/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0017",
+    "pointer": "/facts/steps/16/action/static_extraction/data_operations/12/sql_text",
+    "recovered_value": "\n    SELECT STRPTIME('01 Apr 2003, 00:00', '%d %b %Y, %H:%M')\n",
+    "current_pointer": "/facts/steps/16/action/static_extraction/data_operations/12/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0017",
+    "pointer": "/facts/steps/16/action/static_extraction/data_operations/13/sql_text",
+    "recovered_value": "\n    SELECT STRPTIME('01 Apr 1974, 00:00', '%d %b %Y, %H:%M')\n",
+    "current_pointer": "/facts/steps/16/action/static_extraction/data_operations/13/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0017",
+    "pointer": "/facts/steps/16/action/static_extraction/data_operations/14/sql_text",
+    "recovered_value": "\n    SELECT STRPTIME('September 30, 2020 at 12:00 AM', '%B %d, %Y at %I:%M %p')\n",
+    "current_pointer": "/facts/steps/16/action/static_extraction/data_operations/14/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-525b83b8380cd62bcab9",
+    "step_id": "S0017",
+    "pointer": "/facts/steps/16/action/static_extraction/data_operations/15/sql_text",
+    "recovered_value": "\n    SELECT TRY_CAST('2000-01-03 00:00:00' AS TIMESTAMP)\n",
+    "current_pointer": "/facts/steps/16/action/static_extraction/data_operations/15/sql_text",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/steps/15/action/static_extraction/data_operations/0/path_literal",
+    "recovered_value": "Crop Recommendation using Soil Properties and Weather Prediction.csv",
+    "current_pointer": "/facts/steps/15/action/static_extraction/data_operations/0/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/steps/15/action/static_extraction/data_operations/1/path_literal",
+    "recovered_value": "Crop Yield Prediction Dataset/yield.csv",
+    "current_pointer": "/facts/steps/15/action/static_extraction/data_operations/1/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/steps/15/action/static_extraction/data_operations/2/path_literal",
+    "recovered_value": "Crop Yield Prediction Dataset/pesticides.csv",
+    "current_pointer": "/facts/steps/15/action/static_extraction/data_operations/2/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/steps/15/action/static_extraction/data_operations/3/path_literal",
+    "recovered_value": "Crop Yield Prediction Dataset/yield_df.csv",
+    "current_pointer": "/facts/steps/15/action/static_extraction/data_operations/3/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/steps/15/action/static_extraction/data_operations/4/path_literal",
+    "recovered_value": "Crop Yield Prediction Dataset/rainfall.csv",
+    "current_pointer": "/facts/steps/15/action/static_extraction/data_operations/4/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/steps/15/action/static_extraction/data_operations/5/path_literal",
+    "recovered_value": "Crop Yield Prediction Dataset/temp.csv",
+    "current_pointer": "/facts/steps/15/action/static_extraction/data_operations/5/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/steps/15/action/static_extraction/data_operations/6/path_literal",
+    "recovered_value": "globalfoodprices_wfp.csv",
+    "current_pointer": "/facts/steps/15/action/static_extraction/data_operations/6/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/data_resources/26/path_as_recorded",
+    "recovered_value": "Crop Recommendation using Soil Properties and Weather Prediction.csv",
+    "current_pointer": "/facts/data_resources/26/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/data_resources/27/path_as_recorded",
+    "recovered_value": "Crop Yield Prediction Dataset/yield.csv",
+    "current_pointer": "/facts/data_resources/27/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/data_resources/28/path_as_recorded",
+    "recovered_value": "Crop Yield Prediction Dataset/pesticides.csv",
+    "current_pointer": "/facts/data_resources/28/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/data_resources/29/path_as_recorded",
+    "recovered_value": "Crop Yield Prediction Dataset/yield_df.csv",
+    "current_pointer": "/facts/data_resources/29/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/data_resources/30/path_as_recorded",
+    "recovered_value": "Crop Yield Prediction Dataset/rainfall.csv",
+    "current_pointer": "/facts/data_resources/30/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/data_resources/31/path_as_recorded",
+    "recovered_value": "Crop Yield Prediction Dataset/temp.csv",
+    "current_pointer": "/facts/data_resources/31/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-15bddfa32aabf6afa7c2",
+    "step_id": "S0016",
+    "pointer": "/facts/data_resources/32/path_as_recorded",
+    "recovered_value": "globalfoodprices_wfp.csv",
+    "current_pointer": "/facts/data_resources/32/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/steps/13/action/static_extraction/data_operations/1/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Recommendation using Soil Properties and Weather Prediction.csv",
+    "current_pointer": "/facts/steps/13/action/static_extraction/data_operations/1/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/steps/13/action/static_extraction/data_operations/3/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/yield_df.csv",
+    "current_pointer": "/facts/steps/13/action/static_extraction/data_operations/3/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/steps/13/action/static_extraction/data_operations/5/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/yield.csv",
+    "current_pointer": "/facts/steps/13/action/static_extraction/data_operations/5/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/steps/13/action/static_extraction/data_operations/7/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/pesticides.csv",
+    "current_pointer": "/facts/steps/13/action/static_extraction/data_operations/7/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/steps/13/action/static_extraction/data_operations/9/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/temp.csv",
+    "current_pointer": "/facts/steps/13/action/static_extraction/data_operations/9/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/steps/13/action/static_extraction/data_operations/11/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/rainfall.csv",
+    "current_pointer": "/facts/steps/13/action/static_extraction/data_operations/11/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/steps/13/action/static_extraction/data_operations/13/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/globalfoodprices_wfp.csv",
+    "current_pointer": "/facts/steps/13/action/static_extraction/data_operations/13/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/steps/13/action/static_extraction/data_operations/15/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/output.csv",
+    "current_pointer": "/facts/steps/13/action/static_extraction/data_operations/15/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/1/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Recommendation using Soil Properties and Weather Prediction.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/1/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/3/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/yield_df.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/3/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/5/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/yield.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/5/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/7/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/pesticides.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/7/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/9/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/temp.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/9/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/11/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/rainfall.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/11/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/13/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/globalfoodprices_wfp.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/13/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/15/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/output.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/15/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/17/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Recommendation using Soil Properties and Weather Prediction.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/17/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/19/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/yield_df.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/19/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/21/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/yield.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/21/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/23/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/pesticides.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/23/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/25/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/temp.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/25/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/27/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/rainfall.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/27/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/29/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/globalfoodprices_wfp.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/29/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/steps/19/action/static_extraction/data_operations/31/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/output.csv",
+    "current_pointer": "/facts/steps/19/action/static_extraction/data_operations/31/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/data_resources/4/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Recommendation using Soil Properties and Weather Prediction.csv",
+    "current_pointer": "/facts/data_resources/4/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/data_resources/5/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/yield_df.csv",
+    "current_pointer": "/facts/data_resources/5/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/data_resources/6/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/yield.csv",
+    "current_pointer": "/facts/data_resources/6/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/data_resources/7/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/pesticides.csv",
+    "current_pointer": "/facts/data_resources/7/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/data_resources/8/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/temp.csv",
+    "current_pointer": "/facts/data_resources/8/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/data_resources/9/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/rainfall.csv",
+    "current_pointer": "/facts/data_resources/9/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0014",
+    "pointer": "/facts/data_resources/10/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/globalfoodprices_wfp.csv",
+    "current_pointer": "/facts/data_resources/10/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/15/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Recommendation using Soil Properties and Weather Prediction.csv",
+    "current_pointer": "/facts/data_resources/15/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/16/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/yield_df.csv",
+    "current_pointer": "/facts/data_resources/16/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/17/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/yield.csv",
+    "current_pointer": "/facts/data_resources/17/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/18/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/pesticides.csv",
+    "current_pointer": "/facts/data_resources/18/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/19/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/temp.csv",
+    "current_pointer": "/facts/data_resources/19/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/20/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/rainfall.csv",
+    "current_pointer": "/facts/data_resources/20/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/21/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/globalfoodprices_wfp.csv",
+    "current_pointer": "/facts/data_resources/21/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/22/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Recommendation using Soil Properties and Weather Prediction.csv",
+    "current_pointer": "/facts/data_resources/22/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/23/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/yield_df.csv",
+    "current_pointer": "/facts/data_resources/23/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/24/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/yield.csv",
+    "current_pointer": "/facts/data_resources/24/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/25/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/pesticides.csv",
+    "current_pointer": "/facts/data_resources/25/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/26/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/temp.csv",
+    "current_pointer": "/facts/data_resources/26/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/27/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/Crop Yield Prediction Dataset/rainfall.csv",
+    "current_pointer": "/facts/data_resources/27/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-981bdbf680c3870ba714",
+    "step_id": "S0020",
+    "pointer": "/facts/data_resources/28/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_07/attempt-001/workspace/globalfoodprices_wfp.csv",
+    "current_pointer": "/facts/data_resources/28/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-7355196a7bebe96b9791",
+    "step_id": "S0025",
+    "pointer": "/facts/steps/24/action/static_extraction/data_operations/0/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_28/attempt-001/workspace/Crop Yield Prediction Dataset/yield_df.csv",
+    "current_pointer": "/facts/steps/24/action/static_extraction/data_operations/0/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-7355196a7bebe96b9791",
+    "step_id": "S0025",
+    "pointer": "/facts/steps/24/action/static_extraction/data_operations/1/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_28/attempt-001/workspace/globalfoodprices_wfp.csv",
+    "current_pointer": "/facts/steps/24/action/static_extraction/data_operations/1/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-7355196a7bebe96b9791",
+    "step_id": "S0025",
+    "pointer": "/facts/steps/24/action/static_extraction/data_operations/14/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_28/attempt-001/workspace/output.csv",
+    "current_pointer": "/facts/steps/24/action/static_extraction/data_operations/14/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-7355196a7bebe96b9791",
+    "step_id": "S0026",
+    "pointer": "/facts/steps/25/action/static_extraction/data_operations/0/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_28/attempt-001/workspace/Crop Yield Prediction Dataset/yield_df.csv",
+    "current_pointer": "/facts/steps/25/action/static_extraction/data_operations/0/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-7355196a7bebe96b9791",
+    "step_id": "S0026",
+    "pointer": "/facts/steps/25/action/static_extraction/data_operations/1/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_28/attempt-001/workspace/globalfoodprices_wfp.csv",
+    "current_pointer": "/facts/steps/25/action/static_extraction/data_operations/1/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-7355196a7bebe96b9791",
+    "step_id": "S0026",
+    "pointer": "/facts/steps/25/action/static_extraction/data_operations/14/path_literal",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_28/attempt-001/workspace/output.csv",
+    "current_pointer": "/facts/steps/25/action/static_extraction/data_operations/14/path_literal",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-7355196a7bebe96b9791",
+    "step_id": "S0025",
+    "pointer": "/facts/data_resources/26/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_28/attempt-001/workspace/Crop Yield Prediction Dataset/yield_df.csv",
+    "current_pointer": "/facts/data_resources/26/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-7355196a7bebe96b9791",
+    "step_id": "S0025",
+    "pointer": "/facts/data_resources/27/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_28/attempt-001/workspace/globalfoodprices_wfp.csv",
+    "current_pointer": "/facts/data_resources/27/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-7355196a7bebe96b9791",
+    "step_id": "S0026",
+    "pointer": "/facts/data_resources/28/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_28/attempt-001/workspace/Crop Yield Prediction Dataset/yield_df.csv",
+    "current_pointer": "/facts/data_resources/28/path_as_recorded",
+    "status": "recovered"
+  },
+  {
+    "record_id": "rawio-7355196a7bebe96b9791",
+    "step_id": "S0026",
+    "pointer": "/facts/data_resources/29/path_as_recorded",
+    "recovered_value": "/Volumes/Public HD/Data Agent Trace/runs/recording-repair-soclaas-qwen36-20261013-v1/tasks/agenticdatabench/codex/agriculture_28/attempt-001/workspace/globalfoodprices_wfp.csv",
+    "current_pointer": "/facts/data_resources/29/path_as_recorded",
+    "status": "recovered"
+  }
+]

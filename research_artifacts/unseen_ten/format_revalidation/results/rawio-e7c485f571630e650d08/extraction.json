@@ -1,0 +1,19 @@
+{
+  "mode": "unchanged_native_json",
+  "native_response": "artifacts/05_diagnosis/diagnosis_unseen_ten_v5_20261020/results/rawio-e7c485f571630e650d08/native_final.txt",
+  "native_sha256": "4e474c6e695a8e6f5784091a80bcaff449b959f8b6261de80003bce682fa9991",
+  "retained_char_range": [
+    0,
+    3316
+  ],
+  "retained_utf8_byte_range": [
+    0,
+    5472
+  ],
+  "removed_prefix_characters": 0,
+  "removed_suffix_characters": 0,
+  "cleaned_sha256": "4e474c6e695a8e6f5784091a80bcaff449b959f8b6261de80003bce682fa9991",
+  "retained_text_is_exact_source_substring": true,
+  "json_payload_edited": false,
+  "reserialized": false
+}

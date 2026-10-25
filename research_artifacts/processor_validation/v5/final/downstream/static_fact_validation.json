@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "counts": {
+    "steps": 4208,
+    "script_invocations": 430,
+    "data_operations": 10592,
+    "connection_operations": 1946
+  },
+  "all_original_values_types_and_order_preserved": true,
+  "only_extra_optional_null_keys_allowed": true,
+  "known26_positional_connection_fields_reachable": true,
+  "runtime_execution_certified": false
+}

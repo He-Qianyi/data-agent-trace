@@ -1,0 +1,15 @@
+{
+  "method": "local_author_review_against_original_task_and_recorded_evidence",
+  "independent_blinded_review": false,
+  "criteria": [
+    "Final JSON is parseable and passes current CodeTracer-compatible contract.",
+    "Referenced step/evidence IDs exist and referenced original text was actually returned.",
+    "Any inability-to-localize explanation states a concrete supported limit rather than inventing missing logs or assuming a failure.",
+    "Do not equate uninspected evidence with an absent record.",
+    "Retain supported local discrepancies while keeping unsupported causal chains empty.",
+    "Do not invent task requirements, repair status, correct answers, or original-agent stopping causes.",
+    "Distinguish successful JSON submission from correct diagnosis."
+  ],
+  "provider_failures_reported_separately": true,
+  "comparison": "Latest two-change prompt versus original v1; no attribution to one rule in isolation."
+}

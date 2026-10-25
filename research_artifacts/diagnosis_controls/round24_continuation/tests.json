@@ -1,0 +1,6 @@
+{
+  "offline_tests_passed": 3,
+  "original_prompt_prefix_and_completed_outputs_identical": true,
+  "round13_and24_allow_tools": true,
+  "current_runtime_matches_plan": true
+}

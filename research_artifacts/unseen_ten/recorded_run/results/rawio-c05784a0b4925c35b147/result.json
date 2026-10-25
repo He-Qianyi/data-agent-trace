@@ -1,0 +1,8 @@
+{
+  "task_id": "1753",
+  "status": "invalid_json",
+  "model_rounds": 5,
+  "tool_calls": 8,
+  "reason": "no_parseable_final_JSON_no_repair",
+  "finished_at": "2026-10-20T05:27:50.882001+00:00"
+}

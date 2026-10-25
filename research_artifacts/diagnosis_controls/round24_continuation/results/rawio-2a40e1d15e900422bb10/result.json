@@ -1,0 +1,10 @@
+{
+  "task_id": "1464",
+  "status": "mechanically_passed",
+  "model_rounds": 4,
+  "tool_calls": 5,
+  "finished_at": "2026-10-18T12:59:21.427148+00:00",
+  "new_model_requests": 0,
+  "reused_model_rounds": 4,
+  "acceptance_standard": "codetracer-detailed-compatible-v1"
+}

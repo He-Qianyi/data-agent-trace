@@ -1,0 +1,10 @@
+{
+  "task_id": "agriculture_16",
+  "status": "mechanically_failed",
+  "model_rounds": 12,
+  "reused_model_rounds": 11,
+  "new_model_requests": 1,
+  "tools_executed_in_round12": 0,
+  "tool_calls_before_round12": 24,
+  "finished_at": "2026-10-18T13:45:41.224977+00:00"
+}

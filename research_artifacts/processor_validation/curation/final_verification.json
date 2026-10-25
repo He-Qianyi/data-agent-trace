@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "all_164_original_trace_hashes_unchanged": true,
+  "active_config_matches_145_verified_view": true,
+  "partition_count": 164,
+  "retained": 145,
+  "excluded": 19,
+  "all_exclusion_quotes_match_recorded_observations": true,
+  "input_files_stable_during_read_only_checks": true,
+  "existing_diagnosis_trace_ids_in_full_corpus": 18,
+  "existing_diagnosis_trace_ids_excluded_by_this_curation": [],
+  "report_structural_validation": {
+    "validation": "passed",
+    "package": "passed",
+    "verification": "structural_only"
+  },
+  "browser_visual_qa": "not_run_no_compatible_installed_browser",
+  "new_model_calls": 0,
+  "original_code_or_evaluators_executed": false
+}

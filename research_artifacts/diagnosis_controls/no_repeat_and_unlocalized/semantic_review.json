@@ -1,0 +1,45 @@
+{
+  "method": "local_author_review_of_terminal_outputs_and_recorded_retrieval",
+  "independent_blinded_review": false,
+  "new_model_calls": 0,
+  "final_diagnosis_semantics_assessable": false,
+  "inability_explanation_observed": false,
+  "reason": "Neither case submitted final diagnostic JSON; retrieval behavior cannot substitute for a final diagnosis.",
+  "records": [
+    {
+      "record_id": "rawio-bcb49010f78ccd4af446",
+      "task_id": "agriculture_16",
+      "status": "round_budget_exhausted",
+      "model_rounds": 24,
+      "tool_calls": 48,
+      "verdict": "not_assessable_no_final_diagnosis",
+      "http_200_responses": 24,
+      "all_finish_reasons": "tool_calls",
+      "length_truncation_reported": false,
+      "failure_chain_correctness": "not_assessable",
+      "inability_reason_quality": "not_assessable"
+    },
+    {
+      "record_id": "rawio-b4aa2e6b636cb50f6643",
+      "task_id": "2697",
+      "status": "round_budget_exhausted",
+      "model_rounds": 24,
+      "tool_calls": 32,
+      "verdict": "not_assessable_no_final_diagnosis",
+      "http_200_responses": 24,
+      "all_finish_reasons": "tool_calls",
+      "length_truncation_reported": false,
+      "failure_chain_correctness": "not_assessable",
+      "inability_reason_quality": "not_assessable"
+    }
+  ],
+  "interpretation": [
+    "The combined prompt did not improve submission on these two known non-submitting cases.",
+    "Fewer exact duplicate reads do not by themselves establish better diagnosis or relevant evidence acquisition.",
+    "No final JSON is not proof that the normalized trace lacks the root cause.",
+    "No attribution to one added rule is possible because both prompt rules changed together."
+  ],
+  "runtime_changes_during_run": false,
+  "official_feedback_used_for_diagnosis": false,
+  "output_repairs": 0
+}

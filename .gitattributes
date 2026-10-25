@@ -1,0 +1,2 @@
+# Preserve the exact BOM/CRLF bytes of the frozen historical CSV export.
+research_artifacts/processor_validation/curation/excluded_cases.csv -text whitespace=cr-at-eol

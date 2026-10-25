@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "errors": [],
+  "citation_references": 8,
+  "citation_checks": [
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "T0005",
+      "read_ranges": [
+        [
+          0,
+          1022
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00128",
+      "read_ranges": [
+        [
+          0,
+          4481
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00129",
+      "read_ranges": [
+        [
+          0,
+          2369
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00165",
+      "read_ranges": [
+        [
+          0,
+          3599
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "T0005",
+      "read_ranges": [
+        [
+          0,
+          1022
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00152",
+      "read_ranges": [
+        [
+          0,
+          3991
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00153",
+      "read_ranges": [
+        [
+          0,
+          622
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 1,
+      "evidence_id": "E00147",
+      "read_ranges": [
+        [
+          0,
+          2299
+        ]
+      ]
+    }
+  ],
+  "semantic_entailment_verified_by_scripts": false
+}

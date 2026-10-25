@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "retained": 145,
+  "excluded": 19,
+  "partition_covers_original_164": true,
+  "exclusion_leakage": false,
+  "all_164_trace_bytes_unchanged": true,
+  "existing_evidence_index_loads": 145,
+  "jsonl": {
+    "diagnosis_inputs": {
+      "parent_rows": 164,
+      "retained_rows": 145,
+      "distinct_traces": 145,
+      "lines_preserved_exactly": true
+    },
+    "evidence_samples": {
+      "parent_rows": 164,
+      "retained_rows": 145,
+      "distinct_traces": 145,
+      "lines_preserved_exactly": true
+    },
+    "timeline": {
+      "parent_rows": 8910,
+      "retained_rows": 7652,
+      "distinct_traces": 145,
+      "lines_preserved_exactly": true
+    },
+    "edges": {
+      "parent_rows": 29907,
+      "retained_rows": 25642,
+      "distinct_traces": 145,
+      "lines_preserved_exactly": true
+    }
+  },
+  "duckdb": [
+    {
+      "table": "evaluation_mismatch_evidence",
+      "rows": 19,
+      "distinct_traces": 19,
+      "all_columns_types_and_values_equal_parent_subset": true
+    },
+    {
+      "table": "failure_evidence",
+      "rows": 145,
+      "distinct_traces": 145,
+      "all_columns_types_and_values_equal_parent_subset": true
+    },
+    {
+      "table": "trace_evidence",
+      "rows": 145,
+      "distinct_traces": 145,
+      "all_columns_types_and_values_equal_parent_subset": true
+    },
+    {
+      "table": "trace_evidence_edges",
+      "rows": 25642,
+      "distinct_traces": 145,
+      "all_columns_types_and_values_equal_parent_subset": true
+    }
+  ],
+  "full_normalized_validation": "passed"
+}

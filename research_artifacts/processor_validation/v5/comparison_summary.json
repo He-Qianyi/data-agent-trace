@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "counts": {
+    "traces": 164,
+    "tool_steps": 4208,
+    "model_exchanges": 4162,
+    "native_units": 4259,
+    "static_operations": 10592,
+    "connections": 1946,
+    "script_invocations": 430
+  },
+  "known_null_fields_recovered": 26,
+  "primary_connection_fields_recovered": 13,
+  "derived_resource_fields_recovered": 13,
+  "known_null_affected_traces": 2,
+  "changed_final_traces": 2,
+  "unchanged_final_traces": 162,
+  "B_C_evidence_views_identical": 164,
+  "native_units_reusable": 4259,
+  "reasonable_script_nulls_preserved": 53,
+  "all_prior_fields_identical_except26_recoveries_and13_derivation_notes": true,
+  "new_tool_steps_or_connection_calls_created": false,
+  "model_calls": 0
+}

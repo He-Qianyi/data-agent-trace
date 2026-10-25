@@ -1,0 +1,8 @@
+{
+  "task_id": "agriculture_20",
+  "status": "failed",
+  "model_rounds": 1,
+  "tool_calls": 2,
+  "reason": "provider_failure_no_retry",
+  "finished_at": "2026-10-18T13:00:24.451497+00:00"
+}

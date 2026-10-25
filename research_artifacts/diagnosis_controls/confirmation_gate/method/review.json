@@ -1,0 +1,174 @@
+{
+  "reviewer": "local_source_checked_author_review",
+  "independent_gold": false,
+  "blinded": false,
+  "official_evaluations_or_answers_consulted": false,
+  "new_review_model_calls": 0,
+  "false_positive_rate_measured": false,
+  "counting_limit": "不把旧结果已经明确保留的不确定性计作旧误报；不把空失败链或问题减少本身计作准确率。逐项对照原始任务、代码和返回，技术性事实错误、因果越界、格式失败单列。",
+  "cases": [
+    {
+      "task_id": "2697",
+      "paired_semantic_control": false,
+      "status": "needs_scope_limits",
+      "findings": [
+        "最终消息仍是下一步计算意图而不是要求的答案，有直接任务与FINAL0001支持。",
+        "S0008仅统计欺诈交易，没有完成替代ACI费用计算，有代码和返回支持。",
+        "没有历史最终诊断，不能计作误报下降。关于从未执行费用计算、从未写文件的全局否定，应保留已读取范围与录制终点限制。"
+      ],
+      "causal_constraints_tested_separately": false
+    },
+    {
+      "task_id": "1273",
+      "paired_semantic_control": true,
+      "status": "improved_with_limits",
+      "threshold_comparison": [
+        {
+          "topic": "manual/null与平均口径",
+          "before": "过滤后的手册片段被说成完整定义范围；两种未固定口径进入关键问题。",
+          "after": "不再断言手册没有null定义；不再把交易加权作为必须改变的口径。",
+          "assessment": "旧的证据范围断言消失；旧输出本就承认均值口径未固定，不能把删除该疑点全部计为误报消除。"
+        },
+        {
+          "topic": "文件未写入",
+          "before": "总结把当前数值未写入文件说得过强。",
+          "after": "总结明确实际运行若继续则是否写入不由当前证据确定；但链和关键点仍称保存未执行。",
+          "assessment": "边界有所收敛，正文与总结仍有强弱不一致；只可确定最终消息未给出答案。"
+        }
+      ],
+      "supported_findings_retained": [
+        "最终回复没有数字答案。",
+        "123条规则及0.117667是实际运行结果，公式与已见说明一致。",
+        "write_stdin错误被后续执行恢复。"
+      ],
+      "remaining_limits": [
+        "没有独立证明0.117667符合所有业务口径；建议写回该数字应理解为记录中已有结果，不是已认证正确答案。",
+        "新增交付链是单独的因果/覆盖审查对象，本轮没有修改该规则。"
+      ]
+    },
+    {
+      "task_id": "1464",
+      "paired_semantic_control": true,
+      "status": "partly_improved",
+      "threshold_comparison": [
+        {
+          "topic": "内联代码必须另存脚本",
+          "before": "直接要求保存脚本而不是仅用python3 -c，扩大了条件义务。",
+          "after": "不再要求另存脚本，但总结仍称内联执行未见脚本文件是流程要求未覆盖点。",
+          "assessment": "修正策略中的强制义务消失，但并未完全撤回该要求推断。"
+        },
+        {
+          "topic": "空列表语义",
+          "before": "已明确是未决项，不是已确认集合错误。",
+          "after": "仍明确不能认定为错误；仍列在关键决策点。",
+          "assessment": "保持克制；不计作新消除的旧误报。"
+        }
+      ],
+      "supported_findings_retained": [
+        "null通配有manual第95行依据。",
+        "50个ID的文件写入、读回与最终消息一致。"
+      ],
+      "remaining_limits": [
+        "未知项仍占关键决策列表；下游不能把该列表全部解释为错误清单。"
+      ]
+    },
+    {
+      "task_id": "agriculture_20",
+      "paired_semantic_control": false,
+      "status": "usable_with_limits",
+      "findings": [
+        "有原始任务、代码和返回支持国家面板与全局年度口径的不同结果。",
+        "面板粒度、商品平均和汇率覆盖被称为疑点或未确认选择，没有将不显著/显著差异直接判为已确认计算错误；失败链为空。",
+        "文件两种结果与p<0.05过滤有读回支持；最终消息说7国却只列6国是局部表述不一致。",
+        "未固定口径仍进入critical_decision_points，不能被下游自动当作错误；没有历史最终JSON，不能做误报改善对比。"
+      ]
+    },
+    {
+      "task_id": "agriculture_22",
+      "paired_semantic_control": true,
+      "status": "usable_with_limits",
+      "threshold_comparison": [
+        {
+          "topic": "交叉验证F1聚合",
+          "before": "已承认任务没有固定折内均值与汇总OOF的口径，不判错。",
+          "after": "保持相同边界，未把新增的原始季节列去留疑点判错。",
+          "assessment": "没有新的误报改善可计；保持原来有依据的克制。"
+        }
+      ],
+      "supported_findings_retained": [
+        "派生特征、编码、5折分层随机森林、12类结果和CSV读回均保留。",
+        "早期路径错误被恢复。"
+      ],
+      "remaining_limits": [
+        "未固定口径仍列为关键决策，虽明确不判错，下游仍需按文字区分。"
+      ]
+    },
+    {
+      "task_id": "agriculture_16",
+      "paired_semantic_control": true,
+      "status": "not_assessable_output_protocol",
+      "findings": [
+        "第12轮HTTP200、finish_reason=stop；未产生可解析JSON。原生content是DSML read_steps文本，要求读取S0003/S0004/S0007/S0009。",
+        "该轮tool_choice=none，native tool_calls为空，工具没有执行，未追加第13轮。",
+        "completion_tokens=12411，其中reasoning_tokens=12351，低于48000输出上限且不是length；不是token截断。",
+        "没有连接中断。仅凭这一条无法确定序列化文本出自模型行为还是接口处理层；不能将其归为已定位的prompt问题。",
+        "旧对照有JSON但含未支持归因；本轮没有诊断，不能把旧误报未出现计为消除，也不能比较最终语义质量。",
+        "任务本身没有要求最终消息另行重复文件中数值，缺少独立读回也不能自动认定错误；原作者相应正例探针已收窄，见review_target_correction_agri16.json。"
+      ]
+    },
+    {
+      "task_id": "civic_unstructured__query6",
+      "paired_semantic_control": true,
+      "status": "needs_revision",
+      "threshold_comparison": [
+        {
+          "topic": "answer.txt缺失",
+          "before": "链首项断言交付物缺失，超出只有未见写入/读回的证据。",
+          "after": "链首项和总结限定为已记录步骤未见写入/读回，没有再断言文件一定不存在。",
+          "assessment": "这一具体误报边界改善；最终消息没有年份与总额的结论仍保留。"
+        },
+        {
+          "topic": "名称规范化",
+          "before": "没有单独作为已确认错误。",
+          "after": "明确称为关联从未执行时尚未证实的风险。",
+          "assessment": "保持正确的不确定性边界，不计作旧误报消除。"
+        }
+      ],
+      "supported_findings_retained": [
+        "最终消息没有要求的年份与USD总额。",
+        "S0018返回确实混入描述续行作为项目名。",
+        "S0014混合章节current_type=None有代码/返回依据；最终数值影响未获证明。"
+      ],
+      "remaining_causal_overreach": [
+        "仍声称持续微调解析器这一取向使其停留在抽取阶段并最终未产出答案。记录说明先后和终点，但没有确定停止机制或排除其他原因。本轮因果规则未改，不应与门槛改善混计。"
+      ],
+      "mechanical_issue": "额外字段root_cause_chain_note:null。",
+      "remaining_limits": [
+        "仍多次断言记录中从未关联或汇总；实际主要读取S0003/S0011/S0012/S0013/S0014/S0017/S0018及首末片段，搜索未命中和未核验导航不足以支撑覆盖全部18步的全局否定。文件是否存在的绝对断言消失，但覆盖范围门槛仍未完全落实。"
+      ]
+    },
+    {
+      "task_id": "stockmarket__query1",
+      "paired_semantic_control": true,
+      "status": "new_local_regression",
+      "supported_findings_retained": [
+        "最终文件18.44与MAX查询/降序结果一致。",
+        "后续步骤的日期类型错误已恢复，失败链为空。",
+        "数据覆盖并非全年被作为数据范围事实，而非已确认计算错误。"
+      ],
+      "new_technical_error": {
+        "pointer": "/critical_decision_points/0",
+        "claim": "S0006日期未加引号，E00020证明日期类型不匹配。",
+        "source_check": "E00019中的S0006日期实际已加引号；E00020是MAX([Adj Close])在Close附近的ParserException。后续其他步骤才有未引号日期的BinderException（如E00033）。模型把两个不同错误机制混合并错置到S0006。",
+        "evidence_ids": [
+          "E00019",
+          "E00020",
+          "E00033"
+        ]
+      },
+      "threshold_limit": "/tmp/save_answer.py辅助写文件的事实有依据；任务原文说analysis scripts，是否涵盖这个仅写答案的辅助脚本存在范围解释空间，不能把所有辅助脚本均须落在工作区作为无条件要求。",
+      "reviewer_correction": "旧作者复核说最终消息只能给答案不准确。真实T0003只说Then repeat that answer，附解释本身不能判违规。本轮未把它算作漏报或误报改善。",
+      "mechanical_issue": "额外字段root_cause_chain_note_removed:null；本地不删除或修复。"
+    }
+  ]
+}

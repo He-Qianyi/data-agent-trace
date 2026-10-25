@@ -1,0 +1,5 @@
+{
+  "reason": "policy changes round 12 only; prior terminal output is unaffected",
+  "diagnosis_sha256": "2e97c33b745ea7d6fdaec0c16bbacace3ac4f76c75aa00842b014493174e0ab0",
+  "new_model_calls": 0
+}

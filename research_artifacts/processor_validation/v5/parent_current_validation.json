@@ -1,0 +1,22 @@
+{
+  "policy_id": "trace-processor-allow-extra-fields-v1-20261019",
+  "policy": "outputs/trace_processor_allow_extra_fields_20261019/policy.json",
+  "operations_schema": "outputs/trace_processor_allow_extra_fields_20261019/operations.schema.json",
+  "parent_frozen_config": "configs/03_trace_processor/CURRENT_FROZEN.json",
+  "normalized_results": "artifacts/03_trace_processor/integrated_runs/trace_processor_constant_connection_v4_20261020/final",
+  "summary": "artifacts/03_trace_processor/integrated_runs/trace_processor_constant_connection_v4_20261020/summary.json",
+  "hierarchy_prompt_experiment": "outputs/stage_c_hierarchy_ten_20261019/experiment.json",
+  "scope": "General bounded string recovery restored122 known NULL fields;709 audited database keyword sites recovered,871 new lexical connection operations in total. All164 rebuilt and validated;49 final traces updated,115 copied unchanged. B/C evidence views identical on164 and4259 semantic units reused unchanged; reasonable nulls retained; no model calls.",
+  "updated_at_utc": "2026-10-19T16:19:40.568124+00:00",
+  "connection_retry": "outputs/stage_c_connection_retry_three_20261019/experiment.json",
+  "missing_unit_retry": "outputs/stage_c_cve_missing_retry_20261019/experiment.json",
+  "fact_layer_upgrade": "artifacts/03_trace_processor/integrated_runs/trace_processor_constant_connection_v4_20261020",
+  "fact_layer_implementation": "pipeline.stages.trace_processor.fact_layer_v4",
+  "fact_layer_implementation_version": "fact-layer-constant-connection-v4-20261020",
+  "previous_normalized_results": "artifacts/03_trace_processor/integrated_runs/trace_processor_null_recovery_v3_20261019/final",
+  "null_recovery_validation": "artifacts/03_trace_processor/integrated_runs/trace_processor_constant_connection_v4_20261020/known122_recovery.json",
+  "conservative_null_validation": "artifacts/03_trace_processor/integrated_runs/trace_processor_constant_connection_v4_20261020/reasonable_null_preservation.json",
+  "postmerge_validation": "artifacts/03_trace_processor/integrated_runs/trace_processor_constant_connection_v4_20261020/postmerge_validation.json",
+  "connection_recovery_validation": "artifacts/03_trace_processor/integrated_runs/trace_processor_constant_connection_v4_20261020/known709_connections.json",
+  "downstream_fact_validation": "artifacts/03_trace_processor/integrated_runs/trace_processor_constant_connection_v4_20261020/final/downstream/static_fact_validation.json"
+}

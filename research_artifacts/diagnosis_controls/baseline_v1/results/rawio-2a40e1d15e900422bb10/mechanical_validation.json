@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "errors": [],
+  "citation_references": 5,
+  "citation_checks": [
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00005",
+      "read_ranges": [
+        [
+          0,
+          5000
+        ],
+        [
+          5000,
+          10000
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00012",
+      "read_ranges": [
+        [
+          0,
+          638
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00014",
+      "read_ranges": [
+        [
+          0,
+          893
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00015",
+      "read_ranges": [
+        [
+          0,
+          301
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00018",
+      "read_ranges": [
+        [
+          0,
+          155
+        ]
+      ]
+    }
+  ],
+  "semantic_entailment_verified_by_scripts": false
+}

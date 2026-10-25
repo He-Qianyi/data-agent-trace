@@ -1,0 +1,52 @@
+{
+  "id": "chatcmpl-b251baae",
+  "object": "chat.completion",
+  "created": 1792335406,
+  "model": "deepseek-v4.1-flash-1017",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_0c45276dd5564fa78acd8775",
+            "type": "function",
+            "function": {
+              "name": "read_evidence",
+              "arguments": "{\"evidence_id\":\"E00024\",\"start\":4000}"
+            }
+          },
+          {
+            "id": "call_5163faeb80484859858c28f9",
+            "type": "function",
+            "function": {
+              "name": "read_evidence",
+              "arguments": "{\"evidence_id\":\"E00028\"}"
+            }
+          }
+        ],
+        "reasoning": "Let me read the rest of manual.md (E00024 next page) to understand the fee formula, and the payments-readme (E00028)."
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 51601,
+    "total_tokens": 51724,
+    "completion_tokens": 123,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 31
+    }
+  },
+  "system_fingerprint": null,
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null
+}

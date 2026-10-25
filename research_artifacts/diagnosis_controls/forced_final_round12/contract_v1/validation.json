@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "record_id": "rawio-baba471b324aa7141b29",
+      "json_schema": "passed",
+      "step_ids": "passed",
+      "cited_evidence_ids_provided": "passed",
+      "pages_exact_source_slices": "passed",
+      "final_source_resolution": "passed",
+      "stage_ids_not_invented": "passed",
+      "interpretation_status": "source_checked_author_example_not_independent_gold",
+      "input_bytes": 38094,
+      "diagnosis_bytes": 2369
+    },
+    {
+      "record_id": "rawio-d1c5eff3a0eeef033955",
+      "json_schema": "passed",
+      "step_ids": "passed",
+      "cited_evidence_ids_provided": "passed",
+      "pages_exact_source_slices": "passed",
+      "final_source_resolution": "passed",
+      "stage_ids_not_invented": "passed",
+      "interpretation_status": "source_checked_author_example_not_independent_gold",
+      "input_bytes": 27830,
+      "diagnosis_bytes": 2125
+    }
+  ],
+  "prompt_heading_order": "passed",
+  "five_top_level_output_keys": "passed",
+  "frozen_files_verified_before": 79,
+  "frozen_files_verified_after": 79,
+  "new_llm_calls": 0,
+  "semantic_accuracy_measured": false,
+  "example_traces_are_development_not_holdout": true
+}

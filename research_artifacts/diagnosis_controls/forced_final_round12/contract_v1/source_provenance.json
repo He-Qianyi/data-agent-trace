@@ -1,0 +1,27 @@
+{
+  "source_bundle": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_d_ten_20261018",
+  "examples": [
+    {
+      "record_id": "rawio-baba471b324aa7141b29",
+      "trace_sha256": "8d86e77e63914635073a7cffc77add7e895e8c0fc64290bc408a4e6265b8a814",
+      "final_source_verified": true,
+      "final_source_ref": {
+        "source_id": "S0013",
+        "json_pointer": "",
+        "representation": "text"
+      }
+    },
+    {
+      "record_id": "rawio-d1c5eff3a0eeef033955",
+      "trace_sha256": "29b55371deeddead4afd94686a5f94e8545a3418933763777f1127e2b7abf9ef",
+      "final_source_verified": true,
+      "final_source_ref": {
+        "source_id": "S0004",
+        "json_pointer": "/final_text"
+      }
+    }
+  ],
+  "new_llm_calls": 0,
+  "benchmark_reexecutions": 0,
+  "processor_or_batch_modified": false
+}

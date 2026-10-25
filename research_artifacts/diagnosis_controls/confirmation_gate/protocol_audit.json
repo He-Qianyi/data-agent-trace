@@ -1,0 +1,170 @@
+{
+  "rows": [
+    {
+      "task_id": "2697",
+      "record_id": "rawio-b4aa2e6b636cb50f6643",
+      "status": "mechanically_passed",
+      "requests": 6,
+      "responses": 6,
+      "transport_failures": [],
+      "final_json": true,
+      "strict_pass": true,
+      "model_rounds": 6,
+      "tool_calls": 8,
+      "citation_instances": 17,
+      "reference_errors": 0,
+      "verified_source_pages": 25,
+      "usage": {
+        "prompt_tokens": 281927,
+        "completion_tokens": 14867,
+        "total_tokens": 296794
+      }
+    },
+    {
+      "task_id": "1273",
+      "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+      "status": "mechanically_passed",
+      "requests": 4,
+      "responses": 4,
+      "transport_failures": [],
+      "final_json": true,
+      "strict_pass": true,
+      "model_rounds": 4,
+      "tool_calls": 6,
+      "citation_instances": 13,
+      "reference_errors": 0,
+      "verified_source_pages": 30,
+      "usage": {
+        "prompt_tokens": 167691,
+        "completion_tokens": 12473,
+        "total_tokens": 180164
+      }
+    },
+    {
+      "task_id": "1464",
+      "record_id": "rawio-2a40e1d15e900422bb10",
+      "status": "mechanically_passed",
+      "requests": 3,
+      "responses": 3,
+      "transport_failures": [],
+      "final_json": true,
+      "strict_pass": true,
+      "model_rounds": 3,
+      "tool_calls": 4,
+      "citation_instances": 4,
+      "reference_errors": 0,
+      "verified_source_pages": 55,
+      "usage": {
+        "prompt_tokens": 134884,
+        "completion_tokens": 17900,
+        "total_tokens": 152784
+      }
+    },
+    {
+      "task_id": "agriculture_20",
+      "record_id": "rawio-a5173d9e30dba77ca1c5",
+      "status": "mechanically_passed",
+      "requests": 2,
+      "responses": 2,
+      "transport_failures": [],
+      "final_json": true,
+      "strict_pass": true,
+      "model_rounds": 2,
+      "tool_calls": 2,
+      "citation_instances": 8,
+      "reference_errors": 0,
+      "verified_source_pages": 18,
+      "usage": {
+        "prompt_tokens": 95913,
+        "completion_tokens": 12849,
+        "total_tokens": 108762
+      }
+    },
+    {
+      "task_id": "agriculture_22",
+      "record_id": "rawio-de63c9937aeb17c70d6d",
+      "status": "mechanically_passed",
+      "requests": 3,
+      "responses": 3,
+      "transport_failures": [],
+      "final_json": true,
+      "strict_pass": true,
+      "model_rounds": 3,
+      "tool_calls": 3,
+      "citation_instances": 5,
+      "reference_errors": 0,
+      "verified_source_pages": 22,
+      "usage": {
+        "prompt_tokens": 117632,
+        "completion_tokens": 3414,
+        "total_tokens": 121046
+      }
+    },
+    {
+      "task_id": "agriculture_16",
+      "record_id": "rawio-bcb49010f78ccd4af446",
+      "status": "invalid_json",
+      "requests": 12,
+      "responses": 12,
+      "transport_failures": [],
+      "final_json": false,
+      "strict_pass": false,
+      "model_rounds": 12,
+      "tool_calls": 16,
+      "citation_instances": 0,
+      "reference_errors": 0,
+      "verified_source_pages": 19,
+      "usage": {
+        "prompt_tokens": 1190661,
+        "completion_tokens": 160577,
+        "total_tokens": 1351238
+      }
+    },
+    {
+      "task_id": "civic_unstructured__query6",
+      "record_id": "rawio-ecb8d458d5899c6dfd80",
+      "status": "mechanically_failed",
+      "requests": 5,
+      "responses": 5,
+      "transport_failures": [],
+      "final_json": true,
+      "strict_pass": false,
+      "model_rounds": 5,
+      "tool_calls": 7,
+      "citation_instances": 22,
+      "reference_errors": 0,
+      "verified_source_pages": 28,
+      "usage": {
+        "prompt_tokens": 242320,
+        "completion_tokens": 8930,
+        "total_tokens": 251250
+      }
+    },
+    {
+      "task_id": "stockmarket__query1",
+      "record_id": "rawio-ea688bde06c727ee43b1",
+      "status": "mechanically_failed",
+      "requests": 4,
+      "responses": 4,
+      "transport_failures": [],
+      "final_json": true,
+      "strict_pass": false,
+      "model_rounds": 4,
+      "tool_calls": 5,
+      "citation_instances": 11,
+      "reference_errors": 0,
+      "verified_source_pages": 37,
+      "usage": {
+        "prompt_tokens": 154398,
+        "completion_tokens": 3725,
+        "total_tokens": 158123
+      }
+    }
+  ],
+  "prompt_single_insert_verified": true,
+  "historical_controls_unchanged": true,
+  "frozen_processor_files_unchanged": 79,
+  "new_output_repair_calls": 0,
+  "new_retries": 0,
+  "semantic_entailment_verified_by_script": false
+}

@@ -1,0 +1,219 @@
+{
+  "passed": true,
+  "errors": [],
+  "citation_references": 17,
+  "citation_checks": [
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "FINAL0001",
+      "read_ranges": [
+        [
+          0,
+          238
+        ],
+        [
+          0,
+          238
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "T0002",
+      "read_ranges": [
+        [
+          0,
+          289
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "T0003",
+      "read_ranges": [
+        [
+          0,
+          263
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "T0008",
+      "read_ranges": [
+        [
+          0,
+          77
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "T0010",
+      "read_ranges": [
+        [
+          0,
+          77
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 0,
+      "evidence_id": "T0011",
+      "read_ranges": [
+        [
+          0,
+          17
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "E00034",
+      "read_ranges": [
+        [
+          0,
+          1000
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "E00035",
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          1000,
+          5000
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "E00024",
+      "read_ranges": [
+        [
+          0,
+          4000
+        ],
+        [
+          4000,
+          8000
+        ]
+      ]
+    },
+    {
+      "section": "root_cause_chain",
+      "index": 1,
+      "evidence_id": "E00014",
+      "read_ranges": [
+        [
+          0,
+          5000
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00034",
+      "read_ranges": [
+        [
+          0,
+          1000
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00035",
+      "read_ranges": [
+        [
+          0,
+          1000
+        ],
+        [
+          1000,
+          5000
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00024",
+      "read_ranges": [
+        [
+          0,
+          4000
+        ],
+        [
+          4000,
+          8000
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "E00014",
+      "read_ranges": [
+        [
+          0,
+          5000
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "FINAL0001",
+      "read_ranges": [
+        [
+          0,
+          238
+        ],
+        [
+          0,
+          238
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "T0003",
+      "read_ranges": [
+        [
+          0,
+          263
+        ]
+      ]
+    },
+    {
+      "section": "critical_decision_points",
+      "index": 0,
+      "evidence_id": "T0008",
+      "read_ranges": [
+        [
+          0,
+          77
+        ]
+      ]
+    }
+  ],
+  "semantic_entailment_verified_by_scripts": false
+}

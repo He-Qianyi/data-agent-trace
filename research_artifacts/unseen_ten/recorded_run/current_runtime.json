@@ -1,0 +1,17 @@
+{
+  "schema": "diagnosis-current-runtime-v1",
+  "prompt_path": "/Volumes/Public HD/Data Agent Trace/artifacts/05_diagnosis/diagnosis_prompt_v1_no_repeat_unknown_candidate_20261018/diagnosis.prompt.md",
+  "prompt_version": "v1-no-repeat-and-unlocalized-candidate",
+  "prompt_sha256": "a95d56c12558537e4104af73d6dd74bc0b414aa13f1b5dbb74698e3d54222b46",
+  "max_model_rounds_per_trace": 24,
+  "max_tool_calls_per_trace": 60,
+  "tool_choice": "auto",
+  "forced_final_round": false,
+  "acceptance_policy": "configs/05_diagnosis/CURRENT_ACCEPTANCE.json",
+  "model": "x-test-2",
+  "max_tokens": 48000,
+  "thinking_token_budget": 16000,
+  "temperature": 0,
+  "response_format": null,
+  "automatic_retries": 0
+}

@@ -1,0 +1,344 @@
+{
+  "1753_immediate_count": {
+    "source": "E00050",
+    "actual_ids": [
+      284,
+      456,
+      502,
+      804,
+      870,
+      915,
+      944,
+      996
+    ],
+    "actual_count": 8,
+    "diagnosis_count": 7,
+    "answer_count": 42,
+    "recorded_official_gold_count": 34,
+    "answer_minus_official_gold": [
+      284,
+      456,
+      502,
+      804,
+      870,
+      915,
+      944,
+      996
+    ],
+    "official_gold_minus_answer": [],
+    "removing_actual_immediate_rules_matches_recorded_gold": true,
+    "gold_used_posthoc_only": true
+  },
+  "yelp_regex": {
+    "pattern": "in\\s+[\\w\\s]+,\\s+([A-Z]{2})",
+    "recorded_businessid_47_description_matches": false,
+    "expected_state": "MO",
+    "recorded_business_review_count": 81,
+    "control_matches_Goleta_CA": true
+  },
+  "yelp_review_population": {
+    "recorded_counts": {
+      "NJ": 27,
+      "TN": 39,
+      "MO": 164,
+      "PA": 617,
+      "NV": 65,
+      "ID": 126,
+      "LA": 125,
+      "IL": 28,
+      "AB": 45,
+      "IN": 176,
+      "AZ": 13,
+      "CA": 75,
+      "FL": 320
+    },
+    "assigned_review_rows": 1820,
+    "total_review_rows": 2000,
+    "unassigned_review_rows": 180,
+    "PA_count": 617,
+    "MO_count": 164,
+    "largest_non_PA_plus_all_unassigned": 500,
+    "PA_still_largest_even_if_all_unassigned_reviews_go_to_single_other_state": true,
+    "ranking_basis": "recorded review-row counts, not business.review_count"
+  },
+  "github_unexecuted_loop": {
+    "S0014_command_is_heredoc_only": true,
+    "S0014_observation": "(Bash completed with no output)",
+    "recorded_final": "That would be too slow with 2.7M repos. Let me use a more efficient SQL-based approach:",
+    "runtime_of_loop_observed": false
+  },
+  "agriculture28_confounded_comparison": {
+    "simple_price_annual_mean": true,
+    "rolling_price_last_observed_month": true,
+    "rolling_window_12_observations": true,
+    "both_price_and_volatility_changed": true,
+    "single_factor_causal_inference_supported": false
+  },
+  "1305_empty_list_sensitivity": {
+    "explicit_ids": [
+      204,
+      612,
+      921
+    ],
+    "explicit_average": "0.064",
+    "null_or_empty_as_wildcard_count": 46,
+    "null_or_empty_as_wildcard_average": "0.1232173913043478260869565217",
+    "rounded_six_decimals": "0.123217",
+    "wildcard_assumption": "Treat [] as unrestricted along with null; documented null rule alone does not establish [] semantics.",
+    "introduced_as_posthoc_sensitivity_not_diagnostic_input": true
+  },
+  "kimi1681_monthly_rules_in_returned_list": [
+    {
+      "ID": 454,
+      "monthly_fraud_level": null,
+      "monthly_volume": "100k-1m"
+    },
+    {
+      "ID": 602,
+      "monthly_fraud_level": null,
+      "monthly_volume": "1m-5m"
+    },
+    {
+      "ID": 895,
+      "monthly_fraud_level": null,
+      "monthly_volume": "<100k"
+    }
+  ],
+  "49_counts_vs_rates": {
+    "total_records": 138236,
+    "fraud_records": 10765,
+    "country_total": {
+      "SE": 21664,
+      "NL": 29760,
+      "LU": 7151,
+      "IT": 28246,
+      "BE": 22976,
+      "FR": 14209,
+      "GR": 7123,
+      "ES": 7107
+    },
+    "country_fraud_count": {
+      "NL": 2955,
+      "SE": 1627,
+      "IT": 1652,
+      "FR": 843,
+      "ES": 407,
+      "BE": 2493,
+      "LU": 410,
+      "GR": 378
+    },
+    "country_fraud_rate": {
+      "SE": 0.07510155096011817,
+      "NL": 0.09929435483870967,
+      "LU": 0.05733463851209621,
+      "IT": 0.05848615733201161,
+      "BE": 0.10850452646239554,
+      "FR": 0.059328594552748255,
+      "GR": 0.05306752772708129,
+      "ES": 0.057267482763472634
+    },
+    "count_leader": "NL",
+    "rate_leader": "BE",
+    "task_text_alone_fixes_count_vs_rate": false
+  },
+  "kimi1681_january_supplemental": {
+    "monthly_eur_volume": "113260.42",
+    "fraud_eur_volume": "11680.62",
+    "fraud_amount_ratio": "0.1031306435204813826401138191",
+    "interpretation": "if task is 10th day of 2023, monthly conditions use January; no claim to resolve ambiguous ordinal from hidden gold"
+  },
+  "agriculture29_temperature": {
+    "all_rows": 3867,
+    "soil_filtered_rows": 3729,
+    "per_crop": {
+      "Barley": {
+        "all_samples": {
+          "rows": 503,
+          "mean_of_differences": 19.447779987005962,
+          "difference_of_means": 19.447779987005966,
+          "temperature_pair_missing": 0
+        },
+        "soil_filtered_samples": {
+          "rows": 497,
+          "mean_of_differences": 19.47035546637827,
+          "difference_of_means": 19.47035546637827,
+          "temperature_pair_missing": 0
+        }
+      },
+      "Bean": {
+        "all_samples": {
+          "rows": 253,
+          "mean_of_differences": 19.141014492608694,
+          "difference_of_means": 19.141014492608697,
+          "temperature_pair_missing": 0
+        },
+        "soil_filtered_samples": {
+          "rows": 245,
+          "mean_of_differences": 19.176911564461225,
+          "difference_of_means": 19.176911564461225,
+          "temperature_pair_missing": 0
+        }
+      },
+      "Dagussa": {
+        "all_samples": {
+          "rows": 71,
+          "mean_of_differences": 17.337887325070422,
+          "difference_of_means": 17.337887325070426,
+          "temperature_pair_missing": 0
+        },
+        "soil_filtered_samples": {
+          "rows": 60,
+          "mean_of_differences": 17.275500001216667,
+          "difference_of_means": 17.275500001216667,
+          "temperature_pair_missing": 0
+        }
+      },
+      "Fallow": {
+        "all_samples": {
+          "rows": 26,
+          "mean_of_differences": 17.507435898423076,
+          "difference_of_means": 17.507435898423076,
+          "temperature_pair_missing": 0
+        },
+        "soil_filtered_samples": {
+          "rows": 26,
+          "mean_of_differences": 17.507435898423076,
+          "difference_of_means": 17.507435898423076,
+          "temperature_pair_missing": 0
+        }
+      },
+      "Maize": {
+        "all_samples": {
+          "rows": 732,
+          "mean_of_differences": 17.357536430502734,
+          "difference_of_means": 17.357536430502734,
+          "temperature_pair_missing": 0
+        },
+        "soil_filtered_samples": {
+          "rows": 673,
+          "mean_of_differences": 17.32816741027786,
+          "difference_of_means": 17.328167410277864,
+          "temperature_pair_missing": 0
+        }
+      },
+      "Niger seed": {
+        "all_samples": {
+          "rows": 64,
+          "mean_of_differences": 17.4314062509375,
+          "difference_of_means": 17.4314062509375,
+          "temperature_pair_missing": 0
+        },
+        "soil_filtered_samples": {
+          "rows": 60,
+          "mean_of_differences": 17.42422222315,
+          "difference_of_means": 17.42422222315,
+          "temperature_pair_missing": 0
+        }
+      },
+      "Pea": {
+        "all_samples": {
+          "rows": 94,
+          "mean_of_differences": 17.32436170393617,
+          "difference_of_means": 17.32436170393617,
+          "temperature_pair_missing": 0
+        },
+        "soil_filtered_samples": {
+          "rows": 94,
+          "mean_of_differences": 17.32436170393617,
+          "difference_of_means": 17.32436170393617,
+          "temperature_pair_missing": 0
+        }
+      },
+      "Potato": {
+        "all_samples": {
+          "rows": 48,
+          "mean_of_differences": 17.36840277958333,
+          "difference_of_means": 17.368402779583334,
+          "temperature_pair_missing": 0
+        },
+        "soil_filtered_samples": {
+          "rows": 47,
+          "mean_of_differences": 17.3702127677234,
+          "difference_of_means": 17.370212767723405,
+          "temperature_pair_missing": 0
+        }
+      },
+      "Red Pepper": {
+        "all_samples": {
+          "rows": 29,
+          "mean_of_differences": 17.2212643662069,
+          "difference_of_means": 17.2212643662069,
+          "temperature_pair_missing": 0
+        },
+        "soil_filtered_samples": {
+          "rows": 29,
+          "mean_of_differences": 17.2212643662069,
+          "difference_of_means": 17.2212643662069,
+          "temperature_pair_missing": 0
+        }
+      },
+      "Sorghum": {
+        "all_samples": {
+          "rows": 72,
+          "mean_of_differences": 17.309120370694444,
+          "difference_of_means": 17.309120370694444,
+          "temperature_pair_missing": 0
+        },
+        "soil_filtered_samples": {
+          "rows": 72,
+          "mean_of_differences": 17.309120370694444,
+          "difference_of_means": 17.309120370694444,
+          "temperature_pair_missing": 0
+        }
+      },
+      "Teff": {
+        "all_samples": {
+          "rows": 1260,
+          "mean_of_differences": 17.42900000064603,
+          "difference_of_means": 17.42900000064603,
+          "temperature_pair_missing": 0
+        },
+        "soil_filtered_samples": {
+          "rows": 1221,
+          "mean_of_differences": 17.42776412838329,
+          "difference_of_means": 17.42776412838329,
+          "temperature_pair_missing": 0
+        }
+      },
+      "Wheat": {
+        "all_samples": {
+          "rows": 715,
+          "mean_of_differences": 18.755706294095106,
+          "difference_of_means": 18.755706294095106,
+          "temperature_pair_missing": 0
+        },
+        "soil_filtered_samples": {
+          "rows": 705,
+          "mean_of_differences": 18.77524349920709,
+          "difference_of_means": 18.775243499207093,
+          "temperature_pair_missing": 0
+        }
+      }
+    }
+  },
+  "supplemental_inputs": [
+    {
+      "path": "/Volumes/Public HD/DABstep/data/context/fees.json",
+      "sha256": "9a833666ae9be5a8e756dd1fe076c72e7c502d64161315ffa8fee9e5bf2599dc",
+      "bytes": 531118,
+      "scope": "supplementary_current_local_input_not_sent_to_diagnostic_model"
+    },
+    {
+      "path": "/Volumes/Public HD/DABstep/data/context/payments.csv",
+      "sha256": "5fbb26210a45427d7a6560cfab3a362a08e4067f27cd03695f211a51c47ffc25",
+      "bytes": 23581339,
+      "scope": "supplementary_current_local_input_not_sent_to_diagnostic_model"
+    },
+    {
+      "path": "/Volumes/Public HD/AgenticDataBench/testbed/datasets/agriculture/Crop Recommendation using Soil Properties and Weather Prediction.csv",
+      "sha256": "b1ab02458ab1d3862189d58721c537fa66f15b8ac7ddf590a3c9a92a32695878",
+      "bytes": 861663,
+      "scope": "supplementary_current_local_input_not_sent_to_diagnostic_model"
+    }
+  ]
+}

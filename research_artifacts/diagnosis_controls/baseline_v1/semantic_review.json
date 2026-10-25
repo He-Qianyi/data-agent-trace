@@ -1,0 +1,165 @@
+{
+  "reviewer": "local_source_checked_author_review",
+  "independent_gold": false,
+  "root_cause_accuracy_measured": false,
+  "status_definitions": {
+    "usable_with_limits": "主要结论可由原文支持，但有明确口径限制或较小边界问题；不是准确率认证。",
+    "needs_revision": "存在会影响证据解释、要求判断或因果归因的实质问题；有用的局部发现仍保留。",
+    "not_assessable_budget": "原定轮数内没有最终诊断JSON，不能评价最终诊断语义。",
+    "not_assessable_service": "连接中断且显式续跑后再次中断，无最终诊断JSON，不能评价其最终语义。"
+  },
+  "cases": [
+    {
+      "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+      "task_id": "1273",
+      "status": "needs_revision",
+      "conclusion": "计算与未完成文字交付的描述有依据，但把过滤后的手册片段当作完整定义范围，证据边界判断偏强。",
+      "notes": [
+        "E00024/E00025及E00047/E00048确实记录123条GlobalCard且is_credit=True规则、10 EUR公式和0.117667等权均值；FINAL0001确实只有Now let me save the answer:。",
+        "关键限制：E00034明确是grep -n -i fee|rate|fixed|calculate|formula ... | head -40；E00035不是完整手册。不能由其未显示null通配定义断言完整manual.md未定义null。应说当前已录片段未提供该定义。",
+        "S0006的筛选确实存在于E00017/E00018，但该关键点引用列表未包含这两个直接定位证据，而引用了S0008的同类筛选，步骤到证据的定位需补强。",
+        "任务并未明确要求按payments.csv的真实交易分布加权。模型虽使用条件式表述，仍应把该口径列为未决问题，不能当成已确认错误。",
+        "没有记录到答案写入与断言文件在任何状态下都不存在应区分；模型关于未被写入的部分措辞比已读覆盖更强。未建立失败链是合理克制。"
+      ],
+      "source_anchors_checked": [
+        "T0002",
+        "E00017",
+        "E00018",
+        "E00024",
+        "E00025",
+        "E00034",
+        "E00035",
+        "E00047",
+        "E00048",
+        "FINAL0001"
+      ]
+    },
+    {
+      "record_id": "rawio-2a40e1d15e900422bb10",
+      "task_id": "1464",
+      "status": "needs_revision",
+      "conclusion": "null通配规则、50个ID与写入读回描述正确，但把内联代码必然需要另存脚本文件作为违规，扩大了任务要求。",
+      "notes": [
+        "E00005确有第95行null适用所有取值规则，模型实际读取范围0–5000及5000–10000覆盖该定义（起始字符7160）。没有把null处理误判为已确认错误。",
+        "E00014/E00015、E00018和末尾写入/读回支持匹配逻辑、50个ID、样本核查与交付事实；空列表语义被明确限定为疑点，不能因此直接判最终集合错误。",
+        "原任务是Save every script you create in this workspace。仅凭python3 -c内联执行，不能确证另有脚本文件被创建但未保存在工作区；模型在策略和总结中把未留下独立脚本文件当作缺陷，条件义务被泛化。",
+        "失败链留空且说明当前证据不足以判答案错误，符合证据限制；本地未读取标准答案判断50个ID集合的正确性。"
+      ],
+      "source_anchors_checked": [
+        "E00005",
+        "E00012",
+        "E00014",
+        "E00015",
+        "E00018",
+        "FINAL0001"
+      ]
+    },
+    {
+      "record_id": "rawio-de63c9937aeb17c70d6d",
+      "task_id": "agriculture_22",
+      "status": "usable_with_limits",
+      "conclusion": "能准确描述交叉验证实现与文件交付，并把F1聚合口径保留为未决项；原生JSON多一个合同外字段，严格验收失败。",
+      "notes": [
+        "任务原文未固定折内F1平均还是汇总折外预测后计算F1；模型没有仅凭两种口径不同就判现有实现错误。",
+        "派生气候特征、Soilcolor编码、RandomForest、StratifiedKFold及12类输出在代码和返回中有依据；初始路径错误被后续成功操作恢复。",
+        "原生输出额外包含root_cause_chain_note:null，违反五字段合同。未删除此字段或修复模型结果。",
+        "关键决策点实际列的是一种可辩护但未固定的统计口径，应避免被下游当成已确认错误；额外输出OOF对照只是可选核查，不能当作任务必需条件。"
+      ],
+      "source_anchors_checked": [
+        "T0005",
+        "E00012",
+        "E00014",
+        "E00015",
+        "E00019",
+        "FINAL0001"
+      ]
+    },
+    {
+      "record_id": "rawio-bcb49010f78ccd4af446",
+      "task_id": "agriculture_16",
+      "status": "not_assessable_budget",
+      "conclusion": "12轮模型调用后仍在取证，未提交最终诊断JSON。",
+      "notes": [
+        "原始返回的12轮均保留；共有26次取证调用，主要逐个读取小证据块。",
+        "这属于预算内未收敛，不能当作空发现，也不能据此判定轨迹没有错误。",
+        "未追加强制最终回答调用、未扩大轮数预算，也未由当前助手代写模型诊断。"
+      ],
+      "source_anchors_checked": []
+    },
+    {
+      "record_id": "rawio-ecb8d458d5899c6dfd80",
+      "task_id": "civic_unstructured__query6",
+      "status": "needs_revision",
+      "conclusion": "项目解析的局部问题有实证，但失败链对文件缺失与停止原因的判断超出了证据。",
+      "notes": [
+        "E00041/E00045显示rid_0001确有混合章节；E00054只检出一个Not Started章节。E00057确将approvals.等描述续行当作项目名。两处解析缺陷不是凭评分猜测。",
+        "FINAL0001确实仍在说明解析问题，没有给出年份与美元总额。",
+        "失败链首项由最终文字和任务要求推出交付物缺失，不能证明answer.txt不存在；同一输出的summary又承认不能断言文件不存在，存在内部边界不一致。",
+        "反复返工使agent停留在抽取阶段是合理候选解释，但记录没有证明具体停止机制或这些解析缺陷必然导致最终停止。不能把候选机制写成确定因果链。",
+        "完整阶段B/C索引不是已经执行的因果证明。有关尚未关联/汇总的判断，应限定为已读取证据没有展示对应结果。"
+      ],
+      "source_anchors_checked": [
+        "T0002",
+        "T0003",
+        "E00041",
+        "E00045",
+        "E00054",
+        "E00056",
+        "E00057",
+        "FINAL0001"
+      ]
+    },
+    {
+      "record_id": "rawio-ea688bde06c727ee43b1",
+      "task_id": "stockmarket__query1",
+      "status": "usable_with_limits",
+      "conclusion": "能区分已恢复SQL错误与最终可核查数值，没有强行构造失败根因；最终消息格式判断略宽。",
+      "notes": [
+        "E00023/E00026的SQL相同（外围注释不同），确为未加引号日期比较；E00030确认Date为VARCHAR，E00039/E00040确认修正后MAX为18.440000534057617。",
+        "E00053/E00054的top-5、答案文件读回和FINAL0001均支持18.44；模型正确把中间错误视为已恢复，root_cause_chain为空。",
+        "E00033给出的日期范围确为2019-06-28至2020-04-01，覆盖限制的描述有依据；不能仅因数据未满全年就断言该本地任务答案错误。",
+        "原任务要求最终消息只重复答案；FINAL0001还包含文件说明和自然语言解释。模型称交付形式基本符合，严格格式判断偏宽，但这不推翻其对查询结果与已恢复错误的主要判断。"
+      ],
+      "source_anchors_checked": [
+        "E00023",
+        "E00026",
+        "E00030",
+        "E00033",
+        "E00039",
+        "E00040",
+        "E00053",
+        "E00054",
+        "FINAL0001"
+      ]
+    },
+    {
+      "record_id": "rawio-b4aa2e6b636cb50f6643",
+      "task_id": "2697",
+      "status": "not_assessable_service",
+      "conclusion": "原生取证已经发生，但连接中断后显式接续又在后续调用中断，没有最终诊断JSON。",
+      "notes": [
+        "已收到10轮模型响应，执行17次只读取证。",
+        "两次连接中断均保留请求、错误类型和耗时；对第一次未返回请求仅做过一次显式续跑，且确实取得响应，之后的不同请求再次中断。",
+        "没有重生成已完成诊断，没有由当前助手补写该模型的诊断，也没有扩大原定12轮预算。",
+        "这些是运行未完成样本，不能算语义错误、正确或空发现；不能从检索结果替代最终诊断。"
+      ],
+      "source_anchors_checked": []
+    },
+    {
+      "record_id": "rawio-a5173d9e30dba77ca1c5",
+      "task_id": "agriculture_20",
+      "status": "not_assessable_service",
+      "conclusion": "原生取证已经发生，但连接中断后显式接续又在后续调用中断，没有最终诊断JSON。",
+      "notes": [
+        "已收到2轮模型响应，执行3次只读取证。",
+        "两次连接中断均保留请求、错误类型和耗时；对第一次未返回请求仅做过一次显式续跑，且确实取得响应，之后的不同请求再次中断。",
+        "没有重生成已完成诊断，没有由当前助手补写该模型的诊断，也没有扩大原定12轮预算。",
+        "这些是运行未完成样本，不能算语义错误、正确或空发现；不能从检索结果替代最终诊断。"
+      ],
+      "source_anchors_checked": []
+    }
+  ],
+  "reviewed_after_native_outputs": true,
+  "official_reference_answers_consulted": false,
+  "semantic_model_review_calls": 0
+}

@@ -1,0 +1,8 @@
+{
+  "offline_tests_passed": 2,
+  "source_projection_checks_passed": 8,
+  "single_prompt_insert": true,
+  "schema_examples_unchanged": true,
+  "round12_no_tools_tested": true,
+  "no_real_tool_invocation_during_tests": true
+}

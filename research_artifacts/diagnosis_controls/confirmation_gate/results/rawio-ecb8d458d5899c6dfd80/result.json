@@ -1,0 +1,7 @@
+{
+  "task_id": "civic_unstructured__query6",
+  "status": "mechanically_failed",
+  "model_rounds": 5,
+  "tool_calls": 7,
+  "finished_at": "2026-10-18T13:57:30.352541+00:00"
+}

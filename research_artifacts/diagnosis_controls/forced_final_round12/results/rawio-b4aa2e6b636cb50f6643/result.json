@@ -1,0 +1,11 @@
+{
+  "task_id": "2697",
+  "status": "recovery_failed",
+  "model_rounds": 10,
+  "tool_calls": 17,
+  "finished_at": "2026-10-18T13:11:43.789691+00:00",
+  "explicit_transport_replays": 1,
+  "reason": "provider_failure_no_retry",
+  "comparison_status": "not_reached_round12_transport_censored",
+  "new_model_calls": 0
+}

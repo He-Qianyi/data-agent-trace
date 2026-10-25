@@ -1,5 +1,17 @@
 # Release history
 
+## 0.4.0 — 25 October 2026
+
+- Published the recorded ten-case diagnosis experiment, its separate formatting revalidation and author-style semantic review, including original errors and limits.
+- Published completed all-164 processor validation and the 145/19 corpus-selection audit with source/hash inventories and original scripts.
+- Published six historical diagnosis control experiments, native provider responses, negative/nonterminal outcomes and read/message audits.
+- Added a network-blocked public-artifact verifier, with explicit boundaries for withheld full source contexts. No new model calls or independent accuracy claims.
+
+## 0.3.0 — 25 October 2026
+
+- Added the complete real DABstep1464 recording and strict offline processor/native-diagnosis replay, retaining original model outputs and the needs-revision author review.
+- Verified 163 tests and independent installed-wheel full sample replay; no new model calls.
+
 ## 0.2.0 — 25 October 2026
 
 - Added the available full research-stage implementations, helper dependency closure, frozen configurations, prompts and original historical runners.

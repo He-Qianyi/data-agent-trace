@@ -1,0 +1,1389 @@
+{
+  "$.facts.data_resources[].revision_ref": {
+    "count": 3449,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/data_resources/0/revision_ref"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/data_resources/1/revision_ref"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/data_resources/2/revision_ref"
+      }
+    ],
+    "affected_traces": 160
+  },
+  "$.facts.data_resources[].access_observed": {
+    "count": 4208,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/data_resources/0/access_observed"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/data_resources/1/access_observed"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/data_resources/2/access_observed"
+      }
+    ],
+    "affected_traces": 161
+  },
+  "$.facts.steps[].action.arguments_parse_error": {
+    "count": 4208,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/0/action/arguments_parse_error"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/1/action/arguments_parse_error"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/2/action/arguments_parse_error"
+      }
+    ],
+    "affected_traces": 164
+  },
+  "$.facts.steps[].action.submission_variants[].arguments_parse_error": {
+    "count": 7415,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/0/action/submission_variants/0/arguments_parse_error"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/0/action/submission_variants/1/arguments_parse_error"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/1/action/submission_variants/0/arguments_parse_error"
+      }
+    ],
+    "affected_traces": 164
+  },
+  "$.facts.steps[].action.submission_variants[].model_exchange_ref": {
+    "count": 7415,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/0/action/submission_variants/0/model_exchange_ref"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/0/action/submission_variants/1/model_exchange_ref"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/1/action/submission_variants/0/model_exchange_ref"
+      }
+    ],
+    "affected_traces": 164
+  },
+  "$.facts.steps[].observation.tool_status_as_recorded": {
+    "count": 3440,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/0/observation/tool_status_as_recorded"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/1/observation/tool_status_as_recorded"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/2/observation/tool_status_as_recorded"
+      }
+    ],
+    "affected_traces": 139
+  },
+  "$.facts.steps[].observation.exit_code_as_recorded": {
+    "count": 3314,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/0/observation/exit_code_as_recorded"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/1/observation/exit_code_as_recorded"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/2/observation/exit_code_as_recorded"
+      }
+    ],
+    "affected_traces": 147
+  },
+  "$.facts.steps[].observation.is_error_as_recorded": {
+    "count": 1249,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/1/observation/is_error_as_recorded"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/3/observation/is_error_as_recorded"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/6/observation/is_error_as_recorded"
+      }
+    ],
+    "affected_traces": 140
+  },
+  "$.facts.steps[].action.static_extraction.code_units[].path_as_written": {
+    "count": 1146,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/8/action/static_extraction/code_units/1/path_as_written"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/9/action/static_extraction/code_units/1/path_as_written"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/facts/steps/10/action/static_extraction/code_units/1/path_as_written"
+      }
+    ],
+    "affected_traces": 90
+  },
+  "$.annotations.task.task_summary.evidence[].location.step_id": {
+    "count": 878,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/task_summary/evidence/0/location/step_id"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/task_summary/evidence/1/location/step_id"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/task_summary/evidence/2/location/step_id"
+      }
+    ],
+    "affected_traces": 164
+  },
+  "$.annotations.task.task_summary.evidence[].location.representation": {
+    "count": 878,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/task_summary/evidence/0/location/representation"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/task_summary/evidence/1/location/representation"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/task_summary/evidence/2/location/representation"
+      }
+    ],
+    "affected_traces": 164
+  },
+  "$.annotations.task.requirements[].evidence[].location.step_id": {
+    "count": 2693,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/requirements/0/evidence/0/location/step_id"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/requirements/1/evidence/0/location/step_id"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/requirements/2/evidence/0/location/step_id"
+      }
+    ],
+    "affected_traces": 164
+  },
+  "$.annotations.task.requirements[].evidence[].location.representation": {
+    "count": 2693,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/requirements/0/evidence/0/location/representation"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/requirements/1/evidence/0/location/representation"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/requirements/2/evidence/0/location/representation"
+      }
+    ],
+    "affected_traces": 164
+  },
+  "$.annotations.task.ambiguities[].evidence[].location.step_id": {
+    "count": 254,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/ambiguities/0/evidence/0/location/step_id"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/ambiguities/1/evidence/0/location/step_id"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/ambiguities/2/evidence/0/location/step_id"
+      }
+    ],
+    "affected_traces": 94
+  },
+  "$.annotations.task.ambiguities[].evidence[].location.representation": {
+    "count": 254,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/ambiguities/0/evidence/0/location/representation"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/ambiguities/1/evidence/0/location/representation"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/annotations/task/ambiguities/2/evidence/0/location/representation"
+      }
+    ],
+    "affected_traces": 94
+  },
+  "$.evidence_catalog[].fact_pointer": {
+    "count": 5261,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/evidence_catalog/12/fact_pointer"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/evidence_catalog/13/fact_pointer"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/evidence_catalog/17/fact_pointer"
+      }
+    ],
+    "affected_traces": 164
+  },
+  "$.evidence_catalog[].original_source_ref": {
+    "count": 4208,
+    "examples": [
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/evidence_catalog/12/original_source_ref"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/evidence_catalog/17/original_source_ref"
+      },
+      {
+        "record_id": "rawio-ed2adfd824dbfd11d0fe",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1273",
+        "pointer": "/evidence_catalog/20/original_source_ref"
+      }
+    ],
+    "affected_traces": 164
+  },
+  "$.citation_index[].fact_pointer": {
+    "count": 192,
+    "examples": [
+      {
+        "record_id": "rawio-2d7377295e37c2351295",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1305",
+        "pointer": "/citation_index/92/fact_pointer"
+      },
+      {
+        "record_id": "rawio-f1b9d043fca0a8c93d5f",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "GITHUB_REPOS__query2",
+        "pointer": "/citation_index/115/fact_pointer"
+      },
+      {
+        "record_id": "rawio-bbe5a351940f4e23fe2c",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "PATENTS__query1",
+        "pointer": "/citation_index/276/fact_pointer"
+      }
+    ],
+    "affected_traces": 65
+  },
+  "$.facts.steps[].action.static_extraction.data_operations[].first_argument_literal": {
+    "count": 750,
+    "examples": [
+      {
+        "record_id": "rawio-2a40e1d15e900422bb10",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1464",
+        "pointer": "/facts/steps/4/action/static_extraction/data_operations/1/first_argument_literal"
+      },
+      {
+        "record_id": "rawio-b4ed5eab3db144999fc3",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1681",
+        "pointer": "/facts/steps/17/action/static_extraction/data_operations/4/first_argument_literal"
+      },
+      {
+        "record_id": "rawio-c05784a0b4925c35b147",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1753",
+        "pointer": "/facts/steps/16/action/static_extraction/data_operations/1/first_argument_literal"
+      }
+    ],
+    "affected_traces": 66
+  },
+  "$.facts.data_resources[].code_ref": {
+    "count": 557,
+    "examples": [
+      {
+        "record_id": "rawio-c05784a0b4925c35b147",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1753",
+        "pointer": "/facts/data_resources/3/code_ref"
+      },
+      {
+        "record_id": "rawio-c05784a0b4925c35b147",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1753",
+        "pointer": "/facts/data_resources/4/code_ref"
+      },
+      {
+        "record_id": "rawio-c05784a0b4925c35b147",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1753",
+        "pointer": "/facts/data_resources/5/code_ref"
+      }
+    ],
+    "affected_traces": 71
+  },
+  "$.facts.steps[].action.static_extraction.script_invocations[].candidate_revision_ref": {
+    "count": 53,
+    "examples": [
+      {
+        "record_id": "rawio-c05784a0b4925c35b147",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1753",
+        "pointer": "/facts/steps/8/action/static_extraction/script_invocations/0/candidate_revision_ref"
+      },
+      {
+        "record_id": "rawio-c05784a0b4925c35b147",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1753",
+        "pointer": "/facts/steps/12/action/static_extraction/script_invocations/0/candidate_revision_ref"
+      },
+      {
+        "record_id": "rawio-a351932be4b4cee42449",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "2697",
+        "pointer": "/facts/steps/9/action/static_extraction/script_invocations/0/candidate_revision_ref"
+      }
+    ],
+    "affected_traces": 32
+  },
+  "$.facts.script_revisions[].previous_revision_ref": {
+    "count": 324,
+    "examples": [
+      {
+        "record_id": "rawio-c05784a0b4925c35b147",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1753",
+        "pointer": "/facts/script_revisions/0/previous_revision_ref"
+      },
+      {
+        "record_id": "rawio-c05784a0b4925c35b147",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1753",
+        "pointer": "/facts/script_revisions/1/previous_revision_ref"
+      },
+      {
+        "record_id": "rawio-c05784a0b4925c35b147",
+        "benchmark": "dabstep",
+        "agent_id": "claude_code",
+        "task_id": "1753",
+        "pointer": "/facts/script_revisions/2/previous_revision_ref"
+      }
+    ],
+    "affected_traces": 82
+  },
+  "$.facts.task.metadata_as_recorded": {
+    "count": 91,
+    "examples": [
+      {
+        "record_id": "rawio-d646c83fb0cd621172b7",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query1",
+        "pointer": "/facts/task/metadata_as_recorded"
+      },
+      {
+        "record_id": "rawio-139bc2d3a4cc3c71747f",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query2",
+        "pointer": "/facts/task/metadata_as_recorded"
+      },
+      {
+        "record_id": "rawio-28b2f965e92b9d64d640",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "GITHUB_REPOS__query1",
+        "pointer": "/facts/task/metadata_as_recorded"
+      }
+    ],
+    "affected_traces": 91
+  },
+  "$.facts.task.metadata_ref": {
+    "count": 91,
+    "examples": [
+      {
+        "record_id": "rawio-d646c83fb0cd621172b7",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query1",
+        "pointer": "/facts/task/metadata_ref"
+      },
+      {
+        "record_id": "rawio-139bc2d3a4cc3c71747f",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query2",
+        "pointer": "/facts/task/metadata_ref"
+      },
+      {
+        "record_id": "rawio-28b2f965e92b9d64d640",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "GITHUB_REPOS__query1",
+        "pointer": "/facts/task/metadata_ref"
+      }
+    ],
+    "affected_traces": 91
+  },
+  "$.facts.steps[].action.static_extraction.data_operations[].parameters_expression": {
+    "count": 4148,
+    "examples": [
+      {
+        "record_id": "rawio-d646c83fb0cd621172b7",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query1",
+        "pointer": "/facts/steps/3/action/static_extraction/data_operations/1/parameters_expression"
+      },
+      {
+        "record_id": "rawio-d646c83fb0cd621172b7",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query1",
+        "pointer": "/facts/steps/3/action/static_extraction/data_operations/2/parameters_expression"
+      },
+      {
+        "record_id": "rawio-d646c83fb0cd621172b7",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query1",
+        "pointer": "/facts/steps/3/action/static_extraction/data_operations/3/parameters_expression"
+      }
+    ],
+    "affected_traces": 89
+  },
+  "$.facts.steps[].action.static_extraction.data_operations[].sql_text": {
+    "count": 282,
+    "examples": [
+      {
+        "record_id": "rawio-d646c83fb0cd621172b7",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query1",
+        "pointer": "/facts/steps/4/action/static_extraction/data_operations/2/sql_text"
+      },
+      {
+        "record_id": "rawio-d646c83fb0cd621172b7",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query1",
+        "pointer": "/facts/steps/4/action/static_extraction/data_operations/9/sql_text"
+      },
+      {
+        "record_id": "rawio-d646c83fb0cd621172b7",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query1",
+        "pointer": "/facts/steps/20/action/static_extraction/data_operations/3/sql_text"
+      }
+    ],
+    "affected_traces": 36
+  },
+  "$.annotations.units[].operations[].details[].basis_note": {
+    "count": 43,
+    "examples": [
+      {
+        "record_id": "rawio-d646c83fb0cd621172b7",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query1",
+        "pointer": "/annotations/units/0/operations/0/details/0/basis_note"
+      },
+      {
+        "record_id": "rawio-ef9fe2769822d2c161ec",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "PATENTS__query2",
+        "pointer": "/annotations/units/12/operations/0/details/0/basis_note"
+      },
+      {
+        "record_id": "rawio-ef9fe2769822d2c161ec",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "PATENTS__query2",
+        "pointer": "/annotations/units/13/operations/0/details/0/basis_note"
+      }
+    ],
+    "affected_traces": 10
+  },
+  "$.facts.steps[].action.static_extraction.code_units[].code": {
+    "count": 8,
+    "examples": [
+      {
+        "record_id": "rawio-139bc2d3a4cc3c71747f",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query2",
+        "pointer": "/facts/steps/3/action/static_extraction/code_units/1/code"
+      },
+      {
+        "record_id": "rawio-139bc2d3a4cc3c71747f",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "DEPS_DEV_V1__query2",
+        "pointer": "/facts/steps/4/action/static_extraction/code_units/1/code"
+      },
+      {
+        "record_id": "rawio-bdbe63b47a66acb00cca",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "cve__query4",
+        "pointer": "/facts/steps/2/action/static_extraction/code_units/1/code"
+      }
+    ],
+    "affected_traces": 4
+  },
+  "$.citation_index[].original_source_ref": {
+    "count": 131,
+    "examples": [
+      {
+        "record_id": "rawio-f1b9d043fca0a8c93d5f",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "GITHUB_REPOS__query2",
+        "pointer": "/citation_index/115/original_source_ref"
+      },
+      {
+        "record_id": "rawio-bbe5a351940f4e23fe2c",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "PATENTS__query1",
+        "pointer": "/citation_index/276/original_source_ref"
+      },
+      {
+        "record_id": "rawio-bbe5a351940f4e23fe2c",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "PATENTS__query1",
+        "pointer": "/citation_index/278/original_source_ref"
+      }
+    ],
+    "affected_traces": 42
+  },
+  "$.annotations.units[].operations[].requirement_links[].requirement_id_note": {
+    "count": 1,
+    "examples": [
+      {
+        "record_id": "rawio-ba871dfd92fd9fd5f7db",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "GITHUB_REPOS__query3",
+        "pointer": "/annotations/units/17/operations/0/requirement_links/0/requirement_id_note"
+      }
+    ],
+    "affected_traces": 1
+  },
+  "$.facts.data_resources[].path_as_recorded": {
+    "count": 865,
+    "examples": [
+      {
+        "record_id": "rawio-0cec5972f17f6236610a",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "PANCANCER_ATLAS__query1",
+        "pointer": "/facts/data_resources/1/path_as_recorded"
+      },
+      {
+        "record_id": "rawio-0cec5972f17f6236610a",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "PANCANCER_ATLAS__query1",
+        "pointer": "/facts/data_resources/2/path_as_recorded"
+      },
+      {
+        "record_id": "rawio-0cec5972f17f6236610a",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "PANCANCER_ATLAS__query1",
+        "pointer": "/facts/data_resources/3/path_as_recorded"
+      }
+    ],
+    "affected_traces": 45
+  },
+  "$.facts.steps[].action.static_extraction.data_operations[].path_literal": {
+    "count": 869,
+    "examples": [
+      {
+        "record_id": "rawio-0cec5972f17f6236610a",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "PANCANCER_ATLAS__query1",
+        "pointer": "/facts/steps/2/action/static_extraction/data_operations/0/path_literal"
+      },
+      {
+        "record_id": "rawio-0cec5972f17f6236610a",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "PANCANCER_ATLAS__query1",
+        "pointer": "/facts/steps/3/action/static_extraction/data_operations/0/path_literal"
+      },
+      {
+        "record_id": "rawio-0cec5972f17f6236610a",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "PANCANCER_ATLAS__query1",
+        "pointer": "/facts/steps/4/action/static_extraction/data_operations/0/path_literal"
+      }
+    ],
+    "affected_traces": 46
+  },
+  "$.facts.data_resources[].connection_options_as_recorded.port": {
+    "count": 2,
+    "examples": [
+      {
+        "record_id": "rawio-cbd5dd169f4866662de8",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "agnews__query4",
+        "pointer": "/facts/data_resources/8/connection_options_as_recorded/port"
+      },
+      {
+        "record_id": "rawio-bdbe63b47a66acb00cca",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "cve__query4",
+        "pointer": "/facts/data_resources/24/connection_options_as_recorded/port"
+      }
+    ],
+    "affected_traces": 2
+  },
+  "$.facts.steps[].action.static_extraction.data_operations[].options_literal.port": {
+    "count": 2,
+    "examples": [
+      {
+        "record_id": "rawio-cbd5dd169f4866662de8",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "agnews__query4",
+        "pointer": "/facts/steps/13/action/static_extraction/data_operations/0/options_literal/port"
+      },
+      {
+        "record_id": "rawio-bdbe63b47a66acb00cca",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "cve__query4",
+        "pointer": "/facts/steps/53/action/static_extraction/data_operations/0/options_literal/port"
+      }
+    ],
+    "affected_traces": 2
+  },
+  "$.facts.data_resources[].connection_options_as_recorded.dbname": {
+    "count": 5,
+    "examples": [
+      {
+        "record_id": "rawio-bdbe63b47a66acb00cca",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "cve__query4",
+        "pointer": "/facts/data_resources/11/connection_options_as_recorded/dbname"
+      },
+      {
+        "record_id": "rawio-bdbe63b47a66acb00cca",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "cve__query4",
+        "pointer": "/facts/data_resources/12/connection_options_as_recorded/dbname"
+      },
+      {
+        "record_id": "rawio-bdbe63b47a66acb00cca",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "cve__query4",
+        "pointer": "/facts/data_resources/24/connection_options_as_recorded/dbname"
+      }
+    ],
+    "affected_traces": 3
+  },
+  "$.facts.steps[].action.static_extraction.data_operations[].options_literal.dbname": {
+    "count": 5,
+    "examples": [
+      {
+        "record_id": "rawio-bdbe63b47a66acb00cca",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "cve__query4",
+        "pointer": "/facts/steps/21/action/static_extraction/data_operations/0/options_literal/dbname"
+      },
+      {
+        "record_id": "rawio-bdbe63b47a66acb00cca",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "cve__query4",
+        "pointer": "/facts/steps/22/action/static_extraction/data_operations/0/options_literal/dbname"
+      },
+      {
+        "record_id": "rawio-bdbe63b47a66acb00cca",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "cve__query4",
+        "pointer": "/facts/steps/53/action/static_extraction/data_operations/0/options_literal/dbname"
+      }
+    ],
+    "affected_traces": 3
+  },
+  "$.facts.steps[].action.static_extraction.data_operations[].options_literal.sheet_name": {
+    "count": 1,
+    "examples": [
+      {
+        "record_id": "rawio-5b1e378dbf76f07c0a65",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "krama__query1",
+        "pointer": "/facts/steps/13/action/static_extraction/data_operations/2/options_literal/sheet_name"
+      }
+    ],
+    "affected_traces": 1
+  },
+  "$.facts.script_revisions[].content": {
+    "count": 1,
+    "examples": [
+      {
+        "record_id": "rawio-17e56752e76ef2450009",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "usaspending__query6",
+        "pointer": "/facts/script_revisions/1/content"
+      }
+    ],
+    "affected_traces": 1
+  },
+  "$.facts.script_revisions[].content_sha256": {
+    "count": 1,
+    "examples": [
+      {
+        "record_id": "rawio-17e56752e76ef2450009",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "usaspending__query6",
+        "pointer": "/facts/script_revisions/1/content_sha256"
+      }
+    ],
+    "affected_traces": 1
+  },
+  "$.annotations.units[].operations[].requirement_links[].basis_note": {
+    "count": 7,
+    "examples": [
+      {
+        "record_id": "rawio-53ffcaacf6bac2ab6eb1",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "usaspending__query8",
+        "pointer": "/annotations/units/32/operations/0/requirement_links/0/basis_note"
+      },
+      {
+        "record_id": "rawio-53ffcaacf6bac2ab6eb1",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "usaspending__query8",
+        "pointer": "/annotations/units/33/operations/0/requirement_links/0/basis_note"
+      },
+      {
+        "record_id": "rawio-53ffcaacf6bac2ab6eb1",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "usaspending__query8",
+        "pointer": "/annotations/units/33/operations/1/requirement_links/0/basis_note"
+      }
+    ],
+    "affected_traces": 1
+  },
+  "$.annotations.units[].operations[].basis_note": {
+    "count": 7,
+    "examples": [
+      {
+        "record_id": "rawio-53ffcaacf6bac2ab6eb1",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "usaspending__query8",
+        "pointer": "/annotations/units/32/operations/0/basis_note"
+      },
+      {
+        "record_id": "rawio-53ffcaacf6bac2ab6eb1",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "usaspending__query8",
+        "pointer": "/annotations/units/33/operations/0/basis_note"
+      },
+      {
+        "record_id": "rawio-53ffcaacf6bac2ab6eb1",
+        "benchmark": "dataagentbench",
+        "agent_id": "claude_code",
+        "task_id": "usaspending__query8",
+        "pointer": "/annotations/units/33/operations/1/basis_note"
+      }
+    ],
+    "affected_traces": 1
+  },
+  "$.annotations.units[].operations[].requirement_links[].description": {
+    "count": 1,
+    "examples": [
+      {
+        "record_id": "rawio-64db3c837b5022077e61",
+        "benchmark": "dabstep",
+        "agent_id": "codex",
+        "task_id": "1871",
+        "pointer": "/annotations/units/24/operations/0/requirement_links/0/description"
+      }
+    ],
+    "affected_traces": 1
+  },
+  "$.facts.trace_metadata.completion_as_audited.receipts[].status": {
+    "count": 54,
+    "examples": [
+      {
+        "record_id": "rawio-00a89a8d096c0f7731c8",
+        "benchmark": "dabstep",
+        "agent_id": "codex",
+        "task_id": "2697",
+        "pointer": "/facts/trace_metadata/completion_as_audited/receipts/1/status"
+      },
+      {
+        "record_id": "rawio-96915432b045658fea71",
+        "benchmark": "dabstep",
+        "agent_id": "kimi_code",
+        "task_id": "49",
+        "pointer": "/facts/trace_metadata/completion_as_audited/receipts/1/status"
+      },
+      {
+        "record_id": "rawio-6df8430e0d49870d665b",
+        "benchmark": "dabstep",
+        "agent_id": "kimi_code",
+        "task_id": "1305",
+        "pointer": "/facts/trace_metadata/completion_as_audited/receipts/1/status"
+      }
+    ],
+    "affected_traces": 54
+  },
+  "$.facts.trace_metadata.completion_as_audited.receipts[].finished_at": {
+    "count": 54,
+    "examples": [
+      {
+        "record_id": "rawio-00a89a8d096c0f7731c8",
+        "benchmark": "dabstep",
+        "agent_id": "codex",
+        "task_id": "2697",
+        "pointer": "/facts/trace_metadata/completion_as_audited/receipts/1/finished_at"
+      },
+      {
+        "record_id": "rawio-96915432b045658fea71",
+        "benchmark": "dabstep",
+        "agent_id": "kimi_code",
+        "task_id": "49",
+        "pointer": "/facts/trace_metadata/completion_as_audited/receipts/1/finished_at"
+      },
+      {
+        "record_id": "rawio-6df8430e0d49870d665b",
+        "benchmark": "dabstep",
+        "agent_id": "kimi_code",
+        "task_id": "1305",
+        "pointer": "/facts/trace_metadata/completion_as_audited/receipts/1/finished_at"
+      }
+    ],
+    "affected_traces": 54
+  },
+  "$.facts.trace_metadata.completion_as_audited.receipts[].expected_model_requests": {
+    "count": 25,
+    "examples": [
+      {
+        "record_id": "rawio-00a89a8d096c0f7731c8",
+        "benchmark": "dabstep",
+        "agent_id": "codex",
+        "task_id": "2697",
+        "pointer": "/facts/trace_metadata/completion_as_audited/receipts/1/expected_model_requests"
+      },
+      {
+        "record_id": "rawio-de6481afdb797a74168e",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_02",
+        "pointer": "/facts/trace_metadata/completion_as_audited/receipts/1/expected_model_requests"
+      },
+      {
+        "record_id": "rawio-4b9fd6b15e4b554779db",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_03",
+        "pointer": "/facts/trace_metadata/completion_as_audited/receipts/1/expected_model_requests"
+      }
+    ],
+    "affected_traces": 25
+  },
+  "$.facts.steps[].action.static_extraction.file_actions[].replace_all": {
+    "count": 2,
+    "examples": [
+      {
+        "record_id": "rawio-96915432b045658fea71",
+        "benchmark": "dabstep",
+        "agent_id": "kimi_code",
+        "task_id": "49",
+        "pointer": "/facts/steps/10/action/static_extraction/file_actions/0/replace_all"
+      },
+      {
+        "record_id": "rawio-6e9757019dc8767f3cfc",
+        "benchmark": "dabstep",
+        "agent_id": "kimi_code",
+        "task_id": "1681",
+        "pointer": "/facts/steps/20/action/static_extraction/file_actions/0/replace_all"
+      }
+    ],
+    "affected_traces": 2
+  },
+  "$.facts.evaluation.records[].payload.results[].actions[].token_usage": {
+    "count": 1572,
+    "examples": [
+      {
+        "record_id": "rawio-de6481afdb797a74168e",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_02",
+        "pointer": "/facts/evaluation/records/1/payload/results/0/actions/0/token_usage"
+      },
+      {
+        "record_id": "rawio-de6481afdb797a74168e",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_02",
+        "pointer": "/facts/evaluation/records/1/payload/results/0/actions/1/token_usage"
+      },
+      {
+        "record_id": "rawio-de6481afdb797a74168e",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_02",
+        "pointer": "/facts/evaluation/records/1/payload/results/0/actions/2/token_usage"
+      }
+    ],
+    "affected_traces": 24
+  },
+  "$.facts.evaluation.records[].payload.results[].actions[].timing": {
+    "count": 1572,
+    "examples": [
+      {
+        "record_id": "rawio-de6481afdb797a74168e",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_02",
+        "pointer": "/facts/evaluation/records/1/payload/results/0/actions/0/timing"
+      },
+      {
+        "record_id": "rawio-de6481afdb797a74168e",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_02",
+        "pointer": "/facts/evaluation/records/1/payload/results/0/actions/1/timing"
+      },
+      {
+        "record_id": "rawio-de6481afdb797a74168e",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_02",
+        "pointer": "/facts/evaluation/records/1/payload/results/0/actions/2/timing"
+      }
+    ],
+    "affected_traces": 24
+  },
+  "$.facts.evaluation.records[].payload.results[].info[].output_data": {
+    "count": 25,
+    "examples": [
+      {
+        "record_id": "rawio-0077865439ee1adace4e",
+        "benchmark": "agenticdatabench",
+        "agent_id": "claude_code",
+        "task_id": "agriculture_03",
+        "pointer": "/facts/evaluation/records/1/payload/results/0/info/0/output_data"
+      },
+      {
+        "record_id": "rawio-4b9fd6b15e4b554779db",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_03",
+        "pointer": "/facts/evaluation/records/1/payload/results/0/info/0/output_data"
+      },
+      {
+        "record_id": "rawio-7b433636a0901314132e",
+        "benchmark": "agenticdatabench",
+        "agent_id": "claude_code",
+        "task_id": "agriculture_04",
+        "pointer": "/facts/evaluation/records/1/payload/results/0/info/0/output_data"
+      }
+    ],
+    "affected_traces": 21
+  },
+  "$.facts.evaluation.records[].payload.results[].info[].gold_data": {
+    "count": 25,
+    "examples": [
+      {
+        "record_id": "rawio-0077865439ee1adace4e",
+        "benchmark": "agenticdatabench",
+        "agent_id": "claude_code",
+        "task_id": "agriculture_03",
+        "pointer": "/facts/evaluation/records/1/payload/results/0/info/0/gold_data"
+      },
+      {
+        "record_id": "rawio-4b9fd6b15e4b554779db",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_03",
+        "pointer": "/facts/evaluation/records/1/payload/results/0/info/0/gold_data"
+      },
+      {
+        "record_id": "rawio-7b433636a0901314132e",
+        "benchmark": "agenticdatabench",
+        "agent_id": "claude_code",
+        "task_id": "agriculture_04",
+        "pointer": "/facts/evaluation/records/1/payload/results/0/info/0/gold_data"
+      }
+    ],
+    "affected_traces": 21
+  },
+  "$.facts.steps[].action.static_extraction.data_operations[].options_literal.dtype": {
+    "count": 12,
+    "examples": [
+      {
+        "record_id": "rawio-a204e794f29683525e49",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_09",
+        "pointer": "/facts/steps/12/action/static_extraction/data_operations/3/options_literal/dtype"
+      },
+      {
+        "record_id": "rawio-a204e794f29683525e49",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_09",
+        "pointer": "/facts/steps/14/action/static_extraction/data_operations/0/options_literal/dtype"
+      },
+      {
+        "record_id": "rawio-a204e794f29683525e49",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_09",
+        "pointer": "/facts/steps/16/action/static_extraction/data_operations/4/options_literal/dtype"
+      }
+    ],
+    "affected_traces": 4
+  },
+  "$.facts.task.metadata_as_recorded.post_process_func[]": {
+    "count": 2,
+    "examples": [
+      {
+        "record_id": "rawio-0b7edaf3f9d57f829a11",
+        "benchmark": "agenticdatabench",
+        "agent_id": "claude_code",
+        "task_id": "agriculture_10",
+        "pointer": "/facts/task/metadata_as_recorded/post_process_func/0"
+      },
+      {
+        "record_id": "rawio-baba471b324aa7141b29",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_10",
+        "pointer": "/facts/task/metadata_as_recorded/post_process_func/0"
+      }
+    ],
+    "affected_traces": 2
+  },
+  "$.facts.steps[].action.static_extraction.data_operations[].options_literal.subset": {
+    "count": 4,
+    "examples": [
+      {
+        "record_id": "rawio-3fc11c98829e907cf68b",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_12",
+        "pointer": "/facts/steps/25/action/static_extraction/data_operations/6/options_literal/subset"
+      },
+      {
+        "record_id": "rawio-3fc11c98829e907cf68b",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "agriculture_12",
+        "pointer": "/facts/steps/26/action/static_extraction/data_operations/6/options_literal/subset"
+      },
+      {
+        "record_id": "rawio-5fddab9db5eccfe66cc8",
+        "benchmark": "agenticdatabench",
+        "agent_id": "codex",
+        "task_id": "ecommerce_01",
+        "pointer": "/facts/steps/19/action/static_extraction/data_operations/15/options_literal/subset"
+      }
+    ],
+    "affected_traces": 2
+  },
+  "$.facts.generated_calls_without_observed_submission[].arguments_parse_error": {
+    "count": 3,
+    "examples": [
+      {
+        "record_id": "rawio-b8e332b863380c2f04be",
+        "benchmark": "agenticdatabench",
+        "agent_id": "claude_code",
+        "task_id": "agriculture_15",
+        "pointer": "/facts/generated_calls_without_observed_submission/0/arguments_parse_error"
+      },
+      {
+        "record_id": "rawio-215ed1e15c7e5a24e058",
+        "benchmark": "agenticdatabench",
+        "agent_id": "claude_code",
+        "task_id": "agriculture_32",
+        "pointer": "/facts/generated_calls_without_observed_submission/0/arguments_parse_error"
+      },
+      {
+        "record_id": "rawio-215ed1e15c7e5a24e058",
+        "benchmark": "agenticdatabench",
+        "agent_id": "claude_code",
+        "task_id": "agriculture_32",
+        "pointer": "/facts/generated_calls_without_observed_submission/1/arguments_parse_error"
+      }
+    ],
+    "affected_traces": 2
+  },
+  "$.facts.steps[].action.static_extraction.data_operations[].options_literal.key": {
+    "count": 3,
+    "examples": [
+      {
+        "record_id": "rawio-bcb49010f78ccd4af446",
+        "benchmark": "agenticdatabench",
+        "agent_id": "claude_code",
+        "task_id": "agriculture_16",
+        "pointer": "/facts/steps/32/action/static_extraction/data_operations/11/options_literal/key"
+      },
+      {
+        "record_id": "rawio-bcb49010f78ccd4af446",
+        "benchmark": "agenticdatabench",
+        "agent_id": "claude_code",
+        "task_id": "agriculture_16",
+        "pointer": "/facts/steps/33/action/static_extraction/data_operations/10/options_literal/key"
+      },
+      {
+        "record_id": "rawio-bcb49010f78ccd4af446",
+        "benchmark": "agenticdatabench",
+        "agent_id": "claude_code",
+        "task_id": "agriculture_16",
+        "pointer": "/facts/steps/33/action/static_extraction/data_operations/23/options_literal/key"
+      }
+    ],
+    "affected_traces": 1
+  }
+}

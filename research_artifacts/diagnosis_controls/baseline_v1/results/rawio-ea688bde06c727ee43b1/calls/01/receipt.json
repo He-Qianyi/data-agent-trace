@@ -1,0 +1,20 @@
+{
+  "requested_model": "x-test-2",
+  "returned_model": "deepseek-v4.1-flash-1017",
+  "usage": {
+    "prompt_tokens": 32678,
+    "total_tokens": 35757,
+    "completion_tokens": 3079,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2960
+    }
+  },
+  "finish_reason": "tool_calls",
+  "request_sha256": "67cc9fbfee1ea153f7ad811ebd684da45020e201cc2d7d0aa3dc93bcab1e7897",
+  "http_status": 200,
+  "elapsed_seconds": 17.404,
+  "reused_probe": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/diagnosis_eight_validation_20261018/protocol_probe_native_tools",
+  "new_http_attempts": 0,
+  "automatic_retries": 0
+}

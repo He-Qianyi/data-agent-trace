@@ -1,0 +1,1056 @@
+{
+  "finished_at": "2026-10-20T05:40:40.245583+00:00",
+  "total": 10,
+  "traces": [
+    {
+      "record_id": "rawio-c05784a0b4925c35b147",
+      "benchmark": "dabstep",
+      "agent_id": "claude_code",
+      "task_id": "1753",
+      "tool_steps": 22,
+      "input_sha256": "4e6de19faded2aca7b0e29eddccee454f743f4e8a981e4e8098f09eb61c75f86",
+      "trace_sha256": "528100379b369b43b6bfe63adedf8b4e2c3aa43ee2e25df93f7783f5ff328f4d",
+      "status": "invalid_json",
+      "model_rounds": 5,
+      "tool_calls": 8,
+      "reason": "no_parseable_final_JSON_no_repair",
+      "finished_at": "2026-10-20T05:27:50.882001+00:00",
+      "has_final_json": false,
+      "accepted": false
+    },
+    {
+      "record_id": "rawio-c63c1bb0b2f1eaa2080b",
+      "benchmark": "dabstep",
+      "agent_id": "codex",
+      "task_id": "49",
+      "tool_steps": 6,
+      "input_sha256": "27a915787212172f9b4065484ca08883cf5ad5f50b9f6d0ed354f6446060e40a",
+      "trace_sha256": "603cdc0a80ab4b110043e8c37f1bde0a1737fb5648c8432baf6745f65e4f775f",
+      "status": "mechanically_passed",
+      "model_rounds": 2,
+      "tool_calls": 2,
+      "finished_at": "2026-10-20T05:21:11.747548+00:00",
+      "has_final_json": true,
+      "accepted": true,
+      "acceptance": {
+        "passed": true,
+        "errors": [],
+        "acceptance_standard": "codetracer-detailed-compatible-v1",
+        "evidence_audit_affects_acceptance": false,
+        "semantic_correctness_evaluated": false,
+        "output_modified": false
+      },
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00018",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00019",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00021",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      }
+    },
+    {
+      "record_id": "rawio-ad24e54fdf0c7d46da13",
+      "benchmark": "dabstep",
+      "agent_id": "codex",
+      "task_id": "1305",
+      "tool_steps": 19,
+      "input_sha256": "bbb86f43cdf3f4b301f755f88456fbd4eed7741d578e9819e79ed21f1ecb80ce",
+      "trace_sha256": "852883bfbc9f0c9fdb86248be73fc06a93e3221490a7e48194e17baf370e6b72",
+      "status": "invalid_json",
+      "model_rounds": 5,
+      "tool_calls": 7,
+      "reason": "no_parseable_final_JSON_no_repair",
+      "finished_at": "2026-10-20T05:27:36.817836+00:00",
+      "has_final_json": false,
+      "accepted": false
+    },
+    {
+      "record_id": "rawio-6e9757019dc8767f3cfc",
+      "benchmark": "dabstep",
+      "agent_id": "kimi_code",
+      "task_id": "1681",
+      "tool_steps": 24,
+      "input_sha256": "6e3ea6946a02d2f739ea32fa4940e29c6512d546e84f8567debe6a8729a0bb92",
+      "trace_sha256": "325d75164a53486f7521e3f9e7526556db056ba49ceeb7f3b2a0b0c59a1d2c08",
+      "status": "invalid_json",
+      "model_rounds": 7,
+      "tool_calls": 11,
+      "reason": "no_parseable_final_JSON_no_repair",
+      "finished_at": "2026-10-20T05:31:47.702399+00:00",
+      "has_final_json": false,
+      "accepted": false
+    },
+    {
+      "record_id": "rawio-e7c485f571630e650d08",
+      "benchmark": "dataagentbench",
+      "agent_id": "claude_code",
+      "task_id": "yelp__query2",
+      "tool_steps": 7,
+      "input_sha256": "dc32480792e2acfdf0b9216148fc8137b4fe7328bf3643e411c2935cf4fe8276",
+      "trace_sha256": "e399849afb0150b3dbeec079ee9d1d868d94c3a7a67e75210c1c228b92430e43",
+      "status": "mechanically_passed",
+      "model_rounds": 2,
+      "tool_calls": 2,
+      "finished_at": "2026-10-20T05:31:25.995047+00:00",
+      "has_final_json": true,
+      "accepted": true,
+      "acceptance": {
+        "passed": true,
+        "errors": [],
+        "acceptance_standard": "codetracer-detailed-compatible-v1",
+        "evidence_audit_affects_acceptance": false,
+        "semantic_correctness_evaluated": false,
+        "output_modified": false
+      },
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00019",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00015",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00016",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00008",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00011",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00012",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00016",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00008",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00011",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00012",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00016",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "T0002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00008",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00016",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      }
+    },
+    {
+      "record_id": "rawio-28b2f965e92b9d64d640",
+      "benchmark": "dataagentbench",
+      "agent_id": "claude_code",
+      "task_id": "GITHUB_REPOS__query1",
+      "tool_steps": 14,
+      "input_sha256": "926054220732aa78294279c12f3997c994cbb941367522f518d0effbe03513b2",
+      "trace_sha256": "e66a26ae32aff96b3e91f88c0cc3cc2aaa95cda30ee80aa0006d2c0919a2a3d7",
+      "status": "mechanically_passed",
+      "model_rounds": 5,
+      "tool_calls": 6,
+      "finished_at": "2026-10-20T05:33:06.437613+00:00",
+      "has_final_json": true,
+      "accepted": true,
+      "acceptance": {
+        "passed": true,
+        "errors": [],
+        "acceptance_standard": "codetracer-detailed-compatible-v1",
+        "evidence_audit_affects_acceptance": false,
+        "semantic_correctness_evaluated": false,
+        "output_modified": false
+      },
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0003",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00042",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00043",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00039",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00038",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00039",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00033",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00023",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00030",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00033",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00036",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00038",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00039",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "T0002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00032",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00033",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00042",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "T0003",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00042",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00043",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      }
+    },
+    {
+      "record_id": "rawio-ecb3a8772d271f6bc689",
+      "benchmark": "dataagentbench",
+      "agent_id": "claude_code",
+      "task_id": "agnews__query3",
+      "tool_steps": 21,
+      "input_sha256": "003488c9852e42c92d6682772b730b08535e2fe938870911c4873b77e4274d9f",
+      "trace_sha256": "c893074a4f0d61ae05778203154f1fa1cfe3deeb4c6c52a303ac4985dbbeffaa",
+      "status": "mechanically_passed",
+      "model_rounds": 4,
+      "tool_calls": 6,
+      "finished_at": "2026-10-20T05:33:14.167405+00:00",
+      "has_final_json": true,
+      "accepted": true,
+      "acceptance": {
+        "passed": true,
+        "errors": [],
+        "acceptance_standard": "codetracer-detailed-compatible-v1",
+        "evidence_audit_affects_acceptance": false,
+        "semantic_correctness_evaluated": false,
+        "output_modified": false
+      },
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0003",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00065",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00066",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00068",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00014",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00020",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00022",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00062",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00065",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00065",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00066",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00014",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00020",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00062",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00063",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00066",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00068",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "T0002",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00052",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00053",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00057",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      }
+    },
+    {
+      "record_id": "rawio-747fdd4b9b059ac3c74c",
+      "benchmark": "agenticdatabench",
+      "agent_id": "claude_code",
+      "task_id": "agriculture_28",
+      "tool_steps": 43,
+      "input_sha256": "073f11159364bbeeb82f8e462215a319b778a7c53824eb5371a1f331102816da",
+      "trace_sha256": "5dd64fa562a30ddbe2e7c47bc753fea652a7ba767a9ac16d03c555b4dbe336ac",
+      "status": "mechanically_passed",
+      "model_rounds": 3,
+      "tool_calls": 3,
+      "finished_at": "2026-10-20T05:35:46.553097+00:00",
+      "has_final_json": true,
+      "accepted": true,
+      "acceptance": {
+        "passed": true,
+        "errors": [],
+        "acceptance_standard": "codetracer-detailed-compatible-v1",
+        "evidence_audit_affects_acceptance": false,
+        "semantic_correctness_evaluated": false,
+        "output_modified": false
+      },
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00076",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00123",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00130",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00123",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00124",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00075",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 2,
+            "evidence_id": "E00076",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00117",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00123",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00130",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00075",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00076",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00123",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00130",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00123",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00124",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "E00126",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "E00127",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      }
+    },
+    {
+      "record_id": "rawio-5bc9d9c1b623a95007e1",
+      "benchmark": "agenticdatabench",
+      "agent_id": "codex",
+      "task_id": "agriculture_29",
+      "tool_steps": 64,
+      "input_sha256": "5a1600328918c969ee2e0d44254eebca0119f2d73baa8556a25c284b079c1557",
+      "trace_sha256": "91607a5db1462759ae2e3c15aa565945ac0bb24479992f8b8dd953a1bb9751f0",
+      "status": "mechanically_passed",
+      "model_rounds": 7,
+      "tool_calls": 7,
+      "finished_at": "2026-10-20T05:40:39.960667+00:00",
+      "has_final_json": true,
+      "accepted": true,
+      "acceptance": {
+        "passed": true,
+        "errors": [],
+        "acceptance_standard": "codetracer-detailed-compatible-v1",
+        "evidence_audit_affects_acceptance": false,
+        "semantic_correctness_evaluated": false,
+        "output_modified": false
+      },
+      "reference_audit": {
+        "errors": [],
+        "citation_checks": [
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 0,
+            "evidence_id": "E00221",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00215",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "root_cause_chain",
+            "index": 1,
+            "evidence_id": "E00221",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00215",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 0,
+            "evidence_id": "E00221",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00220",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "E00221",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 1,
+            "evidence_id": "FINAL0001",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "T0005",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00168",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00154",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00215",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 2,
+            "evidence_id": "E00221",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "E00070",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "E00071",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "E00094",
+            "exists": true,
+            "actually_read": true
+          },
+          {
+            "section": "critical_decision_points",
+            "index": 3,
+            "evidence_id": "E00105",
+            "exists": true,
+            "actually_read": true
+          }
+        ],
+        "affects_acceptance": false,
+        "semantic_entailment_verified": false
+      }
+    },
+    {
+      "record_id": "rawio-4b9fd6b15e4b554779db",
+      "benchmark": "agenticdatabench",
+      "agent_id": "codex",
+      "task_id": "agriculture_03",
+      "tool_steps": 11,
+      "input_sha256": "ae5170ebacd58ff2c676adffc0796d6aee832ceeaf469cf14c301e3e3ffaa12f",
+      "trace_sha256": "cc27515d4af9c6681a14bb073b43eefff40dd1709848f923da9aceb51afa6baf",
+      "status": "invalid_json",
+      "model_rounds": 4,
+      "tool_calls": 5,
+      "reason": "no_parseable_final_JSON_no_repair",
+      "finished_at": "2026-10-20T05:38:11.659599+00:00",
+      "has_final_json": false,
+      "accepted": false
+    }
+  ],
+  "accepted": 6,
+  "final_json": 6,
+  "status_counts": {
+    "invalid_json": 4,
+    "mechanically_passed": 6
+  },
+  "model_rounds": 44,
+  "tool_calls": 57,
+  "service_failures": 0,
+  "usage": {
+    "prompt_tokens": 2431564,
+    "completion_tokens": 233614,
+    "total_tokens": 2665178
+  },
+  "prompt_version": "v1-no-repeat-and-unlocalized-candidate",
+  "prompt_unchanged": true,
+  "source_and_guarded_files_unchanged": 184,
+  "semantic_accuracy_measured": false,
+  "official_evaluations_sent": false,
+  "benchmark_reexecutions": 0,
+  "automatic_retries": 0,
+  "output_repairs": 0
+}

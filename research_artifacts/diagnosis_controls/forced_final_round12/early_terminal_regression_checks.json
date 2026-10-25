@@ -1,0 +1,42 @@
+[
+  {
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "task_id": "1273",
+    "diagnosis_byte_identical": true,
+    "sha256": "2e97c33b745ea7d6fdaec0c16bbacace3ac4f76c75aa00842b014493174e0ab0",
+    "prior_author_review_status_unchanged": "needs_revision",
+    "new_independent_model_output_generated": false
+  },
+  {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "task_id": "1464",
+    "diagnosis_byte_identical": true,
+    "sha256": "7892759ddcd68afa36d2b58d00ebbdfc98e913135d75778d73973991dfe4b440",
+    "prior_author_review_status_unchanged": "needs_revision",
+    "new_independent_model_output_generated": false
+  },
+  {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "task_id": "agriculture_22",
+    "diagnosis_byte_identical": true,
+    "sha256": "f5cb7da642d0ff792feecd043e68151466b588202952cea606f8e2e317ec4b8d",
+    "prior_author_review_status_unchanged": "usable_with_limits",
+    "new_independent_model_output_generated": false
+  },
+  {
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "task_id": "civic_unstructured__query6",
+    "diagnosis_byte_identical": true,
+    "sha256": "f24b19ae43e77469c6cbe7886d963c30f25b7844b6ae4b81bf614740b6b585eb",
+    "prior_author_review_status_unchanged": "needs_revision",
+    "new_independent_model_output_generated": false
+  },
+  {
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "task_id": "stockmarket__query1",
+    "diagnosis_byte_identical": true,
+    "sha256": "b02c5f44425327e6aa8a6e7b9ac622b7d48863b0fc22f9cc8506753d537f0a68",
+    "prior_author_review_status_unchanged": "usable_with_limits",
+    "new_independent_model_output_generated": false
+  }
+]

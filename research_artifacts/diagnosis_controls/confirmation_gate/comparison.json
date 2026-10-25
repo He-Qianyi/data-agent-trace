@@ -1,0 +1,90 @@
+[
+  {
+    "task_id": "2697",
+    "record_id": "rawio-b4aa2e6b636cb50f6643",
+    "before_status": "recovery_failed",
+    "after_status": "mechanically_passed",
+    "before_final_json": false,
+    "after_final_json": true,
+    "before_strict_pass": false,
+    "after_strict_pass": true,
+    "paired_semantic_comparison_available": false
+  },
+  {
+    "task_id": "1273",
+    "record_id": "rawio-cf33ea88ec15a7b4bfbb",
+    "before_status": "mechanically_passed",
+    "after_status": "mechanically_passed",
+    "before_final_json": true,
+    "after_final_json": true,
+    "before_strict_pass": true,
+    "after_strict_pass": true,
+    "paired_semantic_comparison_available": true
+  },
+  {
+    "task_id": "1464",
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "before_status": "mechanically_passed",
+    "after_status": "mechanically_passed",
+    "before_final_json": true,
+    "after_final_json": true,
+    "before_strict_pass": true,
+    "after_strict_pass": true,
+    "paired_semantic_comparison_available": true
+  },
+  {
+    "task_id": "agriculture_20",
+    "record_id": "rawio-a5173d9e30dba77ca1c5",
+    "before_status": "recovery_failed",
+    "after_status": "mechanically_passed",
+    "before_final_json": false,
+    "after_final_json": true,
+    "before_strict_pass": false,
+    "after_strict_pass": true,
+    "paired_semantic_comparison_available": false
+  },
+  {
+    "task_id": "agriculture_22",
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "before_status": "mechanically_failed",
+    "after_status": "mechanically_passed",
+    "before_final_json": true,
+    "after_final_json": true,
+    "before_strict_pass": false,
+    "after_strict_pass": true,
+    "paired_semantic_comparison_available": true
+  },
+  {
+    "task_id": "agriculture_16",
+    "record_id": "rawio-bcb49010f78ccd4af446",
+    "before_status": "mechanically_failed",
+    "after_status": "invalid_json",
+    "before_final_json": true,
+    "after_final_json": false,
+    "before_strict_pass": false,
+    "after_strict_pass": false,
+    "paired_semantic_comparison_available": false
+  },
+  {
+    "task_id": "civic_unstructured__query6",
+    "record_id": "rawio-ecb8d458d5899c6dfd80",
+    "before_status": "mechanically_passed",
+    "after_status": "mechanically_failed",
+    "before_final_json": true,
+    "after_final_json": true,
+    "before_strict_pass": true,
+    "after_strict_pass": false,
+    "paired_semantic_comparison_available": true
+  },
+  {
+    "task_id": "stockmarket__query1",
+    "record_id": "rawio-ea688bde06c727ee43b1",
+    "before_status": "mechanically_passed",
+    "after_status": "mechanically_failed",
+    "before_final_json": true,
+    "after_final_json": true,
+    "before_strict_pass": true,
+    "after_strict_pass": false,
+    "paired_semantic_comparison_available": true
+  }
+]

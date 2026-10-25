@@ -1,0 +1,13 @@
+{
+  "task_id": "agriculture_16",
+  "status": "round_budget_exhausted",
+  "model_rounds": 24,
+  "tool_calls": 50,
+  "new_model_requests": 12,
+  "reused_model_rounds": 12,
+  "reused_tool_calls": 26,
+  "acceptance_standard": "codetracer-detailed-compatible-v1",
+  "active_round": 24,
+  "reason": "no_final_diagnosis_within24_rounds",
+  "finished_at": "2026-10-18T14:45:57.248740+00:00"
+}
