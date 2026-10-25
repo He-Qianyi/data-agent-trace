@@ -1,83 +1,106 @@
 # Data Agent Trace
 
-**Understanding how data agents perform analytical tasks, where their decisions go wrong, and what the execution evidence actually supports.**
+**Evidence-grounded Trace Processor and Trace Diagnosis for studying analytical agent behavior.**
 
-Undergraduate research by **He Qianyi**, Computer Science, National University of Singapore. Ongoing since September 2026.
+Research by **He Qianyi**, Computer Science, National University of Singapore; ongoing since September 2026.
 
-This project studies analytical behavior through two connected stages: **Trace Processor** reconstructs a workflow from heterogeneous execution records; **Trace Diagnosis** uses the recorded evidence to examine critical decisions, recovery, and supported explanations of failure.
+This repository releases the available research implementations, configurations, prompts, dependency closure, and reproduction instructions. It includes a **genuine recorded small sample** and an offline evaluator. The release preserves known failures and explicitly records unavailable evidence and evaluation assets.
 
-## Research question
-
-A final benchmark score says little about how an analysis unfolded. Which task requirements did the agent pursue? What data operations did it submit? What did the tools actually return? Did an apparent error persist or get corrected later? The project develops representations and evidence interfaces for investigating these questions across benchmark, agent-framework, and model combinations.
+## Research workflow
 
 ```mermaid
 flowchart LR
-    A[Raw execution traces] --> B[Trace Processor]
-    B --> C[Recorded facts and semantic annotations]
-    C --> D[Evidence index and original sources]
-    D --> E[Trace Diagnosis]
-    E --> F[Critical decisions and supported explanations]
+    A[Complete native trace recordings] --> B[A: Recorded fact extraction]
+    B --> C[B: Task requirements]
+    C --> D[C: Data operation semantics]
+    D --> E[D: Evidence preserving merge]
+    E --> F[Read only evidence retrieval]
+    F --> G[Trace Diagnosis]
+    G --> H[Separate structural and evidence checks]
 ```
 
-## Trace Processor
+**Trace Processor** reconstructs analytical workflows, connects task requirements with data operations, and separates recorded facts from semantic interpretations. **Trace Diagnosis** examines critical decisions, later recovery, competing explanations, and evidence-supported consequences. The project collects traces across benchmark, agent-framework, and model combinations to support these stages.
 
-- Reconstructs analytical workflows while preserving original calls, code, observations, and source references.
-- Connects task requirements with data operations through evidence-grounded semantic annotations.
-- Separates recorded execution facts from interpretations of intent, and code definitions from observed results.
-- Applies conservative static extraction and exact-quotation checks, retaining ambiguity and unknown values when the source is insufficient.
+## Release status
 
-## Trace Diagnosis
+| Component | Available here | Validation and scope |
+| --- | --- | --- |
+| Trace Processor | Complete v5 fact extraction, earlier fact versions needed for historical compatibility, semantic annotation runner, contracts, merge, verification, downstream export | Offline original regression tests and a full mocked A/B/C/D integration test |
+| Trace Diagnosis | Evidence index, original native retrieval tools/client, current acceptance validator, original 12-round and 24-round continuation runners, a fresh-run release adapter | Offline mocked native-tool loop; current public release did not make fresh model requests |
+| Configuration and prompts | Frozen processor prompts, schema, runtime profile; diagnosis prompt/schema; current structural policy; historical scheduler profile | Local path spellings are replaced in public copies; source and release hashes are recorded |
+| Real small sample | Original task, recorded steps S0004-S0006, processor annotations, original diagnosis, existing author review | A public excerpt, not a complete native recording or independent gold dataset |
+| Evaluation | Strict schema, current acceptance, evidence-ID coverage, exact quotations, source hashes, static extraction | Semantic/root-cause accuracy is unavailable and remains `null` |
 
-- Examines material analytical decisions in the context of the original task and recorded outputs.
-- Checks later recovery and competing explanations before attributing final impact to an earlier error.
-- Constructs causal explanations only when the evidence supports the links; a local error alone does not establish a final root cause.
-- Produces structured reports with critical decision points, supported root-cause chains, correction strategies, stage summaries, and limitations.
+See [reproduction instructions](docs/reproduction.md), [evaluation protocol](docs/evaluation.md), [data scope](docs/data-release.md), and [remaining limitations](docs/availability.md).
 
-## Contributions and current outputs
+## Quick start without a model API
 
-I designed and implemented the trace-processing and diagnostic research workflow, assembled heterogeneous execution records, and developed the evidence and validation mechanisms that support inspectable failure studies. Current outputs include structured workflow representations, a curated research corpus, and diagnostic reports linked to original evidence.
-
-This repository is a **curated research showcase**. It contains reusable modules from the working project and a small, reproducible demonstration. It is not the complete collection harness or a release of the full experimental corpus. See [scope and methodology](docs/methodology.md) and [source provenance](docs/source-provenance.json).
-
-## Try the offline demonstration
-
-Requires Python 3.10 or later. From the repository root:
+Python 3.10 or later on Linux or macOS is required. The original runtime uses POSIX file locking. From the repository root:
 
 ```bash
 python -m pip install -e .
-python -m data_agent_trace.demo --output demo_output
+python -m reproduction.evaluate \
+  --sample samples/real/agriculture_22_claude \
+  --output reproduction_output/real_sample_evaluation
 python -m unittest discover -s tests -v
 ```
 
-The demo uses an **entirely synthetic** trace about a missing exclusion filter. It runs the actual static extractor and exact-citation binder, then validates a **human-authored illustrative diagnosis** against the diagnostic schema. It makes no model requests and never executes the recorded analysis code.
+Use a new output directory for each evaluation. The offline command does not execute recorded analysis code or call a model.
 
-Outputs:
+The real sample has a useful known boundary: the actual saved diagnosis contains an extra `root_cause_chain_note` field. The strict declared schema rejects it; the current CodeTracer-compatible structural acceptance policy accepts it. Both outcomes are reported unchanged. Passing either mechanical policy does not establish diagnosis correctness.
 
-- `processor_output.json`: extracted code facts, requirement evidence, and an explicitly labelled illustrative semantic annotation.
-- `diagnosis_output.json`: the illustrative diagnosis and exact citations.
-- `report.md`: a readable walkthrough with evidence references.
+## Full execution on your complete recordings
 
-The demo is an interface example, not an experiment measuring diagnostic accuracy. The LLM runtime and real-trace results remain in the working research project.
+The public excerpt intentionally omits local workspace metadata and raw input-row previews. To run the complete native-recording pipeline, supply your own eligible recording manifest and original source files. No artificial complete recording is substituted for the excerpt.
+
+```bash
+# A: verify and extract facts from eligible original recordings; no model calls
+python -m pipeline.stages.trace_processor.fact_layer_v5 \
+  --manifest /path/to/eligible_recordings.jsonl \
+  --output reproduction_output/facts
+
+# B/C/D: fresh annotation and evidence-preserving merge; live API access required
+python -m reproduction.processor \
+  --facts reproduction_output/facts \
+  --output reproduction_output/processor \
+  --env-file /path/to/local-provider.env \
+  --max-requests 10 --allow-network
+
+# Verify the resulting source-bound bundle; no model calls
+python -m pipeline.stages.trace_processor.merge_layer.verify \
+  reproduction_output/processor/final
+
+# Diagnosis: actual read-only retrieval tools and native model continuation
+python -m reproduction.diagnose \
+  --bundle reproduction_output/processor/final \
+  --output reproduction_output/diagnosis \
+  --env-file /path/to/local-provider.env --allow-network
+```
+
+The supplied historical provider profile uses SoCLaaS `x-test-2`, expected to return `deepseek-v4.1-flash-1017`. You must have your own authorized access. No credential or model access is provided by this repository, and another provider/model is not silently substituted. Live replay with this profile was not revalidated during this release. Details and exact fresh-run versus historical-run differences are in [the run guide](docs/reproduction.md).
 
 ## Repository map
 
-| Location | Purpose |
+| Path | Contents |
 | --- | --- |
-| `src/data_agent_trace/fact_layer/` | Original conservative static-extraction modules |
-| `src/data_agent_trace/semantic/` | Original requirement/operation contracts, evidence views, citation checks |
-| `src/data_agent_trace/diagnosis/` | Core diagnostic instructions and JSON contract |
-| `src/data_agent_trace/examples/` | Synthetic trace and illustrative annotations |
-| `tests/` | Connection-resolution regression tests and evidence/demo checks |
-| `docs/` | Methodology, attribution, and source provenance |
+| `pipeline/stages/trace_processor/` | Full research fact, semantic, merge, and verification implementations |
+| `pipeline/stages/evidence_builder/` | Original evidence index and read-only retrieval |
+| `pipeline/stages/diagnosis/` | Current structural acceptance policy |
+| `research_runners/` | Original batch/scheduler, native diagnosis, continuation, reporting and audit code |
+| `scripts/` | Source-verifier, provider, downstream storage and reader dependencies |
+| `configs/` | Current/frozen method contracts and release profiles |
+| `reproduction/` | Portable fresh-run adapters and real-sample evaluation |
+| `samples/real/` | Original recorded public excerpt and original outputs |
+| `tests/` | Original unit tests and clearly labelled mocked integration tests |
+| `docs/research-source-manifest.json` | Research source, source hash, release hash, and disclosed export edits |
+| `src/data_agent_trace/` | Earlier selected-module API and explicitly synthetic tutorial demo, retained for compatibility |
 
-## Research tools
+## Reproducibility boundaries
 
-Python, SQL, LLM APIs, DuckDB, and JSON Schema are used in the broader research workflow. This selected offline package requires only Python and `jsonschema`; DuckDB and live LLM access are not needed for the demo.
+This is a release of existing implementations and a real inspectable sample. It does not claim a finished paper evaluation, an independently labelled failure benchmark, completed baseline/ablation studies, or historical results regenerated from scratch. Model response histories and the full trace corpus are not all redistributed. The real author review is not independent gold.
 
-## Interpretation limits
+New release adapters are tested with explicit offline mocks. Those mock responses are unit-test fixtures, never research results. The public real diagnosis is copied byte-for-byte from the saved experiment, including its extra field.
 
-Static extraction does not prove that a statement executed. An exact quotation does not prove that an interpretation is correct. Structural validity does not establish causal or semantic accuracy. The system preserves these distinctions in its representations and research evaluation.
+## Attribution
 
-## Acknowledgements
-
-The diagnostic output organization draws on [CodeTracer](https://github.com/NJU-LINK/CodeTracer), adapted to analytical tasks and evidence-grounded workflow inspection. Benchmark and agent-framework projects used in the broader research are credited in [acknowledgements](docs/acknowledgements.md).
+The diagnostic output organization draws on [CodeTracer](https://github.com/NJU-LINK/CodeTracer) and its linked validation convention. The real sample uses a task from [AgenticDataBench](https://github.com/AgenticDataBench/AgenticDataBench); the upstream Apache-2.0 license is included beside the sample. See [attribution and source notes](docs/acknowledgements.md). No new project-wide license or publication acceptance is asserted by this release.

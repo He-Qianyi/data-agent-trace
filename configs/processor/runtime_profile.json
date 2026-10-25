@@ -1,0 +1,25 @@
+{
+  "schema_version": "stage-c-runtime-v1",
+  "stage": "C",
+  "provider": "SoCLaaS",
+  "model": "x-test-2",
+  "wire_protocol": "chat",
+  "max_tokens": 48000,
+  "thinking_token_budget": 16000,
+  "temperature": 0,
+  "response_format": {
+    "type": "json_object"
+  },
+  "timeout_seconds": 600,
+  "concurrency": 2,
+  "max_units_per_packet": 4,
+  "max_packet_bytes": 32000,
+  "automatic_retries": 0,
+  "repair_calls": 0,
+  "review_calls": 0,
+  "prompt_path": "outputs/trace_processor_frozen_v1_20261018/compiled_system_prompt.md",
+  "schema_path": "outputs/trace_processor_frozen_v1_20261018/operations.schema.json",
+  "configured_on_client_date": "2026-10-18",
+  "status": "frozen_v1_batch164",
+  "selected_on_client_date": "2026-10-18"
+}

@@ -1,0 +1,49 @@
+{
+  "version": "trace-processor-frozen-v1-20261018",
+  "new_generation": {
+    "B_prompt_sha256": "0f544f6bccf427b9e6c4970e492a6d86cbef54c7854ac4c98554e36eb37d35cf",
+    "C_prompt_sha256": "ff8a9d554dcd864c8034aa8373eedb02ff2dc4a4fc5cedd530635be6e2650942",
+    "runtime": {
+      "schema_version": "stage-c-runtime-v1",
+      "stage": "C",
+      "provider": "SoCLaaS",
+      "model": "x-test-2",
+      "wire_protocol": "chat",
+      "max_tokens": 48000,
+      "thinking_token_budget": 16000,
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "timeout_seconds": 600,
+      "concurrency": 2,
+      "max_units_per_packet": 4,
+      "max_packet_bytes": 32000,
+      "automatic_retries": 0,
+      "repair_calls": 0,
+      "review_calls": 0,
+      "prompt_path": "outputs/trace_processor_frozen_v1_20261018/compiled_system_prompt.md",
+      "schema_path": "outputs/trace_processor_frozen_v1_20261018/operations.schema.json",
+      "configured_on_client_date": "2026-10-18",
+      "status": "frozen_v1_batch164",
+      "selected_on_client_date": "2026-10-18"
+    }
+  },
+  "reuse_policy": "Prefer structurally complete native units matching the frozen prompt; otherwise reuse compatible historical native units with original prompt/model provenance. Bind to identical fact evidence and identical task-requirement ID semantics. Never rank by benchmark score or semantic correctness.",
+  "reused_packet_projection": "Select unchanged native units from original complete response; archive both. Not a model rerun, quotation repair, or new annotation.",
+  "failure_policy": "No automatic retries/repair/review. Preserve failures and missing coverage explicitly. Continue other traces unless provider/service identity failure.",
+  "scope": {
+    "traces": 164,
+    "fact_steps": 4208,
+    "annotation_units": 4259
+  },
+  "old_batch_remains_paused": true,
+  "official_evaluation_not_sent": true,
+  "existing_D_ten_reused_byte_for_byte": true,
+  "existing_authorized_review_replayed_without_new_edit": true,
+  "historical_C_records_reused": 19,
+  "historical_C_units_reused": 480,
+  "no_new_calls_for_complete_compatible_units": true,
+  "no_new_calls_for_original_D_ten": true,
+  "incomplete_output_policy": "Missing/failed annotations remain explicit; all recorded facts and raw unsuccessful responses retained. No synthetic annotation to claim completion."
+}

@@ -1,0 +1,3250 @@
+{
+  "record_id": "rawio-de63c9937aeb17c70d6d",
+  "data_origin": "real_recorded_excerpt",
+  "new_model_calls": 0,
+  "recorded_code_executed": false,
+  "sample_file_hashes": "passed",
+  "recorded_diagnosis_bytes": "unchanged",
+  "coverage": {
+    "published_step_ids": [
+      "S0004",
+      "S0005",
+      "S0006"
+    ],
+    "original_trace_step_ids": [
+      "S0001",
+      "S0002",
+      "S0003",
+      "S0004",
+      "S0005",
+      "S0006"
+    ],
+    "full_native_recording_available": false,
+    "evidence_text_transformed": false
+  },
+  "strict_declared_schema": {
+    "passed": false,
+    "errors": [
+      {
+        "path": "",
+        "validator": "additionalProperties",
+        "message": "Additional properties are not allowed ('root_cause_chain_note' was unexpected)"
+      }
+    ]
+  },
+  "current_structural_acceptance": {
+    "passed": true,
+    "errors": [],
+    "acceptance_standard": "codetracer-detailed-compatible-v1",
+    "evidence_audit_affects_acceptance": false,
+    "semantic_correctness_evaluated": false,
+    "output_modified": false
+  },
+  "diagnosis_evidence_references": {
+    "total": 4,
+    "published": 4,
+    "checks": [
+      {
+        "section": "critical_decision_points",
+        "index": 0,
+        "evidence_id": "T0005",
+        "published": true
+      },
+      {
+        "section": "critical_decision_points",
+        "index": 0,
+        "evidence_id": "E00014",
+        "published": true
+      },
+      {
+        "section": "critical_decision_points",
+        "index": 0,
+        "evidence_id": "E00015",
+        "published": true
+      },
+      {
+        "section": "critical_decision_points",
+        "index": 0,
+        "evidence_id": "E00019",
+        "published": true
+      }
+    ],
+    "presence_does_not_prove_entailment": true,
+    "actual_model_read_audit_replayed": false
+  },
+  "processor_literal_citations": {
+    "counts": {
+      "exact_unique": 109
+    },
+    "checks": [
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/task_summary/evidence/0",
+        "evidence_id": "T0005",
+        "quote": "Using the provided crop recommendation dataset containing soil properties and seasonal weather features",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 135,
+            "end": 238
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 263,
+            "end": 366
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/task_summary/evidence/1",
+        "evidence_id": "T0005",
+        "quote": "calculate derived features including the annual temperature range (difference between maximum and minimum temperatures across all seasons) and total annual precipitation (sum of precipitation across all seasons)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 246,
+            "end": 457
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 374,
+            "end": 585
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/task_summary/evidence/2",
+        "evidence_id": "T0005",
+        "quote": "Encode categorical features such as soil color using label encoding.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 459,
+            "end": 527
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 587,
+            "end": 655
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/task_summary/evidence/3",
+        "evidence_id": "T0005",
+        "quote": "Then train a multi-class random forest classifier using 5-fold stratified cross-validation to predict the best crop type.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 528,
+            "end": 649
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 656,
+            "end": 777
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/task_summary/evidence/4",
+        "evidence_id": "T0005",
+        "quote": "Calculate the F1 score for each crop category",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 650,
+            "end": 695
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 778,
+            "end": 823
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/task_summary/evidence/5",
+        "evidence_id": "T0005",
+        "quote": "Save the results to output.csv.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 860,
+            "end": 891
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 988,
+            "end": 1019
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/task_summary/evidence/6",
+        "evidence_id": "T0010",
+        "quote": "verify their names, columns/format, rows, and values.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 23,
+            "end": 76
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1354,
+            "end": 1407
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/0/evidence/0",
+        "evidence_id": "T0005",
+        "quote": "An international agricultural research institution aims to develop a crop recommendation system based on soil and climate suitability.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 134
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 128,
+            "end": 262
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/0/evidence/1",
+        "evidence_id": "T0005",
+        "quote": "to predict the best crop type.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 619,
+            "end": 649
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 747,
+            "end": 777
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/1/evidence/0",
+        "evidence_id": "T0005",
+        "quote": "Using the provided crop recommendation dataset containing soil properties and seasonal weather features",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 135,
+            "end": 238
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 263,
+            "end": 366
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/2/evidence/0",
+        "evidence_id": "T0005",
+        "quote": "calculate derived features including the annual temperature range (difference between maximum and minimum temperatures across all seasons)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 246,
+            "end": 384
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 374,
+            "end": 512
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/3/evidence/0",
+        "evidence_id": "T0005",
+        "quote": "total annual precipitation (sum of precipitation across all seasons)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 389,
+            "end": 457
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 517,
+            "end": 585
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/4/evidence/0",
+        "evidence_id": "T0005",
+        "quote": "Encode categorical features such as soil color using label encoding.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 459,
+            "end": 527
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 587,
+            "end": 655
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/5/evidence/0",
+        "evidence_id": "T0005",
+        "quote": "Then train a multi-class random forest classifier using 5-fold stratified cross-validation to predict the best crop type.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 528,
+            "end": 649
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 656,
+            "end": 777
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/6/evidence/0",
+        "evidence_id": "T0005",
+        "quote": "Calculate the F1 score for each crop category",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 650,
+            "end": 695
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 778,
+            "end": 823
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/6/evidence/1",
+        "evidence_id": "T0005",
+        "quote": "the F1 score of each category from cross-validation",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 806,
+            "end": 857
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 934,
+            "end": 985
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/7/evidence/0",
+        "evidence_id": "T0005",
+        "quote": "output a pandas data frame containing two columns: 'crop_class' (listing the crop labels) and 'f1_score' (the F1 score of each category from cross-validation).",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 700,
+            "end": 859
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 828,
+            "end": 987
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/8/evidence/0",
+        "evidence_id": "T0005",
+        "quote": "Save the results to output.csv.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 860,
+            "end": 891
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 988,
+            "end": 1019
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/9/evidence/0",
+        "evidence_id": "T0006",
+        "quote": "The domain data files are available in the current working directory using the",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 78
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1021,
+            "end": 1099
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/9/evidence/1",
+        "evidence_id": "T0007",
+        "quote": "relative paths listed in the task. Work directly in this directory.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 67
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1100,
+            "end": 1167
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/10/evidence/0",
+        "evidence_id": "T0008",
+        "quote": "the local benchmark data; do not use network access or external data.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 69
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1177,
+            "end": 1246
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/11/evidence/0",
+        "evidence_id": "T0008",
+        "quote": "Execute",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 70,
+            "end": 77
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1247,
+            "end": 1254
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/11/evidence/1",
+        "evidence_id": "T0009",
+        "quote": "the analysis, write the required output file(s) (output.csv) in the current",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 75
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1255,
+            "end": 1330
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/12/evidence/0",
+        "evidence_id": "T0010",
+        "quote": "verify their names, columns/format, rows, and values.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 23,
+            "end": 76
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1354,
+            "end": 1407
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/requirements/13/evidence/0",
+        "evidence_id": "T0011",
+        "quote": "Do not merely describe a solution: create the files before finishing.",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 69
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1408,
+            "end": 1477
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/ambiguities/0/evidence/0",
+        "evidence_id": "T0005",
+        "quote": "using 5-fold stratified cross-validation",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 578,
+            "end": 618
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 706,
+            "end": 746
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/ambiguities/0/evidence/1",
+        "evidence_id": "T0005",
+        "quote": "Calculate the F1 score for each crop category",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 650,
+            "end": 695
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 778,
+            "end": 823
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/task/ambiguities/0/evidence/2",
+        "evidence_id": "T0005",
+        "quote": "the F1 score of each category from cross-validation",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 806,
+            "end": 857
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 934,
+            "end": 985
+          }
+        ],
+        "fact_pointer": "/task/instruction",
+        "original_source_ref": {
+          "source_id": "S0002",
+          "json_pointer": "",
+          "representation": "text"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/0/evidence/0",
+        "evidence_id": "E00011",
+        "quote": "df = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 33,
+            "end": 121
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 33,
+            "end": 121
+          }
+        ],
+        "fact_pointer": "/steps/3/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 4,
+          "json_pointer": "/outgoing_anthropic_response/content/0/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/0/evidence/1",
+        "evidence_id": "E00011",
+        "quote": "print('Shape:', df.shape)\nprint('Columns:', df.columns.tolist())",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 122,
+            "end": 186
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 122,
+            "end": 186
+          }
+        ],
+        "fact_pointer": "/steps/3/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 4,
+          "json_pointer": "/outgoing_anthropic_response/content/0/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/0/details/0/evidence/0",
+        "evidence_id": "E00011",
+        "quote": "df = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 33,
+            "end": 121
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 33,
+            "end": 121
+          }
+        ],
+        "fact_pointer": "/steps/3/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 4,
+          "json_pointer": "/outgoing_anthropic_response/content/0/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/0/details/1/evidence/0",
+        "evidence_id": "E00011",
+        "quote": "print('Unique crops:', df['label'].unique())",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 195,
+            "end": 239
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 195,
+            "end": 239
+          }
+        ],
+        "fact_pointer": "/steps/3/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 4,
+          "json_pointer": "/outgoing_anthropic_response/content/0/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/0/details/1/evidence/1",
+        "evidence_id": "E00011",
+        "quote": "print('Missing values:')\nprint(df.isnull().sum())",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 356,
+            "end": 405
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 356,
+            "end": 405
+          }
+        ],
+        "fact_pointer": "/steps/3/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 4,
+          "json_pointer": "/outgoing_anthropic_response/content/0/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/0/details/1/evidence/2",
+        "evidence_id": "E00011",
+        "quote": "print('Soil color unique:', df['Soilcolor'].unique())",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 414,
+            "end": 467
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 414,
+            "end": 467
+          }
+        ],
+        "fact_pointer": "/steps/3/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 4,
+          "json_pointer": "/outgoing_anthropic_response/content/0/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/0/requirement_links/0/evidence/0",
+        "evidence_id": "E00011",
+        "quote": "df = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 33,
+            "end": 121
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 33,
+            "end": 121
+          }
+        ],
+        "fact_pointer": "/steps/3/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 4,
+          "json_pointer": "/outgoing_anthropic_response/content/0/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/1/evidence/0",
+        "evidence_id": "E00012",
+        "quote": "Shape: (3867, 29)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 17
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 17
+          }
+        ],
+        "fact_pointer": "/steps/3/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 41,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/1/evidence/1",
+        "evidence_id": "E00012",
+        "quote": "Unique crops: ['Barley' 'Bean' 'Dagussa' 'Fallow' 'Maize' 'Niger seed' 'Pea' 'Potato'",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 360,
+            "end": 445
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 360,
+            "end": 445
+          }
+        ],
+        "fact_pointer": "/steps/3/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 41,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/1/evidence/2",
+        "evidence_id": "E00012",
+        "quote": "Name: count, dtype: int64",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 739,
+            "end": 764
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 739,
+            "end": 764
+          }
+        ],
+        "fact_pointer": "/steps/3/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 41,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/1/details/0/evidence/0",
+        "evidence_id": "E00012",
+        "quote": "Shape: (3867, 29)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 17
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 17
+          }
+        ],
+        "fact_pointer": "/steps/3/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 41,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/1/details/1/evidence/0",
+        "evidence_id": "E00012",
+        "quote": "Unique crops: ['Barley' 'Bean' 'Dagussa' 'Fallow' 'Maize' 'Niger seed' 'Pea' 'Potato'",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 360,
+            "end": 445
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 360,
+            "end": 445
+          }
+        ],
+        "fact_pointer": "/steps/3/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 41,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/1/details/2/evidence/0",
+        "evidence_id": "E00012",
+        "quote": "Soil color unique: ['Yellowish brown' 'brown' 'red' 'gray' 'black' 'Reddish brown'",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2157,
+            "end": 2239
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2157,
+            "end": 2239
+          }
+        ],
+        "fact_pointer": "/steps/3/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 41,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/1/details/3/evidence/0",
+        "evidence_id": "E00012",
+        "quote": "Name: count, dtype: int64",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 739,
+            "end": 764
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 739,
+            "end": 764
+          }
+        ],
+        "fact_pointer": "/steps/3/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 41,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/1/details/3/evidence/1",
+        "evidence_id": "E00012",
+        "quote": "Missing values:",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1547,
+            "end": 1562
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1547,
+            "end": 1562
+          }
+        ],
+        "fact_pointer": "/steps/3/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 41,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/1/requirement_links/0/evidence/0",
+        "evidence_id": "E00012",
+        "quote": "Shape: (3867, 29)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 17
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 17
+          }
+        ],
+        "fact_pointer": "/steps/3/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 41,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/0/operations/1/requirement_links/1/evidence/0",
+        "evidence_id": "E00012",
+        "quote": "Soil color unique: ['Yellowish brown' 'brown' 'red' 'gray' 'black' 'Reddish brown'",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2157,
+            "end": 2239
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2157,
+            "end": 2239
+          }
+        ],
+        "fact_pointer": "/steps/3/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 41,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "df = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 264,
+            "end": 352
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 264,
+            "end": 352
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/evidence/1",
+        "evidence_id": "E00014",
+        "quote": "df['annual_temp_range'] = df[[f'T2M_MAX-{s}' for s in seasons]].max(axis=1) - df[[f'T2M_MIN-{s}' for s in seasons]].min(axis=1)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 629,
+            "end": 756
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 629,
+            "end": 756
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/evidence/2",
+        "evidence_id": "E00014",
+        "quote": "df['total_annual_precipitation'] = df[[f'PRECTOTCORR-{s}' for s in seasons]].sum(axis=1)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 827,
+            "end": 915
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 827,
+            "end": 915
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/evidence/3",
+        "evidence_id": "E00014",
+        "quote": "categorical_cols = ['Soilcolor']\nle = LabelEncoder()\nfor col in categorical_cols:\n    df[col + '_encoded'] = le.fit_transform(df[col])",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1392,
+            "end": 1526
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1392,
+            "end": 1526
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/evidence/4",
+        "evidence_id": "E00014",
+        "quote": "feature_cols = [col for col in df.columns if col not in ['label', 'Soilcolor']]\ntarget_col = 'label'",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1832,
+            "end": 1932
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1832,
+            "end": 1932
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/evidence/5",
+        "evidence_id": "E00014",
+        "quote": "cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2413,
+            "end": 2476
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2413,
+            "end": 2476
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/evidence/6",
+        "evidence_id": "E00014",
+        "quote": "rf = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2712,
+            "end": 2785
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2712,
+            "end": 2785
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/evidence/7",
+        "evidence_id": "E00014",
+        "quote": "fold_f1 = f1_score(y_test, y_pred, average=None, labels=range(len(crop_names)), zero_division=0)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2852,
+            "end": 2948
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2852,
+            "end": 2948
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/evidence/8",
+        "evidence_id": "E00014",
+        "quote": "mean_f1 = np.mean(f1_values)\n    results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 3513,
+            "end": 3613
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 3513,
+            "end": 3613
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/evidence/9",
+        "evidence_id": "E00014",
+        "quote": "results_df.to_csv('output.csv', index=False)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 3883,
+            "end": 3927
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 3883,
+            "end": 3927
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/0/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "df = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 264,
+            "end": 352
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 264,
+            "end": 352
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/0/evidence/1",
+        "evidence_id": "E00014",
+        "quote": "seasons = ['W', 'Sp', 'Su', 'Au']",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 594,
+            "end": 627
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 594,
+            "end": 627
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/1/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "df['annual_temp_range'] = df[[f'T2M_MAX-{s}' for s in seasons]].max(axis=1) - df[[f'T2M_MIN-{s}' for s in seasons]].min(axis=1)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 629,
+            "end": 756
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 629,
+            "end": 756
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/2/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "df['total_annual_precipitation'] = df[[f'PRECTOTCORR-{s}' for s in seasons]].sum(axis=1)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 827,
+            "end": 915
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 827,
+            "end": 915
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/3/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "categorical_cols = ['Soilcolor']\nle = LabelEncoder()\nfor col in categorical_cols:\n    df[col + '_encoded'] = le.fit_transform(df[col])",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1392,
+            "end": 1526
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1392,
+            "end": 1526
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/4/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "feature_cols = [col for col in df.columns if col not in ['label', 'Soilcolor']]\ntarget_col = 'label'",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1832,
+            "end": 1932
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1832,
+            "end": 1932
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/4/evidence/1",
+        "evidence_id": "E00014",
+        "quote": "target_le = LabelEncoder()\ny_encoded = target_le.fit_transform(y)\ncrop_names = target_le.classes_",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2012,
+            "end": 2109
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2012,
+            "end": 2109
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/4/evidence/2",
+        "evidence_id": "E00014",
+        "quote": "cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2413,
+            "end": 2476
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2413,
+            "end": 2476
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/4/evidence/3",
+        "evidence_id": "E00014",
+        "quote": "rf = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2712,
+            "end": 2785
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2712,
+            "end": 2785
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/5/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "for crop in crop_names:\n    f1_values = all_f1[crop]\n    mean_f1 = np.mean(f1_values)\n    results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 3456,
+            "end": 3613
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 3456,
+            "end": 3613
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/6/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "fold_f1 = f1_score(y_test, y_pred, average=None, labels=range(len(crop_names)), zero_division=0)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2852,
+            "end": 2948
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2852,
+            "end": 2948
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/6/evidence/1",
+        "evidence_id": "E00014",
+        "quote": "mean_f1 = np.mean(f1_values)\n    results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 3513,
+            "end": 3613
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 3513,
+            "end": 3613
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/7/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 3546,
+            "end": 3613
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 3546,
+            "end": 3613
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/details/7/evidence/1",
+        "evidence_id": "E00014",
+        "quote": "results_df.to_csv('output.csv', index=False)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 3883,
+            "end": 3927
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 3883,
+            "end": 3927
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/requirement_links/0/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "rf = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2712,
+            "end": 2785
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2712,
+            "end": 2785
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/requirement_links/1/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "df = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 264,
+            "end": 352
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 264,
+            "end": 352
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/requirement_links/2/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "df['annual_temp_range'] = df[[f'T2M_MAX-{s}' for s in seasons]].max(axis=1) - df[[f'T2M_MIN-{s}' for s in seasons]].min(axis=1)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 629,
+            "end": 756
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 629,
+            "end": 756
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/requirement_links/3/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "df['total_annual_precipitation'] = df[[f'PRECTOTCORR-{s}' for s in seasons]].sum(axis=1)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 827,
+            "end": 915
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 827,
+            "end": 915
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/requirement_links/4/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "categorical_cols = ['Soilcolor']\nle = LabelEncoder()\nfor col in categorical_cols:\n    df[col + '_encoded'] = le.fit_transform(df[col])",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1392,
+            "end": 1526
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1392,
+            "end": 1526
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/requirement_links/5/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2413,
+            "end": 2476
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2413,
+            "end": 2476
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/requirement_links/5/evidence/1",
+        "evidence_id": "E00014",
+        "quote": "rf = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2712,
+            "end": 2785
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2712,
+            "end": 2785
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/requirement_links/6/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "fold_f1 = f1_score(y_test, y_pred, average=None, labels=range(len(crop_names)), zero_division=0)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2852,
+            "end": 2948
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2852,
+            "end": 2948
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/requirement_links/6/evidence/1",
+        "evidence_id": "E00014",
+        "quote": "mean_f1 = np.mean(f1_values)\n    results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 3513,
+            "end": 3613
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 3513,
+            "end": 3613
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/requirement_links/7/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 3546,
+            "end": 3613
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 3546,
+            "end": 3613
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/requirement_links/7/evidence/1",
+        "evidence_id": "E00014",
+        "quote": "results_df.to_csv('output.csv', index=False)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 3883,
+            "end": 3927
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 3883,
+            "end": 3927
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/0/requirement_links/8/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "results_df.to_csv('output.csv', index=False)",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 3883,
+            "end": 3927
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 3883,
+            "end": 3927
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/1/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "verify = pd.read_csv('output.csv')\nprint(f\"Shape: {verify.shape}\")\nprint(f\"Columns: {verify.columns.tolist()}\")\nprint(verify.to_string(index=False))",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 4009,
+            "end": 4157
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 4009,
+            "end": 4157
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/1/details/0/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "verify = pd.read_csv('output.csv')",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 4009,
+            "end": 4043
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 4009,
+            "end": 4043
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/1/requirement_links/0/evidence/0",
+        "evidence_id": "E00014",
+        "quote": "verify = pd.read_csv('output.csv')\nprint(f\"Shape: {verify.shape}\")\nprint(f\"Columns: {verify.columns.tolist()}\")\nprint(verify.to_string(index=False))",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 4009,
+            "end": 4157
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 4009,
+            "end": 4157
+          }
+        ],
+        "fact_pointer": "/steps/4/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 5,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/evidence/0",
+        "evidence_id": "E00015",
+        "quote": "Derived features added:\n  annual_temp_range: mean=23.29, std=0.98\n  total_annual_precipitation: mean=24.86, std=6.65",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 116
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 116
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/evidence/1",
+        "evidence_id": "E00015",
+        "quote": "Features: 30\nTarget classes (12): ['Barley', 'Bean', 'Dagussa', 'Fallow', 'Maize', 'Niger seed', 'Pea', 'Potato', 'Red Pepper', 'Sorghum', 'Teff', 'Wheat']",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1477,
+            "end": 1632
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1477,
+            "end": 1632
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/evidence/2",
+        "evidence_id": "E00015",
+        "quote": "Fold 1: Macro F1 = 0.2357\nFold 2: Macro F1 = 0.2462\nFold 3: Macro F1 = 0.2119\nFold 4: Macro F1 = 0.2180\nFold 5: Macro F1 = 0.2335",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1633,
+            "end": 1762
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1633,
+            "end": 1762
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/evidence/3",
+        "evidence_id": "E00015",
+        "quote": "--- Final F1 Scores ---\ncrop_class  f1_score\n    Barley    0.4223\n      Bean    0.1516\n   Dagussa    0.1411\n    Fallow    0.0000\n     Maize    0.5630\nNiger seed    0.0000\n       Pea    0.1871\n    Potato    0.1238\nRed Pepper    0.0571\n   Sorghum    0.0446\n      Teff    0.6378\n     Wheat    0.4202",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1764,
+            "end": 2060
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1764,
+            "end": 2060
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/evidence/4",
+        "evidence_id": "E00015",
+        "quote": "Results saved to output.csv",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2062,
+            "end": 2089
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2062,
+            "end": 2089
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/evidence/5",
+        "evidence_id": "E00015",
+        "quote": "Shape: (12, 2)\nColumns: ['crop_class', 'f1_score']",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2112,
+            "end": 2162
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2112,
+            "end": 2162
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/details/0/evidence/0",
+        "evidence_id": "E00015",
+        "quote": "Features: 30\nTarget classes (12): ['Barley', 'Bean', 'Dagussa', 'Fallow', 'Maize', 'Niger seed', 'Pea', 'Potato', 'Red Pepper', 'Sorghum', 'Teff', 'Wheat']",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1477,
+            "end": 1632
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1477,
+            "end": 1632
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/details/1/evidence/0",
+        "evidence_id": "E00015",
+        "quote": "Derived features added:\n  annual_temp_range: mean=23.29, std=0.98\n  total_annual_precipitation: mean=24.86, std=6.65",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 116
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 116
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/details/2/evidence/0",
+        "evidence_id": "E00015",
+        "quote": "Fold 1: Macro F1 = 0.2357\nFold 2: Macro F1 = 0.2462\nFold 3: Macro F1 = 0.2119\nFold 4: Macro F1 = 0.2180\nFold 5: Macro F1 = 0.2335",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1633,
+            "end": 1762
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1633,
+            "end": 1762
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/details/3/evidence/0",
+        "evidence_id": "E00015",
+        "quote": "--- Final F1 Scores ---\ncrop_class  f1_score\n    Barley    0.4223\n      Bean    0.1516\n   Dagussa    0.1411\n    Fallow    0.0000\n     Maize    0.5630\nNiger seed    0.0000\n       Pea    0.1871\n    Potato    0.1238\nRed Pepper    0.0571\n   Sorghum    0.0446\n      Teff    0.6378\n     Wheat    0.4202",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1764,
+            "end": 2060
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1764,
+            "end": 2060
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/details/4/evidence/0",
+        "evidence_id": "E00015",
+        "quote": "Results saved to output.csv",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2062,
+            "end": 2089
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2062,
+            "end": 2089
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/details/4/evidence/1",
+        "evidence_id": "E00015",
+        "quote": "Shape: (12, 2)\nColumns: ['crop_class', 'f1_score']",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2112,
+            "end": 2162
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2112,
+            "end": 2162
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/requirement_links/0/evidence/0",
+        "evidence_id": "E00015",
+        "quote": "Fold 1: Macro F1 = 0.2357\nFold 2: Macro F1 = 0.2462\nFold 3: Macro F1 = 0.2119\nFold 4: Macro F1 = 0.2180\nFold 5: Macro F1 = 0.2335",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1633,
+            "end": 1762
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1633,
+            "end": 1762
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/requirement_links/1/evidence/0",
+        "evidence_id": "E00015",
+        "quote": "--- Final F1 Scores ---\ncrop_class  f1_score\n    Barley    0.4223\n      Bean    0.1516\n   Dagussa    0.1411\n    Fallow    0.0000\n     Maize    0.5630\nNiger seed    0.0000\n       Pea    0.1871\n    Potato    0.1238\nRed Pepper    0.0571\n   Sorghum    0.0446\n      Teff    0.6378\n     Wheat    0.4202",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 1764,
+            "end": 2060
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 1764,
+            "end": 2060
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/requirement_links/2/evidence/0",
+        "evidence_id": "E00015",
+        "quote": "Results saved to output.csv",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2062,
+            "end": 2089
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2062,
+            "end": 2089
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/1/operations/2/requirement_links/3/evidence/0",
+        "evidence_id": "E00015",
+        "quote": "Shape: (12, 2)\nColumns: ['crop_class', 'f1_score']",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 2112,
+            "end": 2162
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 2112,
+            "end": 2162
+          }
+        ],
+        "fact_pointer": "/steps/4/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 54,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/2/operations/0/evidence/0",
+        "evidence_id": "E00018",
+        "quote": "cat output.csv",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 14
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 14
+          }
+        ],
+        "fact_pointer": "/steps/5/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 6,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/2/operations/0/details/0/evidence/0",
+        "evidence_id": "E00018",
+        "quote": "cat output.csv",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 14
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 14
+          }
+        ],
+        "fact_pointer": "/steps/5/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 6,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/2/operations/0/requirement_links/0/evidence/0",
+        "evidence_id": "E00018",
+        "quote": "cat output.csv",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 14
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 14
+          }
+        ],
+        "fact_pointer": "/steps/5/action/arguments/command",
+        "original_source_ref": {
+          "source_id": "S0004",
+          "line": 6,
+          "json_pointer": "/outgoing_anthropic_response/content/1/input"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/2/operations/1/evidence/0",
+        "evidence_id": "E00019",
+        "quote": "crop_class,f1_score\nBarley,0.4223\nBean,0.1516\nDagussa,0.1411\nFallow,0.0\nMaize,0.563\nNiger seed,0.0\nPea,0.1871\nPotato,0.1238\nRed Pepper,0.0571\nSorghum,0.0446\nTeff,0.6378\nWheat,0.4202",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 181
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 181
+          }
+        ],
+        "fact_pointer": "/steps/5/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 67,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/2/operations/1/details/0/evidence/0",
+        "evidence_id": "E00019",
+        "quote": "crop_class,f1_score\nBarley,0.4223\nBean,0.1516\nDagussa,0.1411\nFallow,0.0\nMaize,0.563\nNiger seed,0.0\nPea,0.1871\nPotato,0.1238\nRed Pepper,0.0571\nSorghum,0.0446\nTeff,0.6378\nWheat,0.4202",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 181
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 181
+          }
+        ],
+        "fact_pointer": "/steps/5/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 67,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/2/operations/1/details/1/evidence/0",
+        "evidence_id": "E00019",
+        "quote": "crop_class,f1_score\nBarley,0.4223\nBean,0.1516\nDagussa,0.1411\nFallow,0.0\nMaize,0.563\nNiger seed,0.0\nPea,0.1871\nPotato,0.1238\nRed Pepper,0.0571\nSorghum,0.0446\nTeff,0.6378\nWheat,0.4202",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 181
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 181
+          }
+        ],
+        "fact_pointer": "/steps/5/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 67,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/2/operations/1/requirement_links/0/evidence/0",
+        "evidence_id": "E00019",
+        "quote": "crop_class,f1_score\nBarley,0.4223\nBean,0.1516\nDagussa,0.1411\nFallow,0.0\nMaize,0.563\nNiger seed,0.0\nPea,0.1871\nPotato,0.1238\nRed Pepper,0.0571\nSorghum,0.0446\nTeff,0.6378\nWheat,0.4202",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 181
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 181
+          }
+        ],
+        "fact_pointer": "/steps/5/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 67,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/2/operations/1/requirement_links/1/evidence/0",
+        "evidence_id": "E00019",
+        "quote": "crop_class,f1_score\nBarley,0.4223\nBean,0.1516\nDagussa,0.1411\nFallow,0.0\nMaize,0.563\nNiger seed,0.0\nPea,0.1871\nPotato,0.1238\nRed Pepper,0.0571\nSorghum,0.0446\nTeff,0.6378\nWheat,0.4202",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 181
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 181
+          }
+        ],
+        "fact_pointer": "/steps/5/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 67,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      },
+      {
+        "annotation_pointer": "/recorded_processor_annotations/units/2/operations/1/requirement_links/2/evidence/0",
+        "evidence_id": "E00019",
+        "quote": "crop_class,f1_score\nBarley,0.4223\nBean,0.1516\nDagussa,0.1411\nFallow,0.0\nMaize,0.563\nNiger seed,0.0\nPea,0.1871\nPotato,0.1238\nRed Pepper,0.0571\nSorghum,0.0446\nTeff,0.6378\nWheat,0.4202",
+        "status": "exact_unique",
+        "issues": [],
+        "eligible_as_literal_evidence": true,
+        "match_count": 1,
+        "block_char_spans": [
+          {
+            "start": 0,
+            "end": 181
+          }
+        ],
+        "field_char_spans": [
+          {
+            "start": 0,
+            "end": 181
+          }
+        ],
+        "fact_pointer": "/steps/5/observation/text",
+        "original_source_ref": {
+          "source_id": "S0001",
+          "line": 67,
+          "json_pointer": "/message/content/0"
+        },
+        "coordinate_system": "Unicode character offsets in the declared fact/display representation; not raw file byte offsets",
+        "semantic_entailment_verified": false
+      }
+    ],
+    "semantic_correctness_certified": false
+  },
+  "semantic_evaluation": {
+    "independent_gold_available": false,
+    "root_cause_accuracy": null,
+    "causal_chain_accuracy": null,
+    "reason": "No independent semantic gold is released; existing author review is descriptive only."
+  }
+}

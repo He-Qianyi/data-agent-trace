@@ -1,0 +1,7 @@
+{
+  "version": "trace-processor-frozen-v1-20261018",
+  "path": "outputs/trace_processor_frozen_v1_20261018",
+  "manifest_sha256": "36dd06edb9ccb3f48d4607b0f07f1c40fdc55807df081f809ccc1f740d18e178",
+  "batch_path": "outputs/trace_processor_batch164_20261018",
+  "old_164_batch_resumed": false
+}

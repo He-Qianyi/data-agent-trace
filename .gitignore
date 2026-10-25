@@ -10,3 +10,8 @@ demo_output/
 .pytest_cache/
 .DS_Store
 ._*
+
+# Reproduction outputs and local credentials
+reproduction_output/
+.env.soclaas
+!/.env.example

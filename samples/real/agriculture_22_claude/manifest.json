@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1865,
+      "sha256": "f07e53d970200103a400a49ea7571ac21f1e627006c4720cb09da08572c6924b"
+    },
+    {
+      "path": "UPSTREAM_LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "author_review.json",
+      "bytes": 1232,
+      "sha256": "714cca726eaef2831eb428aab603feea416a06ed087ab2c7bd6ad29aadc2e81f"
+    },
+    {
+      "path": "diagnosis.json",
+      "bytes": 3269,
+      "sha256": "f5cb7da642d0ff792feecd043e68151466b588202952cea606f8e2e317ec4b8d"
+    },
+    {
+      "path": "processor_annotations.json",
+      "bytes": 60951,
+      "sha256": "30548a531fcc689305d63d22d7b533836d88e6061753725a479a8ca551fa5915"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 2933,
+      "sha256": "84cfa6004d8f3b2ef3e5ef5e48e0a857944ef5d3bd45009707960d16dda4b174"
+    },
+    {
+      "path": "trace_excerpt.json",
+      "bytes": 120109,
+      "sha256": "daf2dbccec225e7950c69e5fc6943b1e669a804259c57637e4a028771286d501"
+    }
+  ],
+  "scope": "released real excerpt; no independent semantic gold"
+}

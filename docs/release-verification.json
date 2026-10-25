@@ -1,0 +1,21 @@
+{
+  "tests_run": 159,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "isolated_release_imports": true,
+  "real_model_calls": 0,
+  "benchmark_tasks_rerun": 0,
+  "real_sample": "recorded agriculture_22 excerpt; original diagnosis bytes unchanged",
+  "strict_sample_schema_passed": false,
+  "current_sample_acceptance_passed": true,
+  "independent_gold_available": false,
+  "root_cause_accuracy": null,
+  "live_provider_validation": "not_performed",
+  "portability": "fresh release adapters; historical full archive not redistributed",
+  "wheel_build": "passed",
+  "installed_wheel_real_sample_evaluator": "passed",
+  "installed_original_diagnosis_tools": "passed",
+  "wheel_sha256": "5707ea81e2129012082dbf3b16e48490bd0c0ba5f7b0b5eb9b9a3848820bd4e1",
+  "new_live_model_calls": 0
+}

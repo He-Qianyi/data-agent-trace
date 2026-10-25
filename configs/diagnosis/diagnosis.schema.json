@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Data Agent diagnosis: five-section contract v1",
+  "type": "object",
+  "properties": {
+    "root_cause_chain": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "step_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true,
+            "minItems": 1
+          }
+        },
+        "required": [
+          "description",
+          "step_ids",
+          "evidence_ids"
+        ],
+        "additionalProperties": false
+      },
+      "anyOf": [
+        {
+          "maxItems": 0
+        },
+        {
+          "minItems": 2
+        }
+      ]
+    },
+    "critical_decision_points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "step_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reasoning": {
+            "type": "string",
+            "minLength": 1
+          },
+          "should_have": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true,
+            "minItems": 1
+          }
+        },
+        "required": [
+          "step_id",
+          "decision",
+          "reasoning",
+          "should_have",
+          "evidence_ids"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "correct_strategy": {
+      "type": "string"
+    },
+    "stage_labels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stage_id": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "incorrect_step_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "unuseful_step_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "reasoning": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "stage_id",
+          "incorrect_step_ids",
+          "unuseful_step_ids",
+          "reasoning"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "root_cause_chain",
+    "critical_decision_points",
+    "correct_strategy",
+    "stage_labels",
+    "summary"
+  ],
+  "additionalProperties": false
+}

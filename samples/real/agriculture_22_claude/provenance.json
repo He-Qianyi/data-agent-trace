@@ -1,0 +1,99 @@
+{
+  "record_id": "rawio-de63c9937aeb17c70d6d",
+  "source_normalized_trace": "artifacts/02_recording_quality/trace_curation_environment_short_v1_20261020/eligible/traces/rawio-de63c9937aeb17c70d6d.json",
+  "source_normalized_trace_sha256": "be667b18541bb348e53096f1f4719236a53d8e0a1b03dbf096f6cc20d57f8e34",
+  "source_diagnosis_sha256": "f5cb7da642d0ff792feecd043e68151466b588202952cea606f8e2e317ec4b8d",
+  "original_source_hashes": [
+    {
+      "source_id": "S0001",
+      "sha256": "30b6c756ecf691cd294af002470ea2358f41388699aae16552f61afc523ee7e2",
+      "roles": [
+        "transcript"
+      ]
+    },
+    {
+      "source_id": "S0002",
+      "sha256": "7e4eba9f1aa7189aeb55f91e5aad2c536ef6c5f3408e538e389cf92ab5b20eb8",
+      "roles": [
+        "task_prompt"
+      ]
+    },
+    {
+      "source_id": "S0003",
+      "sha256": "98995b53d0eab086433ccf2eb87a20e1aef4ddc0a3230646fc0c4762fd378791",
+      "roles": [
+        "provider_metadata"
+      ]
+    },
+    {
+      "source_id": "S0004",
+      "sha256": "bcc5a76f7793a10f4c16207e2e7674a69777201ff0ba2e945494e6300cc3ea40",
+      "roles": [
+        "model_io"
+      ]
+    },
+    {
+      "source_id": "S0005",
+      "sha256": "655d95b13e8bfc38be3b4c604864c1047f3e62412263bcd22f0ae9146e3d303d",
+      "roles": [
+        "run_result"
+      ]
+    },
+    {
+      "source_id": "S0006",
+      "sha256": "e78e52731390fd93ed5c032b22cfc18d1a9d213eabe0cb461c2672cb18bd847f",
+      "roles": [
+        "wire_cli_execution_provenance"
+      ]
+    },
+    {
+      "source_id": "S0007",
+      "sha256": "24957f45ee5533db2a4f1c8a0acbf75521cf7ecee775b536e264c2e72b0acef0",
+      "roles": [
+        "process_execution"
+      ]
+    },
+    {
+      "source_id": "S0008",
+      "sha256": "75d4d61c119b4455e0162059fbd020dd6328df684cec3bb07f7299b3babd919d",
+      "roles": [
+        "task_metadata"
+      ]
+    },
+    {
+      "source_id": "S0010",
+      "sha256": "e93d714189ce7c49249b95746b4210c2e45bebe8d19daf231807fa40f9841ea2",
+      "roles": [
+        "artifact_snapshot"
+      ]
+    },
+    {
+      "source_id": "S0011",
+      "sha256": "48d1b159e674151015dbcc44131cdfe7b026fca82c250829b83427424c8b277f",
+      "roles": [
+        "artifact_snapshot"
+      ]
+    },
+    {
+      "source_id": "S0012",
+      "sha256": "aa2da3d8277b02194c67dd84fc7348696a2562161af0357ce54a0226ab096ee9",
+      "roles": [
+        "official_evaluation"
+      ]
+    },
+    {
+      "source_id": "S0013",
+      "sha256": "84ad36c9dd9daf7dee272ece297e3011f8c58da74fd71483b84f1a743a4165de",
+      "roles": [
+        "official_evaluation_detail"
+      ]
+    }
+  ],
+  "evidence_text_transformed": false,
+  "publication_is_excerpt": true,
+  "new_model_calls": 0,
+  "dataset_rows_redistributed": false,
+  "benchmark_task_source": "https://github.com/AgenticDataBench/AgenticDataBench",
+  "upstream_license": "Apache-2.0",
+  "scope_of_license_note": "Upstream repository license for task/code. Original datasets are not redistributed."
+}

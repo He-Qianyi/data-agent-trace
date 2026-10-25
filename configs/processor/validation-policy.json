@@ -1,0 +1,13 @@
+{
+  "policy_id": "trace-processor-allow-extra-fields-v1-20261019",
+  "authorized_change": "User permits ignoring extra fields only; required fields, types, enums, unit coverage, scope and provenance checks remain.",
+  "source_batch": "${PROJECT_ROOT}/outputs/trace_processor_batch164_20261018",
+  "source_contract": "${PROJECT_ROOT}/outputs/trace_processor_frozen_v1_20261018/operations.schema.json",
+  "source_contract_sha256": "60fec1326739ed118c88a0699bf3b5d9d34e3d5aa7f13d153d0d379f42f5235b",
+  "overlay_module_sha256": "33343bf24d3c01d72af96462115a2b9291cf6f381feb17b4b3bd8247abba6c51",
+  "native_fields_deleted": false,
+  "extra_fields_interpreted_as_canonical_semantics": false,
+  "model_calls": 0,
+  "quote_repairs": 0,
+  "created_at_utc": "2026-10-19T02:56:59.607323+00:00"
+}

@@ -1,0 +1,235 @@
+{
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "unit_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "operations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "type": {
+                  "enum": [
+                    "data_discovery",
+                    "documentation_inspection",
+                    "schema_inspection",
+                    "data_loading",
+                    "data_cleaning",
+                    "filtering",
+                    "joining",
+                    "aggregation",
+                    "metric_derivation",
+                    "statistical_analysis",
+                    "model_fitting",
+                    "forecasting",
+                    "visualization",
+                    "data_export",
+                    "result_inspection",
+                    "result_verification",
+                    "answer_submission",
+                    "script_authoring",
+                    "script_editing",
+                    "script_execution",
+                    "environment_management",
+                    "other",
+                    "unknown"
+                  ]
+                },
+                "phase": {
+                  "enum": [
+                    "defined_in_code",
+                    "submitted_for_execution",
+                    "observed_in_result",
+                    "unknown"
+                  ]
+                },
+                "description": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "basis": {
+                  "enum": [
+                    "explicit",
+                    "inferred",
+                    "uncertain"
+                  ]
+                },
+                "evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "evidence_id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "quote": {
+                        "type": "string",
+                        "minLength": 2
+                      }
+                    },
+                    "required": [
+                      "evidence_id",
+                      "quote"
+                    ]
+                  },
+                  "minItems": 1
+                },
+                "details": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "aspect": {
+                        "enum": [
+                          "data_object",
+                          "filter",
+                          "grouping",
+                          "measure",
+                          "join_key",
+                          "transformation",
+                          "model",
+                          "output",
+                          "other"
+                        ]
+                      },
+                      "description": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "evidence": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "properties": {
+                            "evidence_id": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "quote": {
+                              "type": "string",
+                              "minLength": 2
+                            }
+                          },
+                          "required": [
+                            "evidence_id",
+                            "quote"
+                          ]
+                        },
+                        "minItems": 1
+                      },
+                      "basis": {
+                        "enum": [
+                          "explicit",
+                          "inferred",
+                          "uncertain"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "aspect",
+                      "description",
+                      "evidence",
+                      "basis"
+                    ]
+                  },
+                  "minItems": 0
+                },
+                "requirement_links": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                      "requirement_id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "relation": {
+                        "enum": [
+                          "targets",
+                          "checks",
+                          "produces_candidate_for",
+                          "provides_context_for",
+                          "uncertain"
+                        ]
+                      },
+                      "evidence": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": true,
+                          "properties": {
+                            "evidence_id": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "quote": {
+                              "type": "string",
+                              "minLength": 2
+                            }
+                          },
+                          "required": [
+                            "evidence_id",
+                            "quote"
+                          ]
+                        },
+                        "minItems": 1
+                      }
+                    },
+                    "required": [
+                      "requirement_id",
+                      "relation",
+                      "evidence"
+                    ]
+                  },
+                  "minItems": 0
+                },
+                "limitations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "minItems": 0
+                }
+              },
+              "required": [
+                "type",
+                "phase",
+                "description",
+                "basis",
+                "evidence",
+                "details",
+                "requirement_links",
+                "limitations"
+              ]
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "unit_id",
+          "operations"
+        ]
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "units"
+  ]
+}

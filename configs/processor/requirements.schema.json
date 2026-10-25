@@ -1,0 +1,186 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "task_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "evidence_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 2
+              }
+            },
+            "required": [
+              "evidence_id",
+              "quote"
+            ]
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "description",
+        "evidence"
+      ]
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "enum": [
+              "goal",
+              "data_source",
+              "filter",
+              "metric_definition",
+              "grouping",
+              "transformation",
+              "statistical_method",
+              "modeling",
+              "visualization",
+              "output_artifact",
+              "output_schema",
+              "output_format",
+              "constraint",
+              "verification",
+              "other"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "evidence_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 2
+                }
+              },
+              "required": [
+                "evidence_id",
+                "quote"
+              ]
+            },
+            "minItems": 1
+          },
+          "basis": {
+            "enum": [
+              "explicit",
+              "inferred",
+              "uncertain"
+            ]
+          }
+        },
+        "required": [
+          "kind",
+          "description",
+          "evidence",
+          "basis"
+        ]
+      },
+      "minItems": 1
+    },
+    "coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "disposition": {
+            "enum": [
+              "requirement",
+              "context",
+              "ambiguous"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "evidence_id",
+          "disposition",
+          "reason"
+        ]
+      },
+      "minItems": 1
+    },
+    "ambiguities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "evidence_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 2
+                }
+              },
+              "required": [
+                "evidence_id",
+                "quote"
+              ]
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "description",
+          "evidence"
+        ]
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "task_summary",
+    "requirements",
+    "coverage",
+    "ambiguities"
+  ]
+}

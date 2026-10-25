@@ -4,15 +4,45 @@ build-backend = "hatchling.build"
 
 [project]
 name = "data-agent-trace-research"
-version = "0.1.0"
+version = "0.2.0"
 description = "Evidence-grounded trace processing and diagnosis for data agents"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = ["jsonschema>=4.18,<5"]
+dependencies = ["jsonschema>=4.18,<5", "certifi>=2024.7", "duckdb>=1.1,<2"]
 authors = [{name = "He Qianyi"}]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/data_agent_trace"]
+packages = ["src/data_agent_trace", "pipeline", "reproduction", "research_runners", "scripts"]
 
 [tool.hatch.build]
 exclude = ["**/._*", "**/__pycache__/**"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"configs/diagnosis/CURRENT_ACCEPTANCE.json" = "configs/diagnosis/CURRENT_ACCEPTANCE.json"
+"configs/diagnosis/CURRENT_RUNTIME.json" = "configs/diagnosis/CURRENT_RUNTIME.json"
+"configs/diagnosis/diagnosis.prompt.md" = "configs/diagnosis/diagnosis.prompt.md"
+"configs/diagnosis/diagnosis.schema.json" = "configs/diagnosis/diagnosis.schema.json"
+"configs/diagnosis/reproduction.json" = "configs/diagnosis/reproduction.json"
+"configs/historical/CURRENT_FROZEN.json" = "configs/historical/CURRENT_FROZEN.json"
+"configs/historical/CURRENT_VALIDATION.json" = "configs/historical/CURRENT_VALIDATION.json"
+"configs/historical/increment289_scheduler.json" = "configs/historical/increment289_scheduler.json"
+"configs/historical/stage-c-runtime.json" = "configs/historical/stage-c-runtime.json"
+"configs/processor/METHOD.md" = "configs/processor/METHOD.md"
+"configs/processor/compiled_system_prompt.md" = "configs/processor/compiled_system_prompt.md"
+"configs/processor/normalized_trace.schema.json" = "configs/processor/normalized_trace.schema.json"
+"configs/processor/operations.schema.json" = "configs/processor/operations.schema.json"
+"configs/processor/protocol.json" = "configs/processor/protocol.json"
+"configs/processor/reproduction.json" = "configs/processor/reproduction.json"
+"configs/processor/requirements.compiled.md" = "configs/processor/requirements.compiled.md"
+"configs/processor/requirements.schema.json" = "configs/processor/requirements.schema.json"
+"configs/processor/runtime_profile.json" = "configs/processor/runtime_profile.json"
+"configs/processor/validation-operations.schema.json" = "configs/processor/validation-operations.schema.json"
+"configs/processor/validation-policy.json" = "configs/processor/validation-policy.json"
+"samples/real/agriculture_22_claude/README.md" = "samples/real/agriculture_22_claude/README.md"
+"samples/real/agriculture_22_claude/UPSTREAM_LICENSE.txt" = "samples/real/agriculture_22_claude/UPSTREAM_LICENSE.txt"
+"samples/real/agriculture_22_claude/author_review.json" = "samples/real/agriculture_22_claude/author_review.json"
+"samples/real/agriculture_22_claude/diagnosis.json" = "samples/real/agriculture_22_claude/diagnosis.json"
+"samples/real/agriculture_22_claude/manifest.json" = "samples/real/agriculture_22_claude/manifest.json"
+"samples/real/agriculture_22_claude/processor_annotations.json" = "samples/real/agriculture_22_claude/processor_annotations.json"
+"samples/real/agriculture_22_claude/provenance.json" = "samples/real/agriculture_22_claude/provenance.json"
+"samples/real/agriculture_22_claude/trace_excerpt.json" = "samples/real/agriculture_22_claude/trace_excerpt.json"

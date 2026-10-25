@@ -1,0 +1,25 @@
+{
+  "reviewer_type": "original_author_review",
+  "independent_gold": false,
+  "root_cause_accuracy_measured": false,
+  "review": {
+    "record_id": "rawio-de63c9937aeb17c70d6d",
+    "task_id": "agriculture_22",
+    "status": "usable_with_limits",
+    "conclusion": "能准确描述交叉验证实现与文件交付，并把F1聚合口径保留为未决项；原生JSON多一个合同外字段，严格验收失败。",
+    "notes": [
+      "任务原文未固定折内F1平均还是汇总折外预测后计算F1；模型没有仅凭两种口径不同就判现有实现错误。",
+      "派生气候特征、Soilcolor编码、RandomForest、StratifiedKFold及12类输出在代码和返回中有依据；初始路径错误被后续成功操作恢复。",
+      "原生输出额外包含root_cause_chain_note:null，违反五字段合同。未删除此字段或修复模型结果。",
+      "关键决策点实际列的是一种可辩护但未固定的统计口径，应避免被下游当成已确认错误；额外输出OOF对照只是可选核查，不能当作任务必需条件。"
+    ],
+    "source_anchors_checked": [
+      "T0005",
+      "E00012",
+      "E00014",
+      "E00015",
+      "E00019",
+      "FINAL0001"
+    ]
+  }
+}

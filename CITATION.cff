@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this research software, cite this software artifact."
+type: software
+title: "Data Agent Trace"
+authors:
+  - family-names: "He"
+    given-names: "Qianyi"
+version: "0.2.0"
+date-released: "2026-10-25"
+url: "https://github.com/He-Qianyi/data-agent-trace"
+repository-code: "https://github.com/He-Qianyi/data-agent-trace"
+abstract: "Research implementations of evidence-grounded trace processing and diagnosis for analytical agents, with a real recorded excerpt and mechanical evaluation tools."

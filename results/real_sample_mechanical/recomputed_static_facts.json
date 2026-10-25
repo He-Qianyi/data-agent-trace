@@ -1,0 +1,162 @@
+[
+  {
+    "step_id": "S0004",
+    "extraction": {
+      "code_units": [
+        {
+          "language": "shell",
+          "code": "python3 -c \"\nimport pandas as pd\ndf = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')\nprint('Shape:', df.shape)\nprint('Columns:', df.columns.tolist())\nprint()\nprint('Unique crops:', df['label'].unique())\nprint('Crop value counts:')\nprint(df['label'].value_counts())\nprint()\nprint('Data types:')\nprint(df.dtypes)\nprint()\nprint('Missing values:')\nprint(df.isnull().sum())\nprint()\nprint('Soil color unique:', df['Soilcolor'].unique())\n\"\n",
+          "source_ref": {
+            "source_id": "S0004",
+            "line": 4,
+            "json_pointer": "/outgoing_anthropic_response/content/0/input/command"
+          },
+          "context": "submitted_command",
+          "code_id": "C01"
+        },
+        {
+          "language": "python",
+          "code": "\nimport pandas as pd\ndf = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')\nprint('Shape:', df.shape)\nprint('Columns:', df.columns.tolist())\nprint()\nprint('Unique crops:', df['label'].unique())\nprint('Crop value counts:')\nprint(df['label'].value_counts())\nprint()\nprint('Data types:')\nprint(df.dtypes)\nprint()\nprint('Missing values:')\nprint(df.isnull().sum())\nprint()\nprint('Soil color unique:', df['Soilcolor'].unique())\n",
+          "source_ref": {
+            "source_id": "S0004",
+            "line": 4,
+            "json_pointer": "/outgoing_anthropic_response/content/0/input/command"
+          },
+          "context": "submitted_inline_program",
+          "extraction": "shell_quoted_argument_decoding",
+          "code_id": "C02",
+          "static_parse": {
+            "status": "parsed",
+            "syntax_warning_count": 0
+          }
+        }
+      ],
+      "file_actions": [],
+      "script_invocations": [],
+      "data_operations": [
+        {
+          "api_spelling": "pd.read_csv",
+          "expression": "pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')",
+          "code_line_start": 3,
+          "code_line_end": 3,
+          "evidence_type": "python_ast_syntax",
+          "statement_execution_verified": false,
+          "operation": "data_read_api",
+          "path_literal": "Crop Recommendation using Soil Properties and Weather Prediction.csv",
+          "options_literal": {},
+          "code_ref": "C02",
+          "code_context": "submitted_inline_program",
+          "result_scope": "enclosing_tool_result_only"
+        }
+      ],
+      "extraction_status": "parsed_conservative_shell_patterns"
+    }
+  },
+  {
+    "step_id": "S0005",
+    "extraction": {
+      "code_units": [
+        {
+          "language": "shell",
+          "code": "python3 << 'EOF'\nimport pandas as pd\nimport numpy as np\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nfrom sklearn.preprocessing import LabelEncoder\n\n# Load the dataset\ndf = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')\n\n# ============================================================\n# Step 1: Calculate derived features\n# ============================================================\n\n# Annual temperature range = max(T2M_MAX) - min(T2M_MIN) across all seasons\nseasons = ['W', 'Sp', 'Su', 'Au']\n\ndf['annual_temp_range'] = df[[f'T2M_MAX-{s}' for s in seasons]].max(axis=1) - df[[f'T2M_MIN-{s}' for s in seasons]].min(axis=1)\n\n# Total annual precipitation = sum of PRECTOTCORR across all seasons\ndf['total_annual_precipitation'] = df[[f'PRECTOTCORR-{s}' for s in seasons]].sum(axis=1)\n\nprint(\"Derived features added:\")\nprint(f\"  annual_temp_range: mean={df['annual_temp_range'].mean():.2f}, std={df['annual_temp_range'].std():.2f}\")\nprint(f\"  total_annual_precipitation: mean={df['total_annual_precipitation'].mean():.2f}, std={df['total_annual_precipitation'].std():.2f}\")\n\n# ============================================================\n# Step 2: Encode categorical features using label encoding\n# ============================================================\n\ncategorical_cols = ['Soilcolor']\nle = LabelEncoder()\nfor col in categorical_cols:\n    df[col + '_encoded'] = le.fit_transform(df[col])\n\nprint(f\"\\nSoilcolor encoding: {dict(zip(le.classes_, le.transform(le.classes_)))}\")\n\n# ============================================================\n# Step 3: Prepare features and target\n# ============================================================\n\n# Drop the original categorical column after encoding\nfeature_cols = [col for col in df.columns if col not in ['label', 'Soilcolor']]\ntarget_col = 'label'\n\nX = df[feature_cols].values\ny = df[target_col].values\n\n# Encode target labels\ntarget_le = LabelEncoder()\ny_encoded = target_le.fit_transform(y)\ncrop_names = target_le.classes_\n\nprint(f\"\\nFeatures: {len(feature_cols)}\")\nprint(f\"Target classes ({len(crop_names)}): {crop_names.tolist()}\")\n\n# ============================================================\n# Step 4: 5-fold stratified cross-validation with Random Forest\n# ============================================================\n\ncv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\n\nall_f1 = {}  # {crop_name: [f1 per fold]}\n\nfor fold_idx, (train_idx, test_idx) in enumerate(cv.split(X, y_encoded)):\n    X_train, X_test = X[train_idx], X[test_idx]\n    y_train, y_test = y_encoded[train_idx], y_encoded[test_idx]\n\n    rf = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)\n    rf.fit(X_train, y_train)\n    y_pred = rf.predict(X_test)\n\n    fold_f1 = f1_score(y_test, y_pred, average=None, labels=range(len(crop_names)), zero_division=0)\n    \n    for i, crop in enumerate(crop_names):\n        if crop not in all_f1:\n            all_f1[crop] = []\n        all_f1[crop].append(fold_f1[i])\n    \n    # Overall macro F1 for this fold\n    macro_f1 = f1_score(y_test, y_pred, average='macro', zero_division=0)\n    print(f\"Fold {fold_idx+1}: Macro F1 = {macro_f1:.4f}\")\n\n# ============================================================\n# Step 5: Calculate mean F1 per crop class\n# ============================================================\n\nresults = []\nfor crop in crop_names:\n    f1_values = all_f1[crop]\n    mean_f1 = np.mean(f1_values)\n    results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})\n\nresults_df = pd.DataFrame(results)\nprint(\"\\n--- Final F1 Scores ---\")\nprint(results_df.to_string(index=False))\n\n# ============================================================\n# Step 6: Save to output.csv\n# ============================================================\n\nresults_df.to_csv('output.csv', index=False)\nprint(\"\\nResults saved to output.csv\")\n\n# Verify\nprint(\"\\n--- Verification ---\")\nverify = pd.read_csv('output.csv')\nprint(f\"Shape: {verify.shape}\")\nprint(f\"Columns: {verify.columns.tolist()}\")\nprint(verify.to_string(index=False))\nEOF\n",
+          "source_ref": {
+            "source_id": "S0004",
+            "line": 5,
+            "json_pointer": "/outgoing_anthropic_response/content/1/input/command"
+          },
+          "context": "submitted_command",
+          "code_id": "C01"
+        },
+        {
+          "language": "python",
+          "code": "import pandas as pd\nimport numpy as np\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.model_selection import StratifiedKFold\nfrom sklearn.metrics import f1_score\nfrom sklearn.preprocessing import LabelEncoder\n\n# Load the dataset\ndf = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')\n\n# ============================================================\n# Step 1: Calculate derived features\n# ============================================================\n\n# Annual temperature range = max(T2M_MAX) - min(T2M_MIN) across all seasons\nseasons = ['W', 'Sp', 'Su', 'Au']\n\ndf['annual_temp_range'] = df[[f'T2M_MAX-{s}' for s in seasons]].max(axis=1) - df[[f'T2M_MIN-{s}' for s in seasons]].min(axis=1)\n\n# Total annual precipitation = sum of PRECTOTCORR across all seasons\ndf['total_annual_precipitation'] = df[[f'PRECTOTCORR-{s}' for s in seasons]].sum(axis=1)\n\nprint(\"Derived features added:\")\nprint(f\"  annual_temp_range: mean={df['annual_temp_range'].mean():.2f}, std={df['annual_temp_range'].std():.2f}\")\nprint(f\"  total_annual_precipitation: mean={df['total_annual_precipitation'].mean():.2f}, std={df['total_annual_precipitation'].std():.2f}\")\n\n# ============================================================\n# Step 2: Encode categorical features using label encoding\n# ============================================================\n\ncategorical_cols = ['Soilcolor']\nle = LabelEncoder()\nfor col in categorical_cols:\n    df[col + '_encoded'] = le.fit_transform(df[col])\n\nprint(f\"\\nSoilcolor encoding: {dict(zip(le.classes_, le.transform(le.classes_)))}\")\n\n# ============================================================\n# Step 3: Prepare features and target\n# ============================================================\n\n# Drop the original categorical column after encoding\nfeature_cols = [col for col in df.columns if col not in ['label', 'Soilcolor']]\ntarget_col = 'label'\n\nX = df[feature_cols].values\ny = df[target_col].values\n\n# Encode target labels\ntarget_le = LabelEncoder()\ny_encoded = target_le.fit_transform(y)\ncrop_names = target_le.classes_\n\nprint(f\"\\nFeatures: {len(feature_cols)}\")\nprint(f\"Target classes ({len(crop_names)}): {crop_names.tolist()}\")\n\n# ============================================================\n# Step 4: 5-fold stratified cross-validation with Random Forest\n# ============================================================\n\ncv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\n\nall_f1 = {}  # {crop_name: [f1 per fold]}\n\nfor fold_idx, (train_idx, test_idx) in enumerate(cv.split(X, y_encoded)):\n    X_train, X_test = X[train_idx], X[test_idx]\n    y_train, y_test = y_encoded[train_idx], y_encoded[test_idx]\n\n    rf = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)\n    rf.fit(X_train, y_train)\n    y_pred = rf.predict(X_test)\n\n    fold_f1 = f1_score(y_test, y_pred, average=None, labels=range(len(crop_names)), zero_division=0)\n    \n    for i, crop in enumerate(crop_names):\n        if crop not in all_f1:\n            all_f1[crop] = []\n        all_f1[crop].append(fold_f1[i])\n    \n    # Overall macro F1 for this fold\n    macro_f1 = f1_score(y_test, y_pred, average='macro', zero_division=0)\n    print(f\"Fold {fold_idx+1}: Macro F1 = {macro_f1:.4f}\")\n\n# ============================================================\n# Step 5: Calculate mean F1 per crop class\n# ============================================================\n\nresults = []\nfor crop in crop_names:\n    f1_values = all_f1[crop]\n    mean_f1 = np.mean(f1_values)\n    results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})\n\nresults_df = pd.DataFrame(results)\nprint(\"\\n--- Final F1 Scores ---\")\nprint(results_df.to_string(index=False))\n\n# ============================================================\n# Step 6: Save to output.csv\n# ============================================================\n\nresults_df.to_csv('output.csv', index=False)\nprint(\"\\nResults saved to output.csv\")\n\n# Verify\nprint(\"\\n--- Verification ---\")\nverify = pd.read_csv('output.csv')\nprint(f\"Shape: {verify.shape}\")\nprint(f\"Columns: {verify.columns.tolist()}\")\nprint(verify.to_string(index=False))\n",
+          "source_ref": {
+            "source_id": "S0004",
+            "line": 5,
+            "json_pointer": "/outgoing_anthropic_response/content/1/input/command",
+            "char_start": 17,
+            "char_end": 4158
+          },
+          "context": "submitted_inline_program",
+          "path_as_written": null,
+          "code_id": "C02",
+          "static_parse": {
+            "status": "parsed",
+            "syntax_warning_count": 0
+          }
+        }
+      ],
+      "file_actions": [],
+      "script_invocations": [],
+      "data_operations": [
+        {
+          "api_spelling": "pd.read_csv",
+          "expression": "pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')",
+          "code_line_start": 9,
+          "code_line_end": 9,
+          "evidence_type": "python_ast_syntax",
+          "statement_execution_verified": false,
+          "operation": "data_read_api",
+          "path_literal": "Crop Recommendation using Soil Properties and Weather Prediction.csv",
+          "options_literal": {},
+          "code_ref": "C02",
+          "code_context": "submitted_inline_program",
+          "result_scope": "enclosing_tool_result_only"
+        },
+        {
+          "api_spelling": "results_df.to_csv",
+          "expression": "results_df.to_csv('output.csv', index=False)",
+          "code_line_start": 102,
+          "code_line_end": 102,
+          "evidence_type": "python_ast_syntax",
+          "statement_execution_verified": false,
+          "operation": "data_write_api",
+          "path_literal": "output.csv",
+          "options_literal": {
+            "index": false
+          },
+          "code_ref": "C02",
+          "code_context": "submitted_inline_program",
+          "result_scope": "enclosing_tool_result_only"
+        },
+        {
+          "api_spelling": "pd.read_csv",
+          "expression": "pd.read_csv('output.csv')",
+          "code_line_start": 107,
+          "code_line_end": 107,
+          "evidence_type": "python_ast_syntax",
+          "statement_execution_verified": false,
+          "operation": "data_read_api",
+          "path_literal": "output.csv",
+          "options_literal": {},
+          "code_ref": "C02",
+          "code_context": "submitted_inline_program",
+          "result_scope": "enclosing_tool_result_only"
+        }
+      ],
+      "extraction_status": "parsed_conservative_shell_patterns"
+    }
+  },
+  {
+    "step_id": "S0006",
+    "extraction": {
+      "code_units": [
+        {
+          "language": "shell",
+          "code": "cat output.csv",
+          "source_ref": {
+            "source_id": "S0004",
+            "line": 6,
+            "json_pointer": "/outgoing_anthropic_response/content/1/input/command"
+          },
+          "context": "submitted_command",
+          "code_id": "C01"
+        }
+      ],
+      "file_actions": [],
+      "script_invocations": [],
+      "data_operations": [],
+      "extraction_status": "parsed_conservative_shell_patterns"
+    }
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "version": "pipeline-v2-batch30-global2",
+  "user_request": "B阶段每完成30条就把这30条拿去做阶段C，同时继续做剩下的阶段B",
+  "created_at_utc": "2026-10-25T08:26:00.823526+00:00",
+  "B_release_trace_count": 30,
+  "final_partial_batch_enabled": true,
+  "global_concurrency": 2,
+  "steady_state_when_both_ready": {
+    "B": 1,
+    "C": 1
+  },
+  "prompts_or_payloads_changed": false,
+  "automatic_retries": 0,
+  "D_merge_after_all_annotations": true,
+  "migration_drain_active_calls": true,
+  "boundary_and_dispatch_tests": "passed"
+}

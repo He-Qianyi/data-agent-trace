@@ -1,0 +1,1641 @@
+{
+  "origin": "recorded_model_annotations",
+  "new_model_calls": 0,
+  "task": {
+    "task_summary": {
+      "description": "基于提供的作物推荐数据集，计算年度温差和年总降水、对分类特征做标签编码，使用 5 折分层交叉验证训练多分类随机森林预测最佳作物，计算各作物类别 F1 并保存为 output.csv，同时核验文件。",
+      "evidence": [
+        {
+          "evidence_id": "T0005",
+          "quote": "Using the provided crop recommendation dataset containing soil properties and seasonal weather features",
+          "location": {
+            "role": "original_task_instruction",
+            "step_id": null,
+            "fact_pointer": "/task/instruction",
+            "representation": null,
+            "original_source_ref": {
+              "source_id": "S0002",
+              "json_pointer": "",
+              "representation": "text"
+            }
+          },
+          "match_count": 1,
+          "candidate_char_spans": [
+            {
+              "char_start": 263,
+              "char_end": 366
+            }
+          ],
+          "candidate_spans_partial": false,
+          "interpretation_is_llm_generated": true
+        },
+        {
+          "evidence_id": "T0005",
+          "quote": "calculate derived features including the annual temperature range (difference between maximum and minimum temperatures across all seasons) and total annual precipitation (sum of precipitation across all seasons)",
+          "location": {
+            "role": "original_task_instruction",
+            "step_id": null,
+            "fact_pointer": "/task/instruction",
+            "representation": null,
+            "original_source_ref": {
+              "source_id": "S0002",
+              "json_pointer": "",
+              "representation": "text"
+            }
+          },
+          "match_count": 1,
+          "candidate_char_spans": [
+            {
+              "char_start": 374,
+              "char_end": 585
+            }
+          ],
+          "candidate_spans_partial": false,
+          "interpretation_is_llm_generated": true
+        },
+        {
+          "evidence_id": "T0005",
+          "quote": "Encode categorical features such as soil color using label encoding.",
+          "location": {
+            "role": "original_task_instruction",
+            "step_id": null,
+            "fact_pointer": "/task/instruction",
+            "representation": null,
+            "original_source_ref": {
+              "source_id": "S0002",
+              "json_pointer": "",
+              "representation": "text"
+            }
+          },
+          "match_count": 1,
+          "candidate_char_spans": [
+            {
+              "char_start": 587,
+              "char_end": 655
+            }
+          ],
+          "candidate_spans_partial": false,
+          "interpretation_is_llm_generated": true
+        },
+        {
+          "evidence_id": "T0005",
+          "quote": "Then train a multi-class random forest classifier using 5-fold stratified cross-validation to predict the best crop type.",
+          "location": {
+            "role": "original_task_instruction",
+            "step_id": null,
+            "fact_pointer": "/task/instruction",
+            "representation": null,
+            "original_source_ref": {
+              "source_id": "S0002",
+              "json_pointer": "",
+              "representation": "text"
+            }
+          },
+          "match_count": 1,
+          "candidate_char_spans": [
+            {
+              "char_start": 656,
+              "char_end": 777
+            }
+          ],
+          "candidate_spans_partial": false,
+          "interpretation_is_llm_generated": true
+        },
+        {
+          "evidence_id": "T0005",
+          "quote": "Calculate the F1 score for each crop category",
+          "location": {
+            "role": "original_task_instruction",
+            "step_id": null,
+            "fact_pointer": "/task/instruction",
+            "representation": null,
+            "original_source_ref": {
+              "source_id": "S0002",
+              "json_pointer": "",
+              "representation": "text"
+            }
+          },
+          "match_count": 1,
+          "candidate_char_spans": [
+            {
+              "char_start": 778,
+              "char_end": 823
+            }
+          ],
+          "candidate_spans_partial": false,
+          "interpretation_is_llm_generated": true
+        },
+        {
+          "evidence_id": "T0005",
+          "quote": "Save the results to output.csv.",
+          "location": {
+            "role": "original_task_instruction",
+            "step_id": null,
+            "fact_pointer": "/task/instruction",
+            "representation": null,
+            "original_source_ref": {
+              "source_id": "S0002",
+              "json_pointer": "",
+              "representation": "text"
+            }
+          },
+          "match_count": 1,
+          "candidate_char_spans": [
+            {
+              "char_start": 988,
+              "char_end": 1019
+            }
+          ],
+          "candidate_spans_partial": false,
+          "interpretation_is_llm_generated": true
+        },
+        {
+          "evidence_id": "T0010",
+          "quote": "verify their names, columns/format, rows, and values.",
+          "location": {
+            "role": "original_task_instruction",
+            "step_id": null,
+            "fact_pointer": "/task/instruction",
+            "representation": null,
+            "original_source_ref": {
+              "source_id": "S0002",
+              "json_pointer": "",
+              "representation": "text"
+            }
+          },
+          "match_count": 1,
+          "candidate_char_spans": [
+            {
+              "char_start": 1354,
+              "char_end": 1407
+            }
+          ],
+          "candidate_spans_partial": false,
+          "interpretation_is_llm_generated": true
+        }
+      ]
+    },
+    "requirements": [
+      {
+        "kind": "goal",
+        "description": "开发基于土壤和气候适宜性的作物推荐系统，并使用模型预测最佳作物类型。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0005",
+            "quote": "An international agricultural research institution aims to develop a crop recommendation system based on soil and climate suitability.",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 128,
+                "char_end": 262
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          },
+          {
+            "evidence_id": "T0005",
+            "quote": "to predict the best crop type.",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 747,
+                "char_end": 777
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0001",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "data_source",
+        "description": "使用提供的作物推荐数据集，该数据集包含土壤属性和季节性天气特征。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0005",
+            "quote": "Using the provided crop recommendation dataset containing soil properties and seasonal weather features",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 263,
+                "char_end": 366
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0002",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "transformation",
+        "description": "计算年度温度范围：所有季节中最高温度与最低温度之差。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0005",
+            "quote": "calculate derived features including the annual temperature range (difference between maximum and minimum temperatures across all seasons)",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 374,
+                "char_end": 512
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0003",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "transformation",
+        "description": "计算年总降水量：所有季节降水量之和。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0005",
+            "quote": "total annual precipitation (sum of precipitation across all seasons)",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 517,
+                "char_end": 585
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0004",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "transformation",
+        "description": "使用标签编码对分类特征（如土壤颜色）进行编码。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0005",
+            "quote": "Encode categorical features such as soil color using label encoding.",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 587,
+                "char_end": 655
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0005",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "modeling",
+        "description": "训练多分类随机森林分类器，使用 5 折分层交叉验证，以最佳作物类型为目标。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0005",
+            "quote": "Then train a multi-class random forest classifier using 5-fold stratified cross-validation to predict the best crop type.",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 656,
+                "char_end": 777
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0006",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "metric_definition",
+        "description": "计算每个作物类别的 F1 分数，分数来自交叉验证。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0005",
+            "quote": "Calculate the F1 score for each crop category",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 778,
+                "char_end": 823
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          },
+          {
+            "evidence_id": "T0005",
+            "quote": "the F1 score of each category from cross-validation",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 934,
+                "char_end": 985
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0007",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "output_schema",
+        "description": "输出 pandas data frame，包含两列：'crop_class'（作物标签）和 'f1_score'（交叉验证中每个类别的 F1 分数）。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0005",
+            "quote": "output a pandas data frame containing two columns: 'crop_class' (listing the crop labels) and 'f1_score' (the F1 score of each category from cross-validation).",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 828,
+                "char_end": 987
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0008",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "output_artifact",
+        "description": "将结果保存到 output.csv。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0005",
+            "quote": "Save the results to output.csv.",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 988,
+                "char_end": 1019
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0009",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "constraint",
+        "description": "在当前工作目录使用任务列出的相对路径直接工作。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0006",
+            "quote": "The domain data files are available in the current working directory using the",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 1021,
+                "char_end": 1099
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          },
+          {
+            "evidence_id": "T0007",
+            "quote": "relative paths listed in the task. Work directly in this directory.",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 1100,
+                "char_end": 1167
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0010",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "constraint",
+        "description": "仅使用本地 benchmark 数据；不得使用网络访问或外部数据。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0008",
+            "quote": "the local benchmark data; do not use network access or external data.",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 1177,
+                "char_end": 1246
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0011",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "constraint",
+        "description": "执行分析，并在当前工作目录写出所需输出文件 output.csv。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0008",
+            "quote": "Execute",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 1247,
+                "char_end": 1254
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          },
+          {
+            "evidence_id": "T0009",
+            "quote": "the analysis, write the required output file(s) (output.csv) in the current",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 1255,
+                "char_end": 1330
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0012",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "verification",
+        "description": "核验输出文件的名称、列/格式、行和值。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0010",
+            "quote": "verify their names, columns/format, rows, and values.",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 1354,
+                "char_end": 1407
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0013",
+        "hard_requirement_certified": false
+      },
+      {
+        "kind": "constraint",
+        "description": "不要只描述方案；在结束前创建文件。",
+        "basis": "explicit",
+        "evidence": [
+          {
+            "evidence_id": "T0011",
+            "quote": "Do not merely describe a solution: create the files before finishing.",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 1408,
+                "char_end": 1477
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ],
+        "requirement_id": "R0014",
+        "hard_requirement_certified": false
+      }
+    ],
+    "coverage": [
+      {
+        "evidence_id": "T0001",
+        "disposition": "context",
+        "reason": "任务/领域标识及标题背景。"
+      },
+      {
+        "evidence_id": "T0002",
+        "disposition": "context",
+        "reason": "任务/领域标识及标题背景。"
+      },
+      {
+        "evidence_id": "T0003",
+        "disposition": "context",
+        "reason": "任务/领域标识及标题背景。"
+      },
+      {
+        "evidence_id": "T0004",
+        "disposition": "context",
+        "reason": "任务/领域标识及标题背景。"
+      },
+      {
+        "evidence_id": "T0005",
+        "disposition": "requirement",
+        "reason": "包含目标、数据来源、派生特征、编码、建模、F1 指标及输出要求。"
+      },
+      {
+        "evidence_id": "T0006",
+        "disposition": "requirement",
+        "reason": "包含当前工作目录和相对路径约束。"
+      },
+      {
+        "evidence_id": "T0007",
+        "disposition": "requirement",
+        "reason": "包含相对路径、直接工作目录约束。"
+      },
+      {
+        "evidence_id": "T0008",
+        "disposition": "requirement",
+        "reason": "包含本地数据限制、禁止网络/外部数据及执行要求。"
+      },
+      {
+        "evidence_id": "T0009",
+        "disposition": "requirement",
+        "reason": "包含写出 output.csv 的执行要求。"
+      },
+      {
+        "evidence_id": "T0010",
+        "disposition": "requirement",
+        "reason": "包含核验文件名称、列/格式、行和值的要求。"
+      },
+      {
+        "evidence_id": "T0011",
+        "disposition": "requirement",
+        "reason": "包含结束前创建文件、不能只描述方案的要求。"
+      }
+    ],
+    "ambiguities": [
+      {
+        "description": "原文要求每个作物类别的 F1 分数来自 5 折交叉验证，但未说明如何将各折的每类 F1 汇总为 output.csv 中每个 crop_class 的单一 f1_score（例如按折平均，或基于合并的折外预测计算）；该选择会影响 f1_score 的数值。",
+        "evidence": [
+          {
+            "evidence_id": "T0005",
+            "quote": "using 5-fold stratified cross-validation",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 706,
+                "char_end": 746
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          },
+          {
+            "evidence_id": "T0005",
+            "quote": "Calculate the F1 score for each crop category",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 778,
+                "char_end": 823
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          },
+          {
+            "evidence_id": "T0005",
+            "quote": "the F1 score of each category from cross-validation",
+            "location": {
+              "role": "original_task_instruction",
+              "step_id": null,
+              "fact_pointer": "/task/instruction",
+              "representation": null,
+              "original_source_ref": {
+                "source_id": "S0002",
+                "json_pointer": "",
+                "representation": "text"
+              }
+            },
+            "match_count": 1,
+            "candidate_char_spans": [
+              {
+                "char_start": 934,
+                "char_end": 985
+              }
+            ],
+            "candidate_spans_partial": false,
+            "interpretation_is_llm_generated": true
+          }
+        ]
+      }
+    ],
+    "task_prompt_sha256": "7e4eba9f1aa7189aeb55f91e5aad2c536ef6c5f3408e538e389cf92ab5b20eb8",
+    "validation": {
+      "schema": "passed",
+      "literal_evidence": "passed",
+      "task_block_accounting": "passed",
+      "semantic_completeness_certified": false
+    }
+  },
+  "units": [
+    {
+      "unit_id": "U00004",
+      "operations": [
+        {
+          "type": "schema_inspection",
+          "phase": "submitted_for_execution",
+          "description": "提交用 pandas 读取作物推荐 CSV，并打印形状、列名、唯一作物、作物计数、数据类型、缺失值统计与 Soilcolor 唯一值。",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "evidence_id": "E00011",
+              "quote": "df = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')"
+            },
+            {
+              "evidence_id": "E00011",
+              "quote": "print('Shape:', df.shape)\nprint('Columns:', df.columns.tolist())"
+            }
+          ],
+          "details": [
+            {
+              "aspect": "data_object",
+              "description": "读取对象为 'Crop Recommendation using Soil Properties and Weather Prediction.csv'。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00011",
+                  "quote": "df = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')"
+                }
+              ]
+            },
+            {
+              "aspect": "measure",
+              "description": "打印 df.shape、df.columns.tolist()、df['label'].unique()、df['label'].value_counts()、df.dtypes、df.isnull().sum() 与 df['Soilcolor'].unique()。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00011",
+                  "quote": "print('Unique crops:', df['label'].unique())"
+                },
+                {
+                  "evidence_id": "E00011",
+                  "quote": "print('Missing values:')\nprint(df.isnull().sum())"
+                },
+                {
+                  "evidence_id": "E00011",
+                  "quote": "print('Soil color unique:', df['Soilcolor'].unique())"
+                }
+              ]
+            }
+          ],
+          "requirement_links": [
+            {
+              "requirement_id": "R0002",
+              "relation": "targets",
+              "evidence": [
+                {
+                  "evidence_id": "E00011",
+                  "quote": "df = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')"
+                }
+              ]
+            }
+          ],
+          "limitations": []
+        },
+        {
+          "type": "result_inspection",
+          "phase": "observed_in_result",
+          "description": "工具返回形状 (3867, 29)、29 个列名、12 个唯一作物标签、label 计数序列、各列数据类型、缺失值统计段与 Soilcolor 唯一值列表。",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "evidence_id": "E00012",
+              "quote": "Shape: (3867, 29)"
+            },
+            {
+              "evidence_id": "E00012",
+              "quote": "Unique crops: ['Barley' 'Bean' 'Dagussa' 'Fallow' 'Maize' 'Niger seed' 'Pea' 'Potato'"
+            },
+            {
+              "evidence_id": "E00012",
+              "quote": "Name: count, dtype: int64"
+            }
+          ],
+          "details": [
+            {
+              "aspect": "measure",
+              "description": "返回数据形状为 3867 行、29 列。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00012",
+                  "quote": "Shape: (3867, 29)"
+                }
+              ]
+            },
+            {
+              "aspect": "data_object",
+              "description": "返回的唯一作物标签包括 Barley、Bean、Dagussa、Fallow、Maize、Niger seed、Pea、Potato 等。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00012",
+                  "quote": "Unique crops: ['Barley' 'Bean' 'Dagussa' 'Fallow' 'Maize' 'Niger seed' 'Pea' 'Potato'"
+                }
+              ]
+            },
+            {
+              "aspect": "data_object",
+              "description": "返回的 Soilcolor 唯一值列表以 'Yellowish brown'、'brown'、'red'、'gray'、'black'、'Reddish brown' 等字符串开头。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00012",
+                  "quote": "Soil color unique: ['Yellowish brown' 'brown' 'red' 'gray' 'black' 'Reddish brown'"
+                }
+              ]
+            },
+            {
+              "aspect": "other",
+              "description": "返回内容还包含 label 的计数序列（Name: count, dtype: int64）、Data types 段与 Missing values 段。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00012",
+                  "quote": "Name: count, dtype: int64"
+                },
+                {
+                  "evidence_id": "E00012",
+                  "quote": "Missing values:"
+                }
+              ]
+            }
+          ],
+          "requirement_links": [
+            {
+              "requirement_id": "R0002",
+              "relation": "provides_context_for",
+              "evidence": [
+                {
+                  "evidence_id": "E00012",
+                  "quote": "Shape: (3867, 29)"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0005",
+              "relation": "provides_context_for",
+              "evidence": [
+                {
+                  "evidence_id": "E00012",
+                  "quote": "Soil color unique: ['Yellowish brown' 'brown' 'red' 'gray' 'black' 'Reddish brown'"
+                }
+              ]
+            }
+          ],
+          "limitations": []
+        }
+      ],
+      "step_id": "S0004",
+      "model_exchange_ref": "X0004",
+      "native_origin": {
+        "packet": 1,
+        "bundle_path": "objects/63112b857d5c2c71f12af1edf91d5276f2bc8104d9e4d48bfb96205b08c79fb6.json",
+        "sha256": "63112b857d5c2c71f12af1edf91d5276f2bc8104d9e4d48bfb96205b08c79fb6",
+        "json_pointer": "/units/3"
+      },
+      "validation": {
+        "status": "mechanically_valid",
+        "issues": [],
+        "semantic_correctness_certified": false
+      }
+    },
+    {
+      "unit_id": "U00005",
+      "operations": [
+        {
+          "type": "model_fitting",
+          "phase": "submitted_for_execution",
+          "description": "提交运行 Python 脚本：读取作物推荐 CSV，构造 annual_temp_range 与 total_annual_precipitation，对 Soilcolor 做标签编码，以 label 为目标、其余非 label/Soilcolor 列为特征，执行 5 折分层交叉验证的 RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)，计算并汇总每类 F1，导出 output.csv。",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "evidence_id": "E00014",
+              "quote": "df = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')"
+            },
+            {
+              "evidence_id": "E00014",
+              "quote": "df['annual_temp_range'] = df[[f'T2M_MAX-{s}' for s in seasons]].max(axis=1) - df[[f'T2M_MIN-{s}' for s in seasons]].min(axis=1)"
+            },
+            {
+              "evidence_id": "E00014",
+              "quote": "df['total_annual_precipitation'] = df[[f'PRECTOTCORR-{s}' for s in seasons]].sum(axis=1)"
+            },
+            {
+              "evidence_id": "E00014",
+              "quote": "categorical_cols = ['Soilcolor']\nle = LabelEncoder()\nfor col in categorical_cols:\n    df[col + '_encoded'] = le.fit_transform(df[col])"
+            },
+            {
+              "evidence_id": "E00014",
+              "quote": "feature_cols = [col for col in df.columns if col not in ['label', 'Soilcolor']]\ntarget_col = 'label'"
+            },
+            {
+              "evidence_id": "E00014",
+              "quote": "cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)"
+            },
+            {
+              "evidence_id": "E00014",
+              "quote": "rf = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)"
+            },
+            {
+              "evidence_id": "E00014",
+              "quote": "fold_f1 = f1_score(y_test, y_pred, average=None, labels=range(len(crop_names)), zero_division=0)"
+            },
+            {
+              "evidence_id": "E00014",
+              "quote": "mean_f1 = np.mean(f1_values)\n    results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})"
+            },
+            {
+              "evidence_id": "E00014",
+              "quote": "results_df.to_csv('output.csv', index=False)"
+            }
+          ],
+          "details": [
+            {
+              "aspect": "data_object",
+              "description": "输入为 'Crop Recommendation using Soil Properties and Weather Prediction.csv'；季节列表为 W、Sp、Su、Au。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "df = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')"
+                },
+                {
+                  "evidence_id": "E00014",
+                  "quote": "seasons = ['W', 'Sp', 'Su', 'Au']"
+                }
+              ]
+            },
+            {
+              "aspect": "transformation",
+              "description": "annual_temp_range = 各季节 T2M_MAX 的最大值减去各季节 T2M_MIN 的最小值。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "df['annual_temp_range'] = df[[f'T2M_MAX-{s}' for s in seasons]].max(axis=1) - df[[f'T2M_MIN-{s}' for s in seasons]].min(axis=1)"
+                }
+              ]
+            },
+            {
+              "aspect": "transformation",
+              "description": "total_annual_precipitation = 各季节 PRECTOTCORR 之和。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "df['total_annual_precipitation'] = df[[f'PRECTOTCORR-{s}' for s in seasons]].sum(axis=1)"
+                }
+              ]
+            },
+            {
+              "aspect": "transformation",
+              "description": "对 Soilcolor 使用 LabelEncoder 生成 Soilcolor_encoded。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "categorical_cols = ['Soilcolor']\nle = LabelEncoder()\nfor col in categorical_cols:\n    df[col + '_encoded'] = le.fit_transform(df[col])"
+                }
+              ]
+            },
+            {
+              "aspect": "model",
+              "description": "特征列为除 label 与 Soilcolor 外的所有列；目标 label 经 LabelEncoder 编码；5 折 StratifiedKFold(shuffle=True, random_state=42)；RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "feature_cols = [col for col in df.columns if col not in ['label', 'Soilcolor']]\ntarget_col = 'label'"
+                },
+                {
+                  "evidence_id": "E00014",
+                  "quote": "target_le = LabelEncoder()\ny_encoded = target_le.fit_transform(y)\ncrop_names = target_le.classes_"
+                },
+                {
+                  "evidence_id": "E00014",
+                  "quote": "cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)"
+                },
+                {
+                  "evidence_id": "E00014",
+                  "quote": "rf = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)"
+                }
+              ]
+            },
+            {
+              "aspect": "grouping",
+              "description": "按 crop_names 中每个作物类别汇总 5 折 F1，每个类别一行。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "for crop in crop_names:\n    f1_values = all_f1[crop]\n    mean_f1 = np.mean(f1_values)\n    results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})"
+                }
+              ]
+            },
+            {
+              "aspect": "measure",
+              "description": "每折用 f1_score(average=None, labels=range(len(crop_names)), zero_division=0) 得到每类 F1，再对 5 折取 np.mean 并 round(...,4)。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "fold_f1 = f1_score(y_test, y_pred, average=None, labels=range(len(crop_names)), zero_division=0)"
+                },
+                {
+                  "evidence_id": "E00014",
+                  "quote": "mean_f1 = np.mean(f1_values)\n    results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})"
+                }
+              ]
+            },
+            {
+              "aspect": "output",
+              "description": "导出 output.csv，列 crop_class、f1_score，index=False。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})"
+                },
+                {
+                  "evidence_id": "E00014",
+                  "quote": "results_df.to_csv('output.csv', index=False)"
+                }
+              ]
+            }
+          ],
+          "requirement_links": [
+            {
+              "requirement_id": "R0001",
+              "relation": "targets",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "rf = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0002",
+              "relation": "targets",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "df = pd.read_csv('Crop Recommendation using Soil Properties and Weather Prediction.csv')"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0003",
+              "relation": "targets",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "df['annual_temp_range'] = df[[f'T2M_MAX-{s}' for s in seasons]].max(axis=1) - df[[f'T2M_MIN-{s}' for s in seasons]].min(axis=1)"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0004",
+              "relation": "targets",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "df['total_annual_precipitation'] = df[[f'PRECTOTCORR-{s}' for s in seasons]].sum(axis=1)"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0005",
+              "relation": "targets",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "categorical_cols = ['Soilcolor']\nle = LabelEncoder()\nfor col in categorical_cols:\n    df[col + '_encoded'] = le.fit_transform(df[col])"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0006",
+              "relation": "targets",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)"
+                },
+                {
+                  "evidence_id": "E00014",
+                  "quote": "rf = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0007",
+              "relation": "targets",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "fold_f1 = f1_score(y_test, y_pred, average=None, labels=range(len(crop_names)), zero_division=0)"
+                },
+                {
+                  "evidence_id": "E00014",
+                  "quote": "mean_f1 = np.mean(f1_values)\n    results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0008",
+              "relation": "produces_candidate_for",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "results.append({'crop_class': crop, 'f1_score': round(mean_f1, 4)})"
+                },
+                {
+                  "evidence_id": "E00014",
+                  "quote": "results_df.to_csv('output.csv', index=False)"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0009",
+              "relation": "produces_candidate_for",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "results_df.to_csv('output.csv', index=False)"
+                }
+              ]
+            }
+          ],
+          "limitations": []
+        },
+        {
+          "type": "result_verification",
+          "phase": "submitted_for_execution",
+          "description": "脚本末尾请求读回 output.csv，打印 shape、列名和全部行以核验导出结果。",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "evidence_id": "E00014",
+              "quote": "verify = pd.read_csv('output.csv')\nprint(f\"Shape: {verify.shape}\")\nprint(f\"Columns: {verify.columns.tolist()}\")\nprint(verify.to_string(index=False))"
+            }
+          ],
+          "details": [
+            {
+              "aspect": "data_object",
+              "description": "读回对象为 output.csv。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "verify = pd.read_csv('output.csv')"
+                }
+              ]
+            }
+          ],
+          "requirement_links": [
+            {
+              "requirement_id": "R0013",
+              "relation": "checks",
+              "evidence": [
+                {
+                  "evidence_id": "E00014",
+                  "quote": "verify = pd.read_csv('output.csv')\nprint(f\"Shape: {verify.shape}\")\nprint(f\"Columns: {verify.columns.tolist()}\")\nprint(verify.to_string(index=False))"
+                }
+              ]
+            }
+          ],
+          "limitations": []
+        },
+        {
+          "type": "result_inspection",
+          "phase": "observed_in_result",
+          "description": "工具返回脚本输出：派生特征统计、30 个特征、12 个目标类别、5 折 Macro F1、每类 F1 表，并报告保存 output.csv；读回显示 shape (12, 2)、列 crop_class/f1_score 及数值。",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "evidence_id": "E00015",
+              "quote": "Derived features added:\n  annual_temp_range: mean=23.29, std=0.98\n  total_annual_precipitation: mean=24.86, std=6.65"
+            },
+            {
+              "evidence_id": "E00015",
+              "quote": "Features: 30\nTarget classes (12): ['Barley', 'Bean', 'Dagussa', 'Fallow', 'Maize', 'Niger seed', 'Pea', 'Potato', 'Red Pepper', 'Sorghum', 'Teff', 'Wheat']"
+            },
+            {
+              "evidence_id": "E00015",
+              "quote": "Fold 1: Macro F1 = 0.2357\nFold 2: Macro F1 = 0.2462\nFold 3: Macro F1 = 0.2119\nFold 4: Macro F1 = 0.2180\nFold 5: Macro F1 = 0.2335"
+            },
+            {
+              "evidence_id": "E00015",
+              "quote": "--- Final F1 Scores ---\ncrop_class  f1_score\n    Barley    0.4223\n      Bean    0.1516\n   Dagussa    0.1411\n    Fallow    0.0000\n     Maize    0.5630\nNiger seed    0.0000\n       Pea    0.1871\n    Potato    0.1238\nRed Pepper    0.0571\n   Sorghum    0.0446\n      Teff    0.6378\n     Wheat    0.4202"
+            },
+            {
+              "evidence_id": "E00015",
+              "quote": "Results saved to output.csv"
+            },
+            {
+              "evidence_id": "E00015",
+              "quote": "Shape: (12, 2)\nColumns: ['crop_class', 'f1_score']"
+            }
+          ],
+          "details": [
+            {
+              "aspect": "data_object",
+              "description": "工具报告 30 个特征和 12 个目标类别：Barley、Bean、Dagussa、Fallow、Maize、Niger seed、Pea、Potato、Red Pepper、Sorghum、Teff、Wheat。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00015",
+                  "quote": "Features: 30\nTarget classes (12): ['Barley', 'Bean', 'Dagussa', 'Fallow', 'Maize', 'Niger seed', 'Pea', 'Potato', 'Red Pepper', 'Sorghum', 'Teff', 'Wheat']"
+                }
+              ]
+            },
+            {
+              "aspect": "measure",
+              "description": "工具报告 annual_temp_range 均值 23.29、标准差 0.98；total_annual_precipitation 均值 24.86、标准差 6.65。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00015",
+                  "quote": "Derived features added:\n  annual_temp_range: mean=23.29, std=0.98\n  total_annual_precipitation: mean=24.86, std=6.65"
+                }
+              ]
+            },
+            {
+              "aspect": "measure",
+              "description": "工具报告 5 折 Macro F1 分别为 0.2357、0.2462、0.2119、0.2180、0.2335。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00015",
+                  "quote": "Fold 1: Macro F1 = 0.2357\nFold 2: Macro F1 = 0.2462\nFold 3: Macro F1 = 0.2119\nFold 4: Macro F1 = 0.2180\nFold 5: Macro F1 = 0.2335"
+                }
+              ]
+            },
+            {
+              "aspect": "measure",
+              "description": "工具报告每类 F1：Barley 0.4223、Bean 0.1516、Dagussa 0.1411、Fallow 0.0000、Maize 0.5630、Niger seed 0.0000、Pea 0.1871、Potato 0.1238、Red Pepper 0.0571、Sorghum 0.0446、Teff 0.6378、Wheat 0.4202。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00015",
+                  "quote": "--- Final F1 Scores ---\ncrop_class  f1_score\n    Barley    0.4223\n      Bean    0.1516\n   Dagussa    0.1411\n    Fallow    0.0000\n     Maize    0.5630\nNiger seed    0.0000\n       Pea    0.1871\n    Potato    0.1238\nRed Pepper    0.0571\n   Sorghum    0.0446\n      Teff    0.6378\n     Wheat    0.4202"
+                }
+              ]
+            },
+            {
+              "aspect": "output",
+              "description": "工具报告保存 output.csv；读回显示 shape (12, 2)，列为 crop_class、f1_score。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00015",
+                  "quote": "Results saved to output.csv"
+                },
+                {
+                  "evidence_id": "E00015",
+                  "quote": "Shape: (12, 2)\nColumns: ['crop_class', 'f1_score']"
+                }
+              ]
+            }
+          ],
+          "requirement_links": [
+            {
+              "requirement_id": "R0006",
+              "relation": "provides_context_for",
+              "evidence": [
+                {
+                  "evidence_id": "E00015",
+                  "quote": "Fold 1: Macro F1 = 0.2357\nFold 2: Macro F1 = 0.2462\nFold 3: Macro F1 = 0.2119\nFold 4: Macro F1 = 0.2180\nFold 5: Macro F1 = 0.2335"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0007",
+              "relation": "provides_context_for",
+              "evidence": [
+                {
+                  "evidence_id": "E00015",
+                  "quote": "--- Final F1 Scores ---\ncrop_class  f1_score\n    Barley    0.4223\n      Bean    0.1516\n   Dagussa    0.1411\n    Fallow    0.0000\n     Maize    0.5630\nNiger seed    0.0000\n       Pea    0.1871\n    Potato    0.1238\nRed Pepper    0.0571\n   Sorghum    0.0446\n      Teff    0.6378\n     Wheat    0.4202"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0009",
+              "relation": "provides_context_for",
+              "evidence": [
+                {
+                  "evidence_id": "E00015",
+                  "quote": "Results saved to output.csv"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0013",
+              "relation": "provides_context_for",
+              "evidence": [
+                {
+                  "evidence_id": "E00015",
+                  "quote": "Shape: (12, 2)\nColumns: ['crop_class', 'f1_score']"
+                }
+              ]
+            }
+          ],
+          "limitations": []
+        }
+      ],
+      "step_id": "S0005",
+      "model_exchange_ref": "X0005",
+      "native_origin": {
+        "packet": 2,
+        "bundle_path": "objects/0a040076adf0d2e87be02f1fae509dfa680487b0b2f9995495f7be7ce0f565b0.json",
+        "sha256": "0a040076adf0d2e87be02f1fae509dfa680487b0b2f9995495f7be7ce0f565b0",
+        "json_pointer": "/units/0"
+      },
+      "validation": {
+        "status": "mechanically_valid",
+        "issues": [],
+        "semantic_correctness_certified": false
+      }
+    },
+    {
+      "unit_id": "U00006",
+      "operations": [
+        {
+          "type": "result_inspection",
+          "phase": "submitted_for_execution",
+          "description": "请求用 cat 显示 output.csv 的内容。",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "evidence_id": "E00018",
+              "quote": "cat output.csv"
+            }
+          ],
+          "details": [
+            {
+              "aspect": "data_object",
+              "description": "读取对象为 output.csv。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00018",
+                  "quote": "cat output.csv"
+                }
+              ]
+            }
+          ],
+          "requirement_links": [
+            {
+              "requirement_id": "R0013",
+              "relation": "checks",
+              "evidence": [
+                {
+                  "evidence_id": "E00018",
+                  "quote": "cat output.csv"
+                }
+              ]
+            }
+          ],
+          "limitations": []
+        },
+        {
+          "type": "result_inspection",
+          "phase": "observed_in_result",
+          "description": "工具返回 output.csv 的 CSV 文本：表头 crop_class,f1_score，随后 12 行作物类别与 F1 值。",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "evidence_id": "E00019",
+              "quote": "crop_class,f1_score\nBarley,0.4223\nBean,0.1516\nDagussa,0.1411\nFallow,0.0\nMaize,0.563\nNiger seed,0.0\nPea,0.1871\nPotato,0.1238\nRed Pepper,0.0571\nSorghum,0.0446\nTeff,0.6378\nWheat,0.4202"
+            }
+          ],
+          "details": [
+            {
+              "aspect": "measure",
+              "description": "返回的 F1 值包括 Barley 0.4223、Bean 0.1516、Dagussa 0.1411、Fallow 0.0、Maize 0.563、Niger seed 0.0、Pea 0.1871、Potato 0.1238、Red Pepper 0.0571、Sorghum 0.0446、Teff 0.6378、Wheat 0.4202。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00019",
+                  "quote": "crop_class,f1_score\nBarley,0.4223\nBean,0.1516\nDagussa,0.1411\nFallow,0.0\nMaize,0.563\nNiger seed,0.0\nPea,0.1871\nPotato,0.1238\nRed Pepper,0.0571\nSorghum,0.0446\nTeff,0.6378\nWheat,0.4202"
+                }
+              ]
+            },
+            {
+              "aspect": "output",
+              "description": "CSV 列为 crop_class、f1_score，共 12 行数据。",
+              "basis": "explicit",
+              "evidence": [
+                {
+                  "evidence_id": "E00019",
+                  "quote": "crop_class,f1_score\nBarley,0.4223\nBean,0.1516\nDagussa,0.1411\nFallow,0.0\nMaize,0.563\nNiger seed,0.0\nPea,0.1871\nPotato,0.1238\nRed Pepper,0.0571\nSorghum,0.0446\nTeff,0.6378\nWheat,0.4202"
+                }
+              ]
+            }
+          ],
+          "requirement_links": [
+            {
+              "requirement_id": "R0007",
+              "relation": "provides_context_for",
+              "evidence": [
+                {
+                  "evidence_id": "E00019",
+                  "quote": "crop_class,f1_score\nBarley,0.4223\nBean,0.1516\nDagussa,0.1411\nFallow,0.0\nMaize,0.563\nNiger seed,0.0\nPea,0.1871\nPotato,0.1238\nRed Pepper,0.0571\nSorghum,0.0446\nTeff,0.6378\nWheat,0.4202"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0008",
+              "relation": "provides_context_for",
+              "evidence": [
+                {
+                  "evidence_id": "E00019",
+                  "quote": "crop_class,f1_score\nBarley,0.4223\nBean,0.1516\nDagussa,0.1411\nFallow,0.0\nMaize,0.563\nNiger seed,0.0\nPea,0.1871\nPotato,0.1238\nRed Pepper,0.0571\nSorghum,0.0446\nTeff,0.6378\nWheat,0.4202"
+                }
+              ]
+            },
+            {
+              "requirement_id": "R0013",
+              "relation": "provides_context_for",
+              "evidence": [
+                {
+                  "evidence_id": "E00019",
+                  "quote": "crop_class,f1_score\nBarley,0.4223\nBean,0.1516\nDagussa,0.1411\nFallow,0.0\nMaize,0.563\nNiger seed,0.0\nPea,0.1871\nPotato,0.1238\nRed Pepper,0.0571\nSorghum,0.0446\nTeff,0.6378\nWheat,0.4202"
+                }
+              ]
+            }
+          ],
+          "limitations": []
+        }
+      ],
+      "step_id": "S0006",
+      "model_exchange_ref": "X0006",
+      "native_origin": {
+        "packet": 2,
+        "bundle_path": "objects/0a040076adf0d2e87be02f1fae509dfa680487b0b2f9995495f7be7ce0f565b0.json",
+        "sha256": "0a040076adf0d2e87be02f1fae509dfa680487b0b2f9995495f7be7ce0f565b0",
+        "json_pointer": "/units/1"
+      },
+      "validation": {
+        "status": "mechanically_valid",
+        "issues": [],
+        "semantic_correctness_certified": false
+      }
+    }
+  ],
+  "note": "Original annotation objects, including original source IDs and native-origin hashes. Full private object bundle is not redistributed."
+}
