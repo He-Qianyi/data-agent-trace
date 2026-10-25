@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "data-agent-trace-research"
+version = "0.1.0"
+description = "Evidence-grounded trace processing and diagnosis for data agents"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["jsonschema>=4.18,<5"]
+authors = [{name = "He Qianyi"}]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/data_agent_trace"]
+
+[tool.hatch.build]
+exclude = ["**/._*", "**/__pycache__/**"]

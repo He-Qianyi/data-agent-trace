@@ -1,0 +1,58 @@
+[
+  {
+    "file": "src/data_agent_trace/fact_layer/extract.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/extract.py",
+    "source_sha256": "1de25b177a4408e0b3ed39e4e0ef6af5106d8a3d611b39955c1e821042b52224",
+    "packaging_changes": {}
+  },
+  {
+    "file": "src/data_agent_trace/fact_layer/constants.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/constants.py",
+    "source_sha256": "a1b7454266999f90f9e8195a2411dfa84cca01e2c1e33f463d119ca5c1f4392e",
+    "packaging_changes": {}
+  },
+  {
+    "file": "src/data_agent_trace/fact_layer/recovery.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/recovery.py",
+    "source_sha256": "5e227381cf44060db4033f2db389936ab6d4258c9a8c13699c189a834c24b353",
+    "packaging_changes": {}
+  },
+  {
+    "file": "src/data_agent_trace/fact_layer/sources.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/sources.py",
+    "source_sha256": "a3c16428126c77a577bbc7e50d5fa2ebc1479f8a49365e8718000af082a3258a",
+    "packaging_changes": {}
+  },
+  {
+    "file": "src/data_agent_trace/semantic/contract.py",
+    "research_source": "pipeline/stages/trace_processor/semantic_layer/contract.py",
+    "source_sha256": "d549d468cef90cd2694c08d6944e6f5dbb9eef9f7765d7d532c0f363da6368ef",
+    "packaging_changes": {}
+  },
+  {
+    "file": "src/data_agent_trace/semantic/evidence.py",
+    "research_source": "pipeline/stages/trace_processor/semantic_layer/evidence.py",
+    "source_sha256": "e6e83e6027343e5152cbc86054ab7f7e1e56f59d9e8418d6a9571a230ee23024",
+    "packaging_changes": {}
+  },
+  {
+    "file": "src/data_agent_trace/semantic/validate.py",
+    "research_source": "pipeline/stages/trace_processor/semantic_layer/validate.py",
+    "source_sha256": "4fc153caa197e485f4aa287df0c4e92ac5d836f0f7712a414e6e91bc64075e35",
+    "packaging_changes": {}
+  },
+  {
+    "file": "tests/test_connection_resolution.py",
+    "research_source": "tests/test_fact_layer_v5_connection_positional.py",
+    "source_sha256": "7534ff6faeccf72f2477d6c48a9645d21151cef4007a01c6a78580950784acef",
+    "packaging_changes": {
+      "from pipeline.stages.trace_processor.fact_layer_v5.extract import python_facts": "from data_agent_trace.fact_layer.extract import python_facts"
+    }
+  },
+  {
+    "file": "src/data_agent_trace/diagnosis/prompt.md",
+    "research_source": "outputs/diagnosis_prompt_v1_20261018/diagnosis.prompt.md",
+    "source_sha256": "8ad65be79cfb5bda29e746d2e096a244e367da6954f4d89773be31bdac7e8fd8",
+    "packaging_changes": "Core instructions and schema only; benchmark examples and final input template omitted."
+  }
+]

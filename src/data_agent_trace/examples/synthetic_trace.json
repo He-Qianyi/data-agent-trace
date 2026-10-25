@@ -1,0 +1,111 @@
+{
+  "synthetic": true,
+  "annotation_origin": "human_authored_illustration",
+  "complete_toy_trace": true,
+  "steps": [
+    "S0001",
+    "S0002"
+  ],
+  "code": "import pandas as pd\ndf = pd.read_csv('orders.csv')\nmonthly = df[df['month'] == '2026-01']\ntotal = monthly['revenue'].sum()\nprint(total)\n",
+  "evidence": [
+    {
+      "evidence_id": "T0001",
+      "role": "original_task_instruction",
+      "text": "Calculate January 2026 revenue from orders.csv, excluding cancelled orders. Return only the total.",
+      "char_start": 0,
+      "original_source_ref": {
+        "source_id": "synthetic_trace",
+        "json_pointer": "/evidence/0/text"
+      }
+    },
+    {
+      "evidence_id": "E0001",
+      "role": "tool_observation",
+      "step_id": "S0001",
+      "text": "orders.csv rows: month=2026-01,status=completed,revenue=100; month=2026-01,status=cancelled,revenue=80.",
+      "char_start": 0,
+      "original_source_ref": {
+        "source_id": "synthetic_trace",
+        "json_pointer": "/evidence/1/text"
+      }
+    },
+    {
+      "evidence_id": "E0002",
+      "role": "submitted_code",
+      "step_id": "S0002",
+      "text": "import pandas as pd\ndf = pd.read_csv('orders.csv')\nmonthly = df[df['month'] == '2026-01']\ntotal = monthly['revenue'].sum()\nprint(total)\n",
+      "char_start": 0,
+      "original_source_ref": {
+        "source_id": "synthetic_trace",
+        "json_pointer": "/evidence/2/text"
+      }
+    },
+    {
+      "evidence_id": "E0003",
+      "role": "tool_observation",
+      "step_id": "S0002",
+      "text": "180",
+      "char_start": 0,
+      "original_source_ref": {
+        "source_id": "synthetic_trace",
+        "json_pointer": "/evidence/3/text"
+      }
+    },
+    {
+      "evidence_id": "FINAL0001",
+      "role": "assistant_final_claim",
+      "text": "180",
+      "char_start": 0,
+      "original_source_ref": {
+        "source_id": "synthetic_trace",
+        "json_pointer": "/evidence/4/text"
+      }
+    }
+  ],
+  "illustrative_diagnosis": {
+    "root_cause_chain": [
+      {
+        "description": "The supplied final answer repeats 180, including the cancelled revenue visible in the supplied rows.",
+        "step_ids": [
+          "S0002"
+        ],
+        "evidence_ids": [
+          "T0001",
+          "E0001",
+          "E0002",
+          "E0003",
+          "FINAL0001"
+        ]
+      },
+      {
+        "description": "The submitted program filters the month but sums all statuses; the requested cancellation exclusion is absent in this complete toy trace.",
+        "step_ids": [
+          "S0002"
+        ],
+        "evidence_ids": [
+          "T0001",
+          "E0001",
+          "E0002"
+        ]
+      }
+    ],
+    "critical_decision_points": [
+      {
+        "step_id": "S0002",
+        "decision": "Aggregate monthly revenue without excluding cancelled orders.",
+        "reasoning": "The original task requires an exclusion. The supplied input rows include a cancelled order; the submitted code applies only a month filter. The supplied observation and final answer are 180. This complete synthetic trace contains no later correction.",
+        "should_have": "Apply the cancellation exclusion before summing and verify the eligible rows.",
+        "evidence_ids": [
+          "T0001",
+          "E0001",
+          "E0002",
+          "E0003",
+          "FINAL0001"
+        ]
+      }
+    ],
+    "correct_strategy": "Apply both the month and cancellation filters, then verify which rows contribute to the aggregate.",
+    "stage_labels": [],
+    "summary": "Illustrative human-authored diagnosis for a complete synthetic trace: omission of the requested status filter explains the supplied total. This example does not measure model accuracy."
+  }
+}
