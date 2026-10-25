@@ -1,0 +1,44 @@
+{
+  "id": "chatcmpl-c745fbb1",
+  "object": "chat.completion",
+  "created": 1792328319,
+  "model": "deepseek-v4.1-flash-1017",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "tool_calls": [
+          {
+            "id": "call_e5bfb9c5b8634466b09e146f",
+            "type": "function",
+            "function": {
+              "name": "read_evidence",
+              "arguments": "{\"evidence_id\":\"E00005\",\"start\":5000,\"characters\":5000}"
+            }
+          }
+        ],
+        "reasoning": "Key: manual.md says account_type is \"list type. list of account types\". Need to see the rest of section 5 to see how null is described (e.g., \"null means all\" or \"if null, applies to all\"). Let me read E00005 next page (5000-10000) to see the field descriptions including aci and null semantics."
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 39010,
+    "total_tokens": 39165,
+    "completion_tokens": 155,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 77
+    }
+  },
+  "system_fingerprint": null,
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null,
+  "ec_transfer_params": null
+}

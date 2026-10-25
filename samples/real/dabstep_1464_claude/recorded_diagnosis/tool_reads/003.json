@@ -1,0 +1,32 @@
+{
+  "ordinal": 3,
+  "round": 2,
+  "name": "read_evidence",
+  "arguments": {
+    "evidence_id": "E00005",
+    "start": 5000,
+    "characters": 5000
+  },
+  "result": {
+    "status": "source_excerpt",
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "evidence_id": "E00005",
+    "role": "tool_observation",
+    "text": "nt happens, the more expensive it is.\n82\t* **monthly_fraud_level**: string type. rule that specifies the fraud levels measured as ratio between monthly total volume and monthly volume notified as fraud. For example '7.7%-8.3%' means that the ratio should be between 7.7 and 8.3 percent. Generally, the payment processors will become more expensive as fraud rate increases.\n83\t* **monthly_volume**: string type. rule that specifies the monthly total volume of the merchant. '100k-1m' is between 100.000 (100k) and 1.000.000 (1m). All volumes are specified in euros. Normally merchants with higher volume are able to get cheaper fees from payments processors.\n84\t* **merchant_category_code**: list type. integer that specifies the possible merchant category codes, according to the categorization found in this manual in the section `Merchant Category Code`. eg: `[8062, 8011, 8021]`.\n85\t* **is_credit**: bool. True if the rule applies for credit transactions. Typically credit transactions are more expensive (higher fee).\n86\t* **aci**: list type. string that specifies an array of possible Authorization Characteristics Indicator (ACI) according to the categorization specified in this manual in the section `Authorization Characteristics Indicator`.\n87\t* **fixed_amount**: float. Fixed amount of the fee in euros per transaction, for the given rule.\n88\t* **rate**: integer. Variable rate to be especified to be multiplied by the transaction value and divided by 10000.\n89\t* **intracountry**: bool. True if the transaction is domestic, defined by the fact that the issuer country and the acquiring country are the same. False are for international transactions where the issuer country and acquirer country are different and typically are more expensive.\n90\t\n91\t**Notes**:\n92\t* The fee then is provided by `fee = fixed_amount + rate * transaction_value / 10000`.\n93\t* Monthly volumes and rates are computed always in natural months (e.g. January, February), starting always in day 1 and ending in the last natural day of the month (i.e. 28 for February, 30 or 31).\n94\t* Fixed amount and transaction values are given in the same currency, typically euros.\n95\t* If a field is set to null it means that it applies to all possible values of that field. E.g. null value in aci means that the rules applies for all possible values of aci.\n96\t\n97\tThe full list of fee rules and values depending on these characteristics can be found in the annexed file `fees.json`. \n98\t\n99\t###  5.1 Best Practices for Minimizing Transaction Costs\n100\t\n101\t\n102\t#### 5.1.1 Optimizing Transactions through Local Acquiring\n103\t\n104\tTo minimize friction and maximize conversion rates, it is essential to route transactions through local acquirers. Local acquiring refers to the scenario where the issuer country is the same as the acquirer country. This approach can lead to several benefits, including:\n105\t\n106\t- Reduced transaction friction, resulting in higher conversion rates\n107\t- Lower fees associated with cross-border transactions\n108\t\n109\t**What is Local Acquiring?**\n110\t\n111\tLocal acquiring occurs when a transaction is processed through an acquirer that is located in the same country as the issuer of the card. For example, if a cardholder is located in the United States and makes a purchase from a merchant also located in the United States, the transaction would be considered a local acquiring transaction.\n112\t\n113\tBy routing transactions through local acquirers, merchants can reduce the complexity and costs associated with cross-border transactions, ultimately leading to a better user experience and increased conversion rates.\n114\t\n115\t**Benefits of Local Acquiring**\n116\t\n117\tSome of the key benefits of local acquiring include:\n118\t\n119\t- Reduced transaction fees\n120\t- Improved conversion rates due to reduced friction\n121\t- Enhanced user experience\n122\t- Simplified transaction processing\n123\t\n124\t#### 5.1.2. Choosing the right transaction type\n125\t\n126\t**Transaction Processing Options and Fees**\n127\t\n128\tWhen processing transactions, there are various options available, depending on the type of transaction and the level of authentication required. The Authorization Characteristic Indicator (ACI) provides a standardized way to categorize transactions and determine the best processing method.\n129\t\n130\t**Transaction Processing Methods**\n131\t\n132\tTransactions can be processed in one of several ways, including:\n133\t\n134\t- POS transactions with authentication: This method involves verifying the cardholder's identity through authentication, such as entering a PIN or signature.\n135\t- Tokenized transactions: This method involves replacing the cardholder's sensitive information with a token or pseudonym, which can be used to process the transaction.\n136\t\n137\t**Choosing the Right ACI**\n138\t\n139\tWhen choosing an ACI, consider the following factors:\n140\t\n141\t- Fees: Different ACIs have varying fees associated with them. Choosing the right ACI can help reduce costs, but may also add fricti",
+    "block_char_start": 5000,
+    "block_char_end": 10000,
+    "block_total_characters": 13868,
+    "field_char_start": 5000,
+    "field_char_end": 10000,
+    "fact_pointer": "/facts/steps/1/observation/text",
+    "original_source_ref": {
+      "source_id": "S0001",
+      "line": 19,
+      "json_pointer": "/message/content/0"
+    },
+    "representation": "text",
+    "next_char_start": 10000,
+    "literal_text_unchanged": true,
+    "statement_truth_or_execution_not_certified": true
+  }
+}

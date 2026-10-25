@@ -4,7 +4,7 @@
 
 Research by **He Qianyi**, Computer Science, National University of Singapore; ongoing since September 2026.
 
-This repository releases the available research implementations, configurations, prompts, dependency closure, and reproduction instructions. It includes a **genuine recorded small sample** and an offline evaluator. The release preserves known failures and explicitly records unavailable evidence and evaluation assets.
+This repository releases the available research implementations, configurations, prompts, dependency closure, and reproduction instructions. It includes a **complete real recorded sample with offline end-to-end replay**, the earlier recorded excerpt, and mechanical evaluation tools. The release preserves known failures and explicitly records unavailable evidence and evaluation assets.
 
 ## Research workflow
 
@@ -25,10 +25,11 @@ flowchart LR
 
 | Component | Available here | Validation and scope |
 | --- | --- | --- |
-| Trace Processor | Complete v5 fact extraction, earlier fact versions needed for historical compatibility, semantic annotation runner, contracts, merge, verification, downstream export | Offline original regression tests and a full mocked A/B/C/D integration test |
-| Trace Diagnosis | Evidence index, original native retrieval tools/client, current acceptance validator, original 12-round and 24-round continuation runners, a fresh-run release adapter | Offline mocked native-tool loop; current public release did not make fresh model requests |
+| Trace Processor | Complete v5 fact extraction, earlier fact versions needed for historical compatibility, semantic annotation runner, contracts, merge, verification, downstream export | Full real-recording A/B/C/D replay, original regression tests and explicit mocked integration tests |
+| Trace Diagnosis | Evidence index, original native retrieval tools/client, current acceptance validator, original 12-round and 24-round continuation runners, a fresh-run release adapter | Full recorded four-round diagnosis replay with exact native read/search verification; no fresh model calls |
 | Configuration and prompts | Frozen processor prompts, schema, runtime profile; diagnosis prompt/schema; current structural policy; historical scheduler profile | Local path spellings are replaced in public copies; source and release hashes are recorded |
-| Real small sample | Original task, recorded steps S0004-S0006, processor annotations, original diagnosis, existing author review | A public excerpt, not a complete native recording or independent gold dataset |
+| Complete real sample | DABstep 1464: raw ledger/transcript, all eight tool steps, full annotations, four diagnosis rounds, saved native outputs and author review | Offline replay from raw records through processor, diagnosis and evaluation; disclosed metadata path substitutions |
+| Earlier real excerpt | Agriculture 22: steps S0004-S0006 and original diagnosis | Retained unchanged for comparison; explicitly an excerpt |
 | Evaluation | Strict schema, current acceptance, evidence-ID coverage, exact quotations, source hashes, static extraction | Semantic/root-cause accuracy is unavailable and remains `null` |
 
 See [reproduction instructions](docs/reproduction.md), [evaluation protocol](docs/evaluation.md), [data scope](docs/data-release.md), and [remaining limitations](docs/availability.md).
@@ -39,19 +40,21 @@ Python 3.10 or later on Linux or macOS is required. The original runtime uses PO
 
 ```bash
 python -m pip install -e .
-python -m reproduction.evaluate \
-  --sample samples/real/agriculture_22_claude \
-  --output reproduction_output/real_sample_evaluation
+python -m reproduction.replay \
+  --sample samples/real/dabstep_1464_claude \
+  --output reproduction_output/complete_sample_replay
 python -m unittest discover -s tests -v
 ```
 
 Use a new output directory for each evaluation. The offline command does not execute recorded analysis code or call a model.
 
-The real sample has a useful known boundary: the actual saved diagnosis contains an extra `root_cause_chain_note` field. The strict declared schema rejects it; the current CodeTracer-compatible structural acceptance policy accepts it. Both outcomes are reported unchanged. Passing either mechanical policy does not establish diagnosis correctness.
+The complete sample replays every saved annotation and diagnosis response, and exactly checks the original diagnostic request histories and five native tool returns. Its existing author review is `needs_revision`; the semantic issue remains visible. See [sample contents, provenance and expected outcome](samples/real/dabstep_1464_claude/README.md).
+
+The earlier agriculture excerpt has a separate known boundary: the actual saved diagnosis contains an extra `root_cause_chain_note` field. The strict declared schema rejects it; the current CodeTracer-compatible structural acceptance policy accepts it. Both outcomes are reported unchanged. Passing either mechanical policy does not establish diagnosis correctness.
 
 ## Full execution on your complete recordings
 
-The public excerpt intentionally omits local workspace metadata and raw input-row previews. To run the complete native-recording pipeline, supply your own eligible recording manifest and original source files. No artificial complete recording is substituted for the excerpt.
+The complete DABstep sample above supports offline recorded-output replay. To make new model predictions on your own recordings, supply an eligible recording manifest and original source files:
 
 ```bash
 # A: verify and extract facts from eligible original recordings; no model calls
@@ -89,9 +92,9 @@ The supplied historical provider profile uses SoCLaaS `x-test-2`, expected to re
 | `research_runners/` | Original batch/scheduler, native diagnosis, continuation, reporting and audit code |
 | `scripts/` | Source-verifier, provider, downstream storage and reader dependencies |
 | `configs/` | Current/frozen method contracts and release profiles |
-| `reproduction/` | Portable fresh-run adapters and real-sample evaluation |
-| `samples/real/` | Original recorded public excerpt and original outputs |
-| `tests/` | Original unit tests and clearly labelled mocked integration tests |
+| `reproduction/` | Portable fresh-run adapters, complete recorded-output replay and evaluation |
+| `samples/real/` | Complete DABstep recording/output history and earlier agriculture excerpt |
+| `tests/` | Original regression tests, full real replay tests and explicitly mocked integration tests |
 | `docs/research-source-manifest.json` | Research source, source hash, release hash, and disclosed export edits |
 | `src/data_agent_trace/` | Earlier selected-module API and explicitly synthetic tutorial demo, retained for compatibility |
 
@@ -99,8 +102,8 @@ The supplied historical provider profile uses SoCLaaS `x-test-2`, expected to re
 
 This is a release of existing implementations and a real inspectable sample. It does not claim a finished paper evaluation, an independently labelled failure benchmark, completed baseline/ablation studies, or historical results regenerated from scratch. Model response histories and the full trace corpus are not all redistributed. The real author review is not independent gold.
 
-New release adapters are tested with explicit offline mocks. Those mock responses are unit-test fixtures, never research results. The public real diagnosis is copied byte-for-byte from the saved experiment, including its extra field.
+The complete recorded-output replay uses real saved responses, separately from software tests with explicit mocks. Both samples retain their original diagnosis bytes and known limitations. No independent semantic accuracy result is inferred from replay success.
 
 ## Attribution
 
-The diagnostic output organization draws on [CodeTracer](https://github.com/NJU-LINK/CodeTracer) and its linked validation convention. The real sample uses a task from [AgenticDataBench](https://github.com/AgenticDataBench/AgenticDataBench); the upstream Apache-2.0 license is included beside the sample. See [attribution and source notes](docs/acknowledgements.md). No new project-wide license or publication acceptance is asserted by this release.
+The diagnostic output organization draws on [CodeTracer](https://github.com/NJU-LINK/CodeTracer) and its linked validation convention. The real sample uses a task from [AgenticDataBench](https://github.com/AgenticDataBench/AgenticDataBench); the upstream Apache-2.0 license is included beside that excerpt. The complete sample uses [DABstep](https://huggingface.co/datasets/adyen/DABstep), with its CC BY 4.0 attribution and license notice beside the sample. See [attribution and source notes](docs/acknowledgements.md). No new project-wide license or publication acceptance is asserted by this release.

@@ -1,0 +1,128 @@
+{
+  "requirements": [
+    {
+      "requirement_id": "R0001",
+      "kind": "goal",
+      "description": "确定适用于 account_type = R 且 aci = B 的 fee ID 或 IDs。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0002",
+      "kind": "filter",
+      "description": "筛选条件为 account_type = R 且 aci = B。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0003",
+      "kind": "data_source",
+      "description": "任务数据与文档位于 ./context。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0004",
+      "kind": "constraint",
+      "description": "探索并计算答案，按需使用本地工具和代码。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0005",
+      "kind": "constraint",
+      "description": "将创建的每个脚本保存在本工作区。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0006",
+      "kind": "constraint",
+      "description": "不得读取参考答案、其他任务或隐藏分数。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0007",
+      "kind": "constraint",
+      "description": "不得使用互联网或询问其他模型。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0008",
+      "kind": "output_artifact",
+      "description": "将精确答案写入 ./answer.txt。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0009",
+      "kind": "output_format",
+      "description": "答案文件只写精确答案，不写其他内容。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0010",
+      "kind": "verification",
+      "description": "写入后确认 ./answer.txt 存在。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0011",
+      "kind": "output_format",
+      "description": "答案必须是逗号分隔的值列表，例如 A, B, C。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0012",
+      "kind": "output_format",
+      "description": "若答案为空列表，回复空字符串。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0013",
+      "kind": "output_format",
+      "description": "若问题没有相关或适用答案，回复 'Not Applicable'。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0014",
+      "kind": "output_format",
+      "description": "仅当指南明确要求空字符串时，空文件才有效。",
+      "basis": "explicit"
+    },
+    {
+      "requirement_id": "R0015",
+      "kind": "output_format",
+      "description": "最终消息仅重复答案。",
+      "basis": "explicit"
+    }
+  ],
+  "target_units": [
+    {
+      "unit_id": "U00009",
+      "step_id": "S0008",
+      "tool_name": "Bash",
+      "model_exchange_ref": "X0008",
+      "evidence_ids": [
+        "E00024",
+        "E00025",
+        "E00026"
+      ],
+      "context_evidence_ids": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E00024",
+      "step_id": "S0008",
+      "role": "argument:command",
+      "text": "cat /private/tmp/dabstep-claude-work-1464-xqu8rdpm/answer.txt"
+    },
+    {
+      "evidence_id": "E00025",
+      "step_id": "S0008",
+      "role": "tool_observation",
+      "text": "34, 39, 49, 62, 68, 82, 154, 220, 231, 236, 265, 276, 278, 286, 329, 345, 352, 355, 360, 368, 369, 390, 393, 404, 419, 512, 539, 556, 564, 583, 587, 590, 638, 645, 661, 711, 717, 731, 757, 779, 793, 828, 837, 871, 915, 938, 939, 964, 986, 998"
+    },
+    {
+      "evidence_id": "E00026",
+      "step_id": "S0008",
+      "role": "recording_signals",
+      "text": "{\"availability\":\"recorded\",\"exit_code_as_recorded\":null,\"is_error_as_recorded\":false,\"nontext_payload_is_not_shown\":false,\"tool_status_as_recorded\":null,\"truncation\":{\"status\":\"not_explicitly_marked\"}}"
+    }
+  ]
+}

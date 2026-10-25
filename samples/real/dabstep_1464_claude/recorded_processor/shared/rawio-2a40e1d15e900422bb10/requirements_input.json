@@ -1,0 +1,54 @@
+{
+  "evidence": [
+    {
+      "evidence_id": "T0001",
+      "role": "original_task_instruction",
+      "text": "DABstep task 1464 (hard).\n"
+    },
+    {
+      "evidence_id": "T0002",
+      "role": "original_task_instruction",
+      "text": "Question: What is the fee ID or IDs that apply to account_type = R and aci = B?\n"
+    },
+    {
+      "evidence_id": "T0003",
+      "role": "original_task_instruction",
+      "text": "Answer guidelines: Answer must be a list of values in comma separated list, eg: A, B, C. If the answer is an empty list, reply with an empty string. If a question does not have a relevant or applicable answer for the task, please respond with 'Not Applicable'\n"
+    },
+    {
+      "evidence_id": "T0004",
+      "role": "original_task_instruction",
+      "text": "The task data and documentation are in ./context. Explore and compute the\n"
+    },
+    {
+      "evidence_id": "T0005",
+      "role": "original_task_instruction",
+      "text": "answer using local tools and code as needed. Save every script you create in\n"
+    },
+    {
+      "evidence_id": "T0006",
+      "role": "original_task_instruction",
+      "text": "this workspace. Do not read reference answers, other tasks, or hidden scores.\n"
+    },
+    {
+      "evidence_id": "T0007",
+      "role": "original_task_instruction",
+      "text": "Do not use the internet or ask another model.\n"
+    },
+    {
+      "evidence_id": "T0008",
+      "role": "original_task_instruction",
+      "text": "Write only the exact answer to ./answer.txt, then confirm it exists. An empty\n"
+    },
+    {
+      "evidence_id": "T0009",
+      "role": "original_task_instruction",
+      "text": "file is valid only if the guidelines specifically request an empty string.\n"
+    },
+    {
+      "evidence_id": "T0010",
+      "role": "original_task_instruction",
+      "text": "Repeat only the answer in your final message.\n"
+    }
+  ]
+}

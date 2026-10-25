@@ -1,0 +1,30 @@
+{
+  "ordinal": 2,
+  "round": 1,
+  "name": "read_evidence",
+  "arguments": {
+    "evidence_id": "E00004"
+  },
+  "result": {
+    "status": "source_excerpt",
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "evidence_id": "E00004",
+    "role": "argument:file_path",
+    "text": "/private/tmp/dabstep-claude-work-1464-xqu8rdpm/context/manual.md",
+    "block_char_start": 0,
+    "block_char_end": 64,
+    "block_total_characters": 64,
+    "field_char_start": 0,
+    "field_char_end": 64,
+    "fact_pointer": "/facts/steps/1/action/arguments/file_path",
+    "original_source_ref": {
+      "source_id": "S0002",
+      "line": 2,
+      "json_pointer": "/outgoing_anthropic_response/content/0/input"
+    },
+    "representation": "text",
+    "next_char_start": null,
+    "literal_text_unchanged": true,
+    "statement_truth_or_execution_not_certified": true
+  }
+}

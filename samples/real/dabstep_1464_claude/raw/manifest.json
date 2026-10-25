@@ -1,0 +1,79 @@
+{
+  "record_id": "rawio-2a40e1d15e900422bb10",
+  "benchmark": "dabstep",
+  "agent_id": "claude_code",
+  "task_id": "1464",
+  "run_id": "dabstep-claude-soclaas-relay-qwen36-20261004-v1",
+  "recording_level": "actual_request_response",
+  "strict_recording_complete": true,
+  "eligible_strict_completed": true,
+  "completion": {
+    "state": "ended_normal",
+    "receipts": [
+      {
+        "path": "raw/attempt-001/result.json",
+        "status": "completed",
+        "return_code": 0,
+        "finished_at": "2026-10-04T10:28:53.861706+00:00",
+        "timed_out": false,
+        "expected_model_requests": 9
+      },
+      {
+        "path": "raw/result.json",
+        "status": "completed",
+        "return_code": 0,
+        "finished_at": "2026-10-04T10:28:53.861706+00:00",
+        "timed_out": false,
+        "expected_model_requests": 9
+      }
+    ],
+    "expected_model_request_counts": [
+      9
+    ],
+    "conflicting_process_receipts": false
+  },
+  "attempt_directory": "raw/attempt-001",
+  "model_io_path": "raw/attempt-001/turn_model_io.jsonl",
+  "sources": [
+    {
+      "path": "raw/attempt-001/claude.stream.jsonl",
+      "role": "transcript"
+    },
+    {
+      "path": "raw/attempt-001/turn_model_io.jsonl",
+      "role": "model_io"
+    },
+    {
+      "path": "raw/attempt-001/prompt.txt",
+      "role": "task_prompt"
+    },
+    {
+      "path": "raw/attempt-001/result.json",
+      "role": "run_result"
+    },
+    {
+      "path": "raw/attempt-001/provider.json",
+      "role": "provider_metadata"
+    },
+    {
+      "path": "raw/result.json",
+      "role": "run_result"
+    }
+  ],
+  "historical_evaluation": {
+    "paths": [
+      "raw/attempt-001/evaluation.json"
+    ]
+  },
+  "declared_source_hashes": {
+    "raw/attempt-001/claude.stream.jsonl": "ad3ace73b9f2ae474db0c08730b92a11ccc9948cbcc05a476dc4d2dbf2d758dd",
+    "raw/attempt-001/turn_model_io.jsonl": "62be0c0a62dadac2a4064d1fb54a8e1cd8b9982791964dc726d34d9aec8b15fe",
+    "raw/attempt-001/prompt.txt": "cb28f8c8cc7d80fc05f24fa91d1fa6fba22b7a197b930364503eb796a36c5365",
+    "raw/attempt-001/result.json": "32daaa2d1a7bd9efc144f867258c95b62f3ac1aa86ee311db0a96471a6b86c65",
+    "raw/attempt-001/provider.json": "d930800ff2705dda8c4837b340d581fa586ebd489c29d8d800402ffe3894072f",
+    "raw/result.json": "32daaa2d1a7bd9efc144f867258c95b62f3ac1aa86ee311db0a96471a6b86c65",
+    "raw/attempt-001/task.json": "304581d1b257affb5d33f4b471a062b13754f893d81a29eb26dd001af1a15da0",
+    "raw/attempt-001/workspace/answer.txt": "278626132fef574dbf83ff302cc455173104be996574fcc035d546cb6f01afb4",
+    "raw/attempt-001/evaluation.json": "64f1636c48aff557440cb42c8f3d6890348498f1902627b799f8069737a11bbf"
+  }
+}

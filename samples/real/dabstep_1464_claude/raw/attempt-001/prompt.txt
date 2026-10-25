@@ -1,0 +1,14 @@
+DABstep task 1464 (hard).
+
+Question: What is the fee ID or IDs that apply to account_type = R and aci = B?
+
+Answer guidelines: Answer must be a list of values in comma separated list, eg: A, B, C. If the answer is an empty list, reply with an empty string. If a question does not have a relevant or applicable answer for the task, please respond with 'Not Applicable'
+
+The task data and documentation are in ./context. Explore and compute the
+answer using local tools and code as needed. Save every script you create in
+this workspace. Do not read reference answers, other tasks, or hidden scores.
+Do not use the internet or ask another model.
+
+Write only the exact answer to ./answer.txt, then confirm it exists. An empty
+file is valid only if the guidelines specifically request an empty string.
+Repeat only the answer in your final message.

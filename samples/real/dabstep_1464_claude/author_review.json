@@ -1,0 +1,26 @@
+{
+  "reviewer": "local_source_checked_author_review",
+  "independent_gold": false,
+  "root_cause_accuracy_measured": false,
+  "case": {
+    "record_id": "rawio-2a40e1d15e900422bb10",
+    "task_id": "1464",
+    "status": "needs_revision",
+    "conclusion": "null通配规则、50个ID与写入读回描述正确，但把内联代码必然需要另存脚本文件作为违规，扩大了任务要求。",
+    "notes": [
+      "E00005确有第95行null适用所有取值规则，模型实际读取范围0–5000及5000–10000覆盖该定义（起始字符7160）。没有把null处理误判为已确认错误。",
+      "E00014/E00015、E00018和末尾写入/读回支持匹配逻辑、50个ID、样本核查与交付事实；空列表语义被明确限定为疑点，不能因此直接判最终集合错误。",
+      "原任务是Save every script you create in this workspace。仅凭python3 -c内联执行，不能确证另有脚本文件被创建但未保存在工作区；模型在策略和总结中把未留下独立脚本文件当作缺陷，条件义务被泛化。",
+      "失败链留空且说明当前证据不足以判答案错误，符合证据限制；本地未读取标准答案判断50个ID集合的正确性。"
+    ],
+    "source_anchors_checked": [
+      "E00005",
+      "E00012",
+      "E00014",
+      "E00015",
+      "E00018",
+      "FINAL0001"
+    ]
+  },
+  "source_sha256": "b5551f311a29320364cb6014045c58c2bfcf981890aa3c9d1b5d8cbb7d0301fb"
+}

@@ -1,0 +1,23 @@
+{
+  "request_sha256": "199fcf8a7812a619fe4357a66d331aa2b7380606eba1c3f608113ea0431d198e",
+  "requested_model": "x-test-2",
+  "automatic_retries": 0,
+  "http_attempts": 1,
+  "wire_protocol": "chat",
+  "max_tokens_requested": 48000,
+  "thinking_token_budget_requested": 16000,
+  "http_status": 200,
+  "returned_model": "deepseek-v4.1-flash-1017",
+  "response_id": "chatcmpl-9fc4ab8e",
+  "usage": {
+    "prompt_tokens": 43884,
+    "total_tokens": 52554,
+    "completion_tokens": 8670,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4545
+    }
+  },
+  "response_sha256": "7789fa959d0837261037a5d48f0458ad0b509e39d65fd45a2ceec7ffb6afa34e",
+  "elapsed_seconds": 38.269
+}

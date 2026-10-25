@@ -1,0 +1,292 @@
+{
+  "status": "passed",
+  "mode": "offline recorded-output replay",
+  "sample": "dabstep_1464_claude",
+  "integrity": {
+    "files_verified": 66,
+    "source_files_verified": 59
+  },
+  "processor": {
+    "status": "passed",
+    "model_exchanges": 9,
+    "tool_steps": 8,
+    "semantic_units": 9,
+    "recorded_annotation_responses_replayed": 4,
+    "full_historical_step_bodies_match": true,
+    "full_historical_evidence_match": true,
+    "fact_quality": {
+      "status": "passed_with_warnings",
+      "warnings": [
+        {
+          "code": "call_argument_surfaces_differ",
+          "tool_call_id": "chatcmpl-tool-b9063cdd94848688",
+          "selection_basis": "framework_submission",
+          "both_surfaces_preserved": true
+        }
+      ],
+      "capture_check": {
+        "representation": "full_wire_exchange",
+        "model_requests": 9,
+        "errors": [],
+        "assistant_ids": [
+          "msg_0525b61d2fbc4c2b954a220019998bd8",
+          "msg_2ac403cef2954c02bd56105ac313b739",
+          "msg_399bed928ec14c358f9737b42672034c",
+          "msg_5364a5badcfe4c11832812e49555511c",
+          "msg_5a91b5004d9b4f748ee72c66b670717a",
+          "msg_690746c0f7e648598309bb96b9e75578",
+          "msg_9553eefb370c492e9e9ea4cd81cd8720",
+          "msg_b62b939548324b0b90269c4e8a247cd8",
+          "msg_e98a6f2f350d44cdb804ed6e356fb0fb"
+        ],
+        "tool_calls": 8,
+        "tool_results": 8,
+        "tool_results_observed_natively": 0,
+        "native_result_ids_absent_from_model_replay": [],
+        "generated_tool_ids_not_observed_as_execution": [],
+        "wire_exact": true,
+        "hidden_reasoning_available": false,
+        "semantic_quality_certified": false
+      },
+      "semantic_annotation_run": false,
+      "source_reference_validation": "passed",
+      "original_sources_copied": false
+    },
+    "normalized_quality": {
+      "semantic_correctness_certified": false,
+      "diagnosis_accuracy_evaluated": false,
+      "quote_repair_performed": false,
+      "fact_mutation_performed": false,
+      "missing_recording_content_recovered": false,
+      "status": "mechanically_valid",
+      "citation_counts": {
+        "exact_unique": 123
+      },
+      "units_retained": 9,
+      "units_mechanically_valid": 9,
+      "tool_steps_retained": 8,
+      "model_exchanges_retained": 9,
+      "semantic_operations_retained": 16,
+      "original_recording_limits": {
+        "status": "passed_with_warnings",
+        "warnings": [
+          {
+            "code": "call_argument_surfaces_differ",
+            "tool_call_id": "chatcmpl-tool-b9063cdd94848688",
+            "selection_basis": "framework_submission",
+            "both_surfaces_preserved": true
+          }
+        ],
+        "capture_check": {
+          "representation": "full_wire_exchange",
+          "model_requests": 9,
+          "errors": [],
+          "assistant_ids": [
+            "msg_0525b61d2fbc4c2b954a220019998bd8",
+            "msg_2ac403cef2954c02bd56105ac313b739",
+            "msg_399bed928ec14c358f9737b42672034c",
+            "msg_5364a5badcfe4c11832812e49555511c",
+            "msg_5a91b5004d9b4f748ee72c66b670717a",
+            "msg_690746c0f7e648598309bb96b9e75578",
+            "msg_9553eefb370c492e9e9ea4cd81cd8720",
+            "msg_b62b939548324b0b90269c4e8a247cd8",
+            "msg_e98a6f2f350d44cdb804ed6e356fb0fb"
+          ],
+          "tool_calls": 8,
+          "tool_results": 8,
+          "tool_results_observed_natively": 0,
+          "native_result_ids_absent_from_model_replay": [],
+          "generated_tool_ids_not_observed_as_execution": [],
+          "wire_exact": true,
+          "hidden_reasoning_available": false,
+          "semantic_quality_certified": false
+        },
+        "semantic_annotation_run": false,
+        "source_reference_validation": "passed",
+        "original_sources_copied": false
+      },
+      "content_completeness_scope": "All frozen A facts and all native B/C annotations; no guarantee of unrecorded content or exhaustive semantic interpretation"
+    },
+    "bundle_verification": {
+      "status": "passed",
+      "traces": 1,
+      "files_verified": 51,
+      "uses_original_source_paths": false,
+      "reports": [
+        {
+          "record_id": "rawio-2a40e1d15e900422bb10",
+          "normalized_schema": "passed",
+          "fact_roundtrip": "passed",
+          "native_annotations_unchanged": 9,
+          "bundled_source_hashes": "passed",
+          "source_reference_occurrences_resolved": 126,
+          "full_model_request_response_pairs_resolved": 9,
+          "citation_ranges": "passed",
+          "original_paths_required_for_resolution": false
+        }
+      ]
+    },
+    "new_model_calls": 0,
+    "recorded_code_executed": false
+  },
+  "diagnosis": {
+    "status": "passed",
+    "recorded_model_rounds_replayed": 4,
+    "native_tool_calls_reexecuted": 5,
+    "all_request_messages_match": true,
+    "all_native_tool_results_match": true,
+    "all_read_ranges_match": true,
+    "diagnosis_bytes_match_recording": true,
+    "strict_schema_and_read_audit": {
+      "passed": true,
+      "errors": [],
+      "citation_references": 5,
+      "citation_checks": [
+        {
+          "section": "critical_decision_points",
+          "index": 0,
+          "evidence_id": "E00005",
+          "read_ranges": [
+            [
+              0,
+              5000
+            ],
+            [
+              5000,
+              10000
+            ]
+          ]
+        },
+        {
+          "section": "critical_decision_points",
+          "index": 0,
+          "evidence_id": "E00012",
+          "read_ranges": [
+            [
+              0,
+              638
+            ]
+          ]
+        },
+        {
+          "section": "critical_decision_points",
+          "index": 0,
+          "evidence_id": "E00014",
+          "read_ranges": [
+            [
+              0,
+              893
+            ]
+          ]
+        },
+        {
+          "section": "critical_decision_points",
+          "index": 0,
+          "evidence_id": "E00015",
+          "read_ranges": [
+            [
+              0,
+              301
+            ]
+          ]
+        },
+        {
+          "section": "critical_decision_points",
+          "index": 0,
+          "evidence_id": "E00018",
+          "read_ranges": [
+            [
+              0,
+              155
+            ]
+          ]
+        }
+      ],
+      "semantic_entailment_verified_by_scripts": false
+    },
+    "current_structural_acceptance": {
+      "passed": true,
+      "errors": [],
+      "acceptance_standard": "codetracer-detailed-compatible-v1",
+      "evidence_audit_affects_acceptance": false,
+      "semantic_correctness_evaluated": false,
+      "output_modified": false
+    },
+    "citation_read_audit": [
+      {
+        "evidence_id": "E00005",
+        "exists": true,
+        "actually_read": true,
+        "read_ranges": [
+          [
+            0,
+            5000
+          ],
+          [
+            5000,
+            10000
+          ]
+        ]
+      },
+      {
+        "evidence_id": "E00012",
+        "exists": true,
+        "actually_read": true,
+        "read_ranges": [
+          [
+            0,
+            638
+          ]
+        ]
+      },
+      {
+        "evidence_id": "E00014",
+        "exists": true,
+        "actually_read": true,
+        "read_ranges": [
+          [
+            0,
+            893
+          ]
+        ]
+      },
+      {
+        "evidence_id": "E00015",
+        "exists": true,
+        "actually_read": true,
+        "read_ranges": [
+          [
+            0,
+            301
+          ]
+        ]
+      },
+      {
+        "evidence_id": "E00018",
+        "exists": true,
+        "actually_read": true,
+        "read_ranges": [
+          [
+            0,
+            155
+          ]
+        ]
+      }
+    ],
+    "retrieval_context": "Frozen historical corpus aggregate statistics; real sample units only.",
+    "new_model_calls": 0,
+    "recorded_code_executed": false
+  },
+  "semantic_evaluation": {
+    "independent_gold_available": false,
+    "root_cause_accuracy": null,
+    "author_review_status": "needs_revision",
+    "author_review_conclusion": "null通配规则、50个ID与写入读回描述正确，但把内联代码必然需要另存脚本文件作为违规，扩大了任务要求。",
+    "native_diagnosis_was_not_repaired": true,
+    "mechanical_pass_is_not_semantic_correctness": true
+  },
+  "new_model_calls": 0,
+  "network_disabled": true,
+  "recorded_code_executed": false,
+  "benchmark_agent_score_recomputed": false
+}

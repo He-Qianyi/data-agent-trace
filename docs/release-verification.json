@@ -1,21 +1,48 @@
 {
-  "tests_run": 159,
+  "version": "0.3.0",
+  "tests_run": 163,
   "failures": 0,
   "errors": 0,
   "passed": true,
   "isolated_release_imports": true,
   "real_model_calls": 0,
   "benchmark_tasks_rerun": 0,
-  "real_sample": "recorded agriculture_22 excerpt; original diagnosis bytes unchanged",
-  "strict_sample_schema_passed": false,
-  "current_sample_acceptance_passed": true,
+  "complete_real_sample": {
+    "name": "dabstep_1464_claude",
+    "source_files": 59,
+    "published_files": 67,
+    "manifest_sha256": "43a789dcff0d8574c63a06bc6220c5be7cbbf99a55cd653ac45fd90af5d41682",
+    "raw_ledger_bytes_unchanged": true,
+    "raw_transcript_bytes_unchanged": true,
+    "all_source_originals_unchanged": true,
+    "diagnosis_bytes_unchanged": true,
+    "tool_steps": 8,
+    "model_exchanges": 9,
+    "recorded_annotation_responses_replayed": 4,
+    "recorded_diagnosis_rounds_replayed": 4,
+    "native_tool_returns_reexecuted": 5,
+    "all_message_histories_and_tool_returns_match": true,
+    "strict_schema_and_read_audit_passed": true,
+    "current_structural_acceptance_passed": true,
+    "author_review_status": "needs_revision",
+    "network_blocked_during_replay": true
+  },
+  "earlier_agriculture_excerpt": {
+    "strict_schema_passed": false,
+    "current_structural_acceptance_passed": true,
+    "unchanged_in_this_release": true
+  },
   "independent_gold_available": false,
   "root_cause_accuracy": null,
   "live_provider_validation": "not_performed",
-  "portability": "fresh release adapters; historical full archive not redistributed",
   "wheel_build": "passed",
-  "installed_wheel_real_sample_evaluator": "passed",
-  "installed_original_diagnosis_tools": "passed",
-  "wheel_sha256": "5707ea81e2129012082dbf3b16e48490bd0c0ba5f7b0b5eb9b9a3848820bd4e1",
-  "new_live_model_calls": 0
+  "installed_wheel_full_real_replay": "passed",
+  "installed_imports_use_no_original_workspace_or_checkout": true,
+  "wheel_sha256": "32d136be7711f15b41a934dc744b1e2933032c87f6455e7a2323e0a312ee42d9",
+  "sensitive_pattern_scan": "passed for all complete-sample public files",
+  "negative_replay_tests": [
+    "raw-file tampering rejected before output creation",
+    "changed message context rejected despite rehashing",
+    "changed historical corpus search statistics rejected"
+  ]
 }

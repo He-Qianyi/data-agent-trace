@@ -1,0 +1,13 @@
+{
+  "tool_steps": 8,
+  "model_exchanges": 9,
+  "semantic_units": 9,
+  "annotation_responses": 4,
+  "diagnosis_rounds": 4,
+  "native_tool_calls": 5,
+  "strict_schema_and_read_audit_passed": true,
+  "current_structural_acceptance_passed": true,
+  "author_review_status": "needs_revision",
+  "root_cause_accuracy": null,
+  "new_model_calls": 0
+}

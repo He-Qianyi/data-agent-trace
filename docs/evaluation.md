@@ -1,6 +1,14 @@
 # Evaluation protocol
 
-## What the released evaluator computes
+## Complete recorded-output replay
+
+`python -m reproduction.replay --output reproduction_output/complete-001` runs the released v5 fact extractor with capture/source checks, all original B/C packet validators, the original evidence-preserving merge, normalized-schema/source verification, the actual native evidence tools and separate diagnosis acceptance/read audits.
+
+It asserts all historical step bodies and all task/operation evidence match, parses and checks all four saved annotation responses, and compares the full four-round diagnostic message histories and all five tool returns byte-for-byte as serialized strings or as complete JSON values where originally structured. Frozen corpus search statistics preserve original ranking/scores. The final diagnosis bytes must match the recorded file. All input files are hash-bound, and sockets are blocked. No model inference or recorded shell/Python/SQL code is executed.
+
+A passing `evaluation.json` means this consistency replay passed. Strict schema/read auditing and current structural acceptance both pass for DABstep 1464. Its existing author review remains **`needs_revision`**: the diagnosis overstates an obligation to save standalone scripts when only inline code was created. This semantic issue is deliberately retained. The review is not independent gold and no accuracy metric is produced. Historical benchmark score files are preserved separately as context; their scorer is not rerun.
+
+## What the earlier excerpt evaluator computes
 
 - File hashes against the released sample manifest.
 - Byte equality of the saved real diagnosis to its original recorded hash.

@@ -1,0 +1,135 @@
+{
+  "task_prompt_sha256": "cb28f8c8cc7d80fc05f24fa91d1fa6fba22b7a197b930364503eb796a36c5365",
+  "evidence": [
+    {
+      "evidence_id": "T0001",
+      "role": "original_task_instruction",
+      "text": "DABstep task 1464 (hard).\n",
+      "fact_pointer": "/task/instruction",
+      "char_start": 0,
+      "char_end": 26,
+      "original_source_ref": {
+        "source_id": "S0003",
+        "json_pointer": "",
+        "representation": "text"
+      }
+    },
+    {
+      "evidence_id": "T0002",
+      "role": "original_task_instruction",
+      "text": "Question: What is the fee ID or IDs that apply to account_type = R and aci = B?\n",
+      "fact_pointer": "/task/instruction",
+      "char_start": 27,
+      "char_end": 107,
+      "original_source_ref": {
+        "source_id": "S0003",
+        "json_pointer": "",
+        "representation": "text"
+      }
+    },
+    {
+      "evidence_id": "T0003",
+      "role": "original_task_instruction",
+      "text": "Answer guidelines: Answer must be a list of values in comma separated list, eg: A, B, C. If the answer is an empty list, reply with an empty string. If a question does not have a relevant or applicable answer for the task, please respond with 'Not Applicable'\n",
+      "fact_pointer": "/task/instruction",
+      "char_start": 108,
+      "char_end": 368,
+      "original_source_ref": {
+        "source_id": "S0003",
+        "json_pointer": "",
+        "representation": "text"
+      }
+    },
+    {
+      "evidence_id": "T0004",
+      "role": "original_task_instruction",
+      "text": "The task data and documentation are in ./context. Explore and compute the\n",
+      "fact_pointer": "/task/instruction",
+      "char_start": 369,
+      "char_end": 443,
+      "original_source_ref": {
+        "source_id": "S0003",
+        "json_pointer": "",
+        "representation": "text"
+      }
+    },
+    {
+      "evidence_id": "T0005",
+      "role": "original_task_instruction",
+      "text": "answer using local tools and code as needed. Save every script you create in\n",
+      "fact_pointer": "/task/instruction",
+      "char_start": 443,
+      "char_end": 520,
+      "original_source_ref": {
+        "source_id": "S0003",
+        "json_pointer": "",
+        "representation": "text"
+      }
+    },
+    {
+      "evidence_id": "T0006",
+      "role": "original_task_instruction",
+      "text": "this workspace. Do not read reference answers, other tasks, or hidden scores.\n",
+      "fact_pointer": "/task/instruction",
+      "char_start": 520,
+      "char_end": 598,
+      "original_source_ref": {
+        "source_id": "S0003",
+        "json_pointer": "",
+        "representation": "text"
+      }
+    },
+    {
+      "evidence_id": "T0007",
+      "role": "original_task_instruction",
+      "text": "Do not use the internet or ask another model.\n",
+      "fact_pointer": "/task/instruction",
+      "char_start": 598,
+      "char_end": 644,
+      "original_source_ref": {
+        "source_id": "S0003",
+        "json_pointer": "",
+        "representation": "text"
+      }
+    },
+    {
+      "evidence_id": "T0008",
+      "role": "original_task_instruction",
+      "text": "Write only the exact answer to ./answer.txt, then confirm it exists. An empty\n",
+      "fact_pointer": "/task/instruction",
+      "char_start": 645,
+      "char_end": 723,
+      "original_source_ref": {
+        "source_id": "S0003",
+        "json_pointer": "",
+        "representation": "text"
+      }
+    },
+    {
+      "evidence_id": "T0009",
+      "role": "original_task_instruction",
+      "text": "file is valid only if the guidelines specifically request an empty string.\n",
+      "fact_pointer": "/task/instruction",
+      "char_start": 723,
+      "char_end": 798,
+      "original_source_ref": {
+        "source_id": "S0003",
+        "json_pointer": "",
+        "representation": "text"
+      }
+    },
+    {
+      "evidence_id": "T0010",
+      "role": "original_task_instruction",
+      "text": "Repeat only the answer in your final message.\n",
+      "fact_pointer": "/task/instruction",
+      "char_start": 798,
+      "char_end": 844,
+      "original_source_ref": {
+        "source_id": "S0003",
+        "json_pointer": "",
+        "representation": "text"
+      }
+    }
+  ]
+}

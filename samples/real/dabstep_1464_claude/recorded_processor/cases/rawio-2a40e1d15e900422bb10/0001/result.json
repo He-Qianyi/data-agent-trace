@@ -1,0 +1,17 @@
+{
+  "record_id": "rawio-2a40e1d15e900422bb10",
+  "task_id": "1464",
+  "packet": 1,
+  "target_units": [
+    "U00001",
+    "U00002",
+    "U00003",
+    "U00004"
+  ],
+  "directory": "cases/rawio-2a40e1d15e900422bb10/packets/0001",
+  "status": "passed",
+  "operations": 6,
+  "length_failure": false,
+  "final_content_present": true,
+  "native_json_available": true
+}

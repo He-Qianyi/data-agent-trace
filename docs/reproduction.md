@@ -1,10 +1,11 @@
 # Reproduction guide
 
-## Three distinct activities
+## Reproduction modes
 
-1. **Offline real-sample checks:** inspect the released recorded excerpt, re-extract code facts, check saved annotations and diagnosis structure, and bind exact quotations. This needs no model and does not rerun the original analysis.
-2. **Fresh method execution:** run A/B/C/D and native-tool diagnosis on eligible complete recordings supplied by the user. This makes explicit live model calls only with `--allow-network`.
-3. **Historical experiment replay:** the archived original batch and continuation code relies on its historical selections, reuse ledgers, request histories and full source objects. Those records are not all publicly available. This release does not claim full historical replay or identical stochastic model outputs.
+1. **Complete real recorded-output replay:** raw DABstep 1464 records through A/B/C/D, saved model outputs, actual native tools, full message/read auditing and evaluation. No model access required.
+2. **Offline excerpt checks:** inspect the released recorded excerpt, re-extract code facts, check saved annotations and diagnosis structure, and bind exact quotations. This needs no model and does not rerun the original analysis.
+3. **Fresh method execution:** run A/B/C/D and native-tool diagnosis on eligible complete recordings supplied by the user. This makes explicit live model calls only with `--allow-network`.
+4. **Full-corpus historical experiment replay:** the archived original batch and continuation code relies on its historical selections, reuse ledgers, request histories and full source objects. Those records are not all publicly available. This release does not claim full historical replay or identical stochastic model outputs.
 
 ## Environment
 
@@ -12,7 +13,26 @@ Use Python 3.10+ on Linux or macOS. POSIX `fcntl` is used by original runners; n
 
 No GPU is required for the released offline evaluator. Full analysis-task execution, GPU model hosting, and benchmark databases are not part of this command: the method analyzes recordings rather than executing their code. Full API cost/time for the portable adapters has not been measured and is not estimated as a research result.
 
-## Offline evaluation
+## Complete sample: offline end-to-end replay
+
+```bash
+python -m reproduction.replay \
+  --sample samples/real/dabstep_1464_claude \
+  --output reproduction_output/complete-001
+```
+
+The command blocks sockets and validates the complete closed file inventory before creating output. It then produces:
+
+- `facts/traces/`: v5 facts rebuilt from the real raw ledger and transcript, with capture verification enabled.
+- `processor/final/`: complete source-bound normalized bundle, archived inputs and frozen contracts.
+- `processor/replay_report.json`: complete recorded-step/evidence equality, exact B/C inputs/outputs, bundle/schema/source checks.
+- `diagnosis/`: actual rerun native read/search results, read ranges and byte-identical saved diagnosis.
+- `diagnosis/replay_report.json`: exact four-round request histories, all five native tool results, strict schema/read audit and current structural acceptance.
+- `evaluation.json`: consolidated checks and the existing `needs_revision` author review; root-cause accuracy remains null.
+
+This is deterministic software replay with real saved model responses, not fresh inference. It applies the original search formula with frozen historical corpus statistics to this sample's real units, preserving scores without distributing other traces. Each B/C response must match the original packet; every diagnostic tool return and complete message chain must match. Local path spellings alone are normalized in prompt comparisons. See the [full sample README](../samples/real/dabstep_1464_claude/README.md).
+
+## Earlier excerpt: offline evaluation
 
 ```bash
 python -m reproduction.evaluate --sample samples/real/agriculture_22_claude \
@@ -90,4 +110,4 @@ These preserve historical assumptions and some `${PROJECT_ROOT}`/`${LOCAL_MIRROR
 
 ## Validation during this release
 
-Offline tests run with network-free mock annotation/diagnosis clients. The real public sample evaluator reads actual saved records. The release does not call a model or rerun benchmark tasks. Both validation modes are recorded separately in `docs/release-verification.json`.
+The complete real sample runs the original algorithms and compares actual saved responses, full requests and tool logs. Separate integration tests use explicit network-free mocks. The earlier excerpt evaluator also reads actual saved records. The release does not call a model or rerun benchmark tasks. Both validation modes are recorded separately in `docs/release-verification.json`.

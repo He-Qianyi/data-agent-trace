@@ -1,0 +1,615 @@
+{
+  "record_id": "rawio-2a40e1d15e900422bb10",
+  "benchmark": "DABstep",
+  "task_id": "1464",
+  "agent": "Claude Code",
+  "recorded_agent_model": "qwen3.6:35b",
+  "original_normalized_trace_sha256": "b351469d47e46c8e7d4c1771fb72dd45a43461ae1a7879200e2a87d0f0b0a81f",
+  "source_normalized_trace": "artifacts/02_recording_quality/trace_curation_environment_short_v1_20261020/eligible/traces/rawio-2a40e1d15e900422bb10.json",
+  "source_capture_scope": "All nine recorded four-surface model exchanges and all eight submitted tool calls/results; no hidden reasoning claimed.",
+  "publication_is_excerpt": false,
+  "publication_is_sanitized_derivative": true,
+  "sanitization": "Only two local path prefixes are replaced by same-length public pseudonyms; no tool step, request, response, task text or dataset preview is removed.",
+  "diagnosis_bytes_unchanged": true,
+  "new_model_calls": 0,
+  "original_code_reexecuted": false,
+  "source_files": [
+    {
+      "path": "raw/attempt-001/claude.stream.jsonl",
+      "source_label": "runs/dabstep-claude-soclaas-relay-qwen36-20261004-v1/tasks/1464/attempts/attempt-001/claude.stream.jsonl",
+      "source_sha256": "ad3ace73b9f2ae474db0c08730b92a11ccc9948cbcc05a476dc4d2dbf2d758dd",
+      "published_sha256": "ad3ace73b9f2ae474db0c08730b92a11ccc9948cbcc05a476dc4d2dbf2d758dd",
+      "bytes": 86488,
+      "transformations": []
+    },
+    {
+      "path": "raw/attempt-001/turn_model_io.jsonl",
+      "source_label": "runs/dabstep-claude-soclaas-relay-qwen36-20261004-v1/tasks/1464/attempts/attempt-001/turn_model_io.jsonl",
+      "source_sha256": "62be0c0a62dadac2a4064d1fb54a8e1cd8b9982791964dc726d34d9aec8b15fe",
+      "published_sha256": "62be0c0a62dadac2a4064d1fb54a8e1cd8b9982791964dc726d34d9aec8b15fe",
+      "bytes": 510759,
+      "transformations": []
+    },
+    {
+      "path": "raw/attempt-001/prompt.txt",
+      "source_label": "runs/dabstep-claude-soclaas-relay-qwen36-20261004-v1/tasks/1464/attempts/attempt-001/prompt.txt",
+      "source_sha256": "cb28f8c8cc7d80fc05f24fa91d1fa6fba22b7a197b930364503eb796a36c5365",
+      "published_sha256": "cb28f8c8cc7d80fc05f24fa91d1fa6fba22b7a197b930364503eb796a36c5365",
+      "bytes": 844,
+      "transformations": []
+    },
+    {
+      "path": "raw/attempt-001/result.json",
+      "source_label": "runs/dabstep-claude-soclaas-relay-qwen36-20261004-v1/tasks/1464/attempts/attempt-001/result.json",
+      "source_sha256": "37c1cd9898935fc587faf527e829170f40acbb75dc61aa9cd093c8441ce31657",
+      "published_sha256": "32daaa2d1a7bd9efc144f867258c95b62f3ac1aa86ee311db0a96471a6b86c65",
+      "bytes": 3331,
+      "transformations": [
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public HD",
+          "occurrences": 3,
+          "length_preserved": true
+        }
+      ]
+    },
+    {
+      "path": "raw/attempt-001/provider.json",
+      "source_label": "runs/dabstep-claude-soclaas-relay-qwen36-20261004-v1/tasks/1464/attempts/attempt-001/provider.json",
+      "source_sha256": "ac0c69d82399f83cb850cfaec1f4df367c4e7dcaeb1150a24e309fc3c59a2667",
+      "published_sha256": "d930800ff2705dda8c4837b340d581fa586ebd489c29d8d800402ffe3894072f",
+      "bytes": 1538,
+      "transformations": [
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Users/research",
+          "occurrences": 1,
+          "length_preserved": true
+        }
+      ]
+    },
+    {
+      "path": "raw/result.json",
+      "source_label": "runs/dabstep-claude-soclaas-relay-qwen36-20261004-v1/tasks/1464/result.json",
+      "source_sha256": "37c1cd9898935fc587faf527e829170f40acbb75dc61aa9cd093c8441ce31657",
+      "published_sha256": "32daaa2d1a7bd9efc144f867258c95b62f3ac1aa86ee311db0a96471a6b86c65",
+      "bytes": 3331,
+      "transformations": [
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public HD",
+          "occurrences": 3,
+          "length_preserved": true
+        }
+      ]
+    },
+    {
+      "path": "raw/attempt-001/task.json",
+      "source_label": "runs/dabstep-claude-soclaas-relay-qwen36-20261004-v1/tasks/1464/attempts/attempt-001/task.json",
+      "source_sha256": "304581d1b257affb5d33f4b471a062b13754f893d81a29eb26dd001af1a15da0",
+      "published_sha256": "304581d1b257affb5d33f4b471a062b13754f893d81a29eb26dd001af1a15da0",
+      "bytes": 390,
+      "transformations": []
+    },
+    {
+      "path": "raw/attempt-001/workspace/answer.txt",
+      "source_label": "runs/dabstep-claude-soclaas-relay-qwen36-20261004-v1/tasks/1464/attempts/attempt-001/workspace/answer.txt",
+      "source_sha256": "278626132fef574dbf83ff302cc455173104be996574fcc035d546cb6f01afb4",
+      "published_sha256": "278626132fef574dbf83ff302cc455173104be996574fcc035d546cb6f01afb4",
+      "bytes": 242,
+      "transformations": []
+    },
+    {
+      "path": "raw/attempt-001/evaluation.json",
+      "source_label": "runs/dabstep-claude-soclaas-relay-qwen36-20261004-v1/tasks/1464/attempts/attempt-001/evaluation.json",
+      "source_sha256": "64f1636c48aff557440cb42c8f3d6890348498f1902627b799f8069737a11bbf",
+      "published_sha256": "64f1636c48aff557440cb42c8f3d6890348498f1902627b799f8069737a11bbf",
+      "bytes": 2139,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/shared/rawio-2a40e1d15e900422bb10/operation_evidence.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/shared/rawio-2a40e1d15e900422bb10/operation_evidence.json",
+      "source_sha256": "d458602d6ab137beb62ee77cc5ee8ef49c7b5c35ea8c74f7bada30e9616df819",
+      "published_sha256": "d458602d6ab137beb62ee77cc5ee8ef49c7b5c35ea8c74f7bada30e9616df819",
+      "bytes": 43226,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/shared/rawio-2a40e1d15e900422bb10/task_evidence.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/shared/rawio-2a40e1d15e900422bb10/task_evidence.json",
+      "source_sha256": "c657544376f56db5118042ac3882c1db024396f21d632bdc03cd673a77f8e794",
+      "published_sha256": "c657544376f56db5118042ac3882c1db024396f21d632bdc03cd673a77f8e794",
+      "bytes": 4211,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/shared/rawio-2a40e1d15e900422bb10/requirements_input.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/shared/rawio-2a40e1d15e900422bb10/requirements_input.json",
+      "source_sha256": "50fc43b4ea8b9a5d3e23a11b9739f3c3f3b34e0e0c2ce0a8860f573ff00ba070",
+      "published_sha256": "50fc43b4ea8b9a5d3e23a11b9739f3c3f3b34e0e0c2ce0a8860f573ff00ba070",
+      "bytes": 1903,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/shared/rawio-2a40e1d15e900422bb10/requirements_native.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/shared/rawio-2a40e1d15e900422bb10/requirements_native.json",
+      "source_sha256": "a51ea3b910ab194cdfcc81e12946d7c7840194c974265e0210ed4fc4b6d7e869",
+      "published_sha256": "a51ea3b910ab194cdfcc81e12946d7c7840194c974265e0210ed4fc4b6d7e869",
+      "bytes": 7228,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/shared/rawio-2a40e1d15e900422bb10/requirements_accepted.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/shared/rawio-2a40e1d15e900422bb10/requirements_accepted.json",
+      "source_sha256": "c3479d618af6f75eaf2e1b1d54a7949390c242d7b19bb281020dc1cdb98d827f",
+      "published_sha256": "c3479d618af6f75eaf2e1b1d54a7949390c242d7b19bb281020dc1cdb98d827f",
+      "bytes": 22751,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/shared/rawio-2a40e1d15e900422bb10/requirements_call/receipt.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/shared/rawio-2a40e1d15e900422bb10/requirements_call/receipt.json",
+      "source_sha256": "aa457dd4e80944372b876c9793f8e5205af2fb8cbf9226e798eaf0e6a21376b2",
+      "published_sha256": "aa457dd4e80944372b876c9793f8e5205af2fb8cbf9226e798eaf0e6a21376b2",
+      "bytes": 712,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/shared/rawio-2a40e1d15e900422bb10/requirements_call/request.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/shared/rawio-2a40e1d15e900422bb10/requirements_call/request.json",
+      "source_sha256": "dc783a938b313b038c80dd6202473e2a6e9394df028bd93fa9d7a1ca0c03ed9e",
+      "published_sha256": "dc783a938b313b038c80dd6202473e2a6e9394df028bd93fa9d7a1ca0c03ed9e",
+      "bytes": 78266,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/shared/rawio-2a40e1d15e900422bb10/requirements_call/response.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/shared/rawio-2a40e1d15e900422bb10/requirements_call/response.json",
+      "source_sha256": "aa314b83d1a1b938eace54373e10513e04d523e226333b9b1a3b27c3003f91b3",
+      "published_sha256": "aa314b83d1a1b938eace54373e10513e04d523e226333b9b1a3b27c3003f91b3",
+      "bytes": 36950,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0001/input.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0001/input.json",
+      "source_sha256": "78f0c205714391263b9811e106e19a3193fb5c14d2987c7733f805a23fe4ac19",
+      "published_sha256": "78f0c205714391263b9811e106e19a3193fb5c14d2987c7733f805a23fe4ac19",
+      "bytes": 30104,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0001/llm_output.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0001/llm_output.json",
+      "source_sha256": "cbd6188cd98b9388113dd85f30ad80b9330493bf98d5020bb1e15c1ccca9c3a3",
+      "published_sha256": "cbd6188cd98b9388113dd85f30ad80b9330493bf98d5020bb1e15c1ccca9c3a3",
+      "bytes": 11400,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0001/result.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0001/result.json",
+      "source_sha256": "2c980559b7f46768dc76649081786d62f55d1f5807325e645b290058ecdcf887",
+      "published_sha256": "2c980559b7f46768dc76649081786d62f55d1f5807325e645b290058ecdcf887",
+      "bytes": 362,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0001/call/receipt.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0001/call/receipt.json",
+      "source_sha256": "9605dea2c25a4fb7b636cbaba11c7252cc3025eb8b0ad18a419faffe75fe7836",
+      "published_sha256": "9605dea2c25a4fb7b636cbaba11c7252cc3025eb8b0ad18a419faffe75fe7836",
+      "bytes": 713,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0001/call/request.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0001/call/request.json",
+      "source_sha256": "18065794a6d06901cf79352b83955ef78c29341c791dce4c669a79765584d801",
+      "published_sha256": "2df8131327c45da91930754bfa4cb7e25a1700031673bc9c12a5677d7b31ec73",
+      "bytes": 204856,
+      "transformations": [
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public HD",
+          "occurrences": 1,
+          "length_preserved": true
+        },
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public\\\\\\\\ HD",
+          "occurrences": 2,
+          "length_preserved": true
+        }
+      ]
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0001/call/response.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0001/call/response.json",
+      "source_sha256": "b0087d8263f4e0bde5b1388a139758012955a7363e70d66272c80bc5da7d6345",
+      "published_sha256": "b0087d8263f4e0bde5b1388a139758012955a7363e70d66272c80bc5da7d6345",
+      "bytes": 32489,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0002/input.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0002/input.json",
+      "source_sha256": "7c7a0cba5a2069557461e1e04d089055fd726f0236fc2c0d13a03993e2c5748a",
+      "published_sha256": "7c7a0cba5a2069557461e1e04d089055fd726f0236fc2c0d13a03993e2c5748a",
+      "bytes": 10904,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0002/llm_output.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0002/llm_output.json",
+      "source_sha256": "676833510a2fc67e3fefad6e31a0c945b1cbbb407e87ab872f104e9fa20ae259",
+      "published_sha256": "676833510a2fc67e3fefad6e31a0c945b1cbbb407e87ab872f104e9fa20ae259",
+      "bytes": 22418,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0002/result.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0002/result.json",
+      "source_sha256": "d8d5ab879673aa1b7f2983042c407b37f7e6f8eccafc2d2ee1b26f08f28532ed",
+      "published_sha256": "d8d5ab879673aa1b7f2983042c407b37f7e6f8eccafc2d2ee1b26f08f28532ed",
+      "bytes": 362,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0002/call/receipt.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0002/call/receipt.json",
+      "source_sha256": "3352ebee408afeed8a39a93aa5e29ed63514951213e1cb919c1aed578ef7bf47",
+      "published_sha256": "3352ebee408afeed8a39a93aa5e29ed63514951213e1cb919c1aed578ef7bf47",
+      "bytes": 713,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0002/call/request.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0002/call/request.json",
+      "source_sha256": "7f61e8b1c2c9a02b9b2d602c3d774fd306846c42979d341b0eedff49c392e1b2",
+      "published_sha256": "2f588e37f2258d43b59c618444df1b5ef59e9ae5bc8c75df3f2620e63c8f375b",
+      "bytes": 185144,
+      "transformations": [
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public HD",
+          "occurrences": 1,
+          "length_preserved": true
+        },
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public\\\\\\\\ HD",
+          "occurrences": 2,
+          "length_preserved": true
+        }
+      ]
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0002/call/response.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0002/call/response.json",
+      "source_sha256": "fe63c078eaa54ec23d59fc3680baa28d9513675f5434463915cd853680cb96cd",
+      "published_sha256": "fe63c078eaa54ec23d59fc3680baa28d9513675f5434463915cd853680cb96cd",
+      "bytes": 32109,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0003/input.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0003/input.json",
+      "source_sha256": "29ad6fef29deda6472566e86924f47bae9be86c7f5902262f5b01bfa580e5516",
+      "published_sha256": "29ad6fef29deda6472566e86924f47bae9be86c7f5902262f5b01bfa580e5516",
+      "bytes": 3851,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0003/llm_output.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0003/llm_output.json",
+      "source_sha256": "973556cd230d4db7cb09468f32080dbfbdda467b75dbfea8f585b8b6beda337a",
+      "published_sha256": "973556cd230d4db7cb09468f32080dbfbdda467b75dbfea8f585b8b6beda337a",
+      "bytes": 4591,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0003/result.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0003/result.json",
+      "source_sha256": "0f926e004fba292d694731e7ffcf54a267ce7144c4fe19d1d4b5b4e342ff0b86",
+      "published_sha256": "0f926e004fba292d694731e7ffcf54a267ce7144c4fe19d1d4b5b4e342ff0b86",
+      "bytes": 320,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0003/call/receipt.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0003/call/receipt.json",
+      "source_sha256": "e075ce312266d28d0a29879134cb2f6196328290d918dcabc31b4f770528a6f2",
+      "published_sha256": "e075ce312266d28d0a29879134cb2f6196328290d918dcabc31b4f770528a6f2",
+      "bytes": 713,
+      "transformations": []
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0003/call/request.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0003/call/request.json",
+      "source_sha256": "9a60729e7e2b27b65d0b7c9e071fa4f41b9f6bc8bef6d86732fcd9780eaab194",
+      "published_sha256": "10dda6511f253af3011864e49875a7f415c978cacdf6c46dd41e6425940261ef",
+      "bytes": 178216,
+      "transformations": [
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public HD",
+          "occurrences": 1,
+          "length_preserved": true
+        },
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public\\\\\\\\ HD",
+          "occurrences": 2,
+          "length_preserved": true
+        }
+      ]
+    },
+    {
+      "path": "recorded_processor/cases/rawio-2a40e1d15e900422bb10/0003/call/response.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/stage_c_no_format_ten_20261018/cases/rawio-2a40e1d15e900422bb10/packets/0003/call/response.json",
+      "source_sha256": "40d29aca29bd0063d187802ad55754dd856e080b48b5d638d19d742f7b7245d2",
+      "published_sha256": "40d29aca29bd0063d187802ad55754dd856e080b48b5d638d19d742f7b7245d2",
+      "bytes": 18838,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/calls/01/receipt.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/01/receipt.json",
+      "source_sha256": "a37bdd87194c10798da294c127eceb33c1d07094fe542e27bde3ddb7737b7fd9",
+      "published_sha256": "a37bdd87194c10798da294c127eceb33c1d07094fe542e27bde3ddb7737b7fd9",
+      "bytes": 602,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/calls/01/request.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/01/request.json",
+      "source_sha256": "217f9f9c63bd650b8f65b9d9c5cf50e0040611b276d67f6971b393c15c283249",
+      "published_sha256": "075d090264b2e81411b5a0222a500b200e27630f5bec606ee8aa4c307fa3bb46",
+      "bytes": 130147,
+      "transformations": [
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public HD",
+          "occurrences": 6,
+          "length_preserved": true
+        },
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Users/research",
+          "occurrences": 5,
+          "length_preserved": true
+        }
+      ]
+    },
+    {
+      "path": "recorded_diagnosis/calls/01/response.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/01/response.json",
+      "source_sha256": "a35afaa4411cba10f33db11bfcc2cd653f91ec84d68d2ceb458bd8e6b3070349",
+      "published_sha256": "a35afaa4411cba10f33db11bfcc2cd653f91ec84d68d2ceb458bd8e6b3070349",
+      "bytes": 2554,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/calls/02/receipt.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/02/receipt.json",
+      "source_sha256": "d0c7aee4bc9a8f3f92b8c41ac388c1d599834d4434c851df930c6a83628d5e73",
+      "published_sha256": "d0c7aee4bc9a8f3f92b8c41ac388c1d599834d4434c851df930c6a83628d5e73",
+      "bytes": 601,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/calls/02/request.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/02/request.json",
+      "source_sha256": "371608e75fc09f3da0fbdfa1e6680b41fc71917b48c809929f61c90cf84a6181",
+      "published_sha256": "91ee2fba0cb361ecda895b3729bf5c3a7507e1f76dcdb03f4a3e6ddd60e5dc63",
+      "bytes": 155496,
+      "transformations": [
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public HD",
+          "occurrences": 6,
+          "length_preserved": true
+        },
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Users/research",
+          "occurrences": 5,
+          "length_preserved": true
+        }
+      ]
+    },
+    {
+      "path": "recorded_diagnosis/calls/02/response.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/02/response.json",
+      "source_sha256": "1565702a81f5a3b6991d0a91de4f396ed131dfc2431e3d1280502db744dff4d2",
+      "published_sha256": "1565702a81f5a3b6991d0a91de4f396ed131dfc2431e3d1280502db744dff4d2",
+      "bytes": 1363,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/calls/03/receipt.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/03/receipt.json",
+      "source_sha256": "51cd231f7fd594685bb17cedcd1eed4da8bd85431345aa275f10f1b8505c5a80",
+      "published_sha256": "51cd231f7fd594685bb17cedcd1eed4da8bd85431345aa275f10f1b8505c5a80",
+      "bytes": 605,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/calls/03/request.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/03/request.json",
+      "source_sha256": "65264caea0eda6575af27ceb04374f12266818df9ab7f8d1b939389f2001bc4f",
+      "published_sha256": "ab68108c1d600034cff605d48f9fa4ee805fb694821da9018a37b5131efe04b9",
+      "bytes": 162101,
+      "transformations": [
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public HD",
+          "occurrences": 6,
+          "length_preserved": true
+        },
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Users/research",
+          "occurrences": 5,
+          "length_preserved": true
+        }
+      ]
+    },
+    {
+      "path": "recorded_diagnosis/calls/03/response.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/03/response.json",
+      "source_sha256": "b9186b660d693e330e38feb1e5746981d4aec32be302e145667b0f96dc50372a",
+      "published_sha256": "b9186b660d693e330e38feb1e5746981d4aec32be302e145667b0f96dc50372a",
+      "bytes": 10746,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/calls/04/receipt.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/04/receipt.json",
+      "source_sha256": "d0f57623cde0d3d42b2b53b124051b7b03ef84ef14f20d11a4e9a4fbeb1086dc",
+      "published_sha256": "d0f57623cde0d3d42b2b53b124051b7b03ef84ef14f20d11a4e9a4fbeb1086dc",
+      "bytes": 599,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/calls/04/request.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/04/request.json",
+      "source_sha256": "c82046e9e45ba008914e9389f39decc5bc5c791e55f3d9b2185f279d57e100cc",
+      "published_sha256": "f07e052e16f69459bdbf4879cc4eea72aab04d7339f6668f77cca1b236ae1d82",
+      "bytes": 179828,
+      "transformations": [
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public HD",
+          "occurrences": 6,
+          "length_preserved": true
+        },
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Users/research",
+          "occurrences": 5,
+          "length_preserved": true
+        }
+      ]
+    },
+    {
+      "path": "recorded_diagnosis/calls/04/response.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/calls/04/response.json",
+      "source_sha256": "50a94fa99f3c222c288557cfb54e1d3f31ce60363a2465f1ff7a14369f255d28",
+      "published_sha256": "50a94fa99f3c222c288557cfb54e1d3f31ce60363a2465f1ff7a14369f255d28",
+      "bytes": 18605,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/diagnosis.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/diagnosis.json",
+      "source_sha256": "7892759ddcd68afa36d2b58d00ebbdfc98e913135d75778d73973991dfe4b440",
+      "published_sha256": "7892759ddcd68afa36d2b58d00ebbdfc98e913135d75778d73973991dfe4b440",
+      "bytes": 2943,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/mechanical_validation.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/mechanical_validation.json",
+      "source_sha256": "4c97a42d6ae0216ccec5502c6144241ae20d6e2227797ca22ccf6ba00fada7c0",
+      "published_sha256": "4c97a42d6ae0216ccec5502c6144241ae20d6e2227797ca22ccf6ba00fada7c0",
+      "bytes": 1123,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/native_final.txt",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/native_final.txt",
+      "source_sha256": "546a897f1bda42c90a1ac541bcc2a16869f8329aeac730e904d493f611f79f23",
+      "published_sha256": "546a897f1bda42c90a1ac541bcc2a16869f8329aeac730e904d493f611f79f23",
+      "bytes": 2964,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/read_ranges.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/read_ranges.json",
+      "source_sha256": "26a8b3c1c8fa583d5df8a45e5e4583053647cfeaf1afdb348dde9d596410e730",
+      "published_sha256": "26a8b3c1c8fa583d5df8a45e5e4583053647cfeaf1afdb348dde9d596410e730",
+      "bytes": 1813,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/registered_extra_sources.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/registered_extra_sources.json",
+      "source_sha256": "7f2b551be873c2536b7d5f24677904812672a5909f385f6111baf8d9ce251e78",
+      "published_sha256": "7f2b551be873c2536b7d5f24677904812672a5909f385f6111baf8d9ce251e78",
+      "bytes": 684,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/result.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/result.json",
+      "source_sha256": "87545fbc629ba2d103afcb5baea1f81be0390bcb97db93b1acbdbb1de0305d7c",
+      "published_sha256": "87545fbc629ba2d103afcb5baea1f81be0390bcb97db93b1acbdbb1de0305d7c",
+      "bytes": 152,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/tool_reads/001.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/001.json",
+      "source_sha256": "b6c63cc4522062453717f2b8fc4090e8f1282f523908e33495a673c5198ad632",
+      "published_sha256": "b6c63cc4522062453717f2b8fc4090e8f1282f523908e33495a673c5198ad632",
+      "bytes": 24238,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/tool_reads/002.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/002.json",
+      "source_sha256": "87567f3c5bf230a3faeeb26c0b6dd16eb3e03a6ce81b9b42f953f6903602da8f",
+      "published_sha256": "87567f3c5bf230a3faeeb26c0b6dd16eb3e03a6ce81b9b42f953f6903602da8f",
+      "bytes": 856,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/tool_reads/003.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/003.json",
+      "source_sha256": "6cde65471e423a75a07ef327cc401474c8c5eae0ef0532bb94d0f7bc00988f4e",
+      "published_sha256": "6cde65471e423a75a07ef327cc401474c8c5eae0ef0532bb94d0f7bc00988f4e",
+      "bytes": 5934,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/tool_reads/004.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/004.json",
+      "source_sha256": "6c236c2c4e16b2b127270f7ad339213f8d081eb46f3370c115770a9b8e9eafe1",
+      "published_sha256": "6c236c2c4e16b2b127270f7ad339213f8d081eb46f3370c115770a9b8e9eafe1",
+      "bytes": 7123,
+      "transformations": []
+    },
+    {
+      "path": "recorded_diagnosis/tool_reads/005.json",
+      "source_label": "outputs/diagnosis_eight_native_tools_20261018/results/rawio-2a40e1d15e900422bb10/tool_reads/005.json",
+      "source_sha256": "38f671acdfa3beb810fa0a9f6e6b030398f6f7d207a00d724701943b555adb80",
+      "published_sha256": "38f671acdfa3beb810fa0a9f6e6b030398f6f7d207a00d724701943b555adb80",
+      "bytes": 2047,
+      "transformations": []
+    },
+    {
+      "path": "reference/historical_fact.json",
+      "source_label": "/Users/research/Documents/ChatGPT/Data Agent Trace Research/outputs/fact_layer_v1_20261017/traces/rawio-2a40e1d15e900422bb10.json",
+      "source_sha256": "9da58e2e4863fb660d44026c175a21be2efd8a310d94cb75bdcda031a6097fd1",
+      "published_sha256": "f9713bd4d01b10add64d44635709e6ea3fdfb7ee04c592de3e26cdf391bc40cb",
+      "bytes": 275972,
+      "transformations": [
+        {
+          "kind": "literal_path_pseudonymization",
+          "published_prefix": "/Volumes/Public HD",
+          "occurrences": 13,
+          "length_preserved": true
+        }
+      ]
+    }
+  ],
+  "known_limits": [
+    "Historical A snapshot is v1; offline replay uses the released v5 implementation and checks complete step/evidence equivalence.",
+    "Historical author review is needs_revision: native diagnosis overgeneralizes the save-created-scripts instruction; retained unchanged.",
+    "No independent diagnosis gold labels; mechanical acceptance is not semantic accuracy.",
+    "Historical capture was four-surface JSON recording, not a packet capture or proof of hidden SDK execution."
+  ]
+}
