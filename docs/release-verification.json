@@ -1,23 +1,39 @@
 {
-  "version": "0.5.0",
+  "version": "0.6.0",
   "validation_date": "2026-10-26",
-  "environment": "Local isolated Python 3.12 / macOS ARM64; GitHub CI results are reported by Actions, not inferred here",
-  "tests_run": 171,
+  "environment": "Local isolated Python 3.12 / macOS ARM64; GitHub results are recorded by Actions",
+  "tests_run": 183,
   "failures": 0,
   "errors": 0,
   "skipped": 0,
   "passed": true,
-  "seconds": 6.388,
+  "seconds": 20.065,
+  "validation_network_blocked": true,
   "isolated_release_imports": true,
   "complete_real_replay": "passed",
   "excerpt_codetracer_acceptance": true,
   "current_diagnosis_acceptance": "codetracer-detailed-compatible-v1",
   "legacy_strict_diagnosis_audits_applied": false,
+  "resumable_run_tests": "Explicit fault-injection software mocks only; not model performance results",
+  "resume_cases_verified": [
+    "processor request budget",
+    "processor saved transport before checkpoint commit",
+    "processor interrupted merge",
+    "diagnosis round budget",
+    "diagnosis tool budget",
+    "diagnosis saved transport before checkpoint commit",
+    "incomplete request blocked unless retry explicitly requested",
+    "completed-run reuse without provider initialization",
+    "changed settings/checkpoint rejection",
+    "historical directory not adopted",
+    "exclusive run ownership",
+    "processor and diagnosis CLI exits"
+  ],
   "research_artifact_verification": "passed",
   "presentation_verification": {
     "status": "passed",
     "existing_source_excerpts_checked": 7,
-    "local_document_links_checked": 38,
+    "local_document_links_checked": 42,
     "new_model_calls": 0,
     "research_outputs_modified": false
   },
@@ -28,7 +44,8 @@
     "pipeline",
     "scripts",
     "configs/processor",
-    "configs/historical"
+    "configs/historical",
+    "configs/diagnosis"
   ],
   "research_source_manifest_verified": 131,
   "new_model_calls": 0,
@@ -36,10 +53,5 @@
   "independent_gold_available": false,
   "root_cause_accuracy": null,
   "author_review_retained": "needs_revision",
-  "historical_ten_case_counts_unchanged": {
-    "native_acceptance": 6,
-    "separate_wrapper_extraction": 10
-  },
-  "previous_verification": "docs/release-verification-v0.4.json",
-  "github_workflow": ".github/workflows/offline-checks.yml"
+  "previous_verification": "docs/release-verification-v0.5.json"
 }

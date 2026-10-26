@@ -15,7 +15,7 @@ Long analytical runs contain tool errors, recoveries and ambiguous decisions. A 
 
 The repository includes the research implementations and frozen method configurations, a complete real recording with saved model outputs and offline end-to-end replay, plus existing diagnostic experiments and processor-audit records. These are inspectable deliverables from work in progress; independent diagnostic accuracy and completed paper comparisons are still unavailable.
 
-**Start here:** [real case walkthrough](docs/case-study.md) · [offline quick start](#quick-start-without-a-model-api) · [method](docs/methodology.md) · [current diagnosis acceptance](docs/acceptance.md)
+**Start here:** [real case walkthrough](docs/case-study.md) · [run status and resume](docs/running-and-resuming.md) · [offline quick start](#quick-start-without-a-model-api) · [method](docs/methodology.md) · [current diagnosis acceptance](docs/acceptance.md)
 
 | Work completed | Next research questions |
 | --- | --- |
@@ -76,7 +76,7 @@ python -m reproduction.replay \
 python -m unittest discover -s tests -v
 ```
 
-Use a new output directory for each evaluation. The offline command does not execute recorded analysis code or call a model.
+Use a new output directory for each offline evaluation. New portable live runs support [explicit resume](docs/running-and-resuming.md). The offline command does not execute recorded analysis code or call a model.
 
 The complete sample replays every saved annotation and diagnosis response, and checks the original diagnostic request histories and five native tool returns. Current diagnosis acceptance uses only the [CodeTracer-compatible policy](docs/acceptance.md). Its existing author review is `needs_revision`; the semantic issue remains visible. See [sample contents, provenance and expected outcome](samples/real/dabstep_1464_claude/README.md).
 

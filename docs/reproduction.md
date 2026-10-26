@@ -72,7 +72,7 @@ python -m reproduction.processor --facts reproduction_output/facts \
 
 The adapter uses the frozen B/C prompts and schemas, the original requirement validator, operation-evidence packet builder, provider client, merge implementation, normalized schema and source verifier. It records actual native responses and receipts, does not manufacture missing annotations, and stops on failed requests, validation failures or budget exhaustion. Model identity is checked against the saved expected returned-model value.
 
-The fresh release adapter is deliberately sequential and has no historical reuse ledger. The historical scheduler used concurrency 2; the incremental scheduler releases B results in groups of 30 and is included under `research_runners/processor/increment289/`. These orchestration differences are disclosed; the fresh adapter is not presented as a byte-identical replay of a historical batch.
+The portable adapter is sequential and now has an explicit new-run resume journal; it does not adopt a historical reuse ledger. The historical scheduler used concurrency 2; the incremental scheduler releases B results in groups of 30 and is included under `research_runners/processor/increment289/`. These orchestration differences are disclosed; the fresh adapter is not presented as a byte-identical replay of a historical batch.
 
 The output `final/` is a source-bound normalized bundle. Verify it with:
 
@@ -95,7 +95,7 @@ python -m reproduction.diagnose --bundle reproduction_output/processor/final \
   --output reproduction_output/diagnosis --env-file /path/to/local-provider.env --allow-network
 ```
 
-The adapter uses the original EvidenceIndex, SafeEvidence, five native read-only tools and native client. It preserves model tool calls, model/response identity checks, read ranges, final output and receipts. It allows up to 24 model rounds and 60 tool calls, does not force a final response, and does not retry failures automatically. A nonterminal run remains budget-exhausted or stopped; it is not converted into a diagnosis.
+The adapter uses the original EvidenceIndex, SafeEvidence, five native read-only tools and native client, with per-attempt request reservation namespaces for safe portable continuation. It preserves model tool calls, model/response identity checks, read ranges, final output and receipts. It allows up to 24 model rounds and 60 tool calls, does not force a final response, and does not retry failures automatically. A nonterminal run remains budget-exhausted or stopped; it is not converted into a diagnosis.
 
 Current CodeTracer-compatible structural acceptance is the only diagnosis acceptance gate. Legacy strict diagnosis schema/read audits are not run; source/read logs remain available for inspection. Acceptance is not semantic correctness evaluation. The historical round-24 code continues a saved 12-round prefix; a fresh 24-round call sequence is a different experimental procedure and is labelled accordingly.
 
@@ -124,3 +124,7 @@ The [artifact guide](../research_artifacts/README.md) describes the three groups
 ## Automated checks
 
 The [offline workflow](../.github/workflows/offline-checks.yml) runs regression tests, complete-sample replay, excerpt evaluation, published experiment verification and guide/source checks on Linux/Python 3.10 and 3.12 plus macOS/Python 3.12. Dependencies are installed normally; the offline replay/audit commands block network access and make no model calls. Workflow status and retained reports are available in [Actions](https://github.com/He-Qianyi/data-agent-trace/actions/workflows/offline-checks.yml). A green run establishes software/material consistency and current structural acceptance, not semantic accuracy.
+
+## Run status and continuation
+
+Processor and diagnosis commands now return nonzero exit codes for incomplete/failed runs and save `run_summary.json`. Use `--resume` on matching new portable runs to reuse successful calls. Incomplete calls are not automatically resent; `--resume --retry-incomplete-calls` explicitly permits another attempt. See [run status, budgets and resume behavior](running-and-resuming.md). Frozen samples, prompts, historical experiments and their results are unchanged.

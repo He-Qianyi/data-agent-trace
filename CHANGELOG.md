@@ -1,5 +1,13 @@
 # Release history
 
+## 0.6.0 — 26 October 2026
+
+- Added explicit CLI statuses and nonzero exits for budget exhaustion, provider/local failures, unusable output, pause and run conflicts.
+- Added opt-in resume for new portable processor/diagnosis runs, reusing successful saved calls and rebuilding diagnostic tool context.
+- Added complete-transport recovery, exclusive run locks, input/model identity binding and explicit retry for incomplete calls; prior attempts remain intact.
+- Retained CodeTracer-compatible diagnosis acceptance and all frozen historical experiment outputs.
+- Verification uses explicit fault-injection mocks plus existing real offline replay; no new paid model run or research result is claimed.
+
 ## 0.5.0 — 26 October 2026
 
 - Added offline CI for regression tests, real-sample replay and published-record/guide checks.

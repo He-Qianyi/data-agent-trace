@@ -1,0 +1,45 @@
+{
+  "version": "0.5.0",
+  "validation_date": "2026-10-26",
+  "environment": "Local isolated Python 3.12 / macOS ARM64; GitHub CI results are reported by Actions, not inferred here",
+  "tests_run": 171,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "seconds": 6.388,
+  "isolated_release_imports": true,
+  "complete_real_replay": "passed",
+  "excerpt_codetracer_acceptance": true,
+  "current_diagnosis_acceptance": "codetracer-detailed-compatible-v1",
+  "legacy_strict_diagnosis_audits_applied": false,
+  "research_artifact_verification": "passed",
+  "presentation_verification": {
+    "status": "passed",
+    "existing_source_excerpts_checked": 7,
+    "local_document_links_checked": 38,
+    "new_model_calls": 0,
+    "research_outputs_modified": false
+  },
+  "frozen_public_source_directories_unchanged": [
+    "samples",
+    "research_artifacts",
+    "research_runners",
+    "pipeline",
+    "scripts",
+    "configs/processor",
+    "configs/historical"
+  ],
+  "research_source_manifest_verified": 131,
+  "new_model_calls": 0,
+  "captured_analysis_code_executed": false,
+  "independent_gold_available": false,
+  "root_cause_accuracy": null,
+  "author_review_retained": "needs_revision",
+  "historical_ten_case_counts_unchanged": {
+    "native_acceptance": 6,
+    "separate_wrapper_extraction": 10
+  },
+  "previous_verification": "docs/release-verification-v0.4.json",
+  "github_workflow": ".github/workflows/offline-checks.yml"
+}
