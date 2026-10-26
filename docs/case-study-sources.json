@@ -1,0 +1,56 @@
+{
+  "case": "DABstep 1464",
+  "record_id": "rawio-2a40e1d15e900422bb10",
+  "origin": "Derived guide to existing released records; no new model outputs or labels",
+  "bindings": [
+    {
+      "label": "Task question",
+      "path": "samples/real/dabstep_1464_claude/raw/attempt-001/task.json",
+      "sha256": "304581d1b257affb5d33f4b471a062b13754f893d81a29eb26dd001af1a15da0",
+      "json_pointer": "/question",
+      "excerpt": "What is the fee ID or IDs that apply to account_type = R and aci = B?"
+    },
+    {
+      "label": "Recorded manual rule",
+      "path": "samples/real/dabstep_1464_claude/recorded_processor/shared/rawio-2a40e1d15e900422bb10/operation_evidence.json",
+      "sha256": "d458602d6ab137beb62ee77cc5ee8ef49c7b5c35ea8c74f7bada30e9616df819",
+      "json_pointer": "/evidence/4/text",
+      "excerpt": "If a field is set to null it means that it applies to all possible values of that field."
+    },
+    {
+      "label": "Recorded read error",
+      "path": "samples/real/dabstep_1464_claude/recorded_processor/shared/rawio-2a40e1d15e900422bb10/operation_evidence.json",
+      "sha256": "d458602d6ab137beb62ee77cc5ee8ef49c7b5c35ea8c74f7bada30e9616df819",
+      "json_pointer": "/evidence/8/text",
+      "excerpt": "File content (518.7KB) exceeds maximum allowed size (256KB)."
+    },
+    {
+      "label": "Processor operation",
+      "path": "samples/real/dabstep_1464_claude/recorded_processor/cases/rawio-2a40e1d15e900422bb10/0002/llm_output.json",
+      "sha256": "676833510a2fc67e3fefad6e31a0c945b1cbbb407e87ab872f104e9fa20ae259",
+      "json_pointer": "/units/1/operations/0/type",
+      "excerpt": "filtering"
+    },
+    {
+      "label": "Recorded diagnosis root cause chain",
+      "path": "samples/real/dabstep_1464_claude/recorded_diagnosis/diagnosis.json",
+      "sha256": "7892759ddcd68afa36d2b58d00ebbdfc98e913135d75778d73973991dfe4b440",
+      "json_pointer": "/root_cause_chain",
+      "excerpt": "[]"
+    },
+    {
+      "label": "Existing author review status",
+      "path": "samples/real/dabstep_1464_claude/author_review.json",
+      "sha256": "3981ed93cf27133614c3a9bd2d009c37bbbf85c1752c3b46ad2d7e1d6d52d367",
+      "json_pointer": "/case/status",
+      "excerpt": "needs_revision"
+    },
+    {
+      "label": "Existing author review conclusion",
+      "path": "samples/real/dabstep_1464_claude/author_review.json",
+      "sha256": "3981ed93cf27133614c3a9bd2d009c37bbbf85c1752c3b46ad2d7e1d6d52d367",
+      "json_pointer": "/case/conclusion",
+      "excerpt": "null通配规则、50个ID与写入读回描述正确，但把内联代码必然需要另存脚本文件作为违规，扩大了任务要求。"
+    }
+  ]
+}

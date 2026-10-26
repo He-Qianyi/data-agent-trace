@@ -1,0 +1,74 @@
+name: Offline checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: offline-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  offline:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.10'
+          - os: ubuntu-latest
+            python: '3.12'
+          - os: macos-latest
+            python: '3.12'
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - name: Check out the exact revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Keep temporary work inside this checkout
+        shell: bash
+        run: |
+          mkdir -p "$GITHUB_WORKSPACE/reproduction_output/ci/tmp"
+          echo "TMPDIR=$GITHUB_WORKSPACE/reproduction_output/ci/tmp" >> "$GITHUB_ENV"
+      - name: Install the released package
+        run: python -m pip install -e .
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Replay the complete real recording without a model API
+        run: python -m reproduction.replay --sample samples/real/dabstep_1464_claude --output reproduction_output/ci/complete
+      - name: Check the earlier real excerpt using CodeTracer acceptance
+        run: python -m reproduction.evaluate --sample samples/real/agriculture_22_claude --output reproduction_output/ci/excerpt
+      - name: Verify published experimental records
+        run: python -m reproduction.verify_research --artifacts research_artifacts --output reproduction_output/ci/research
+      - name: Check walkthrough sources and document links
+        run: python -m reproduction.verify_presentation
+      - name: Save verification reports
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: offline-reports-${{ matrix.os }}-py${{ matrix.python }}
+          path: |
+            reproduction_output/ci/complete/report.md
+            reproduction_output/ci/complete/evaluation.json
+            reproduction_output/ci/excerpt/report.md
+            reproduction_output/ci/excerpt/evaluation.json
+            reproduction_output/ci/research/report.md
+            reproduction_output/ci/research/verification.json
+          if-no-files-found: warn
+          retention-days: 14

@@ -80,6 +80,32 @@ class ReleaseReproductionTests(unittest.TestCase):
         self.assertTrue(any(m['role']=='tool' for m in client.messages))
         self.assertEqual(result[0]['tool_calls'],1)
 
+    def test_extra_fields_and_legacy_schema_mismatch_do_not_gate_new_diagnosis(self):
+        # Explicit test mock only; this is not a research model result.
+        bundle=self.full_mock_bundle()
+        from reproduction.common import load_native
+        native=load_native()
+        def forbidden(*args,**kwargs):
+            raise AssertionError('Legacy strict audit must not run')
+        native.validate_diagnosis=forbidden
+        class PermissiveMock(MockDiagnosisClient):
+            def ask(self,messages,directory):
+                message,finish,receipt=super().ask(messages,directory)
+                if finish=='stop':
+                    data=json.loads(message['content'])
+                    data['root_cause_chain']='mock legacy-schema mismatch'
+                    data['extra_note']='preserved test-only field'
+                    message['content']=json.dumps(data)
+                return message,finish,receipt
+        with patch('reproduction.diagnose.load_native',return_value=native):
+            result=diagnose(bundle,self.root/'permissive',ROOT/'configs/diagnosis/reproduction.json',
+                            client_factory=PermissiveMock)
+        self.assertEqual(result[0]['status'],'mechanically_passed')
+        self.assertFalse(result[0]['legacy_strict_audit_applied'])
+        saved=next((self.root/'permissive').rglob('diagnosis.json'))
+        self.assertEqual(read(saved)['extra_note'],'preserved test-only field')
+        self.assertFalse(any((self.root/'permissive').rglob('strict_schema_and_read_audit.json')))
+
     def test_diagnosis_budget_exhaustion_is_not_a_success_or_fabricated_output(self):
         bundle=self.full_mock_bundle()
         config=read(ROOT/'configs/diagnosis/reproduction.json');config['max_model_rounds_per_trace']=1
@@ -88,9 +114,11 @@ class ReleaseReproductionTests(unittest.TestCase):
         self.assertEqual(result[0]['status'],'round_budget_exhausted')
         self.assertFalse(any((self.root/'limited').rglob('diagnosis.json')))
 
-    def test_real_sample_preserves_strict_failure_and_has_no_accuracy_gold(self):
+    def test_real_excerpt_uses_only_codetracer_acceptance_and_has_no_accuracy_gold(self):
         r=evaluate(ROOT/'samples/real/agriculture_22_claude',self.root/'evaluation')
-        self.assertFalse(r['strict_declared_schema']['passed'])
+        self.assertTrue(r['accepted'])
+        self.assertFalse(r['legacy_strict_audit_applied'])
+        self.assertNotIn('strict_declared_schema',r)
         self.assertTrue(r['current_structural_acceptance']['passed'])
         self.assertIsNone(r['semantic_evaluation']['root_cause_accuracy'])
         self.assertFalse(r['semantic_evaluation']['independent_gold_available'])

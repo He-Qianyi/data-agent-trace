@@ -4,6 +4,7 @@ from pathlib import Path
 import shutil
 import tempfile
 import unittest
+from unittest.mock import Mock,patch
 from reproduction.common import ROOT,read,save,digest
 from reproduction.replay import replay,verify_sample,DEFAULT_SAMPLE,diagnosis_replay
 
@@ -23,14 +24,20 @@ class CompleteRealReplayTests(unittest.TestCase):
         save(sample/'manifest.json',manifest)
 
     def test_complete_real_trace_replays_and_preserves_semantic_limitation(self):
-        result=replay(DEFAULT_SAMPLE,self.root/'result')
+        from reproduction.common import load_native
+        native=load_native()
+        native.validate_diagnosis=Mock(side_effect=AssertionError('Legacy strict audit must not run'))
+        with patch('reproduction.replay.load_native',return_value=native):
+            result=replay(DEFAULT_SAMPLE,self.root/'result')
+        native.validate_diagnosis.assert_not_called()
         self.assertEqual(result['processor']['model_exchanges'],9)
         self.assertEqual(result['processor']['tool_steps'],8)
         self.assertEqual(result['processor']['semantic_units'],9)
         self.assertEqual(result['processor']['recorded_annotation_responses_replayed'],4)
         self.assertEqual(result['diagnosis']['recorded_model_rounds_replayed'],4)
         self.assertEqual(result['diagnosis']['native_tool_calls_reexecuted'],5)
-        self.assertTrue(result['diagnosis']['strict_schema_and_read_audit']['passed'])
+        self.assertFalse(result['diagnosis']['legacy_strict_audit_applied'])
+        self.assertNotIn('strict_schema_and_read_audit',result['diagnosis'])
         self.assertTrue(result['diagnosis']['current_structural_acceptance']['passed'])
         self.assertTrue(all(c['exists'] and c['actually_read'] for c in result['diagnosis']['citation_read_audit']))
         self.assertEqual(result['semantic_evaluation']['author_review_status'],'needs_revision')

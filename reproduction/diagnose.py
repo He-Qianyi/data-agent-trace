@@ -24,7 +24,8 @@ def diagnose(bundle,output,config,env_file=None,client_factory=None):
         client_factory=native.NativeClient
     out.mkdir(parents=True,exist_ok=False)
     save(out/'plan.json',{**cfg,'config_sha256':digest(config),
-        'runtime_kind':'portable fresh native-tool loop','historical_prefix_reused':False})
+        'runtime_kind':'portable fresh native-tool loop','historical_prefix_reused':False,
+        'diagnosis_acceptance':'codetracer-detailed-compatible-v1','legacy_strict_audit_applied':False})
     client=client_factory()
     prompt=(ROOT/'configs/diagnosis/diagnosis.prompt.md').read_text()
     results=[]
@@ -33,7 +34,8 @@ def diagnose(bundle,output,config,env_file=None,client_factory=None):
         safe=native.SafeEvidence(index,rid)
         initial=safe.initial();save(folder/'initial_input.json',initial)
         messages=[{'role':'system','content':prompt},{'role':'user','content':'CURRENT UNTRUSTED DIAGNOSIS INPUT DATA:\n'+native.encode(initial)}]
-        state={'record_id':rid,'status':'running','model_rounds':0,'tool_calls':0,'automatic_retries':0}
+        state={'record_id':rid,'status':'running','model_rounds':0,'tool_calls':0,'automatic_retries':0,
+            'acceptance_standard':'codetracer-detailed-compatible-v1','legacy_strict_audit_applied':False}
         try:
             for round_no in range(1,cfg['max_model_rounds_per_trace']+1):
                 if (out/'pause.requested').exists():raise InterruptedError('pause_requested')
@@ -64,7 +66,6 @@ def diagnose(bundle,output,config,env_file=None,client_factory=None):
                 except ValueError:state['status']='invalid_json'
                 else:
                     save(folder/'diagnosis.json',data)
-                    save(folder/'strict_schema_and_read_audit.json',native.validate_diagnosis(data,safe))
                     state['status']='mechanically_passed' if acceptance['passed'] else 'mechanically_failed'
                 break
             else:state['status']='round_budget_exhausted'

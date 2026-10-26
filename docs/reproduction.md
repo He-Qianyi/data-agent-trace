@@ -27,7 +27,7 @@ The command blocks sockets and validates the complete closed file inventory befo
 - `processor/final/`: complete source-bound normalized bundle, archived inputs and frozen contracts.
 - `processor/replay_report.json`: complete recorded-step/evidence equality, exact B/C inputs/outputs, bundle/schema/source checks.
 - `diagnosis/`: actual rerun native read/search results, read ranges and byte-identical saved diagnosis.
-- `diagnosis/replay_report.json`: exact four-round request histories, all five native tool results, strict schema/read audit and current structural acceptance.
+- `diagnosis/replay_report.json`: exact four-round request histories, all five native tool results, CodeTracer-compatible structural acceptance and separate read/evidence reports.
 - `evaluation.json`: consolidated checks and the existing `needs_revision` author review; root-cause accuracy remains null.
 
 This is deterministic software replay with real saved model responses, not fresh inference. It applies the original search formula with frozen historical corpus statistics to this sample's real units, preserving scores without distributing other traces. Each B/C response must match the original packet; every diagnostic tool return and complete message chain must match. Local path spellings alone are normalized in prompt comparisons. See the [full sample README](../samples/real/dabstep_1464_claude/README.md).
@@ -39,7 +39,7 @@ python -m reproduction.evaluate --sample samples/real/agriculture_22_claude \
   --output reproduction_output/check-001
 ```
 
-This writes `evaluation.json`, `recomputed_static_facts.json`, and `report.md`. Output directories must be new. `evaluation.json` records coverage exclusions and unavailable independent gold. A reported strict-schema failure for the sample is expected from its original extra field; do not delete the field to improve the result.
+This writes `evaluation.json`, `recomputed_static_facts.json`, and `report.md`. Output directories must be new. `evaluation.json` records coverage exclusions and unavailable independent gold. The original extra field is accepted unchanged. Current acceptance is CodeTracer-compatible only; legacy strict diagnosis checks are not run.
 
 ## Complete native input for A
 
@@ -97,7 +97,7 @@ python -m reproduction.diagnose --bundle reproduction_output/processor/final \
 
 The adapter uses the original EvidenceIndex, SafeEvidence, five native read-only tools and native client. It preserves model tool calls, model/response identity checks, read ranges, final output and receipts. It allows up to 24 model rounds and 60 tool calls, does not force a final response, and does not retry failures automatically. A nonterminal run remains budget-exhausted or stopped; it is not converted into a diagnosis.
 
-Current CodeTracer-compatible structural acceptance is saved separately from the strict declared schema/read audit. Neither is semantic correctness evaluation. The historical round-24 code continues a saved 12-round prefix; a fresh 24-round call sequence is a different experimental procedure and is labelled accordingly.
+Current CodeTracer-compatible structural acceptance is the only diagnosis acceptance gate. Legacy strict diagnosis schema/read audits are not run; source/read logs remain available for inspection. Acceptance is not semantic correctness evaluation. The historical round-24 code continues a saved 12-round prefix; a fresh 24-round call sequence is a different experimental procedure and is labelled accordingly.
 
 ## Original archived runners
 
@@ -120,3 +120,7 @@ python -m reproduction.verify_research --artifacts research_artifacts \
 ```
 
 The [artifact guide](../research_artifacts/README.md) describes the three groups, saved native outputs, exact source/public hashes and withheld contexts. The command needs the repository artifact directory, no API credentials or benchmark downloads. It writes `verification.json` and `report.md`; use a fresh output directory. Historical runners require their matching original archives and are not invoked. The new-ten candidate and previous control prompts remain separate from the default profile.
+
+## Automated checks
+
+The [offline workflow](../.github/workflows/offline-checks.yml) runs regression tests, complete-sample replay, excerpt evaluation, published experiment verification and guide/source checks on Linux/Python 3.10 and 3.12 plus macOS/Python 3.12. Dependencies are installed normally; the offline replay/audit commands block network access and make no model calls. Workflow status and retained reports are available in [Actions](https://github.com/He-Qianyi/data-agent-trace/actions/workflows/offline-checks.yml). A green run establishes software/material consistency and current structural acceptance, not semantic accuracy.

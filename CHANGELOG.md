@@ -1,5 +1,14 @@
 # Release history
 
+## 0.5.0 — 26 October 2026
+
+- Added offline CI for regression tests, real-sample replay and published-record/guide checks.
+- Added a source-bound walkthrough using the unchanged DABstep 1464 records and existing author review.
+- Reorganized the homepage around the research problem, personal contributions and concrete deliverables.
+- Clarified complete-sample versus excerpt scope throughout current method/evaluation documentation.
+- Current portable diagnosis entrypoints now use CodeTracer-compatible acceptance only; legacy strict diagnosis audits are not run. Frozen schemas, source records and historical outcomes remain unchanged.
+- No new model outputs, independent labels, benchmark scores or semantic-accuracy results were generated.
+
 ## 0.4.0 — 25 October 2026
 
 - Published the recorded ten-case diagnosis experiment, its separate formatting revalidation and author-style semantic review, including original errors and limits.

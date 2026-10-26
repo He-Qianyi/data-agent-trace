@@ -1,39 +1,27 @@
 # Evaluation protocol
 
+## Current diagnosis acceptance
+
+All current portable diagnosis/evaluation entrypoints use **CodeTracer-compatible acceptance only**: a parseable JSON object, five top-level fields and valid provided critical-decision step IDs. Additional fields are accepted unchanged. Legacy strict diagnosis schema/read audits are not run. See [the exact policy](acceptance.md).
+
 ## Complete recorded-output replay
 
-`python -m reproduction.replay --output reproduction_output/complete-001` runs the released v5 fact extractor with capture/source checks, all original B/C packet validators, the original evidence-preserving merge, normalized-schema/source verification, the actual native evidence tools and separate diagnosis acceptance/read audits.
+`python -m reproduction.replay --output reproduction_output/complete-001` rebuilds the released fact/annotation/merge outputs, reruns the actual native evidence tools and checks the saved diagnosis with the current policy. It compares original step bodies, task/operation evidence, saved annotation responses, complete diagnostic message histories, tool results and diagnosis bytes against the recording. Frozen corpus search statistics preserve the sample's original ranking and scores. Sockets are blocked; no model inference, captured code or benchmark scorer is executed.
 
-It asserts all historical step bodies and all task/operation evidence match, parses and checks all four saved annotation responses, and compares the full four-round diagnostic message histories and all five tool returns byte-for-byte as serialized strings or as complete JSON values where originally structured. Frozen corpus search statistics preserve original ranking/scores. The final diagnosis bytes must match the recorded file. All input files are hash-bound, and sockets are blocked. No model inference or recorded shell/Python/SQL code is executed.
+A passing replay certifies consistency with the published recording. **DABstep 1464** passes current structural acceptance. Its existing author review remains **`needs_revision`**: the diagnosis overstates an obligation to save standalone scripts when only inline code was created. This review is not independent gold. The saved legacy strict audit and expected-outcome field are preserved on disk, but the current replay does not use that field as an acceptance gate.
 
-A passing `evaluation.json` means this consistency replay passed. Strict schema/read auditing and current structural acceptance both pass for DABstep 1464. Its existing author review remains **`needs_revision`**: the diagnosis overstates an obligation to save standalone scripts when only inline code was created. This semantic issue is deliberately retained. The review is not independent gold and no accuracy metric is produced. Historical benchmark score files are preserved separately as context; their scorer is not rerun.
+## Earlier real excerpt
 
-## What the earlier excerpt evaluator computes
+`python -m reproduction.evaluate --sample samples/real/agriculture_22_claude --output reproduction_output/check-001` verifies the published sample/diagnosis identity, applies the current acceptance policy and separately reports evidence-ID coverage, literal quotation qualification and recomputed static extraction. It does not replay the complete original model-read audit.
 
-- File hashes against the released sample manifest.
-- Byte equality of the saved real diagnosis to its original recorded hash.
-- The strict declared five-section JSON schema.
-- The current CodeTracer-compatible structural policy: parseability, core fields and known critical-decision step IDs; additional fields remain untouched.
-- Whether cited diagnostic evidence IDs are present in the public excerpt.
-- Exact-quotation qualification for recorded processor annotations, retaining multiple matches and unavailable excerpt evidence separately.
-- Static code facts recomputed from the actual published action arguments without executing code.
+**Agriculture 22** passes current acceptance with its original extra `root_cause_chain_note` field. The old declared-schema rejection remains a historical record; the current evaluator does not recompute or enforce it. Its author review also retains an unresolved interpretation of cross-validation F1 aggregation. Presence of an evidence ID or a matching quotation does not prove the diagnostic conclusion.
 
-Each result is reported with its scope. Existence of an evidence ID is not entailment, and this excerpt does not replay the complete original model-read audit. The original audit implementation is included for runs that have complete retrieval logs.
+## Semantic evaluation
 
-## Real sample outcome
+Independent root-cause and causal-chain gold is unavailable. Corresponding accuracy metrics remain `null`. Author review, structural acceptance and material-integrity checks must not be reported as independent semantic accuracy. A future semantic study needs its own annotation protocol, labels and evaluation split; the current release does not fabricate those assets.
 
-The real saved diagnosis contains `root_cause_chain_note: null`. The strict schema rejects the additional field; the current permissive structural policy accepts it. All original diagnostic evidence references are included in the public excerpt. These are mechanical observations, not a claim that the diagnostic conclusions are correct.
+## Existing experiment records
 
-The original author review says the cross-validation F1 aggregation convention was not uniquely specified by the task. It should remain an unresolved interpretation rather than a confirmed failure label. The existing review is disclosed as author review and not relabelled as independent gold.
+`python -m reproduction.verify_research --artifacts research_artifacts --output reproduction_output/research-audit-001` checks the published inventory, saved native responses, indexed message/read continuity, recorded formatting extraction, author-review spot checks and the 164-case selection partition. It blocks network access and executes no captured code.
 
-## Unavailable semantic metrics
-
-There is no released independent gold set for root causes or causal chains. Accordingly root-cause accuracy and causal-chain accuracy are `null`, not zero, perfect, or inferred from LLM agreement. Baseline comparisons and ablation results are not populated with simulated values.
-
-To add semantic evaluation later, first establish an annotation protocol, independent labels, unit of analysis and a held-out split. The current evaluator does not invent these assets. Existing structural validators and source audits must remain separate from that future evaluation.
-
-## Existing research artifact verification
-
-`python -m reproduction.verify_research --artifacts research_artifacts --output reproduction_output/research-audit-001` checks the public experiment file inventory, native response/receipt and message/read signature links, exact historical formatting-extraction ranges, four author-review spot checks from published evidence, the all-164 validation inventory and the disjoint 145/19 corpus partition. It blocks network access and executes no captured code.
-
-Original outcomes and policies are retained. Native ten-case acceptance is 6/10; separately recorded wrapper-extracted acceptance is 10/10. These numbers are structural acceptance, not diagnostic accuracy. The all-corpus source checks and supplemental dataset calculations are historical reports, not rerun here without the original archive.
+Historical acceptance policies/counts remain as recorded. The ten-case run retains native acceptance 6/10 and separately recorded formatting-extracted acceptance 10/10. These are structural outcomes, not diagnostic accuracy. The full private-corpus source audit is not rerun by this public command.

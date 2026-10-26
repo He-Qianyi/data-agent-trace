@@ -1,0 +1,1039 @@
+[
+  {
+    "file": "pipeline/__init__.py",
+    "research_source": "pipeline/__init__.py",
+    "source_sha256": "24fe7694221c2a1bd36183b9d38049db5ea18fd1839070032c97b51d2835664a",
+    "release_sha256": "24fe7694221c2a1bd36183b9d38049db5ea18fd1839070032c97b51d2835664a",
+    "changes": []
+  },
+  {
+    "file": "pipeline/common.py",
+    "research_source": "pipeline/common.py",
+    "source_sha256": "65550faf2a2b1d06b54591b2d5c2914269a6d56fa2769de70bca6448f80117a0",
+    "release_sha256": "65550faf2a2b1d06b54591b2d5c2914269a6d56fa2769de70bca6448f80117a0",
+    "changes": []
+  },
+  {
+    "file": "pipeline/config.py",
+    "research_source": "pipeline/config.py",
+    "source_sha256": "334b291bb252e628ee926f67e8cc806e2dcb714ec70b428b12be84e772e6147e",
+    "release_sha256": "7bcae119416b8393fd41dc0b668c42c8e042507cb47ffc7f1ab8dcd8020ee258",
+    "changes": [
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      },
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      },
+      {
+        "from_category": "local_path_prefix",
+        "to": "${BENCHMARK_ROOT}/DABstep"
+      },
+      {
+        "kind": "release_portability",
+        "detail": "Local path spellings removed; mount-only legacy guard becomes release-directory existence guard where applicable."
+      }
+    ]
+  },
+  {
+    "file": "pipeline/frozen_method.py",
+    "research_source": "pipeline/frozen_method.py",
+    "source_sha256": "1cd200062085edb9acb048aafa319f74637c288d285d0be33438b1513a4cf83d",
+    "release_sha256": "1cd200062085edb9acb048aafa319f74637c288d285d0be33438b1513a4cf83d",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/__init__.py",
+    "research_source": "pipeline/stages/__init__.py",
+    "source_sha256": "3fde7a895735b7234dd53bee74ae7e7064f64b4bdbefe7c432827933997b0102",
+    "release_sha256": "3fde7a895735b7234dd53bee74ae7e7064f64b4bdbefe7c432827933997b0102",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/README.md",
+    "research_source": "pipeline/stages/trace_processor/README.md",
+    "source_sha256": "6556ba1f84ce521e8dba936da052369e426fad7eb479b7cb66fb931d2833536c",
+    "release_sha256": "6556ba1f84ce521e8dba936da052369e426fad7eb479b7cb66fb931d2833536c",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/__init__.py",
+    "research_source": "pipeline/stages/trace_processor/__init__.py",
+    "source_sha256": "2c15118f6791db596962854abae3884a93f9ad512e8d50607ac61aa5c66cc54b",
+    "release_sha256": "2c15118f6791db596962854abae3884a93f9ad512e8d50607ac61aa5c66cc54b",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer/README.md",
+    "research_source": "pipeline/stages/trace_processor/fact_layer/README.md",
+    "source_sha256": "b57ed228c10f37cb10d9e25f7061ac877de4ab4abe22895fa4cd3463b13c7768",
+    "release_sha256": "b57ed228c10f37cb10d9e25f7061ac877de4ab4abe22895fa4cd3463b13c7768",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer/__init__.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer/__init__.py",
+    "source_sha256": "620004dd66b1dab803251185290fcf310dacae010b09d32aa596e0b21057da6e",
+    "release_sha256": "620004dd66b1dab803251185290fcf310dacae010b09d32aa596e0b21057da6e",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer/__main__.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer/__main__.py",
+    "source_sha256": "b7d782f125753b7c07e21899a845955886bcf5c9a9db164ee06fd44176291b09",
+    "release_sha256": "b7d782f125753b7c07e21899a845955886bcf5c9a9db164ee06fd44176291b09",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer/adapters.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer/adapters.py",
+    "source_sha256": "55d8fdd3fa7665d62428290df0dd3c83e21da54c2d38f4818558570b6d5ffb36",
+    "release_sha256": "55d8fdd3fa7665d62428290df0dd3c83e21da54c2d38f4818558570b6d5ffb36",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer/build.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer/build.py",
+    "source_sha256": "530fd3ff6ccbdd1a1cc8a533011362464d64e88286ca3d9354268b73854c5beb",
+    "release_sha256": "530fd3ff6ccbdd1a1cc8a533011362464d64e88286ca3d9354268b73854c5beb",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer/extract.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer/extract.py",
+    "source_sha256": "172cc53e2ec775cbe767d39ec661dca0d9a7f740d151cf4870f8770b7a82fac3",
+    "release_sha256": "172cc53e2ec775cbe767d39ec661dca0d9a7f740d151cf4870f8770b7a82fac3",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer/schema.json",
+    "research_source": "pipeline/stages/trace_processor/fact_layer/schema.json",
+    "source_sha256": "2edd91e43502d527676f009c4a709f14b4d1601a4bf14954b4f3b8652cd2c3ea",
+    "release_sha256": "2edd91e43502d527676f009c4a709f14b4d1601a4bf14954b4f3b8652cd2c3ea",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer/sources.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer/sources.py",
+    "source_sha256": "a3c16428126c77a577bbc7e50d5fa2ebc1479f8a49365e8718000af082a3258a",
+    "release_sha256": "a3c16428126c77a577bbc7e50d5fa2ebc1479f8a49365e8718000af082a3258a",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v2/README.md",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v2/README.md",
+    "source_sha256": "382602cef2a2189cd2942e290a337b9669d1aa8f261782ce1dd10758ab2b08e9",
+    "release_sha256": "382602cef2a2189cd2942e290a337b9669d1aa8f261782ce1dd10758ab2b08e9",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v2/__init__.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v2/__init__.py",
+    "source_sha256": "f0897666768980ddb16efce47956439d99fd84f0f7dff971fdbcbff412ea2d04",
+    "release_sha256": "f0897666768980ddb16efce47956439d99fd84f0f7dff971fdbcbff412ea2d04",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v2/__main__.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v2/__main__.py",
+    "source_sha256": "a649583f05230fcfaf131a82d72de68d78ab4f619070ec592c6300116477e5d3",
+    "release_sha256": "a649583f05230fcfaf131a82d72de68d78ab4f619070ec592c6300116477e5d3",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v2/adapters.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v2/adapters.py",
+    "source_sha256": "55d8fdd3fa7665d62428290df0dd3c83e21da54c2d38f4818558570b6d5ffb36",
+    "release_sha256": "55d8fdd3fa7665d62428290df0dd3c83e21da54c2d38f4818558570b6d5ffb36",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v2/build.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v2/build.py",
+    "source_sha256": "530fd3ff6ccbdd1a1cc8a533011362464d64e88286ca3d9354268b73854c5beb",
+    "release_sha256": "530fd3ff6ccbdd1a1cc8a533011362464d64e88286ca3d9354268b73854c5beb",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v2/extract.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v2/extract.py",
+    "source_sha256": "b8a10e606fbe2ccd5c61d6935d648dea0904e251d7d34910960674b581206e8c",
+    "release_sha256": "b8a10e606fbe2ccd5c61d6935d648dea0904e251d7d34910960674b581206e8c",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v2/schema.json",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v2/schema.json",
+    "source_sha256": "2edd91e43502d527676f009c4a709f14b4d1601a4bf14954b4f3b8652cd2c3ea",
+    "release_sha256": "2edd91e43502d527676f009c4a709f14b4d1601a4bf14954b4f3b8652cd2c3ea",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v2/sources.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v2/sources.py",
+    "source_sha256": "a3c16428126c77a577bbc7e50d5fa2ebc1479f8a49365e8718000af082a3258a",
+    "release_sha256": "a3c16428126c77a577bbc7e50d5fa2ebc1479f8a49365e8718000af082a3258a",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v3/README.md",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v3/README.md",
+    "source_sha256": "9de08aa380e1aeca2b79ec4dd4a13f702676dec80a39a406eac31cf05fd47c3d",
+    "release_sha256": "9de08aa380e1aeca2b79ec4dd4a13f702676dec80a39a406eac31cf05fd47c3d",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v3/__init__.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v3/__init__.py",
+    "source_sha256": "16605e54c53f7bf1f6413a7fd3b810200405d634adb44d33c76d63fa8154c4bd",
+    "release_sha256": "16605e54c53f7bf1f6413a7fd3b810200405d634adb44d33c76d63fa8154c4bd",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v3/__main__.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v3/__main__.py",
+    "source_sha256": "a649583f05230fcfaf131a82d72de68d78ab4f619070ec592c6300116477e5d3",
+    "release_sha256": "a649583f05230fcfaf131a82d72de68d78ab4f619070ec592c6300116477e5d3",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v3/adapters.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v3/adapters.py",
+    "source_sha256": "55d8fdd3fa7665d62428290df0dd3c83e21da54c2d38f4818558570b6d5ffb36",
+    "release_sha256": "55d8fdd3fa7665d62428290df0dd3c83e21da54c2d38f4818558570b6d5ffb36",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v3/build.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v3/build.py",
+    "source_sha256": "0412ae0b6d5fedff46dad893d4e8f9ee43253d6cc2c82f9a7092f469987067cd",
+    "release_sha256": "0412ae0b6d5fedff46dad893d4e8f9ee43253d6cc2c82f9a7092f469987067cd",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v3/extract.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v3/extract.py",
+    "source_sha256": "f7bb73c7e4273ce3bbe9c7cfa8bb0c3d7a997674351b6bf39a5a1479df34ada6",
+    "release_sha256": "f7bb73c7e4273ce3bbe9c7cfa8bb0c3d7a997674351b6bf39a5a1479df34ada6",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v3/recovery.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v3/recovery.py",
+    "source_sha256": "5e227381cf44060db4033f2db389936ab6d4258c9a8c13699c189a834c24b353",
+    "release_sha256": "5e227381cf44060db4033f2db389936ab6d4258c9a8c13699c189a834c24b353",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v3/schema.json",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v3/schema.json",
+    "source_sha256": "2edd91e43502d527676f009c4a709f14b4d1601a4bf14954b4f3b8652cd2c3ea",
+    "release_sha256": "2edd91e43502d527676f009c4a709f14b4d1601a4bf14954b4f3b8652cd2c3ea",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v3/sources.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v3/sources.py",
+    "source_sha256": "a3c16428126c77a577bbc7e50d5fa2ebc1479f8a49365e8718000af082a3258a",
+    "release_sha256": "a3c16428126c77a577bbc7e50d5fa2ebc1479f8a49365e8718000af082a3258a",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v4/README.md",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v4/README.md",
+    "source_sha256": "6c2d412c1596f0d6cabff2345317b9958e25a3bc24f3d6475f189f9abab7b87a",
+    "release_sha256": "6c2d412c1596f0d6cabff2345317b9958e25a3bc24f3d6475f189f9abab7b87a",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v4/__init__.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v4/__init__.py",
+    "source_sha256": "346c3a1db6deb77e3f9d542d6ee5a31d8394e51f166e2b97d18d88f9bb2fa1af",
+    "release_sha256": "346c3a1db6deb77e3f9d542d6ee5a31d8394e51f166e2b97d18d88f9bb2fa1af",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v4/__main__.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v4/__main__.py",
+    "source_sha256": "a649583f05230fcfaf131a82d72de68d78ab4f619070ec592c6300116477e5d3",
+    "release_sha256": "a649583f05230fcfaf131a82d72de68d78ab4f619070ec592c6300116477e5d3",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v4/adapters.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v4/adapters.py",
+    "source_sha256": "55d8fdd3fa7665d62428290df0dd3c83e21da54c2d38f4818558570b6d5ffb36",
+    "release_sha256": "55d8fdd3fa7665d62428290df0dd3c83e21da54c2d38f4818558570b6d5ffb36",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v4/build.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v4/build.py",
+    "source_sha256": "a83232ccc68a4705822d0cc0483562ae4d78b2a13b3b935c5dcb750cfd22f63a",
+    "release_sha256": "a83232ccc68a4705822d0cc0483562ae4d78b2a13b3b935c5dcb750cfd22f63a",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v4/constants.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v4/constants.py",
+    "source_sha256": "a1b7454266999f90f9e8195a2411dfa84cca01e2c1e33f463d119ca5c1f4392e",
+    "release_sha256": "a1b7454266999f90f9e8195a2411dfa84cca01e2c1e33f463d119ca5c1f4392e",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v4/extract.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v4/extract.py",
+    "source_sha256": "26b2bb0b3e1bdb05b1ef964e4c0c7a9f45b222de4e0fc8fad569b139e434d761",
+    "release_sha256": "26b2bb0b3e1bdb05b1ef964e4c0c7a9f45b222de4e0fc8fad569b139e434d761",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v4/recovery.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v4/recovery.py",
+    "source_sha256": "5e227381cf44060db4033f2db389936ab6d4258c9a8c13699c189a834c24b353",
+    "release_sha256": "5e227381cf44060db4033f2db389936ab6d4258c9a8c13699c189a834c24b353",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v4/schema.json",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v4/schema.json",
+    "source_sha256": "2edd91e43502d527676f009c4a709f14b4d1601a4bf14954b4f3b8652cd2c3ea",
+    "release_sha256": "2edd91e43502d527676f009c4a709f14b4d1601a4bf14954b4f3b8652cd2c3ea",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v4/sources.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v4/sources.py",
+    "source_sha256": "a3c16428126c77a577bbc7e50d5fa2ebc1479f8a49365e8718000af082a3258a",
+    "release_sha256": "a3c16428126c77a577bbc7e50d5fa2ebc1479f8a49365e8718000af082a3258a",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v5/README.md",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/README.md",
+    "source_sha256": "c5d5419bf0030d549c83489ff8f27517b57a6bc903d121be74a93f5cbc67e9f1",
+    "release_sha256": "c5d5419bf0030d549c83489ff8f27517b57a6bc903d121be74a93f5cbc67e9f1",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v5/__init__.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/__init__.py",
+    "source_sha256": "a3181c23047fb832c118c68759985a0e24be59dc577b8aad5ed1de81d9bc4543",
+    "release_sha256": "a3181c23047fb832c118c68759985a0e24be59dc577b8aad5ed1de81d9bc4543",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v5/__main__.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/__main__.py",
+    "source_sha256": "a649583f05230fcfaf131a82d72de68d78ab4f619070ec592c6300116477e5d3",
+    "release_sha256": "a649583f05230fcfaf131a82d72de68d78ab4f619070ec592c6300116477e5d3",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v5/adapters.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/adapters.py",
+    "source_sha256": "55d8fdd3fa7665d62428290df0dd3c83e21da54c2d38f4818558570b6d5ffb36",
+    "release_sha256": "55d8fdd3fa7665d62428290df0dd3c83e21da54c2d38f4818558570b6d5ffb36",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v5/build.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/build.py",
+    "source_sha256": "a83232ccc68a4705822d0cc0483562ae4d78b2a13b3b935c5dcb750cfd22f63a",
+    "release_sha256": "a83232ccc68a4705822d0cc0483562ae4d78b2a13b3b935c5dcb750cfd22f63a",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v5/constants.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/constants.py",
+    "source_sha256": "a1b7454266999f90f9e8195a2411dfa84cca01e2c1e33f463d119ca5c1f4392e",
+    "release_sha256": "a1b7454266999f90f9e8195a2411dfa84cca01e2c1e33f463d119ca5c1f4392e",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v5/extract.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/extract.py",
+    "source_sha256": "1de25b177a4408e0b3ed39e4e0ef6af5106d8a3d611b39955c1e821042b52224",
+    "release_sha256": "1de25b177a4408e0b3ed39e4e0ef6af5106d8a3d611b39955c1e821042b52224",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v5/recovery.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/recovery.py",
+    "source_sha256": "5e227381cf44060db4033f2db389936ab6d4258c9a8c13699c189a834c24b353",
+    "release_sha256": "5e227381cf44060db4033f2db389936ab6d4258c9a8c13699c189a834c24b353",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v5/schema.json",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/schema.json",
+    "source_sha256": "2edd91e43502d527676f009c4a709f14b4d1601a4bf14954b4f3b8652cd2c3ea",
+    "release_sha256": "2edd91e43502d527676f009c4a709f14b4d1601a4bf14954b4f3b8652cd2c3ea",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/fact_layer_v5/sources.py",
+    "research_source": "pipeline/stages/trace_processor/fact_layer_v5/sources.py",
+    "source_sha256": "a3c16428126c77a577bbc7e50d5fa2ebc1479f8a49365e8718000af082a3258a",
+    "release_sha256": "a3c16428126c77a577bbc7e50d5fa2ebc1479f8a49365e8718000af082a3258a",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/merge_layer/README.md",
+    "research_source": "pipeline/stages/trace_processor/merge_layer/README.md",
+    "source_sha256": "5e0e9177015c37846a605af10ca5a07a099fc99a0743484fb08e4404b7530101",
+    "release_sha256": "5e0e9177015c37846a605af10ca5a07a099fc99a0743484fb08e4404b7530101",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/merge_layer/__init__.py",
+    "research_source": "pipeline/stages/trace_processor/merge_layer/__init__.py",
+    "source_sha256": "fd6b118b64c70b551a1bbd03aba9ea6e40f488d08a674eb56c5d9223214c1cd1",
+    "release_sha256": "fd6b118b64c70b551a1bbd03aba9ea6e40f488d08a674eb56c5d9223214c1cd1",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/merge_layer/__main__.py",
+    "research_source": "pipeline/stages/trace_processor/merge_layer/__main__.py",
+    "source_sha256": "554f7afa287a35a918dccb9cfd97eb7f6a357d970a585297df4f177955a58713",
+    "release_sha256": "554f7afa287a35a918dccb9cfd97eb7f6a357d970a585297df4f177955a58713",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/merge_layer/build.py",
+    "research_source": "pipeline/stages/trace_processor/merge_layer/build.py",
+    "source_sha256": "b71a681d9d5a61993185f37b5f4923c3ef37f1078dedc0c9d25c7cc46a4db4d7",
+    "release_sha256": "b71a681d9d5a61993185f37b5f4923c3ef37f1078dedc0c9d25c7cc46a4db4d7",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/merge_layer/citations.py",
+    "research_source": "pipeline/stages/trace_processor/merge_layer/citations.py",
+    "source_sha256": "87998a8be3611442782bce608faf281fffee8ae94ae0afe1834e5c4edbd3c8b0",
+    "release_sha256": "87998a8be3611442782bce608faf281fffee8ae94ae0afe1834e5c4edbd3c8b0",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/merge_layer/downstream.py",
+    "research_source": "pipeline/stages/trace_processor/merge_layer/downstream.py",
+    "source_sha256": "6a9a408ff700b59feead593fa4beae818912964f25ebf9eed958e25b362b33c7",
+    "release_sha256": "6a9a408ff700b59feead593fa4beae818912964f25ebf9eed958e25b362b33c7",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/merge_layer/schema.py",
+    "research_source": "pipeline/stages/trace_processor/merge_layer/schema.py",
+    "source_sha256": "5d3e30aab2608bad5dc727f949b189f8bfb82347803fa07c1c019a3b8e81a706",
+    "release_sha256": "5d3e30aab2608bad5dc727f949b189f8bfb82347803fa07c1c019a3b8e81a706",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/merge_layer/verify.py",
+    "research_source": "pipeline/stages/trace_processor/merge_layer/verify.py",
+    "source_sha256": "249e7edea2e3f7bcac44cde592703b79460afe6a40fe12c912f8c459d5b647b7",
+    "release_sha256": "249e7edea2e3f7bcac44cde592703b79460afe6a40fe12c912f8c459d5b647b7",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/semantic_layer/README.md",
+    "research_source": "pipeline/stages/trace_processor/semantic_layer/README.md",
+    "source_sha256": "59de9adf3fc878662c2fd5e6a590d5b5823c151b6cf700ff3e95a8fa671840b0",
+    "release_sha256": "59de9adf3fc878662c2fd5e6a590d5b5823c151b6cf700ff3e95a8fa671840b0",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/semantic_layer/__init__.py",
+    "research_source": "pipeline/stages/trace_processor/semantic_layer/__init__.py",
+    "source_sha256": "e0b21bfc57d0f2596ae6c6fe78491ac53d307bc70b2403bd8acdfdc416f62653",
+    "release_sha256": "e0b21bfc57d0f2596ae6c6fe78491ac53d307bc70b2403bd8acdfdc416f62653",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/semantic_layer/__main__.py",
+    "research_source": "pipeline/stages/trace_processor/semantic_layer/__main__.py",
+    "source_sha256": "38a30e96aea09c46fd494e96745e2e6e0228e1b846137bbcd268a036a19a8dc5",
+    "release_sha256": "38a30e96aea09c46fd494e96745e2e6e0228e1b846137bbcd268a036a19a8dc5",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/semantic_layer/contract.py",
+    "research_source": "pipeline/stages/trace_processor/semantic_layer/contract.py",
+    "source_sha256": "d549d468cef90cd2694c08d6944e6f5dbb9eef9f7765d7d532c0f363da6368ef",
+    "release_sha256": "d549d468cef90cd2694c08d6944e6f5dbb9eef9f7765d7d532c0f363da6368ef",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/semantic_layer/evidence.py",
+    "research_source": "pipeline/stages/trace_processor/semantic_layer/evidence.py",
+    "source_sha256": "e6e83e6027343e5152cbc86054ab7f7e1e56f59d9e8418d6a9571a230ee23024",
+    "release_sha256": "e6e83e6027343e5152cbc86054ab7f7e1e56f59d9e8418d6a9571a230ee23024",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/semantic_layer/provider.py",
+    "research_source": "pipeline/stages/trace_processor/semantic_layer/provider.py",
+    "source_sha256": "93e732e2d3a856a534b157b35773dbb0f9bea6fe4129c3143c8ea102ef9711a5",
+    "release_sha256": "93e732e2d3a856a534b157b35773dbb0f9bea6fe4129c3143c8ea102ef9711a5",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/semantic_layer/run.py",
+    "research_source": "pipeline/stages/trace_processor/semantic_layer/run.py",
+    "source_sha256": "0b28aa12fc28d3a9c2b2230b8f16e52f081241ab59c81ac613de6584c14a40ca",
+    "release_sha256": "0b28aa12fc28d3a9c2b2230b8f16e52f081241ab59c81ac613de6584c14a40ca",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/semantic_layer/stage_c_runtime.py",
+    "research_source": "pipeline/stages/trace_processor/semantic_layer/stage_c_runtime.py",
+    "source_sha256": "6b74708bf8071e8e14c456c01d0003073bb41a0714e05720b3117fba7c14538c",
+    "release_sha256": "6b74708bf8071e8e14c456c01d0003073bb41a0714e05720b3117fba7c14538c",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/semantic_layer/validate.py",
+    "research_source": "pipeline/stages/trace_processor/semantic_layer/validate.py",
+    "source_sha256": "4fc153caa197e485f4aa287df0c4e92ac5d836f0f7712a414e6e91bc64075e35",
+    "release_sha256": "4fc153caa197e485f4aa287df0c4e92ac5d836f0f7712a414e6e91bc64075e35",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/trace_processor/validation_policy.py",
+    "research_source": "pipeline/stages/trace_processor/validation_policy.py",
+    "source_sha256": "33343bf24d3c01d72af96462115a2b9291cf6f381feb17b4b3bd8247abba6c51",
+    "release_sha256": "33343bf24d3c01d72af96462115a2b9291cf6f381feb17b4b3bd8247abba6c51",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/diagnosis/README.md",
+    "research_source": "pipeline/stages/diagnosis/README.md",
+    "source_sha256": "cbe9e61518955073d135da25a89ba16cf836ee0252bdac87feaaeccf78a2449e",
+    "release_sha256": "cbe9e61518955073d135da25a89ba16cf836ee0252bdac87feaaeccf78a2449e",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/diagnosis/__init__.py",
+    "research_source": "pipeline/stages/diagnosis/__init__.py",
+    "source_sha256": "f91b4fe6580d081b347b442627767cd5d6e050cf9cc549676fe6a835fc1a7316",
+    "release_sha256": "f91b4fe6580d081b347b442627767cd5d6e050cf9cc549676fe6a835fc1a7316",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/diagnosis/validation.py",
+    "research_source": "pipeline/stages/diagnosis/validation.py",
+    "source_sha256": "606727c7451a75f729840c18ecc6dbc43d6c248aa4dd28caa36d96cbd893ae15",
+    "release_sha256": "606727c7451a75f729840c18ecc6dbc43d6c248aa4dd28caa36d96cbd893ae15",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/evidence_builder/README.md",
+    "research_source": "pipeline/stages/evidence_builder/README.md",
+    "source_sha256": "954782883fc7994936dd5ac74804ab7cc35c2d925762ef5683971a6af36e155b",
+    "release_sha256": "954782883fc7994936dd5ac74804ab7cc35c2d925762ef5683971a6af36e155b",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/evidence_builder/__init__.py",
+    "research_source": "pipeline/stages/evidence_builder/__init__.py",
+    "source_sha256": "8a2280953087231b043ff3ec5c07a2c251ff2b4265ccf9e4ec4ff3eec99b99b2",
+    "release_sha256": "8a2280953087231b043ff3ec5c07a2c251ff2b4265ccf9e4ec4ff3eec99b99b2",
+    "changes": []
+  },
+  {
+    "file": "pipeline/stages/evidence_builder/index.py",
+    "research_source": "pipeline/stages/evidence_builder/index.py",
+    "source_sha256": "72810d8a3760cf135056709deff19d00fa6839e20691529731670b1a33ed20d0",
+    "release_sha256": "72810d8a3760cf135056709deff19d00fa6839e20691529731670b1a33ed20d0",
+    "changes": []
+  },
+  {
+    "file": "scripts/curate_complete_traces.py",
+    "research_source": "scripts/curate_complete_traces.py",
+    "source_sha256": "16a0799b978ecec2eff38c2ccea14d14c822d429b06ca2bef8c016fbfd3d09ac",
+    "release_sha256": "35a66a60319eceb909d8c5d3c6571360ead774f307f83ea435dd5354435ea070",
+    "changes": [
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      },
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      },
+      {
+        "kind": "release_portability",
+        "detail": "Local path spellings removed; mount-only legacy guard becomes release-directory existence guard where applicable."
+      }
+    ]
+  },
+  {
+    "file": "scripts/claude_execution_capture.py",
+    "research_source": "scripts/claude_execution_capture.py",
+    "source_sha256": "31d66c13589c83a1e490e8b8c437e44099d8d28aca2080064f9da8c1002c7cfe",
+    "release_sha256": "31d66c13589c83a1e490e8b8c437e44099d8d28aca2080064f9da8c1002c7cfe",
+    "changes": []
+  },
+  {
+    "file": "scripts/codex_complete_capture.py",
+    "research_source": "scripts/codex_complete_capture.py",
+    "source_sha256": "a8ee43b3719978c2b4e912e3b45f026a6b2142165f6cd94da92221606cd319e7",
+    "release_sha256": "a8ee43b3719978c2b4e912e3b45f026a6b2142165f6cd94da92221606cd319e7",
+    "changes": []
+  },
+  {
+    "file": "scripts/build_trace_processor_v2_manifest.py",
+    "research_source": "scripts/build_trace_processor_v2_manifest.py",
+    "source_sha256": "589ad6100b81cf0878249f345af143d052667b9c7f9a3cddc2b8f4d67647febd",
+    "release_sha256": "4675469649669a37b7fa68d19b52cae7d150c5d2df76a7a572d082cde202552d",
+    "changes": [
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      }
+    ]
+  },
+  {
+    "file": "scripts/trace_processor_v2.py",
+    "research_source": "scripts/trace_processor_v2.py",
+    "source_sha256": "bc8fcf35d00b1252fd06a7ff0d8fba52e53e4f775eef9797fbf7643f74b59ec9",
+    "release_sha256": "bc8fcf35d00b1252fd06a7ff0d8fba52e53e4f775eef9797fbf7643f74b59ec9",
+    "changes": []
+  },
+  {
+    "file": "scripts/probe_trace_processor_provider.py",
+    "research_source": "scripts/probe_trace_processor_provider.py",
+    "source_sha256": "6f77ba9fd469a22adb50cbff2edcf5862f3c8de56dc6182a525854a3f3bee7f2",
+    "release_sha256": "6f77ba9fd469a22adb50cbff2edcf5862f3c8de56dc6182a525854a3f3bee7f2",
+    "changes": []
+  },
+  {
+    "file": "scripts/build_trace_level_evidence.py",
+    "research_source": "scripts/build_trace_level_evidence.py",
+    "source_sha256": "4f2b62f79d58c974d81fdbb38dab0e54b2899a4cc066849b91a3b2c1316d5a00",
+    "release_sha256": "4f2b62f79d58c974d81fdbb38dab0e54b2899a4cc066849b91a3b2c1316d5a00",
+    "changes": []
+  },
+  {
+    "file": "scripts/run_trace_diagnostician_v3_baseline.py",
+    "research_source": "scripts/run_trace_diagnostician_v3_baseline.py",
+    "source_sha256": "ca1fd5b64eb77067052149d5eb2d85e8ec8e367cd181fc5ed83feed6934d4258",
+    "release_sha256": "ca1fd5b64eb77067052149d5eb2d85e8ec8e367cd181fc5ed83feed6934d4258",
+    "changes": []
+  },
+  {
+    "file": "scripts/claude_soclaas_chat_capture.py",
+    "research_source": "scripts/claude_soclaas_chat_capture.py",
+    "source_sha256": "9a55eeedcb4062309fa5a8308e98dd32c43c04dd0f77aa2da4f5edbac519af7a",
+    "release_sha256": "9a55eeedcb4062309fa5a8308e98dd32c43c04dd0f77aa2da4f5edbac519af7a",
+    "changes": []
+  },
+  {
+    "file": "scripts/anthropic_soclaas_relay.py",
+    "research_source": "scripts/anthropic_soclaas_relay.py",
+    "source_sha256": "c0831773ceb1d359f39a4269959eb6e2752d5e071964262ac4afcf9a3cc23ee5",
+    "release_sha256": "6161c66383a399038924502024c6782ea7450ef5c905aed56bcb8a2f75b20031",
+    "changes": [
+      {
+        "kind": "release_portability",
+        "detail": "Local path spellings removed; mount-only legacy guard becomes release-directory existence guard where applicable."
+      }
+    ]
+  },
+  {
+    "file": "scripts/probe_soclaas_chat_provider.py",
+    "research_source": "scripts/probe_soclaas_chat_provider.py",
+    "source_sha256": "8950a77702324b11b15939742a3b50279241528e90f4aee87d0f5ffdb0d2914a",
+    "release_sha256": "0bd24c809e67bbfc2370dccccaa2358e76084cbc650ec3b04b7ac3edc6b69679",
+    "changes": [
+      {
+        "kind": "release_portability",
+        "detail": "Local path spellings removed; mount-only legacy guard becomes release-directory existence guard where applicable."
+      }
+    ]
+  },
+  {
+    "file": "scripts/claude_cli_unicode_adoption.py",
+    "research_source": "scripts/claude_cli_unicode_adoption.py",
+    "source_sha256": "d96790f27d9c26e7bdb4dc90a1219fc48c854ec895b3502093db5777cb461d92",
+    "release_sha256": "d96790f27d9c26e7bdb4dc90a1219fc48c854ec895b3502093db5777cb461d92",
+    "changes": []
+  },
+  {
+    "file": "tests/test_fact_layer_adapters.py",
+    "research_source": "tests/test_fact_layer_adapters.py",
+    "source_sha256": "001afcd58c6e463c095202e061444ab87198142eb3bf106befa0336b3771e4db",
+    "release_sha256": "001afcd58c6e463c095202e061444ab87198142eb3bf106befa0336b3771e4db",
+    "changes": []
+  },
+  {
+    "file": "tests/test_fact_layer_v3_recovery.py",
+    "research_source": "tests/test_fact_layer_v3_recovery.py",
+    "source_sha256": "df3fbb0eb18538e5adbb1daf47bbbbc7c236d1430ac4c661853ccad0c9555410",
+    "release_sha256": "df3fbb0eb18538e5adbb1daf47bbbbc7c236d1430ac4c661853ccad0c9555410",
+    "changes": []
+  },
+  {
+    "file": "tests/test_fact_layer_v4_constants_connections.py",
+    "research_source": "tests/test_fact_layer_v4_constants_connections.py",
+    "source_sha256": "4ec1d5870df6c047d5cd94a55efeccfd1a69ecefc5ff0595caf2af7dd0f27e65",
+    "release_sha256": "4ec1d5870df6c047d5cd94a55efeccfd1a69ecefc5ff0595caf2af7dd0f27e65",
+    "changes": []
+  },
+  {
+    "file": "tests/test_fact_layer_v5_connection_positional.py",
+    "research_source": "tests/test_fact_layer_v5_connection_positional.py",
+    "source_sha256": "7534ff6faeccf72f2477d6c48a9645d21151cef4007a01c6a78580950784acef",
+    "release_sha256": "7534ff6faeccf72f2477d6c48a9645d21151cef4007a01c6a78580950784acef",
+    "changes": []
+  },
+  {
+    "file": "tests/test_shell_boundaries_v2.py",
+    "research_source": "tests/test_shell_boundaries_v2.py",
+    "source_sha256": "d6fcc727f649d4d0109c8a4ef25d740134d692d5c636dbb03ce6050bdd027131",
+    "release_sha256": "d6fcc727f649d4d0109c8a4ef25d740134d692d5c636dbb03ce6050bdd027131",
+    "changes": []
+  },
+  {
+    "file": "tests/test_semantic_layer.py",
+    "research_source": "tests/test_semantic_layer.py",
+    "source_sha256": "5d54bb3601649326398afce02694929f43b46ef567b0939d4d1827a3c6ac618a",
+    "release_sha256": "d1e68c269f506f09040eb555d259ddfe473265d0f6e450863e701ff9028622b8",
+    "changes": [
+      {
+        "kind": "test_fixture_update",
+        "detail": "Two constructor-bypassing mocked Client fixtures initialize the existing optional thinking_token_budget attribute to None. Production provider logic unchanged."
+      }
+    ]
+  },
+  {
+    "file": "tests/test_stage_d_merge.py",
+    "research_source": "tests/test_stage_d_merge.py",
+    "source_sha256": "9f65d7281b38c1f36c6721b2c7b240c9b62e08ebdd4031fc60b2eae672abebb1",
+    "release_sha256": "9f65d7281b38c1f36c6721b2c7b240c9b62e08ebdd4031fc60b2eae672abebb1",
+    "changes": []
+  },
+  {
+    "file": "tests/test_evidence_index.py",
+    "research_source": "tests/test_evidence_index.py",
+    "source_sha256": "6a34722478ff34d1b99a15e34685249052b68d84c489539dd7c8c462e15e396c",
+    "release_sha256": "6a34722478ff34d1b99a15e34685249052b68d84c489539dd7c8c462e15e396c",
+    "changes": []
+  },
+  {
+    "file": "tests/test_diagnosis_acceptance.py",
+    "research_source": "tests/test_diagnosis_acceptance.py",
+    "source_sha256": "9dca9c134450613765331a18b6fa36a17ec0e9dc5effb2089960f10f15cdaf86",
+    "release_sha256": "9dca9c134450613765331a18b6fa36a17ec0e9dc5effb2089960f10f15cdaf86",
+    "changes": []
+  },
+  {
+    "file": "research_runners/processor/batch164/run.py",
+    "research_source": "work/trace_processor_batch164_20261018/run.py",
+    "source_sha256": "8d7484594db086744e0670ce3140e5bf1484fe6cadb12e21b80fe466e8b96325",
+    "release_sha256": "211ace4162821df9b6c5b65b5eba3084ea40bd2064ca7b573d0cff48244db82f",
+    "changes": [
+      {
+        "from_category": "local_path_prefix",
+        "to": "${LOCAL_MIRROR}"
+      }
+    ]
+  },
+  {
+    "file": "research_runners/processor/batch164/prepare.py",
+    "research_source": "work/trace_processor_batch164_20261018/prepare.py",
+    "source_sha256": "04ea68bc83094ff4fb29dad13c462c01e8cdde4e00ff3b8a15adbdcffe49acc8",
+    "release_sha256": "04ea68bc83094ff4fb29dad13c462c01e8cdde4e00ff3b8a15adbdcffe49acc8",
+    "changes": []
+  },
+  {
+    "file": "research_runners/processor/batch164/seal.py",
+    "research_source": "work/trace_processor_batch164_20261018/seal.py",
+    "source_sha256": "f6f0af48253bef2991b93c2d45f422ba27bb7c7ac52a0e982b5ef3b79137dcb1",
+    "release_sha256": "f6f0af48253bef2991b93c2d45f422ba27bb7c7ac52a0e982b5ef3b79137dcb1",
+    "changes": []
+  },
+  {
+    "file": "research_runners/processor/batch164/inventory.py",
+    "research_source": "work/trace_processor_batch164_20261018/inventory.py",
+    "source_sha256": "77a8368541976128e04e5722e166bd6161e60c857d55868a27a27d2a950df373",
+    "release_sha256": "77a8368541976128e04e5722e166bd6161e60c857d55868a27a27d2a950df373",
+    "changes": []
+  },
+  {
+    "file": "research_runners/processor/increment289/run.py",
+    "research_source": "work/trace_processor_increment289_20261025/run.py",
+    "source_sha256": "1052dd989afaac9f824e6adbdb66e765e3ad5d88f72ed40a9604b260368a1d60",
+    "release_sha256": "70c9fe25af8cd0f32068660a49dae925d1ab3a1f8a4ed4d5670dbb6525480380",
+    "changes": [
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      }
+    ]
+  },
+  {
+    "file": "research_runners/processor/increment289/prepare_facts.py",
+    "research_source": "work/trace_processor_increment289_20261025/prepare_facts.py",
+    "source_sha256": "ad9b977e889935638cebb5755de8c7f40f1e173d8ff6a98c0637faea4c17edab",
+    "release_sha256": "c6bdbfa9787032a0203b2042825d9eec2f990297b9d03273714e7e6ea22a9805",
+    "changes": [
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      },
+      {
+        "kind": "release_portability",
+        "detail": "Local path spellings removed; mount-only legacy guard becomes release-directory existence guard where applicable."
+      }
+    ]
+  },
+  {
+    "file": "research_runners/processor/increment289/pipeline_v2.py",
+    "research_source": "work/trace_processor_increment289_20261025/pipeline_v2.py",
+    "source_sha256": "77c43b86ccb8d8ba35e40e56035a23730d38a1a058a6170c01ad21ffd7cef5b9",
+    "release_sha256": "83cfff979c19f24c7df097549b4086e23181f15075a3ecdc1e17fee16ab90c2c",
+    "changes": [
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      }
+    ]
+  },
+  {
+    "file": "research_runners/diagnosis/native_tools/recover_interrupted.py",
+    "research_source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/method/recover_interrupted.py",
+    "source_sha256": "43685fc1b15fe68010dce770830c284ee5e6485b5767c77f66f0ecd2450de340",
+    "release_sha256": "43685fc1b15fe68010dce770830c284ee5e6485b5767c77f66f0ecd2450de340",
+    "changes": []
+  },
+  {
+    "file": "research_runners/diagnosis/native_tools/report.py",
+    "research_source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/method/report.py",
+    "source_sha256": "b0133ab1cce46d8e02c2cc9343c67aeea5ea81e4f0fc3eecf1739000535104b3",
+    "release_sha256": "b0133ab1cce46d8e02c2cc9343c67aeea5ea81e4f0fc3eecf1739000535104b3",
+    "changes": []
+  },
+  {
+    "file": "research_runners/diagnosis/native_tools/run.py",
+    "research_source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/method/run.py",
+    "source_sha256": "44680f25e0621d378909a2d724314be313b2070a85b6ca20d05b17d07d7c8ec6",
+    "release_sha256": "7ffac8445a057ef397dec50feeac53049cd819797abf2da2046d71cc3ec3217a",
+    "changes": [
+      {
+        "from_category": "local_path_prefix",
+        "to": "${LOCAL_MIRROR}"
+      }
+    ]
+  },
+  {
+    "file": "research_runners/diagnosis/round24/message_chain_audit.py",
+    "research_source": "artifacts/05_diagnosis/diagnosis_v1_round24_20261018/method/message_chain_audit.py",
+    "source_sha256": "78285947207903b84e611f7c38ece1416d4bc887ffd22a1b034dc0abf5a76b32",
+    "release_sha256": "78285947207903b84e611f7c38ece1416d4bc887ffd22a1b034dc0abf5a76b32",
+    "changes": []
+  },
+  {
+    "file": "research_runners/diagnosis/round24/read_efficiency.py",
+    "research_source": "artifacts/05_diagnosis/diagnosis_v1_round24_20261018/method/read_efficiency.py",
+    "source_sha256": "23dbb5cb618edad210a8ab0bba42e93395af46210e789d4ddd6907959ee27b1f",
+    "release_sha256": "23dbb5cb618edad210a8ab0bba42e93395af46210e789d4ddd6907959ee27b1f",
+    "changes": []
+  },
+  {
+    "file": "research_runners/diagnosis/round24/report.py",
+    "research_source": "artifacts/05_diagnosis/diagnosis_v1_round24_20261018/method/report.py",
+    "source_sha256": "4cac98cc178bdec2e395c7ef79119e640e4fcad538f3e7facbb0d60210004513",
+    "release_sha256": "4cac98cc178bdec2e395c7ef79119e640e4fcad538f3e7facbb0d60210004513",
+    "changes": []
+  },
+  {
+    "file": "research_runners/diagnosis/round24/run.py",
+    "research_source": "artifacts/05_diagnosis/diagnosis_v1_round24_20261018/method/run.py",
+    "source_sha256": "cb8934423f27a912dd99b92de5a0ba0c7aacc20b1f2d5ca9e95e8b27f774aa9a",
+    "release_sha256": "cb8934423f27a912dd99b92de5a0ba0c7aacc20b1f2d5ca9e95e8b27f774aa9a",
+    "changes": []
+  },
+  {
+    "file": "research_runners/diagnosis/round24/test_control.py",
+    "research_source": "artifacts/05_diagnosis/diagnosis_v1_round24_20261018/method/test_control.py",
+    "source_sha256": "b833dc5a6dfe411afc7ecfe5d4638d0aab0739bba1223d7501195e5172b6c48a",
+    "release_sha256": "b833dc5a6dfe411afc7ecfe5d4638d0aab0739bba1223d7501195e5172b6c48a",
+    "changes": []
+  },
+  {
+    "file": "research_runners/diagnosis/native_runtime.py",
+    "research_source": "artifacts/05_diagnosis/diagnosis_eight_native_tools_20261018/method/run.py",
+    "source_sha256": "44680f25e0621d378909a2d724314be313b2070a85b6ca20d05b17d07d7c8ec6",
+    "release_sha256": "7ffac8445a057ef397dec50feeac53049cd819797abf2da2046d71cc3ec3217a",
+    "changes": [
+      {
+        "from": "BASE = Path(__file__).resolve().parents[2]",
+        "to": "BASE = Path(__file__).resolve().parents[2]"
+      },
+      {
+        "from_category": "local_path_prefix",
+        "to": "${LOCAL_MIRROR}"
+      }
+    ]
+  },
+  {
+    "file": "configs/processor/compiled_system_prompt.md",
+    "research_source": "outputs/trace_processor_frozen_v1_20261018/compiled_system_prompt.md",
+    "source_sha256": "ff8a9d554dcd864c8034aa8373eedb02ff2dc4a4fc5cedd530635be6e2650942",
+    "release_sha256": "a20f101418924e64521529706f0e6cc291794852d612c856cf3ba012a53a1b52",
+    "changes": [
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      },
+      {
+        "kind": "release_portability",
+        "detail": "Local path spellings removed; mount-only legacy guard becomes release-directory existence guard where applicable."
+      }
+    ]
+  },
+  {
+    "file": "configs/processor/requirements.compiled.md",
+    "research_source": "outputs/trace_processor_frozen_v1_20261018/requirements.compiled.md",
+    "source_sha256": "0f544f6bccf427b9e6c4970e492a6d86cbef54c7854ac4c98554e36eb37d35cf",
+    "release_sha256": "0f544f6bccf427b9e6c4970e492a6d86cbef54c7854ac4c98554e36eb37d35cf",
+    "changes": []
+  },
+  {
+    "file": "configs/processor/requirements.schema.json",
+    "research_source": "outputs/trace_processor_frozen_v1_20261018/requirements.schema.json",
+    "source_sha256": "29262dc78f4bc664b5b3c06299405294e47866e61069e0a37dae6ac1fecfa66e",
+    "release_sha256": "29262dc78f4bc664b5b3c06299405294e47866e61069e0a37dae6ac1fecfa66e",
+    "changes": []
+  },
+  {
+    "file": "configs/processor/operations.schema.json",
+    "research_source": "outputs/trace_processor_frozen_v1_20261018/operations.schema.json",
+    "source_sha256": "60fec1326739ed118c88a0699bf3b5d9d34e3d5aa7f13d153d0d379f42f5235b",
+    "release_sha256": "60fec1326739ed118c88a0699bf3b5d9d34e3d5aa7f13d153d0d379f42f5235b",
+    "changes": []
+  },
+  {
+    "file": "configs/processor/normalized_trace.schema.json",
+    "research_source": "outputs/trace_processor_frozen_v1_20261018/normalized_trace.schema.json",
+    "source_sha256": "1b5d2e402d74671bc5549fee8528e07bfbb5d266f7e2ed7e372c7362308a8b66",
+    "release_sha256": "1b5d2e402d74671bc5549fee8528e07bfbb5d266f7e2ed7e372c7362308a8b66",
+    "changes": []
+  },
+  {
+    "file": "configs/processor/runtime_profile.json",
+    "research_source": "outputs/trace_processor_frozen_v1_20261018/runtime_profile.json",
+    "source_sha256": "93edd6b93b3267ae95a911b53d71efa5859fe5b27ef95a90704437d17a123de5",
+    "release_sha256": "93edd6b93b3267ae95a911b53d71efa5859fe5b27ef95a90704437d17a123de5",
+    "changes": []
+  },
+  {
+    "file": "configs/processor/METHOD.md",
+    "research_source": "outputs/trace_processor_frozen_v1_20261018/METHOD.md",
+    "source_sha256": "8971cab7c4b302a9cc14e96eaa481f872a2ea8bcb06f79fe44689eec28a1636d",
+    "release_sha256": "8971cab7c4b302a9cc14e96eaa481f872a2ea8bcb06f79fe44689eec28a1636d",
+    "changes": []
+  },
+  {
+    "file": "configs/processor/protocol.json",
+    "research_source": "outputs/trace_processor_frozen_v1_20261018/protocol.json",
+    "source_sha256": "ec6f433946497a05a031b32bc3b7d975cb8dedccee673850277bbd987539af6b",
+    "release_sha256": "ec6f433946497a05a031b32bc3b7d975cb8dedccee673850277bbd987539af6b",
+    "changes": []
+  },
+  {
+    "file": "configs/diagnosis/diagnosis.prompt.md",
+    "research_source": "outputs/diagnosis_prompt_v1_20261018/diagnosis.prompt.md",
+    "source_sha256": "8ad65be79cfb5bda29e746d2e096a244e367da6954f4d89773be31bdac7e8fd8",
+    "release_sha256": "cdd34f694fcf92a85d90b8b380b2426b932744dd2ae7a6a675da853d6c373eb8",
+    "changes": [
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      },
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      },
+      {
+        "kind": "release_portability",
+        "detail": "Local path spellings removed; mount-only legacy guard becomes release-directory existence guard where applicable."
+      }
+    ]
+  },
+  {
+    "file": "configs/diagnosis/diagnosis.schema.json",
+    "research_source": "outputs/diagnosis_prompt_v1_20261018/diagnosis.schema.json",
+    "source_sha256": "424154b522ac3a27cfa9a52167ccabc88fd27eaac68f426f213578fdfc5566ce",
+    "release_sha256": "424154b522ac3a27cfa9a52167ccabc88fd27eaac68f426f213578fdfc5566ce",
+    "changes": []
+  },
+  {
+    "file": "configs/diagnosis/CURRENT_RUNTIME.json",
+    "research_source": "configs/05_diagnosis/CURRENT_RUNTIME.json",
+    "source_sha256": "7ad8cd7bbe4717053396e4c80f186c0edb222dcf6344878c7e8c1d286a9f6bb1",
+    "release_sha256": "96f6cfdf25ed8e741e104012ce9d145483648c835394b29d041b7e7ed90e68a5",
+    "changes": [
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      }
+    ]
+  },
+  {
+    "file": "configs/diagnosis/CURRENT_ACCEPTANCE.json",
+    "research_source": "configs/05_diagnosis/CURRENT_ACCEPTANCE.json",
+    "source_sha256": "12b3f8f5e95d73ad56438d1ebc395b566c8c5567109b7bf8c01752ffc5e1d7e2",
+    "release_sha256": "12b3f8f5e95d73ad56438d1ebc395b566c8c5567109b7bf8c01752ffc5e1d7e2",
+    "changes": []
+  },
+  {
+    "file": "configs/historical/CURRENT_VALIDATION.json",
+    "research_source": "configs/03_trace_processor/CURRENT_VALIDATION.json",
+    "source_sha256": "f7b7c9581926b1f937218a6e994fd5fedba55eb29f2c70202dcb057b797642c6",
+    "release_sha256": "f7b7c9581926b1f937218a6e994fd5fedba55eb29f2c70202dcb057b797642c6",
+    "changes": []
+  },
+  {
+    "file": "configs/historical/CURRENT_FROZEN.json",
+    "research_source": "configs/03_trace_processor/CURRENT_FROZEN.json",
+    "source_sha256": "4a119e99ece32df46d55156d978c261c0c905ad11e23ccddab603863ca0ca10d",
+    "release_sha256": "4a119e99ece32df46d55156d978c261c0c905ad11e23ccddab603863ca0ca10d",
+    "changes": []
+  },
+  {
+    "file": "configs/historical/stage-c-runtime.json",
+    "research_source": "configs/03_trace_processor/stage-c-runtime.json",
+    "source_sha256": "d4f7bf2b18a2a768721f7f65bf136db61a12ddbc3fee16f7b208a68192255593",
+    "release_sha256": "d4f7bf2b18a2a768721f7f65bf136db61a12ddbc3fee16f7b208a68192255593",
+    "changes": []
+  },
+  {
+    "file": "configs/processor/validation-policy.json",
+    "research_source": "outputs/trace_processor_allow_extra_fields_20261019/policy.json",
+    "source_sha256": "836cc5e05a5a16b5090ad10abaea3cf22d9aa632a19c86fdbf654db29ae2029a",
+    "release_sha256": "6b18c9ee397704bb5fe14e9ba785b3af1068f2733dec09d7fa35f72ea269c1ef",
+    "changes": [
+      {
+        "from_category": "local_path_prefix",
+        "to": "${PROJECT_ROOT}"
+      }
+    ]
+  },
+  {
+    "file": "configs/processor/validation-operations.schema.json",
+    "research_source": "outputs/trace_processor_allow_extra_fields_20261019/operations.schema.json",
+    "source_sha256": "88aeea1a8da65f2c8de77cdb69724fa8cb3418bf15e8d99957936df6225f7b94",
+    "release_sha256": "88aeea1a8da65f2c8de77cdb69724fa8cb3418bf15e8d99957936df6225f7b94",
+    "changes": []
+  },
+  {
+    "file": "configs/historical/increment289_scheduler.json",
+    "research_source": "outputs/trace_processor_increment289_20261025/pipeline_policy_v2.json",
+    "source_sha256": "460f6e5b8294143a925984119d6fe9e33d848125117b76a4c64228bb134766c9",
+    "release_sha256": "460f6e5b8294143a925984119d6fe9e33d848125117b76a4c64228bb134766c9",
+    "changes": []
+  }
+]

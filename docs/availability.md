@@ -3,10 +3,10 @@
 | Item | Status |
 | --- | --- |
 | Existing Trace Processor implementation and helper dependency closure | Included |
-| Existing Trace Diagnosis, native tools, current acceptance and original historical runners | Included |
+| Existing Trace Diagnosis, native tools, CodeTracer-compatible current acceptance and original historical runners | Included |
 | Actual method configs and prompts | Included as disclosed public copies; local-path spellings are replaced |
 | Fresh release orchestration | Added and validated offline with explicit test mocks |
-| Complete real recorded sample | DABstep 1464: full raw recording, annotations, diagnosis history and strict offline end-to-end replay |
+| Complete real recorded sample | DABstep 1464: full raw recording, annotations, diagnosis history and offline end-to-end replay |
 | Earlier recorded excerpt | Agriculture 22 retained with its original scope |
 | Actual diagnosis and existing author review | Included unchanged; author review is not independent gold |
 | Full native corpus and all historical prefixes | Not redistributed |
@@ -20,3 +20,5 @@
 The repository supports source inspection, complete offline replay of one real run and checks of the earlier excerpt and a documented path to fresh method runs with user-supplied complete inputs and authorized model access. It does not claim that an unfinished paper evaluation or an unreleased archive has become fully reproducible.
 
 The three completed [research evidence groups](../research_artifacts/README.md) are now published: new-ten results/review, all-164 processor and selection audits, and six recorded diagnostic control experiments. These are existing experimental records, including failed/nonterminal outcomes. They do not supply independent labels or a finished paper-level ablation study.
+
+Current portable diagnosis entrypoints use only the [CodeTracer-compatible acceptance policy](acceptance.md). Legacy strict results in frozen sample and experiment records remain historical.

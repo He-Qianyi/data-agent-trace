@@ -17,5 +17,12 @@
   ],
   "historical_experiments": "retain original strict results; revalidate in a separate versioned report",
   "prompt_changes": false,
-  "model_reruns": false
+  "model_reruns": false,
+  "current_entrypoints": [
+    "reproduction.replay",
+    "reproduction.evaluate",
+    "reproduction.diagnose"
+  ],
+  "legacy_strict_diagnosis_audits": "not run by current entrypoints; retained only in historical research code and saved records",
+  "replay_integrity": "source hashes and exact recorded-output replay check material identity, not diagnosis acceptance or truth"
 }

@@ -1,10 +1,26 @@
 # Data Agent Trace
 
-**Evidence-grounded Trace Processor and Trace Diagnosis for studying analytical agent behavior.**
+[![Offline checks](https://github.com/He-Qianyi/data-agent-trace/actions/workflows/offline-checks.yml/badge.svg)](https://github.com/He-Qianyi/data-agent-trace/actions/workflows/offline-checks.yml)
 
-Research by **He Qianyi**, Computer Science, National University of Singapore; ongoing since September 2026.
+**Reconstruct what a data agent did, then investigate why its analytical decisions succeed or fail.**
 
-This repository releases the available research implementations, configurations, prompts, dependency closure, and reproduction instructions. It includes a **complete real recorded sample with offline end-to-end replay**, the earlier recorded excerpt, and mechanical evaluation tools. The release preserves known failures and explicitly records unavailable evidence and evaluation assets.
+Independent research by **He Qianyi**, Computer Science, National University of Singapore; ongoing since September 2026.
+
+Long analytical runs contain tool errors, recoveries and ambiguous decisions. A final answer alone cannot explain which choices mattered. This project connects task requirements to recorded data operations and diagnostic evidence through two stages:
+
+- **Trace Processor:** reconstruct analytical workflows from native agent recordings, linking task requirements, operations and source evidence.
+- **Trace Diagnosis:** use an LLM with read-only evidence tools to examine consequential decisions, recovery and alternative explanations.
+
+## What I have built and released
+
+The repository includes the research implementations and frozen method configurations, a complete real recording with saved model outputs and offline end-to-end replay, plus existing diagnostic experiments and processor-audit records. These are inspectable deliverables from work in progress; independent diagnostic accuracy and completed paper comparisons are still unavailable.
+
+**Start here:** [real case walkthrough](docs/case-study.md) · [offline quick start](#quick-start-without-a-model-api) · [method](docs/methodology.md) · [current diagnosis acceptance](docs/acceptance.md)
+
+| Work completed | Next research questions |
+| --- | --- |
+| Trace processing and evidence retrieval implementations; native-tool diagnosis runtime | Independent semantic evaluation and stronger comparisons |
+| Complete recorded sample, offline replay and source-bound experimental records | Broader publicly redistributable samples and robustness studies |
 
 ## Research workflow
 
@@ -30,7 +46,7 @@ flowchart LR
 | Configuration and prompts | Frozen processor prompts, schema, runtime profile; diagnosis prompt/schema; current structural policy; historical scheduler profile | Local path spellings are replaced in public copies; source and release hashes are recorded |
 | Complete real sample | DABstep 1464: raw ledger/transcript, all eight tool steps, full annotations, four diagnosis rounds, saved native outputs and author review | Offline replay from raw records through processor, diagnosis and evaluation; disclosed metadata path substitutions |
 | Earlier real excerpt | Agriculture 22: steps S0004-S0006 and original diagnosis | Retained unchanged for comparison; explicitly an excerpt |
-| Evaluation | Strict schema, current acceptance, evidence-ID coverage, exact quotations, source hashes, static extraction | Semantic/root-cause accuracy is unavailable and remains `null` |
+| Evaluation | CodeTracer-compatible diagnosis acceptance; separate evidence coverage, source hashes, exact replay and static extraction | Legacy strict diagnosis audits are not applied by current entrypoints; semantic accuracy remains `null` |
 
 See [reproduction instructions](docs/reproduction.md), [evaluation protocol](docs/evaluation.md), [data scope](docs/data-release.md), and [remaining limitations](docs/availability.md).
 
@@ -62,11 +78,11 @@ python -m unittest discover -s tests -v
 
 Use a new output directory for each evaluation. The offline command does not execute recorded analysis code or call a model.
 
-The complete sample replays every saved annotation and diagnosis response, and exactly checks the original diagnostic request histories and five native tool returns. Its existing author review is `needs_revision`; the semantic issue remains visible. See [sample contents, provenance and expected outcome](samples/real/dabstep_1464_claude/README.md).
+The complete sample replays every saved annotation and diagnosis response, and checks the original diagnostic request histories and five native tool returns. Current diagnosis acceptance uses only the [CodeTracer-compatible policy](docs/acceptance.md). Its existing author review is `needs_revision`; the semantic issue remains visible. See [sample contents, provenance and expected outcome](samples/real/dabstep_1464_claude/README.md).
 
-The earlier agriculture excerpt has a separate known boundary: the actual saved diagnosis contains an extra `root_cause_chain_note` field. The strict declared schema rejects it; the current CodeTracer-compatible structural acceptance policy accepts it. Both outcomes are reported unchanged. Passing either mechanical policy does not establish diagnosis correctness.
+The earlier Agriculture excerpt retains its extra `root_cause_chain_note` field and passes the same current acceptance policy. Its legacy strict rejection remains only in historical records. Both samples keep their known semantic limitations; structural acceptance does not establish diagnosis correctness.
 
-## Full execution on your complete recordings
+## Fresh execution on your complete recordings
 
 The complete DABstep sample above supports offline recorded-output replay. To make new model predictions on your own recordings, supply an eligible recording manifest and original source files:
 

@@ -7,7 +7,6 @@ import argparse
 import collections
 import json
 from pathlib import Path
-import jsonschema
 from .common import ROOT,read,save,digest
 from pipeline.stages.diagnosis.validation import validate_diagnosis
 from pipeline.stages.trace_processor.fact_layer_v5.extract import extract_action
@@ -30,9 +29,6 @@ def evaluate(sample, output):
     annotations=read(sample/'processor_annotations.json')
     by_id={e['evidence_id']:e for e in trace['evidence']}
     if len(by_id)!=len(trace['evidence']):raise ValueError('Duplicate evidence ID')
-    schema=read(ROOT/'configs/diagnosis/diagnosis.schema.json')
-    errors=[{'path':'/'.join(map(str,e.absolute_path)),'validator':e.validator,'message':e.message}
-        for e in jsonschema.Draft202012Validator(schema).iter_errors(data)]
     mechanical=validate_diagnosis(data,trace['original_trace_step_ids'])
     refs=[]
     for section in ['root_cause_chain','critical_decision_points']:
@@ -51,7 +47,8 @@ def evaluate(sample, output):
         'recorded_code_executed':False,'sample_file_hashes':'passed','recorded_diagnosis_bytes':'unchanged',
         'coverage':{'published_step_ids':trace['published_step_ids'],'original_trace_step_ids':trace['original_trace_step_ids'],
                     'full_native_recording_available':False,'evidence_text_transformed':provenance['evidence_text_transformed']},
-        'strict_declared_schema':{'passed':not errors,'errors':errors},
+        'accepted':mechanical['passed'],'acceptance_standard':mechanical['acceptance_standard'],
+        'legacy_strict_audit_applied':False,
         'current_structural_acceptance':mechanical,
         'diagnosis_evidence_references':{'total':len(refs),'published':sum(r['published'] for r in refs),'checks':refs,
             'presence_does_not_prove_entailment':True,'actual_model_read_audit_replayed':False},
@@ -64,13 +61,11 @@ def evaluate(sample, output):
     lines=['# Real sample mechanical evaluation','',
         'This report is recomputed from a real recorded excerpt. No model calls or recorded code execution occurred.','',
         f"Record: `{trace['record_id']}`",'',
-        f"Strict declared schema: {'passed' if not errors else 'failed'}.",
         f"Current CodeTracer-compatible structural acceptance: {'passed' if mechanical['passed'] else 'failed'}.",
         f"Published diagnostic evidence references: {sum(r['published'] for r in refs)}/{len(refs)}.",
-        '', '## Schema findings','']
-    lines += [f"- {e['validator']}: {e['message']}" for e in errors] or ['None.']
+        '', 'Legacy strict diagnosis audits are not applied. Historical files remain unchanged.']
     lines += ['', '## Interpretation limits','',
-        'An extra field in the original diagnosis is preserved. Different structural policies can therefore yield different acceptance outcomes. Neither policy evaluates diagnosis truth.',
+        'Additional fields in the original diagnosis are accepted and preserved under the current policy. Structural acceptance does not evaluate diagnosis truth.',
         '', 'Evidence ID presence and exact quotation checks establish mechanical properties only. The full original model-read audit is not replayed from this public excerpt.',
         '', 'Independent semantic gold and root-cause accuracy are unavailable and are not assigned a numerical value. See the existing author review and sample coverage notes.']
     (output/'report.md').write_text('\n'.join(lines)+'\n')
@@ -82,7 +77,7 @@ def main():
     p.add_argument('--sample',type=Path,default=ROOT/'samples/real/agriculture_22_claude')
     p.add_argument('--output',type=Path,required=True)
     a=p.parse_args();r=evaluate(a.sample,a.output)
-    print(json.dumps({'record_id':r['record_id'],'strict_schema_passed':r['strict_declared_schema']['passed'],
-        'current_acceptance_passed':r['current_structural_acceptance']['passed'],
+    print(json.dumps({'record_id':r['record_id'],'acceptance_standard':r['acceptance_standard'],
+        'current_acceptance_passed':r['accepted'],
         'root_cause_accuracy':r['semantic_evaluation']['root_cause_accuracy']},indent=2))
 if __name__=='__main__':main()

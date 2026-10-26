@@ -986,8 +986,15 @@
     "file": "configs/diagnosis/CURRENT_ACCEPTANCE.json",
     "research_source": "configs/05_diagnosis/CURRENT_ACCEPTANCE.json",
     "source_sha256": "12b3f8f5e95d73ad56438d1ebc395b566c8c5567109b7bf8c01752ffc5e1d7e2",
-    "release_sha256": "12b3f8f5e95d73ad56438d1ebc395b566c8c5567109b7bf8c01752ffc5e1d7e2",
-    "changes": []
+    "release_sha256": "a16d07eeed6ba099bca7818f9d0b4e46b579ab80d68a05b29a1c915d2b86ffc0",
+    "changes": [
+      {
+        "release_version": "0.5.0",
+        "kind": "current_acceptance_documentation",
+        "previous_release_sha256": "12b3f8f5e95d73ad56438d1ebc395b566c8c5567109b7bf8c01752ffc5e1d7e2",
+        "description": "Declare CodeTracer-only current entrypoints and disable legacy strict diagnosis audits; historical source unchanged."
+      }
+    ]
   },
   {
     "file": "configs/historical/CURRENT_VALIDATION.json",
